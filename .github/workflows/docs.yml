@@ -1,8 +1,6 @@
 name: Validate documentation
 on:
   pull_request:
-  push:
-    branches: [main]
 permissions:
   contents: read
 concurrency:
@@ -34,7 +32,6 @@ jobs:
         with:
           python-version: '3.12'
       - run: npm ci
-      - run: npm run test:release
       - run: npx playwright install --with-deps chromium
       - run: npm run docs:build
       - run: npm run test:site

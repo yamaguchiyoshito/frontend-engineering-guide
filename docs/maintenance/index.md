@@ -15,7 +15,7 @@ description: "定義を変更するときに記録すること、編集と公開
 
 ## 編集と公開
 
-Markdownの正本はリポジトリの `docs/` にあります。Pull Requestで変更を確認し、検査が通った変更を `main` に統合します。公開用タグ `vX.Y.Z` を作成すると、同じコミットからサイト、単一Markdown、記録書式が生成されます。
+Markdownの正本はリポジトリの `docs/` にあります。Pull Requestで変更を確認し、検査が通った変更を `main` に統合します。マージを契機に、同じコミットからサイト、単一Markdown、記録書式が生成・公開されます。
 
 - [編集・検証・公開手順](contributing.md)
 - [改訂履歴](changelog.md)

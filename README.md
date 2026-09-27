@@ -34,15 +34,9 @@ git push -u origin main
 ```
 
 3. **Settings → Pages → Build and deployment → Source** で **GitHub Actions** を選択します。
-4. **Settings → Environments → github-pages** の公開元制限を確認します。制限する場合は、タグの `v*` を許可します。`main` だけの許可ではタグ公開が止まります。
-5. **Validate documentation** の検査成功を確認して、初回公開タグをpushします。
+4. **Settings → Environments → github-pages** の公開元制限は `main` のみで問題ありません。他のブランチからは公開しません。
 
-```bash
-git tag -a v1.2.0 -m "Release public guide 1.2.0"
-git push origin v1.2.0
-```
-
-**Publish GitHub Pages** がビルド・ブラウザ検証後に公開します。公開URLはActionsのdeploymentまたはSettings → Pagesに表示されます。標準URLは `https://YOUR_OWNER.github.io/frontend-engineering-guide/` です。
+`main` へのpushを契機に **Publish GitHub Pages** がビルド・ブラウザ検証後に公開します。初回はpush直後に実行され、以後はPRのマージごとに実行されます。公開URLはActionsのdeploymentまたはSettings → Pagesに表示されます。標準URLは `https://YOUR_OWNER.github.io/frontend-engineering-guide/` です。
 
 GitHub Freeでは公開リポジトリからPagesを公開できます。公開サイトにログインは不要です。[公式仕様](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
 
@@ -62,7 +56,6 @@ npm run docs:preview
 | `docs:check` | 76ページ、28スキル、140定義、100項目、判定、内部参照を検査 |
 | `docs:downloads` | 単一Markdown、空の4書式、ZIP、生成元・SHA-256を生成 |
 | `docs:build` | 文書検査・ダウンロード生成・サイトビルド |
-| `test:release` | タグ・版の一致、mainへの包含、不正なrefの拒否を検査 |
 | `test:site` | 全HTMLのリンク・アンカーとブラウザの検索・表示・ダウンロードを検査 |
 | `check:migration` | 原稿1.1から140定義・100項目が変わっていないことを照合 |
 
@@ -83,9 +76,9 @@ npm run test:site
 
 ## 改訂・再公開
 
-編集内容は [編集・検証・公開手順](docs/maintenance/contributing.md) に従ってPRで確認します。`main` へのpushは検査だけを行い、サイト公開は `vX.Y.Z` タグで行います。タグはpackage.jsonのversionと一致し、mainに含まれるコミットを指す必要があります。
+編集内容は [編集・検証・公開手順](docs/maintenance/contributing.md) に従ってPRで確認します。PRでは **Validate documentation** が検査だけを行います。`main` へマージすると **Publish GitHub Pages** が同じ検査を通してから公開します。`main` の内容がそのまま公開サイトです。
 
-旧版への復旧は **Publish GitHub Pages → Run workflow** をmainから実行し、`release_tag` に既存タグを指定します。タグ自体は変更しません。同時の公開要求は直列に処理されます。
+旧版へ戻すには、`main` で該当する変更を取り消す（revert）PRをマージします。公開の再実行だけが必要な場合は **Publish GitHub Pages → Run workflow** を `main` から実行します。同時の公開要求は直列に処理されます。
 
 ## 公開する内容
 
