@@ -84,4 +84,4 @@ npm run test:site
 
 このリポジトリは基準・使い方・空の書式・架空の回答例を管理します。記入済みの個人評価、社内URL、案件情報は所属組織の管理先へ保存します。サイトに入力・保存・認証の機能はありません。検索は配信済みの索引をブラウザ内で検索します。
 
-出典は [出典と追加した内容](docs/maintenance/sources.md)、変更履歴は [改訂履歴](docs/maintenance/changelog.md) を参照してください。第三者の原文に対する権利は元の権利者に帰属します。
+チームチェックリストの原文は、一般社団法人日本CTO協会が公開する [Webフロントエンド版DX Criteria（v202402）](https://dxcriteria.cto-a.org/frontend) です。原典は [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) で提供されており、原文を含むチェックリストのページと回答例は同じライセンスで提供します。項目No.、分野名、望ましい判定、回答例、28スキルの定義は本リポジトリで追加した内容です。詳細は [出典と追加した内容](docs/maintenance/sources.md)、変更履歴は [改訂履歴](docs/maintenance/changelog.md) を参照してください。

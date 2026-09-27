@@ -10,6 +10,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 回答例は望ましい状態を示す架空の文面です。[判定方法](../guide/team-assessment.md)と[記録書式](../templates/team-assessment.md)を使い、実態と根拠を記録してください。
 
+原文の出典：一般社団法人日本CTO協会「[Webフロントエンド版DX Criteria](https://dxcriteria.cto-a.org/frontend)」（CC BY-SA 4.0）。[出典と追加した内容](../maintenance/sources.md)を参照してください。
+
 ## C025
 
 **チェック項目 No.025**
