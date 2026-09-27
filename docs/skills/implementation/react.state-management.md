@@ -31,3 +31,24 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 状態の分類・配置・同期・破棄に関する方針と共通実装を整備できる。チームへの移行・教育を支援し、状態不整合や変更工数の改善を実測して方針を更新できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [React：stateの管理（日本語）](https://ja.react.dev/learn/managing-state) — 状態の設計とリフトアップ
+- [React：useReducer（日本語）](https://ja.react.dev/reference/react/useReducer) — 複雑な更新ロジックの整理
+- [TanStack Query：概要](https://tanstack.com/query/latest/docs/framework/react/overview) — サーバー状態の考え方
+
+**代表的なライブラリ・ツール**
+
+- [TanStack Query](https://tanstack.com/query) — サーバー状態の取得、キャッシュ、更新
+- [Zustand](https://zustand.docs.pmnd.rs/) — 軽量な共有状態管理
+- [Jotai](https://jotai.org/) — 原子単位の状態管理
+- [Redux Toolkit](https://redux-toolkit.js.org/) — Reduxの標準ツールセット
+
+<!-- references:end -->

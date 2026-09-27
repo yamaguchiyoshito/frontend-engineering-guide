@@ -31,3 +31,23 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 単体テストの対象選定、記述規約、共通補助、実行・保守の仕組みを整備できる。チームの不具合事例とテスト変更工数を分析し、実行速度・検出力・保守性を改善できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [Vitest：ガイド](https://vitest.dev/guide/) — Vite互換のテストランナーの公式ガイド
+- [Jest（日本語）](https://jestjs.io/ja/) — テストランナーの公式ドキュメント
+- [Testing Library：指針](https://testing-library.com/docs/guiding-principles) — 利用者視点で検証する考え方（英語）
+
+**代表的なライブラリ・ツール**
+
+- [Vitest](https://vitest.dev/) — テストランナーとモック機能
+- [Jest](https://jestjs.io/ja/) — テストランナーとモック機能
+- [Testing Library](https://testing-library.com/) — DOMを利用者の視点で検証する補助
+
+<!-- references:end -->

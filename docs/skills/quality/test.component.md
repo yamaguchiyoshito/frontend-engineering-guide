@@ -31,3 +31,23 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 共通UIの検証パターン、テスト環境、補助処理、CI運用を整備できる。複数の開発者に展開し、UI不具合の流出、テストの不安定さ、保守工数を改善できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [React Testing Library：入門](https://testing-library.com/docs/react-testing-library/intro/) — Reactコンポーネントの検証方法
+- [Testing Library：クエリの優先順位](https://testing-library.com/docs/queries/about/#priority) — 要素の特定方法の選び方
+- [Vitest：ブラウザモード](https://vitest.dev/guide/browser/) — 実ブラウザでのコンポーネントテスト
+
+**代表的なライブラリ・ツール**
+
+- [Testing Library](https://testing-library.com/) — 利用者視点の要素特定と操作
+- [user-event](https://testing-library.com/docs/user-event/intro) — 実際の操作に近いイベント発火
+- [Storybook インタラクションテスト](https://storybook.js.org/docs/writing-tests/interaction-testing) — Story上での検証
+
+<!-- references:end -->

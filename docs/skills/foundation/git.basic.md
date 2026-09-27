@@ -31,3 +31,23 @@ Gitで変更履歴を管理する要素技術です。branch、commit、merge、
 ## Lv4
 
 リポジトリの特性に合う履歴管理・競合解消・復旧の標準手順を整備し、演習や支援体制を作れる。他者が手順を使って対応した結果から事故や復旧時間の改善を確認できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [Pro Git（日本語版）](https://git-scm.com/book/ja/v2) — Gitの基本操作と内部構造の解説書
+- [Git Reference](https://git-scm.com/docs) — コマンドのリファレンス（英語）
+- [GitHub Docs：Gitの使用](https://docs.github.com/ja/get-started/using-git) — 日常的な操作の手順
+
+**代表的なライブラリ・ツール**
+
+- [Git](https://git-scm.com/) — 公式サイトとダウンロード
+- [GitHub CLI](https://cli.github.com/) — コマンドラインからのGitHub操作
+- [GitHub Desktop](https://desktop.github.com/) — GUIでのGit操作
+
+<!-- references:end -->

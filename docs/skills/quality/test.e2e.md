@@ -31,3 +31,23 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 業務リスクに基づくE2E対象の選定、共通シナリオ、データ・環境管理、CI結果の分析と保守体制を整備できる。チームで運用し、実行時間、不安定な失敗、重大不具合の検出状況を改善できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [Playwright：ドキュメント](https://playwright.dev/docs/intro) — 導入からCI実行までの公式ガイド
+- [Playwright：ベストプラクティス](https://playwright.dev/docs/best-practices) — 安定した要素特定と待機の指針
+- [Cypress：ドキュメント](https://docs.cypress.io/) — 代替のE2Eテストツール
+
+**代表的なライブラリ・ツール**
+
+- [Playwright](https://playwright.dev/) — 複数ブラウザ対応のE2Eテスト
+- [Cypress](https://www.cypress.io/) — ブラウザ内で動くE2Eテスト
+- [GitHub Actions](https://docs.github.com/ja/actions) — CIでの実行と証跡の保存
+
+<!-- references:end -->

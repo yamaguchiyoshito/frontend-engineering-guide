@@ -31,3 +31,24 @@ JavaScriptの構文、関数、オブジェクト、配列を使って処理を�
 ## Lv4
 
 チームで繰り返す処理の設計原則や共通関数、レビュー観点、演習を整備できる。他者への展開を通じて、同種不具合や重複実装の減少を確認できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [MDN：JavaScript](https://developer.mozilla.org/ja/docs/Web/JavaScript) — 言語仕様と組み込みオブジェクトのリファレンス
+- [JavaScript Primer](https://jsprimer.net/) — ECMAScript 2015以降を前提にした入門書（日本語、OSS）
+- [ECMAScript Language Specification](https://tc39.es/ecma262/) — JavaScriptの言語仕様（英語）
+
+**代表的なライブラリ・ツール**
+
+- [Node.js](https://nodejs.org/ja) — JavaScriptの実行環境
+- [ESLint](https://eslint.org/) — JavaScriptの静的検査
+- [Prettier](https://prettier.io/) — コード整形
+- [Chrome DevTools：JavaScriptのデバッグ](https://developer.chrome.com/docs/devtools/javascript?hl=ja) — ブレークポイントと変数の確認
+
+<!-- references:end -->

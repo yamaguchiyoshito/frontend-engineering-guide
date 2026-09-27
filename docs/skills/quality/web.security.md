@@ -31,3 +31,25 @@ XSS、CSRF、認可漏れ、機密情報の露出などの代表的なリスク�
 ## Lv4
 
 実装基準、共通対策、静的検査・依存関係検査、例外管理、教育、脆弱性対応の手順を関係者と整備できる。チームでの運用実績を基に、指摘の再発と修正までの時間を改善できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/) — 代表的なリスクの一覧（英語）
+- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) — 対策の実装指針（英語）
+- [MDN：Webセキュリティ](https://developer.mozilla.org/ja/docs/Web/Security) — ブラウザのセキュリティ機構の解説
+- [MDN：Content Security Policy](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/CSP) — スクリプト実行の制限
+- [IPA：安全なウェブサイトの作り方](https://www.ipa.go.jp/security/vuln/websecurity.html) — 脆弱性別の対策（日本語）
+
+**代表的なライブラリ・ツール**
+
+- [GitHub code scanning](https://docs.github.com/ja/code-security/code-scanning) — PRごとの静的検査
+- [Dependabot](https://docs.github.com/ja/code-security/dependabot) — 依存関係の脆弱性検知と更新
+- [DOMPurify](https://github.com/cure53/DOMPurify) — HTMLのサニタイズ
+
+<!-- references:end -->

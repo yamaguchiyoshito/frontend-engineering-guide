@@ -31,3 +31,23 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 スキーマの管理・共有方針、型との連携、エラー表現、契約確認の仕組みを整備できる。チームで運用し、検証漏れやフロントエンド・バックエンド間の不一致を減らせる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [MDN：制約検証](https://developer.mozilla.org/ja/docs/Web/HTML/Guides/Constraint_validation) — HTML標準の入力検証
+- [OWASP：Input Validation Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html) — サーバー側で必須となる検証の指針（英語）
+- [TypeScript Handbook：型の絞り込み（日本語）](https://www.typescriptlang.org/ja/docs/handbook/2/narrowing.html) — 外部データを型安全に扱う基礎
+
+**代表的なライブラリ・ツール**
+
+- [Zod](https://zod.dev/) — スキーマ定義と型の導出
+- [Valibot](https://valibot.dev/) — 軽量なスキーマ検証ライブラリ
+- [openapi-typescript](https://openapi-ts.dev/) — API仕様と型定義の整合
+
+<!-- references:end -->

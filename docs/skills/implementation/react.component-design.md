@@ -31,3 +31,23 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 コンポーネントの設計原則、採用・共通化・廃止の基準、カタログ、変更管理を整備できる。複数の利用者による運用を定着させ、重複実装と変更時の影響を減らせる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [React：Reactの流儀（日本語）](https://ja.react.dev/learn/thinking-in-react) — 画面をコンポーネントに分ける手順
+- [React：コンポーネントにpropsを渡す（日本語）](https://ja.react.dev/learn/passing-props-to-a-component) — propsの設計
+- [React：state構造の選択（日本語）](https://ja.react.dev/learn/choosing-the-state-structure) — 状態の置き場所と形
+
+**代表的なライブラリ・ツール**
+
+- [Storybook](https://storybook.js.org/) — コンポーネントの単独開発とカタログ化
+- [Radix Primitives](https://www.radix-ui.com/primitives) — スタイルなしのアクセシブルな部品
+- [React Aria](https://react-spectrum.adobe.com/react-aria/) — アクセシブルなUI部品を作るHooks群
+
+<!-- references:end -->

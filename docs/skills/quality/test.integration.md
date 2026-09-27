@@ -31,3 +31,23 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 結合範囲の決め方、仕様との対応付け、テストデータ、環境、後始末、実行・分析の共通手順を整備できる。他者が再現できる状態へ展開し、結合漏れや調査・再実行工数を減らせる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [Mock Service Worker：ドキュメント](https://mswjs.io/docs/) — APIモックの設計と使い方
+- [Playwright：コンポーネントテスト](https://playwright.dev/docs/test-components) — 実ブラウザでの結合検証（実験的機能）
+- [Martin Fowler：The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) — テスト層の役割分担（英語）
+
+**代表的なライブラリ・ツール**
+
+- [Mock Service Worker](https://mswjs.io/) — 実物とモックの境界の制御
+- [Testing Library](https://testing-library.com/) — 画面と状態の検証
+- [Playwright](https://playwright.dev/) — ブラウザを使った結合検証
+
+<!-- references:end -->

@@ -31,3 +31,23 @@ Storyの役割と対象コンポーネントの関係を説明できず、既存
 ## Lv4
 
 Storyの作成・更新・公開の規約とCI検証を整備し、設計・レビュー・テストで利用する運用を作れる。他者による利用と更新状況を確認し、仕様認識のずれや確認工数を改善できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [Storybook：ドキュメント](https://storybook.js.org/docs) — 設定、Story、アドオンの公式ガイド
+- [Storybook：インタラクションテスト](https://storybook.js.org/docs/writing-tests/interaction-testing) — Story上での操作と検証
+- [Storybook：Autodocs](https://storybook.js.org/docs/writing-docs/autodocs) — Storyからの文書生成
+
+**代表的なライブラリ・ツール**
+
+- [Storybook](https://storybook.js.org/) — コンポーネントのカタログと検証環境
+- [msw-storybook-addon](https://github.com/mswjs/msw-storybook-addon) — Story内でのAPIモック
+- [Chromatic](https://www.chromatic.com/) — ビジュアルリグレッションテスト（商用）
+
+<!-- references:end -->

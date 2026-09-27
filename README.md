@@ -58,6 +58,7 @@ npm run docs:preview
 | `docs:build` | 文書検査・ダウンロード生成・サイトビルド |
 | `test:site` | 全HTMLのリンク・アンカーとブラウザの検索・表示・ダウンロードを検査 |
 | `check:migration` | 原稿1.1から140定義・100項目が変わっていないことを照合 |
+| `check:links` | 要素技術ページの参考リンク（`build/references.json`）の到達確認。週次のワークフローでも実行 |
 
 `check:migration` は今回の移行確認用です。今後の意図した定義改訂では差分になるため、通常CIには含めていません。
 

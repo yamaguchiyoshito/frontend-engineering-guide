@@ -31,3 +31,23 @@ PromiseやasyncとawaitによるJavaScriptの非同期処理を実装する要�
 ## Lv4
 
 非同期処理の共通方針と再利用部品、競合・遅延・失敗の検証方法を整備できる。他者の利用結果を基に、非同期処理に起因する不具合と調査工数を改善できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [MDN：非同期JavaScript](https://developer.mozilla.org/ja/docs/Learn_web_development/Extensions/Async_JS) — Promise、async/awaitの入門
+- [MDN：Promise](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Promise) — Promiseのリファレンス
+- [MDN：AbortController](https://developer.mozilla.org/ja/docs/Web/API/AbortController) — 非同期処理のキャンセル
+- [JavaScript Primer：非同期処理](https://jsprimer.net/basic/async/) — コールバック、Promise、async/awaitの解説（日本語）
+
+**代表的なライブラリ・ツール**
+
+- [typescript-eslint：no-floating-promises](https://typescript-eslint.io/rules/no-floating-promises/) — 未処理のPromiseの検出
+- [eslint-plugin-promise](https://github.com/eslint-community/eslint-plugin-promise) — Promiseの誤用の検出
+
+<!-- references:end -->

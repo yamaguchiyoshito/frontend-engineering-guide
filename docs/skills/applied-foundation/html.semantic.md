@@ -31,3 +31,23 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 画面・コンポーネントの意味構造に関する共通パターンとレビュー基準を整備し、設計・実装に適用できる。他者による利用と検証を通じて構造上の不具合を減らせる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [MDN：HTML要素リファレンス](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements) — 各要素の意味と使い方
+- [HTML Living Standard：セクションと見出し](https://html.spec.whatwg.org/multipage/sections.html) — 文書構造の仕様（英語）
+- [ARIA in HTML](https://www.w3.org/TR/html-aria/) — HTML要素に許可されるARIAロールの対応表（英語）
+- [web.dev：Learn HTML（セマンティクス）](https://web.dev/learn/html/semantic-html?hl=ja) — 意味構造の考え方
+
+**代表的なライブラリ・ツール**
+
+- [W3C Markup Validation Service](https://validator.w3.org/nu/) — 構造と入れ子の検査
+- [Chrome DevTools：アクセシビリティツリー](https://developer.chrome.com/docs/devtools/accessibility/reference?hl=ja) — 支援技術に伝わる構造の確認
+
+<!-- references:end -->

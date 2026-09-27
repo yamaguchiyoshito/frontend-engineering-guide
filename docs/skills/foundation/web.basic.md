@@ -31,3 +31,24 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 チームで使用する通信・Cookie・キャッシュの設計原則と診断手順を整備し、確認の自動化や教材として展開できる。他者の利用結果から不具合の再発や調査時間の改善を確認できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [MDN：Webの仕組み](https://developer.mozilla.org/ja/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works) — ブラウザとサーバーの通信の流れ
+- [MDN：HTTP](https://developer.mozilla.org/ja/docs/Web/HTTP) — 要求と応答、ヘッダー、ステータスコードのリファレンス
+- [MDN：HTTP Cookie](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Cookies) — Cookieの属性と送信条件
+- [MDN：HTTPキャッシュ](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Caching) — ブラウザと中間キャッシュの動作
+- [RFC 9110：HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110) — HTTPの意味論を定める標準仕様（英語）
+
+**代表的なライブラリ・ツール**
+
+- [Chrome DevTools：Networkパネル](https://developer.chrome.com/docs/devtools/network?hl=ja) — 通信内容とタイミングの確認
+- [curl](https://curl.se/docs/) — コマンドラインからのHTTP要求と応答の確認
+
+<!-- references:end -->

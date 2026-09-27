@@ -23,9 +23,11 @@
 | `docs/public/downloads/` | ビルド時に生成する配布物。Git管理対象外 |
 | `build/document-map.json` | 全ページのパス・タイトル・分類・順序 |
 | `build/migration-baseline.json` | 原稿1.1の移行照合用ハッシュ。本文の複製は持たない |
+| `build/references.json` | 要素技術ごとの参考リンク（仕様・公式ドキュメント、代表的なライブラリ・ツール）。各ページの「参考リンク」に同期 |
 | `scripts/` | 構造検査、一覧同期、配布物生成、HTML・ブラウザ検証 |
 | `.github/workflows/docs.yml` | PRの検査。ルート・サブディレクトリの2構成 |
 | `.github/workflows/pages.yml` | `main` へのpushを契機に、ビルド、ブラウザ確認、Pagesへの公開 |
+| `.github/workflows/links.yml` | 参考リンクの到達確認（週次・手動）。公開は止めない |
 | `.github/pull_request_template.md` | 変更理由・評価影響・検証結果の記録 |
 | `package.json` / `package-lock.json` | 文書版、実行コマンド、固定した依存関係 |
 | `.nvmrc` | 開発・CIで使うNode.jsの版 |
