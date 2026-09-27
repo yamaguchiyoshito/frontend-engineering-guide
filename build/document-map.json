@@ -319,12 +319,6 @@
       "title": "コードベース",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "001",
-        "002",
-        "003",
-        "004"
-      ],
       "section": "1. 持続可能な技術スタック",
       "sourceId": "1-1"
     },
@@ -333,12 +327,6 @@
       "title": "開発環境",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "005",
-        "006",
-        "007",
-        "008"
-      ],
       "section": "1. 持続可能な技術スタック",
       "sourceId": "1-2"
     },
@@ -347,12 +335,6 @@
       "title": "UIコンポーネント",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "009",
-        "010",
-        "011",
-        "012"
-      ],
       "section": "1. 持続可能な技術スタック",
       "sourceId": "1-3"
     },
@@ -361,12 +343,6 @@
       "title": "アプリケーション設計",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "013",
-        "014",
-        "015",
-        "016"
-      ],
       "section": "1. 持続可能な技術スタック",
       "sourceId": "1-4"
     },
@@ -375,12 +351,6 @@
       "title": "技術選定",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "017",
-        "018",
-        "019",
-        "020"
-      ],
       "section": "1. 持続可能な技術スタック",
       "sourceId": "1-5"
     },
@@ -389,12 +359,6 @@
       "title": "パフォーマンス",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "021",
-        "022",
-        "023",
-        "024"
-      ],
       "section": "2. ユーザー体験を支える品質",
       "sourceId": "2-1"
     },
@@ -403,12 +367,6 @@
       "title": "アクセシビリティ",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "025",
-        "026",
-        "027",
-        "028"
-      ],
       "section": "2. ユーザー体験を支える品質",
       "sourceId": "2-2"
     },
@@ -417,12 +375,6 @@
       "title": "セキュリティ",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "029",
-        "030",
-        "031",
-        "032"
-      ],
       "section": "2. ユーザー体験を支える品質",
       "sourceId": "2-3"
     },
@@ -431,12 +383,6 @@
       "title": "プライバシー",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "033",
-        "034",
-        "035",
-        "036"
-      ],
       "section": "2. ユーザー体験を支える品質",
       "sourceId": "2-4"
     },
@@ -445,12 +391,6 @@
       "title": "デザイン",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "037",
-        "038",
-        "039",
-        "040"
-      ],
       "section": "2. ユーザー体験を支える品質",
       "sourceId": "2-5"
     },
@@ -459,12 +399,6 @@
       "title": "テスト",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "041",
-        "042",
-        "043",
-        "044"
-      ],
       "section": "3. 安定的なデリバリー",
       "sourceId": "3-1"
     },
@@ -473,12 +407,6 @@
       "title": "ビルド",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "045",
-        "046",
-        "047",
-        "048"
-      ],
       "section": "3. 安定的なデリバリー",
       "sourceId": "3-2"
     },
@@ -487,12 +415,6 @@
       "title": "デプロイ",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "049",
-        "050",
-        "051",
-        "052"
-      ],
       "section": "3. 安定的なデリバリー",
       "sourceId": "3-3"
     },
@@ -501,12 +423,6 @@
       "title": "サプライチェーン",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "053",
-        "054",
-        "055",
-        "056"
-      ],
       "section": "3. 安定的なデリバリー",
       "sourceId": "3-4"
     },
@@ -515,12 +431,6 @@
       "title": "CI/CD",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "057",
-        "058",
-        "059",
-        "060"
-      ],
       "section": "3. 安定的なデリバリー",
       "sourceId": "3-5"
     },
@@ -529,12 +439,6 @@
       "title": "サーバー",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "061",
-        "062",
-        "063",
-        "064"
-      ],
       "section": "4. 効果的なシステム設計",
       "sourceId": "4-1"
     },
@@ -543,12 +447,6 @@
       "title": "インフラ",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "065",
-        "066",
-        "067",
-        "068"
-      ],
       "section": "4. 効果的なシステム設計",
       "sourceId": "4-2"
     },
@@ -557,12 +455,6 @@
       "title": "キャッシュ",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "069",
-        "070",
-        "071",
-        "072"
-      ],
       "section": "4. 効果的なシステム設計",
       "sourceId": "4-3"
     },
@@ -571,12 +463,6 @@
       "title": "モニタリング",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "073",
-        "074",
-        "075",
-        "076"
-      ],
       "section": "4. 効果的なシステム設計",
       "sourceId": "4-4"
     },
@@ -585,12 +471,6 @@
       "title": "障害対応",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "077",
-        "078",
-        "079",
-        "080"
-      ],
       "section": "4. 効果的なシステム設計",
       "sourceId": "4-5"
     },
@@ -599,12 +479,6 @@
       "title": "専門性の育成",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "081",
-        "082",
-        "083",
-        "084"
-      ],
       "section": "5. 成長できるチーム",
       "sourceId": "5-1"
     },
@@ -613,12 +487,6 @@
       "title": "イネーブリング",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "085",
-        "086",
-        "087",
-        "088"
-      ],
       "section": "5. 成長できるチーム",
       "sourceId": "5-2"
     },
@@ -627,12 +495,6 @@
       "title": "職務定義",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "089",
-        "090",
-        "091",
-        "092"
-      ],
       "section": "5. 成長できるチーム",
       "sourceId": "5-3"
     },
@@ -641,12 +503,6 @@
       "title": "ビジネス連携",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "093",
-        "094",
-        "095",
-        "096"
-      ],
       "section": "5. 成長できるチーム",
       "sourceId": "5-4"
     },
@@ -655,12 +511,6 @@
       "title": "外部発信",
       "kind": "checklist",
       "handbook": true,
-      "numbers": [
-        "097",
-        "098",
-        "099",
-        "100"
-      ],
       "section": "5. 成長できるチーム",
       "sourceId": "5-5"
     },

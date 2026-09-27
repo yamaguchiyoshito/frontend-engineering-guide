@@ -24,14 +24,14 @@ description: "評価結果から原因に合った対応を選び、チェック
 
 | チェック項目の例 | 関連するスキルの例 | 併せて確認する条件 |
 | :--- | :--- | :--- |
-| [No.002〜003](../checklists/quality-and-types.md)：型検査、APIの型連携 | [TypeScript](../skills/applied-foundation/typescript.basic.md)、[入力検証・型連携](../skills/implementation/frontend.validation.md)、[REST API連携](../skills/implementation/frontend.api-integration.md) | API仕様の管理者、CI設定、バックエンドとの合意 |
-| [No.009〜012](../checklists/ui-components.md)：コンポーネントの共通化と設計 | [コンポーネント設計](../skills/implementation/react.component-design.md)、[Storybook](../skills/implementation/storybook.basic.md) | カタログの更新担当、レビュー方針、変更・廃止の手順 |
-| [No.021〜024](../checklists/performance.md)：性能の計測と改善 | [Webパフォーマンス](../skills/quality/web.performance.md) | 計測環境、監視担当、性能目標、改善工数 |
-| [No.025〜028](../checklists/accessibility.md)：アクセシビリティ | [セマンティックHTML](../skills/applied-foundation/html.semantic.md)、[アクセシビリティ](../skills/applied-foundation/web.accessibility.md) | 品質基準、デザインとの合意、支援技術を使った確認機会 |
-| [No.029〜032](../checklists/security.md)：セキュリティ | [Webセキュリティ](../skills/quality/web.security.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md) | 検査基盤、修正期限、専門担当者への相談経路 |
-| [No.041〜044](../checklists/testing.md)：テストの計画と保守 | [テスト設計](../skills/quality/test.design.md)、[単体テスト](../skills/quality/test.unit.md)、[コンポーネントテスト](../skills/quality/test.component.md)、[結合テスト](../skills/quality/test.integration.md)、[E2Eテスト](../skills/quality/test.e2e.md) | 仕様の確定、検証環境、テストデータ、保守時間 |
-| [No.057〜060](../checklists/cicd.md)：CI/CDの運用 | [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md) | CI/CDを担当する専門能力、権限、共有基盤との責任分界 |
-| [No.089〜092](../checklists/roles-and-growth.md)：職能・役割・育成 | 担当業務に必要な各スキル | 担当機会、支援者、学習時間、代替要員 |
+| [1-1-2〜1-1-3](../checklists/quality-and-types.md)：型検査、APIの型連携 | [TypeScript](../skills/applied-foundation/typescript.basic.md)、[入力検証・型連携](../skills/implementation/frontend.validation.md)、[REST API連携](../skills/implementation/frontend.api-integration.md) | API仕様の管理者、CI設定、バックエンドとの合意 |
+| [1-3-1〜1-3-4](../checklists/ui-components.md)：コンポーネントの共通化と設計 | [コンポーネント設計](../skills/implementation/react.component-design.md)、[Storybook](../skills/implementation/storybook.basic.md) | カタログの更新担当、レビュー方針、変更・廃止の手順 |
+| [2-1-1〜2-1-4](../checklists/performance.md)：性能の計測と改善 | [Webパフォーマンス](../skills/quality/web.performance.md) | 計測環境、監視担当、性能目標、改善工数 |
+| [2-2-1〜2-2-4](../checklists/accessibility.md)：アクセシビリティ | [セマンティックHTML](../skills/applied-foundation/html.semantic.md)、[アクセシビリティ](../skills/applied-foundation/web.accessibility.md) | 品質基準、デザインとの合意、支援技術を使った確認機会 |
+| [2-3-1〜2-3-4](../checklists/security.md)：セキュリティ | [Webセキュリティ](../skills/quality/web.security.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md) | 検査基盤、修正期限、専門担当者への相談経路 |
+| [3-1-1〜3-1-4](../checklists/testing.md)：テストの計画と保守 | [テスト設計](../skills/quality/test.design.md)、[単体テスト](../skills/quality/test.unit.md)、[コンポーネントテスト](../skills/quality/test.component.md)、[結合テスト](../skills/quality/test.integration.md)、[E2Eテスト](../skills/quality/test.e2e.md) | 仕様の確定、検証環境、テストデータ、保守時間 |
+| [3-5-1〜3-5-4](../checklists/cicd.md)：CI/CDの運用 | [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md) | CI/CDを担当する専門能力、権限、共有基盤との責任分界 |
+| [5-3-1〜5-3-4](../checklists/roles-and-growth.md)：職能・役割・育成 | 担当業務に必要な各スキル | 担当機会、支援者、学習時間、代替要員 |
 
 ## 改善の優先順位
 

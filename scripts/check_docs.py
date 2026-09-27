@@ -22,7 +22,7 @@ def main():
    assert text.strip(),p['path']+': empty definition'
    definitions[p['skillId']+'.'+lv]=hashlib.sha256(text.encode()).hexdigest()
  for p in checks:
-  rows=checklist_data(p);assert list(rows)==p['numbers'],p['path']+': item numbers differ'
+  rows=checklist_data(p);assert list(rows)==[item_number(f'{p["sourceId"]}-{k}') for k in range(1,5)],p['path']+': item IDs differ'
   for num,row in rows.items():
    assert num not in items,'Duplicate checklist number'
    items[num]=hashlib.sha256(json.dumps(row,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()
