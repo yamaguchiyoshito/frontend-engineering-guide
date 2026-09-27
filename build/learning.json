@@ -1,0 +1,291 @@
+{
+  "checked": "2026年9月",
+  "note": "無料で公開されている公式ドキュメント、公的機関の資料、実績のある教材から選んでいます。採用の推奨ではありません。",
+  "courses": [
+    {
+      "title": "MDN：Web開発を学ぶ",
+      "url": "https://developer.mozilla.org/ja/docs/Learn_web_development",
+      "note": "Webの仕組みからHTML、CSS、JavaScriptまでを順に学ぶ入門コース",
+      "lang": "ja",
+      "format": "手を動かす",
+      "skills": [
+        "web.basic",
+        "html.basic",
+        "css.basic",
+        "javascript.basic"
+      ]
+    },
+    {
+      "title": "Chrome DevTools：ドキュメント",
+      "url": "https://developer.chrome.com/docs/devtools?hl=ja",
+      "note": "要素、通信、コンソール、性能の各パネルの使い方",
+      "lang": "ja",
+      "format": "手を動かす",
+      "skills": [
+        "web.basic",
+        "javascript.dom"
+      ]
+    },
+    {
+      "title": "web.dev：Learn HTML",
+      "url": "https://web.dev/learn/html?hl=ja",
+      "note": "HTMLの要素と意味付けの体系的なコース",
+      "lang": "ja",
+      "format": "読む",
+      "skills": [
+        "html.basic",
+        "html.semantic"
+      ]
+    },
+    {
+      "title": "web.dev：Learn CSS",
+      "url": "https://web.dev/learn/css?hl=ja",
+      "note": "カスケード、ボックスモデル、レイアウトの体系的なコース",
+      "lang": "ja",
+      "format": "読む",
+      "skills": [
+        "css.basic"
+      ]
+    },
+    {
+      "title": "web.dev：Learn Responsive Design",
+      "url": "https://web.dev/learn/design?hl=ja",
+      "note": "画面幅と機器に応じた設計のコース",
+      "lang": "ja",
+      "format": "読む",
+      "skills": [
+        "css.responsive"
+      ]
+    },
+    {
+      "title": "web.dev：Learn Forms",
+      "url": "https://web.dev/learn/forms?hl=ja",
+      "note": "フォームの構造、検証、アクセシビリティのコース",
+      "lang": "ja",
+      "format": "読む",
+      "skills": [
+        "html.basic",
+        "react.form"
+      ]
+    },
+    {
+      "title": "JavaScript Primer",
+      "url": "https://jsprimer.net/",
+      "note": "ES2015以降の文法と非同期処理を、実行しながら学べる日本語の教科書",
+      "lang": "ja",
+      "format": "手を動かす",
+      "skills": [
+        "javascript.basic",
+        "javascript.async"
+      ]
+    },
+    {
+      "title": "サバイバルTypeScript",
+      "url": "https://typescriptbook.jp/",
+      "note": "入門から実務の型の使い方までを扱う日本語の教科書",
+      "lang": "ja",
+      "format": "読む",
+      "skills": [
+        "typescript.basic"
+      ]
+    },
+    {
+      "title": "Learn Git Branching",
+      "url": "https://learngitbranching.js.org/?locale=ja_JP",
+      "note": "ブランチとマージをブラウザ上の演習で学ぶ",
+      "lang": "ja",
+      "format": "手を動かす",
+      "skills": [
+        "git.basic"
+      ]
+    },
+    {
+      "title": "Pro Git（日本語版）",
+      "url": "https://git-scm.com/book/ja/v2",
+      "note": "Gitの基本操作から内部構造までの解説書",
+      "lang": "ja",
+      "format": "読む",
+      "skills": [
+        "git.basic",
+        "git.collaboration"
+      ]
+    },
+    {
+      "title": "GitHub Skills",
+      "url": "https://skills.github.com/",
+      "note": "Pull Requestやレビューの流れを、練習用リポジトリで体験する",
+      "lang": "en",
+      "format": "手を動かす",
+      "skills": [
+        "git.collaboration"
+      ]
+    },
+    {
+      "title": "web.dev：Learn Accessibility",
+      "url": "https://web.dev/learn/accessibility?hl=ja",
+      "note": "アクセシビリティの考え方と実装の体系的なコース",
+      "lang": "ja",
+      "format": "読む",
+      "skills": [
+        "web.accessibility",
+        "html.semantic"
+      ]
+    },
+    {
+      "title": "デジタル庁：ウェブアクセシビリティ導入ガイドブック",
+      "url": "https://www.digital.go.jp/resources/introduction-to-web-accessibility-guidebook",
+      "note": "誰にとって何が障壁になるかから始める入門書",
+      "lang": "ja",
+      "format": "読む",
+      "skills": [
+        "web.accessibility"
+      ]
+    },
+    {
+      "title": "Google検索セントラル：SEOスターターガイド",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ja",
+      "note": "検索エンジンにページを理解させる基本",
+      "lang": "ja",
+      "format": "読む",
+      "skills": [
+        "web.seo"
+      ]
+    },
+    {
+      "title": "React：チュートリアル（三目並べ）",
+      "url": "https://ja.react.dev/learn/tutorial-tic-tac-toe",
+      "note": "コンポーネント、props、stateを一つのゲームを作りながら学ぶ",
+      "lang": "ja",
+      "format": "手を動かす",
+      "skills": [
+        "react.basic",
+        "react.state-management"
+      ]
+    },
+    {
+      "title": "Next.js：Learn",
+      "url": "https://nextjs.org/learn",
+      "note": "App Routerでダッシュボードを作りながら、ルーティング、データ取得、認証までを学ぶ公式コース",
+      "lang": "en",
+      "format": "手を動かす",
+      "skills": [
+        "nextjs.routing",
+        "nextjs.rendering"
+      ]
+    },
+    {
+      "title": "Tailwind CSS：Styling with utility classes",
+      "url": "https://tailwindcss.com/docs/styling-with-utility-classes",
+      "note": "ユーティリティクラスの考え方とテーマの扱い",
+      "lang": "en",
+      "format": "読む",
+      "skills": [
+        "frontend.styling"
+      ]
+    },
+    {
+      "title": "Storybook：チュートリアル",
+      "url": "https://storybook.js.org/tutorials/",
+      "note": "部品のカタログ化からテストまでを段階的に学ぶ公式チュートリアル",
+      "lang": "en",
+      "format": "手を動かす",
+      "skills": [
+        "storybook.basic",
+        "react.component-design"
+      ]
+    },
+    {
+      "title": "Vitest：ガイド",
+      "url": "https://vitest.dev/guide/",
+      "note": "導入と最初のテストの書き方",
+      "lang": "en",
+      "format": "手を動かす",
+      "skills": [
+        "test.unit"
+      ]
+    },
+    {
+      "title": "Testing Library：ドキュメント",
+      "url": "https://testing-library.com/docs/",
+      "note": "利用者の見え方で要素を取得するテストの考え方と書き方",
+      "lang": "en",
+      "format": "読む",
+      "skills": [
+        "test.component"
+      ]
+    },
+    {
+      "title": "Mock Service Worker：ドキュメント",
+      "url": "https://mswjs.io/docs/",
+      "note": "通信をモックしてテストする仕組みと手順",
+      "lang": "en",
+      "format": "手を動かす",
+      "skills": [
+        "test.integration"
+      ]
+    },
+    {
+      "title": "Playwright：Getting started",
+      "url": "https://playwright.dev/docs/intro",
+      "note": "導入、操作の記録、実行までの公式ガイド",
+      "lang": "en",
+      "format": "手を動かす",
+      "skills": [
+        "test.e2e"
+      ]
+    },
+    {
+      "title": "web.dev：Learn Performance",
+      "url": "https://web.dev/learn/performance?hl=ja",
+      "note": "計測から画像、フォント、コード分割までの体系的なコース",
+      "lang": "ja",
+      "format": "読む",
+      "skills": [
+        "web.performance"
+      ]
+    },
+    {
+      "title": "IPA：安全なウェブサイトの作り方",
+      "url": "https://www.ipa.go.jp/security/vuln/websecurity.html",
+      "note": "代表的な脆弱性の仕組みと対策を日本語で解説",
+      "lang": "ja",
+      "format": "読む",
+      "skills": [
+        "web.security"
+      ]
+    },
+    {
+      "title": "OWASP Cheat Sheet Series",
+      "url": "https://cheatsheetseries.owasp.org/",
+      "note": "対策の実装指針を分野別にまとめた資料",
+      "lang": "en",
+      "format": "読む",
+      "skills": [
+        "web.security",
+        "frontend.validation"
+      ]
+    }
+  ],
+  "maps": [
+    {
+      "title": "roadmap.sh：Frontend Developer",
+      "url": "https://roadmap.sh/frontend",
+      "note": "フロントエンド全体の学習項目の地図。本書の基礎領域と応用基礎領域に相当"
+    },
+    {
+      "title": "roadmap.sh：React",
+      "url": "https://roadmap.sh/react",
+      "note": "Reactとその周辺ライブラリの地図。本書のフレームワーク・実装領域に相当"
+    },
+    {
+      "title": "roadmap.sh：Next.js",
+      "url": "https://roadmap.sh/nextjs",
+      "note": "Next.jsの地図。本書の「App Routerによる画面構成」「レンダリングとデータ取得」に相当"
+    },
+    {
+      "title": "roadmap.sh：Frontend Performance Best Practices",
+      "url": "https://roadmap.sh/frontend-performance-best-practices",
+      "note": "性能改善の項目一覧。本書の「Webパフォーマンス」に相当"
+    }
+  ]
+}

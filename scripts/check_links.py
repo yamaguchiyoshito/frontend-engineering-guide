@@ -1,4 +1,4 @@
-"""Check that every external link in build/references.json responds. Run on a schedule, not on every PR."""
+"""Check that every external link in build/references.json and build/learning.json responds. Run on a schedule, not on every PR."""
 import json,sys,time,urllib.request,urllib.error,urllib.parse
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -23,6 +23,9 @@ def probe(url):
    status=str(e)
    if method=='GET':return status
  return status
+learning=json.loads((ROOT/'build/learning.json').read_text())
+for r in learning.get('courses',[])+learning.get('maps',[]):
+ (skipped if r.get('check') is False else links).append(('learning',r['url']))
 failed=[]
 for sid,url in links:
  status=probe(url)

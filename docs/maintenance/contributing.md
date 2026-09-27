@@ -14,6 +14,7 @@ description: "正本のファイル、ローカルでの確認手順、Pull Requ
 | チェック項目・回答例 | `docs/checklists/<小テーマ>.md`（項目文は出典のとおり。回答例のみ編集） |
 | 記録書式 | `docs/templates/*.md` のテンプレート欄 |
 | 要素技術・小テーマの参考リンク | `build/references.json`（`docs:sync` で各ページへ展開） |
+| 学習コンテンツのコースと全体地図 | `build/learning.json`（`docs:sync` で学習コンテンツページへ展開。順路は各ページの「はじめの一歩」と「まず読む」から生成） |
 | 用語集と各ページの「前提となる用語」 | `build/glossary.json`（`docs:sync` で用語集ページと各ページ冒頭へ展開） |
 | 図 | Markdownの ```mermaid コードブロック（サイトでは `vitepress-plugin-mermaid` が描画。単一MarkdownではGitHubがそのまま描画） |
 | ページの追加・順序・分類 | `build/document-map.json` |

@@ -81,8 +81,41 @@ def terms(page):
  line='**前提となる用語：** '+'、'.join(f'[{TERMS[i]["term"]}]({target}#{slug(TERMS[i]["term"])})' for i in ids)
  return line+('  \n'+related_skills(page) if page['kind']=='checklist' else '')
 
+LEARNING=json.loads((ROOT/'build/learning.json').read_text())
+LEARNING_PATH='guide/learning.md'
+def first_step(page):
+ """The task sentence(s) of a skill page's ::: start block, without the trailing まず読む link."""
+ m=re.search(r'^::: start\n(.*?)\n:::$',body(page['path']),re.M|re.S)
+ return re.sub(r'まず読む：\[[^\]]*\]\([^)]*\)\s*$','',m.group(1)).strip()
+def start_reference(skill_id):
+ entry=REFERENCES['skills'][skill_id]
+ return [r for key in ('docs','tools') for r in entry.get(key,[]) if r.get('start')][0]
+def route(page):
+ if page['path']!=LEARNING_PATH:return None
+ path=page['path'];out=[]
+ for area in MAP['areas']:
+  out += ['',f'### {area["title"]}','']
+  n=0
+  for p in PAGES:
+   if p['kind']!='skill' or p['area']!=area['id']:continue
+   n+=1;label,prerequisite=re.search(r'\*\*(評価対象|主な前提)：\*\* (.+)',body(p['path'])).groups();start=start_reference(p['skillId'])
+   out.append(f'{n}. **[{p["title"]}]({rel(path,p["path"])})**（{label}：{prerequisite.strip()}）  \n   まず読む：[{start["title"]}]({start["url"]})  \n   Lv1の入口となる課題：{first_step(p)}')
+ return '\n'.join(out).strip()
+def courses(page):
+ if page['path']!=LEARNING_PATH:return None
+ path=page['path'];pages={p['skillId']:p for p in PAGES if p['kind']=='skill'};area_of={p['skillId']:p['area'] for p in pages.values()}
+ def item(r):
+  skills='、'.join(f'[{pages[s]["title"]}]({rel(path,pages[s]["path"])})' for s in r.get('skills',[]))
+  return f'- [{r["title"]}]({r["url"]})'+('（英語）' if r.get('lang')=='en' else '')+f' — {r["note"]}。形式：{r["format"]}。対応：{skills}'
+ out=[f'{LEARNING["note"]}{LEARNING["checked"]}確認。','','## 体系的なコース','','領域をまたいで通しで学べる無料のコースです。日本語の資料を優先し、英語のみの資料には（英語）と付記しています。']
+ for area in MAP['areas']:
+  rows=[item(r) for r in LEARNING['courses'] if area_of[r['skills'][0]]==area['id']]
+  if rows:out += ['',f'### {area["title"]}','']+rows
+ out += ['','## 全体地図','','学習項目の全体像を見渡すための外部の地図です。分類は本書の要素技術と一致しないため、対応する領域や要素技術を付記しています。','']+[f'- [{r["title"]}]({r["url"]})（英語） — {r["note"]}' for r in LEARNING['maps']]
+ return '\n'.join(out)
+
 def blocks(page):
- for marker,value in [('catalog',catalog(page)),('references',references(page)),('terms',terms(page)),('glossary',glossary(page))]:
+ for marker,value in [('catalog',catalog(page)),('references',references(page)),('terms',terms(page)),('glossary',glossary(page)),('route',route(page)),('courses',courses(page))]:
   if value is not None:yield marker,value
 
 def sync(check=False):
