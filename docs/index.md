@@ -1,15 +1,15 @@
 ---
 title: "フロントエンド開発ガイド"
-description: "個人のスキル習熟度（28スキル、Lv0〜Lv4）とチームの取り組み（100項目）を共通の基準で確認し、改善につなげるためのガイド。"
+description: "個人の習熟度（28の要素技術、Lv0〜Lv4）とチームの取り組み（100項目）を共通の基準で確認し、改善につなげるためのガイド。"
 ---
 
 # フロントエンド開発ガイド
 
-<p class="eyebrow">スキル評価とチーム改善</p>
+<p class="eyebrow">習熟度評価とチーム改善</p>
 
-個人のスキルとチームの取り組みを、共通の基準で確認し、次の改善につなげるためのガイドです。
+個人の習熟度とチームの取り組みを、共通の基準で確認し、次の改善につなげるためのガイドです。
 
-<div class="guide-stats"><span><strong>4</strong>スキル領域</span><span><strong>28</strong>スキル</span><span><strong>100</strong>チェック項目</span></div>
+<div class="guide-stats"><span><strong>4</strong>領域</span><span><strong>28</strong>要素技術</span><span><strong>100</strong>チェック項目</span></div>
 
 ## はじめて使う方へ
 
@@ -19,7 +19,7 @@ description: "個人のスキル習熟度（28スキル、Lv0〜Lv4）とチー�
 
 | 行いたいこと | 参照するページ |
 | :--- | :--- |
-| 自分の実行できる範囲を確認する | [スキル定義：28スキルのLv0〜Lv4](skills/index.md) |
+| 自分の実行できる範囲を確認する | [要素技術：28の要素技術のLv0〜Lv4](skills/index.md) |
 | チームの仕組みを見直す | [チームチェック：出典の分類による100項目と回答例](checklists/index.md) |
 | 評価と改善を記録する | [空の書式](templates/index.md)・[記入例](examples/index.md) |
 | 一つの文書として読む | [単一Markdownと書式をダウンロード](downloads.md) |
@@ -27,7 +27,7 @@ description: "個人のスキル習熟度（28スキル、Lv0〜Lv4）とチー�
 
 ## このガイドの読み方
 
-「スキル領域」は技術や作業の分類、「習熟度Lv0〜Lv4」は個人が実行できる範囲です。チームのチェック結果とは分けて記録します。
+「領域」は技術や作業の分類、「習熟度Lv0〜Lv4」は個人が実行できる範囲です。チームのチェック結果とは分けて記録します。
 
 チームチェックリストの原文は、一般社団法人日本CTO協会の[Webフロントエンド版DX Criteria](https://dxcriteria.cto-a.org/frontend)（CC BY-SA 4.0）です。本書は回答例と改善管理用の判定を加えた派生版で、同協会の公式な評価方法ではありません。本書全体も同じCC BY-SA 4.0で提供します。
 

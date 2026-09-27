@@ -12,7 +12,7 @@ description: "評価と改善を記録するための4種類の空の書式。�
 <!-- catalog:start -->
 
 - [評価全体の対象範囲](assessment-scope.md)
-- [個人のスキル評価記録](individual-assessment.md)
+- [個人の習熟度評価記録](individual-assessment.md)
 - [チームの確認記録](team-assessment.md)
 - [改善・育成イシュー](improvement-issue.md)
 

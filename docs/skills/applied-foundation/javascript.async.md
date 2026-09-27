@@ -1,16 +1,16 @@
 ---
 title: "非同期処理"
-description: "PromiseやasyncとawaitによるJavaScriptの非同期処理を実装するスキルです。読み込み中、成功、失敗の状態と処理の順序を扱い、競合、キャンセル、再試行を含む処理を設計できるかを評価します。"
-titleTemplate: ":title | スキル定義 | 開発ガイド"
+description: "PromiseやasyncとawaitによるJavaScriptの非同期処理を実装する要素技術です。読み込み中、成功、失敗の状態と処理の順序を扱い、競合、キャンセル、再試行を含む処理を設計できるかを評価します。"
+titleTemplate: ":title | 要素技術 | 開発ガイド"
 ---
 
 # 非同期処理
 
-**スキルID：** `javascript.async`  
-**スキル領域：** [応用基礎領域](index.md)  
+**要素技術ID：** `javascript.async`  
+**領域：** [応用基礎領域](index.md)  
 **主な前提：** JavaScript
 
-PromiseやasyncとawaitによるJavaScriptの非同期処理を実装するスキルです。読み込み中、成功、失敗の状態と処理の順序を扱い、競合、キャンセル、再試行を含む処理を設計できるかを評価します。
+PromiseやasyncとawaitによるJavaScriptの非同期処理を実装する要素技術です。読み込み中、成功、失敗の状態と処理の順序を扱い、競合、キャンセル、再試行を含む処理を設計できるかを評価します。
 
 ## Lv0
 

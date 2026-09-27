@@ -1,19 +1,19 @@
 ---
-title: "スキル定義"
-description: "28スキルの一覧。4つの領域ごとにスキルID、評価対象または主な前提を示し、各スキルのLv0〜Lv4の定義へ進めます。"
+title: "要素技術"
+description: "28の要素技術の一覧。4つの領域ごとに要素技術ID、評価対象または主な前提を示し、各要素技術のLv0〜Lv4の定義へ進めます。"
 ---
 
-# スキル定義
+# 要素技術
 
-スキルは4つの領域に分類します。領域は資格の序列ではなく、担当業務と前提知識に応じて組み合わせるためのまとまりです。
+要素技術は4つの領域に分類します。領域は資格の序列ではなく、担当業務と前提知識に応じて組み合わせるためのまとまりです。
 
-各スキルにはLv0〜Lv4の到達状態を定義しています。根拠が足りない場合の「未評価」はLv0と区別します。[個人の評価方法](../guide/individual-assessment.md)と併せて確認してください。
+各要素技術にはLv0〜Lv4の到達状態を定義しています。根拠が足りない場合の「未評価」はLv0と区別します。[個人の評価方法](../guide/individual-assessment.md)と併せて確認してください。
 
 <!-- catalog:start -->
 
-## 基礎領域（5スキル）
+## 基礎領域（5つの要素技術）
 
-| スキルID | スキル | 評価対象 |
+| ID | 要素技術 | 評価対象 |
 | :--- | :--- | :--- |
 | `web.basic` | [Web基礎](foundation/web.basic.md) | HTTP、URL、ブラウザ、Cookie、キャッシュ |
 | `html.basic` | [HTML](foundation/html.basic.md) | 文書構造、フォーム、基本要素 |
@@ -21,9 +21,9 @@ description: "28スキルの一覧。4つの領域ごとにスキルID、評価�
 | `javascript.basic` | [JavaScript](foundation/javascript.basic.md) | 構文、関数、オブジェクト、配列 |
 | `git.basic` | [Git](foundation/git.basic.md) | branch、commit、merge、rebase |
 
-## 応用基礎領域（8スキル）
+## 応用基礎領域（8つの要素技術）
 
-| スキルID | スキル | 主な前提 |
+| ID | 要素技術 | 主な前提 |
 | :--- | :--- | :--- |
 | `html.semantic` | [セマンティックHTML](applied-foundation/html.semantic.md) | HTML |
 | `css.responsive` | [レスポンシブ設計](applied-foundation/css.responsive.md) | CSS |
@@ -34,9 +34,9 @@ description: "28スキルの一覧。4つの領域ごとにスキルID、評価�
 | `web.seo` | [基本SEO](applied-foundation/web.seo.md) | HTML、セマンティックHTML |
 | `git.collaboration` | [チーム開発](applied-foundation/git.collaboration.md) | Git |
 
-## フレームワーク・実装領域（7スキル）
+## フレームワーク・実装領域（7つの要素技術）
 
-| スキルID | スキル | 主な前提 |
+| ID | 要素技術 | 主な前提 |
 | :--- | :--- | :--- |
 | `react.basic` | [React実装](implementation/react.basic.md) | JavaScript、TypeScript、DOM |
 | `react.component-design` | [コンポーネント設計](implementation/react.component-design.md) | React、UI実装 |
@@ -46,9 +46,9 @@ description: "28スキルの一覧。4つの領域ごとにスキルID、評価�
 | `frontend.validation` | [入力検証・型連携](implementation/frontend.validation.md) | フォーム、TypeScript |
 | `storybook.basic` | [Storybook](implementation/storybook.basic.md) | React、コンポーネント設計 |
 
-## 品質・高度化領域（8スキル）
+## 品質・高度化領域（8つの要素技術）
 
-| スキルID | スキル | 主な前提 |
+| ID | 要素技術 | 主な前提 |
 | :--- | :--- | :--- |
 | `test.unit` | [単体テスト](quality/test.unit.md) | JavaScript、TypeScript |
 | `test.component` | [コンポーネントテスト](quality/test.component.md) | React |

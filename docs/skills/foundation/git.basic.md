@@ -1,16 +1,16 @@
 ---
 title: "Git"
-description: "Gitで変更履歴を管理するスキルです。branch、commit、merge、rebaseの操作と違いを理解し、競合の解消や誤った変更からの復旧を、他者の作業に影響を与えずに行えるかを評価します。"
-titleTemplate: ":title | スキル定義 | 開発ガイド"
+description: "Gitで変更履歴を管理する要素技術です。branch、commit、merge、rebaseの操作と違いを理解し、競合の解消や誤った変更からの復旧を、他者の作業に影響を与えずに行えるかを評価します。"
+titleTemplate: ":title | 要素技術 | 開発ガイド"
 ---
 
 # Git
 
-**スキルID：** `git.basic`  
-**スキル領域：** [基礎領域](index.md)  
+**要素技術ID：** `git.basic`  
+**領域：** [基礎領域](index.md)  
 **評価対象：** branch、commit、merge、rebase
 
-Gitで変更履歴を管理するスキルです。branch、commit、merge、rebaseの操作と違いを理解し、競合の解消や誤った変更からの復旧を、他者の作業に影響を与えずに行えるかを評価します。
+Gitで変更履歴を管理する要素技術です。branch、commit、merge、rebaseの操作と違いを理解し、競合の解消や誤った変更からの復旧を、他者の作業に影響を与えずに行えるかを評価します。
 
 ## Lv0
 

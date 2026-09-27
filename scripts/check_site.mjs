@@ -35,7 +35,7 @@ try {
   page.on('response', response => { if (response.url().startsWith(origin) && response.status() >= 400) networkErrors.push(response.url()); });
   await page.goto(url);
   await expect(page.locator('h1')).toHaveText('フロントエンド開発ガイド');
-  await expect(page.getByRole('link', { name: 'スキル定義', exact: true }).first()).toBeVisible();
+  await expect(page.getByRole('link', { name: '要素技術', exact: true }).first()).toBeVisible();
   await mkdir('artifacts', { recursive: true });
   await page.screenshot({ path: 'artifacts/home-desktop.png', fullPage: true });
   results.checks.push('desktop home and navigation');
