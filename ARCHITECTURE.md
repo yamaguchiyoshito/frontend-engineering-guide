@@ -6,7 +6,8 @@
 
 | パス | 内容・責任 |
 | :--- | :--- |
-| `README.md` | 初回登録、公開、ローカル実行の入口 |
+| `README.md` | 初回登録、公開、ローカル実行、ライセンスの入口 |
+| `LICENSE` | CC BY-SA 4.0 の全文。リポジトリ全体に適用 |
 | `ARCHITECTURE.md` | ページ構成と生成・公開設計 |
 | `CHANGELOG.md` | 改訂履歴の正本 `docs/maintenance/changelog.md` への入口。編集手順は `docs/maintenance/contributing.md` |
 | `docs/index.md` | 読む順序と目的別の入口 |

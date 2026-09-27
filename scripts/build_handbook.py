@@ -12,7 +12,7 @@ out.mkdir(exist_ok=True);public.mkdir(parents=True,exist_ok=True)
 for f in public.iterdir():
  if f.is_file():f.unlink()
 provenance=f'版：{VERSION}  \n生成元コミット：{revision}  \n生成日時（UTC）：{date}'
-handbook=[f'<a id="top"></a>\n\n# {MAP["title"]}\n\n{provenance}\n\n公開基準と架空の回答例を収録しています。実際の評価記録は含みません。\n\nチームチェックリストの原文は、一般社団法人日本CTO協会「Webフロントエンド版DX Criteria（v202402）」（https://dxcriteria.cto-a.org/frontend）です。原典はCC BY-SA 4.0（https://creativecommons.org/licenses/by-sa/4.0/deed.ja）で提供されており、原文を含むチェックリストの部分と回答例は同じライセンスで提供します。\n\n## 目次\n']
+handbook=[f'<a id="top"></a>\n\n# {MAP["title"]}\n\n{provenance}\n\n公開基準と架空の回答例を収録しています。実際の評価記録は含みません。\n\nチームチェックリストの原文は、一般社団法人日本CTO協会「Webフロントエンド版DX Criteria（v202402）」（https://dxcriteria.cto-a.org/frontend）です。原典はCC BY-SA 4.0（https://creativecommons.org/licenses/by-sa/4.0/deed.ja）で提供されており、本文書全体も同じライセンスで提供します。\n\n## 目次\n']
 handbook.extend(f'- [{p["title"]}](#{ids[p["path"]]})' for p in selected)
 linkre=re.compile(r'\]\(([^)]+)\)')
 for p in selected:

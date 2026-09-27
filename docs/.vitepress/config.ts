@@ -63,7 +63,7 @@ export default defineConfig({
     sidebarMenuLabel: '目次', returnToTopLabel: 'ページの先頭へ',
     darkModeSwitchLabel: '表示モード', lightModeSwitchTitle: 'ライトモード', darkModeSwitchTitle: 'ダークモード',
     skipToContentLabel: '本文へ移動',
-    footer: { message: 'チェック項目の原文：一般社団法人日本CTO協会「<a href="https://dxcriteria.cto-a.org/frontend" target="_blank" rel="noopener">Webフロントエンド版DX Criteria</a>」（<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener">CC BY-SA 4.0</a>）', copyright: `公開基準・空の書式・架空の回答例 · 文書版 ${version}` },
+    footer: { message: 'チェック項目の原文：一般社団法人日本CTO協会「<a href="https://dxcriteria.cto-a.org/frontend" target="_blank" rel="noopener">Webフロントエンド版DX Criteria</a>」（<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener">CC BY-SA 4.0</a>）', copyright: `本ガイド全体：<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener">CC BY-SA 4.0</a> · 公開基準・空の書式・架空の回答例 · 文書版 ${version}` },
     search: {
       provider: 'local',
       options: {

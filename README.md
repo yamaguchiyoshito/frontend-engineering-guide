@@ -84,4 +84,10 @@ npm run test:site
 
 このリポジトリは基準・使い方・空の書式・架空の回答例を管理します。記入済みの個人評価、社内URL、案件情報は所属組織の管理先へ保存します。サイトに入力・保存・認証の機能はありません。検索は配信済みの索引をブラウザ内で検索します。
 
-チームチェックリストの原文は、一般社団法人日本CTO協会が公開する [Webフロントエンド版DX Criteria（v202402）](https://dxcriteria.cto-a.org/frontend) です。原典は [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) で提供されており、原文を含むチェックリストのページと回答例は同じライセンスで提供します。項目No.、分野名、望ましい判定、回答例、28スキルの定義は本リポジトリで追加した内容です。詳細は [出典と追加した内容](docs/maintenance/sources.md)、変更履歴は [改訂履歴](docs/maintenance/changelog.md) を参照してください。
+チームチェックリストの原文は、一般社団法人日本CTO協会が公開する [Webフロントエンド版DX Criteria（v202402）](https://dxcriteria.cto-a.org/frontend) です。項目No.、分野名、望ましい判定、回答例、28スキルの定義は本リポジトリで追加した内容です。詳細は [出典と追加した内容](docs/maintenance/sources.md)、変更履歴は [改訂履歴](docs/maintenance/changelog.md) を参照してください。
+
+## ライセンス
+
+本リポジトリの内容（文書、記録書式、回答例、スクリプト、サイト設定）は、[クリエイティブ・コモンズ 表示—継承 4.0 国際（CC BY-SA 4.0）](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) で提供します。全文は [LICENSE](LICENSE) にあります。原典であるWebフロントエンド版DX Criteriaも同じライセンスで提供されており、その著作権は一般社団法人日本CTO協会に帰属します。
+
+利用・再配布・改変の際は、本ガイドと原典の名称、URL、ライセンスを表示し、改変した派生物も CC BY-SA 4.0 で提供してください。
