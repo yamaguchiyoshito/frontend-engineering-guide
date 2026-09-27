@@ -1330,9 +1330,9 @@
           "cited": true
         },
         {
-          "title": "WAIC：ウェブアクセシビリティ方針策定ガイドライン",
-          "url": "https://waic.jp/docs/policy-guidelines/",
-          "note": "方針の策定と掲出",
+          "title": "ウェブアクセシビリティ基盤委員会（WAIC）",
+          "url": "https://waic.jp/",
+          "note": "方針策定ガイドラインとJIS X 8341-3の解説を公開",
           "cited": true
         },
         {
@@ -1655,7 +1655,8 @@
         {
           "title": "Socket",
           "url": "https://socket.dev/",
-          "note": "依存パッケージの供給元リスクの検査"
+          "note": "依存パッケージの供給元リスクの検査（自動到達確認の対象外）",
+          "check": false
         },
         {
           "title": "GitHub Advisory Database",

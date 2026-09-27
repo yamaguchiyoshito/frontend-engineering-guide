@@ -77,7 +77,7 @@ HTMLのフォーム要素やナビゲーション要素を代替するUIパー�
 **指針・標準**
 
 - [WCAG 2.2（日本語訳）](https://waic.jp/translations/WCAG22/)（出典で言及） — 品質基準の目安
-- [WAIC：ウェブアクセシビリティ方針策定ガイドライン](https://waic.jp/docs/policy-guidelines/)（出典で言及） — 方針の策定と掲出
+- [ウェブアクセシビリティ基盤委員会（WAIC）](https://waic.jp/)（出典で言及） — 方針策定ガイドラインとJIS X 8341-3の解説を公開
 - [デジタル庁：ウェブアクセシビリティ導入ガイドブック](https://www.digital.go.jp/resources/introduction-to-web-accessibility-guidebook)（出典で言及） — 実務の手引き
 - [WAI-ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/) — 独自UIで標準の操作性を保つパターン（英語）
 

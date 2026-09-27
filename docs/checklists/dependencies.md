@@ -82,7 +82,7 @@ DependabotやRenovateなど依存ライブラリの更新を検知する仕組�
 
 - [Dependabot](https://docs.github.com/ja/code-security/dependabot)（出典で言及） — 更新検知と自動PR
 - [Renovate](https://docs.renovatebot.com/)（出典で言及） — 更新ポリシーを細かく設定できる自動更新
-- [Socket](https://socket.dev/) — 依存パッケージの供給元リスクの検査
+- [Socket](https://socket.dev/) — 依存パッケージの供給元リスクの検査（自動到達確認の対象外）
 - [GitHub Advisory Database](https://github.com/advisories) — 脆弱性情報の検索
 
 **関連する要素技術**
