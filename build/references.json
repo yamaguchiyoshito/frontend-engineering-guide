@@ -1242,9 +1242,9 @@
           "note": "サーバー側とブラウザ側のデータ取得、ストリーミング"
         },
         {
-          "title": "Next.js：Updating Data",
-          "url": "https://nextjs.org/docs/app/getting-started/updating-data",
-          "note": "Server Actionsによる更新と再検証"
+          "title": "Next.js：use server",
+          "url": "https://nextjs.org/docs/app/api-reference/directives/use-server",
+          "note": "Server Actionsの定義と呼び出し、再検証"
         },
         {
           "title": "Next.js：Caching",

@@ -1,5 +1,5 @@
 """Check that every external link in build/references.json responds. Run on a schedule, not on every PR."""
-import json,sys,urllib.request,urllib.error,urllib.parse
+import json,sys,time,urllib.request,urllib.error,urllib.parse
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 data=json.loads((ROOT/'build/references.json').read_text())
@@ -9,21 +9,26 @@ for group in ('skills','checklists'):
   for key in ('docs','tools','guides'):
    for r in entry.get(key,[]):
     (skipped if r.get('check') is False else links).append((sid,r['url']))
-failed=[]
-for sid,url in links:
+def probe(url):
  target=urllib.parse.quote(url,safe=':/?&=#%+~@!$,;()*')
  for method in ('HEAD','GET'):
   try:
    req=urllib.request.Request(target,method=method,headers={'User-Agent':'Mozilla/5.0 (compatible; frontend-engineering-guide link check)','Accept':'*/*','Accept-Language':'ja,en'})
    with urllib.request.urlopen(req,timeout=20) as res:
-    status=res.status
-   break
+    return res.status
   except urllib.error.HTTPError as e:
    status=e.code
-   if method=='GET' or status not in (403,405):break
+   if method=='GET' or status not in (403,405):return status
   except Exception as e:
    status=str(e)
-   if method=='GET':break
+   if method=='GET':return status
+ return status
+failed=[]
+for sid,url in links:
+ status=probe(url)
+ if not (isinstance(status,int) and status<400):
+  # Some help centers answer 404 intermittently; one retry after a pause separates a flaky answer from a dead link.
+  time.sleep(3);status=probe(url)
  ok=isinstance(status,int) and status<400
  print(('ok  ' if ok else 'FAIL'),sid,url,status)
  if not ok:failed.append((sid,url,status))
