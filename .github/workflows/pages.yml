@@ -1,13 +1,8 @@
 name: Publish GitHub Pages
 on:
   push:
-    tags: ['v*']
+    branches: [main]
   workflow_dispatch:
-    inputs:
-      release_tag:
-        description: '公開する既存タグ（例: v1.2.0）。旧版への復旧もここから実行'
-        required: true
-        type: string
 permissions:
   contents: read
 concurrency:
@@ -18,21 +13,13 @@ jobs:
     permissions:
       contents: read
       pages: read
-    if: github.event_name == 'push' || github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v6
         with:
-          ref: main
-          fetch-depth: 0
           persist-credentials: false
-      - name: Validate and check out release
-        env:
-          RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.release_tag || github.ref_name }}
-        run: |
-          python3 scripts/validate_release.py "$RELEASE_TAG"
-          git checkout --detach "refs/tags/$RELEASE_TAG"
       - uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
@@ -45,7 +32,7 @@ jobs:
         uses: actions/configure-pages@v5
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - name: Build release
+      - name: Build site
         run: npm run docs:build
         env:
           SITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}

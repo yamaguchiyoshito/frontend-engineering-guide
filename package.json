@@ -1,6 +1,6 @@
 {
   "name": "frontend-engineering-guide",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": true,
   "type": "module",
   "engines": {
@@ -15,8 +15,7 @@
     "docs:preview": "vitepress preview docs --port 4173",
     "test:site": "node scripts/check_site.mjs",
     "test": "npm run docs:build && npm run test:site",
-    "check:migration": "python3 scripts/check_docs.py --migration",
-    "test:release": "python3 scripts/test_release.py"
+    "check:migration": "python3 scripts/check_docs.py --migration"
   },
   "devDependencies": {
     "@playwright/test": "1.58.2",

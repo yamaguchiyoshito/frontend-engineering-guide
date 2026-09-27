@@ -1,6 +1,6 @@
 ---
 title: "編集・検証・公開手順"
-description: "正本のファイル、ローカルでの確認手順、Pull Requestでの確認、タグによる公開、公開済みの版への復旧。"
+description: "正本のファイル、ローカルでの確認手順、Pull Requestでの確認、mainへのマージによる公開、公開済みの版への復旧。"
 ---
 
 # 編集・検証・公開手順
@@ -50,18 +50,18 @@ npm run docs:preview
 
 GitHubの一般公開リポジトリを使用します。初回だけ **Settings → Pages → Build and deployment → Source: GitHub Actions** を選びます。Enterpriseは必要ありません。
 
-`github-pages` 環境に公開元の制限がある場合は、リリースタグ `v*` を許可します。初期状態が `main` のみを許可している場合もあるため、**Settings → Environments → github-pages** で設定します。
+`github-pages` 環境の公開元は `main` のみで構いません。**Settings → Environments → github-pages** の初期設定のまま使用できます。
 
 1. `npm version patch --no-git-tag-version` などでバージョンとlockfileを更新します。
-2. 改訂履歴を更新し、検査の通った変更を `main` に統合します。
-3. 最新の `main` で、package.jsonのversionと一致する `vX.Y.Z` タグを作成してpushします。
-4. Actionsの **Publish GitHub Pages** が成功し、表示された公開URLを開いて版と表示を確認します。
+2. 改訂履歴に同じ版の項目を追加し、PRの検査（**Validate documentation**）が通ったことを確認します。
+3. PRを `main` にマージします。マージを契機に **Publish GitHub Pages** がビルド・検証・公開を行います。
+4. Actionsの実行が成功したら、表示された公開URLを開いて版と表示を確認します。
 
-公開処理は、タグ形式、package.jsonとの一致、`main` に含まれるコミットであることを確認します。通常のPRやmainへのpushでは検査だけを行い、公開版を変更しません。
+`main` にマージした内容がそのまま公開されます。PRの段階では検査だけを行い、公開サイトを変更しません。
 
 ## 公開済みの版へ戻す
 
-Actionsの **Publish GitHub Pages → Run workflow** で `release_tag` に検証済みの既存タグを指定します。mainブランチから実行してください。同じタグの内容を再ビルドして公開します。タグの付け替えは行いません。
+`main` で該当する変更を取り消す（revert）PRを作成し、検査を通してマージします。マージにより取り消し後の内容が公開されます。ビルドの再実行だけが必要な場合は、Actionsの **Publish GitHub Pages → Run workflow** を `main` から実行します。
 
 ## 公開先とURL
 

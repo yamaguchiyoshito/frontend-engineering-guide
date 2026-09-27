@@ -22,9 +22,9 @@
 | `docs/public/downloads/` | ビルド時に生成する配布物。Git管理対象外 |
 | `build/document-map.json` | 全ページのパス・タイトル・分類・順序 |
 | `build/migration-baseline.json` | 原稿1.1の移行照合用ハッシュ。本文の複製は持たない |
-| `scripts/` | 構造検査、一覧同期、配布物生成、HTML・ブラウザ検証、タグ検証 |
-| `.github/workflows/docs.yml` | PR/mainの検査。ルート・サブディレクトリの2構成 |
-| `.github/workflows/pages.yml` | 公開タグの検証、ビルド、ブラウザ確認、Pagesへの公開 |
+| `scripts/` | 構造検査、一覧同期、配布物生成、HTML・ブラウザ検証 |
+| `.github/workflows/docs.yml` | PRの検査。ルート・サブディレクトリの2構成 |
+| `.github/workflows/pages.yml` | `main` へのpushを契機に、ビルド、ブラウザ確認、Pagesへの公開 |
 | `.github/pull_request_template.md` | 変更理由・評価影響・検証結果の記録 |
 | `package.json` / `package-lock.json` | 文書版、実行コマンド、固定した依存関係 |
 | `.nvmrc` | 開発・CIで使うNode.jsの版 |
@@ -79,10 +79,10 @@
 
 ## 検査と公開の境界
 
-PRとmainの検査は `contents: read` で実行し、公開権限を持ちません。ルート `/` とプロジェクトパス `/preview-repository/` の両方で、文書の整合、HTMLの参照、検索、ダウンロード、モバイル表示を確認します。
+PRの検査は `contents: read` で実行し、公開権限を持ちません。ルート `/` とプロジェクトパス `/preview-repository/` の両方で、文書の整合、HTMLの参照、検索、ダウンロード、モバイル表示を確認します。
 
-公開ワークフローは `vX.Y.Z` タグを対象とし、タグの形式、package.jsonとの一致、mainへの包含を確認します。ビルドジョブは読み取り権限で動き、成功したPages artifactだけをデプロイジョブが公開します。デプロイジョブにのみ `pages: write` と `id-token: write` を付けます。
+公開ワークフローは `main` へのpushを対象とし、マージされた内容をそのまま公開します。ビルドジョブは読み取り権限で動き、文書検査とブラウザ検証を通過したPages artifactだけをデプロイジョブが公開します。デプロイジョブにのみ `pages: write` と `id-token: write` を付けます。
 
-公開先のbase pathとoriginはGitHub Pagesの設定から取得します。コードに所有者名を固定しません。同時公開を直列化し、手動再実行では既存のタグを指定して旧版を再公開できます。
+公開先のbase pathとoriginはGitHub Pagesの設定から取得します。コードに所有者名を固定しません。同時公開を直列化します。旧版へ戻す場合は `main` で変更を取り消し、手動実行は `main` の再公開に限ります。
 
 GitHub上の設定と最初のpushはREADMEに記載しています。配布時点で特定のGitHubリポジトリへの登録や公開は行っていません。
