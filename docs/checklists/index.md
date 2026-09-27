@@ -11,58 +11,60 @@ description: "日本CTO協会 Webフロントエンド版DX Criteriaの100項目
 - [ポリシーと構造](https://dxcriteria.cto-a.org/90a7445d540148408343e83f4cbbecac)
 - [使い方](https://dxcriteria.cto-a.org/db7e371398c2464792dc25d79e573ba1)
 
+原典では小テーマごとに、メトリクスの計測、学習と改善、プラクティス、アンチパターンの4つの観点から項目が定義されています。本書は原典の項目文と補足説明をそのまま収録し、観点名を各項目に併記しています。
+
 本書で加えたのは、通し番号（項目No.001〜100）、各項目の望ましい回答（TRUE／FALSE）の併記、架空の「望ましい回答例」、[チームの確認書式](../templates/team-assessment.md)です。詳細は[出典と追加した内容](../maintenance/sources.md)を参照してください。
 
 <!-- catalog:start -->
 
 ## 1. 持続可能な技術スタック
 
-| 原典ID | 小テーマ（本書の見出し） | 本書の項目No. |
+| 原典ID | 小テーマ | 本書の項目No. |
 | :--- | :--- | :--- |
-| 1-1 | [品質と型安全性](quality-and-types.md) | 001〜004 |
-| 1-2 | [開発環境とツールの運用](development-tooling.md) | 005〜008 |
-| 1-3 | [UIコンポーネントの設計と再利用](ui-components.md) | 009〜012 |
-| 1-4 | [ユーザー理解と設計の改善](user-centered-design.md) | 013〜016 |
-| 1-5 | [技術情報の収集と技術選定](technology-selection.md) | 017〜020 |
+| 1-1 | [コードベース](quality-and-types.md) | 001〜004 |
+| 1-2 | [開発環境](development-tooling.md) | 005〜008 |
+| 1-3 | [UIコンポーネント](ui-components.md) | 009〜012 |
+| 1-4 | [アプリケーション設計](user-centered-design.md) | 013〜016 |
+| 1-5 | [技術選定](technology-selection.md) | 017〜020 |
 
 ## 2. ユーザー体験を支える品質
 
-| 原典ID | 小テーマ（本書の見出し） | 本書の項目No. |
+| 原典ID | 小テーマ | 本書の項目No. |
 | :--- | :--- | :--- |
-| 2-1 | [Webパフォーマンス](performance.md) | 021〜024 |
+| 2-1 | [パフォーマンス](performance.md) | 021〜024 |
 | 2-2 | [アクセシビリティ](accessibility.md) | 025〜028 |
 | 2-3 | [セキュリティ](security.md) | 029〜032 |
-| 2-4 | [プライバシーと外部スクリプト](privacy.md) | 033〜036 |
-| 2-5 | [デザインの一貫性とユーザーテスト](design-consistency.md) | 037〜040 |
+| 2-4 | [プライバシー](privacy.md) | 033〜036 |
+| 2-5 | [デザイン](design-consistency.md) | 037〜040 |
 
 ## 3. 安定的なデリバリー
 
-| 原典ID | 小テーマ（本書の見出し） | 本書の項目No. |
+| 原典ID | 小テーマ | 本書の項目No. |
 | :--- | :--- | :--- |
-| 3-1 | [テストの計画と保守](testing.md) | 041〜044 |
-| 3-2 | [ビルドの計測と保守](builds.md) | 045〜048 |
-| 3-3 | [デプロイとリリースの安全性](deployment.md) | 049〜052 |
-| 3-4 | [依存ライブラリの管理](dependencies.md) | 053〜056 |
-| 3-5 | [CI/CDの運用と改善](cicd.md) | 057〜060 |
+| 3-1 | [テスト](testing.md) | 041〜044 |
+| 3-2 | [ビルド](builds.md) | 045〜048 |
+| 3-3 | [デプロイ](deployment.md) | 049〜052 |
+| 3-4 | [サプライチェーン](dependencies.md) | 053〜056 |
+| 3-5 | [CI/CD](cicd.md) | 057〜060 |
 
 ## 4. 効果的なシステム設計
 
-| 原典ID | 小テーマ（本書の見出し） | 本書の項目No. |
+| 原典ID | 小テーマ | 本書の項目No. |
 | :--- | :--- | :--- |
-| 4-1 | [バックエンドとの連携](backend-collaboration.md) | 061〜064 |
-| 4-2 | [インフラ設計と可用性](infrastructure.md) | 065〜068 |
-| 4-3 | [キャッシュの設計と運用](caching.md) | 069〜072 |
-| 4-4 | [モニタリングとログ](observability.md) | 073〜076 |
+| 4-1 | [サーバー](backend-collaboration.md) | 061〜064 |
+| 4-2 | [インフラ](infrastructure.md) | 065〜068 |
+| 4-3 | [キャッシュ](caching.md) | 069〜072 |
+| 4-4 | [モニタリング](observability.md) | 073〜076 |
 | 4-5 | [障害対応](incident-response.md) | 077〜080 |
 
 ## 5. 成長できるチーム
 
-| 原典ID | 小テーマ（本書の見出し） | 本書の項目No. |
+| 原典ID | 小テーマ | 本書の項目No. |
 | :--- | :--- | :--- |
-| 5-1 | [学習とチーム間の知識共有](knowledge-sharing.md) | 081〜084 |
-| 5-2 | [横断的な生産性向上と技術方針](engineering-improvement.md) | 085〜088 |
-| 5-3 | [職能・役割・育成](roles-and-growth.md) | 089〜092 |
-| 5-4 | [他部門との連携と事業への貢献](business-collaboration.md) | 093〜096 |
-| 5-5 | [技術発信の継続](technical-communication.md) | 097〜100 |
+| 5-1 | [専門性の育成](knowledge-sharing.md) | 081〜084 |
+| 5-2 | [イネーブリング](engineering-improvement.md) | 085〜088 |
+| 5-3 | [職務定義](roles-and-growth.md) | 089〜092 |
+| 5-4 | [ビジネス連携](business-collaboration.md) | 093〜096 |
+| 5-5 | [外部発信](technical-communication.md) | 097〜100 |
 
 <!-- catalog:end -->

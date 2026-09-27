@@ -13,7 +13,7 @@
 | `docs/index.md` | 読む順序と目的別の入口 |
 | `docs/guide/` | 個人・チームの評価手順と改善方法 |
 | `docs/skills/<領域>/<ID>.md` | 1スキル1ファイル、Lv0〜Lv4の正本 |
-| `docs/checklists/<分野>.md` | 1分野1ファイル、各4項目の正本 |
+| `docs/checklists/<小テーマ>.md` | 原典の1小テーマ1ファイル、各4項目の正本 |
 | `docs/templates/` | 記入説明と空のテンプレートの正本 |
 | `docs/examples/` | 架空の記入例 |
 | `docs/maintenance/` | 運用・改訂・出典 |
@@ -41,7 +41,7 @@
 | 領域一覧 | 4 | `docs/skills/<領域>/index.md` |
 | スキル個別定義 | 28 | `docs/skills/<領域>/<ID>.md` |
 | チェックリスト一覧 | 1 | `docs/checklists/index.md` |
-| 分野別チェックリスト | 25 | `docs/checklists/<分野>.md` |
+| 小テーマ別チェックリスト | 25 | `docs/checklists/<小テーマ>.md` |
 | 書式一覧・書式 | 5 | `docs/templates/index.md` |
 | 記入例一覧・記入例 | 2 | `docs/examples/index.md` |
 | 運用・改訂 | 4 | `docs/maintenance/index.md` |
@@ -53,7 +53,7 @@
 ## 閲覧経路とURL
 
 - 上部メニュー：使い方、スキル定義、チームチェック、書式・記入例、運用・改訂。ダウンロードを補助リンクとして配置。
-- サイドバー：開いているページ群に対応。28スキルは領域ごと、25分野は4つのまとまりで折りたたむ。
+- サイドバー：開いているページ群に対応。28スキルは領域ごと、25の小テーマは原典の5つの大テーマごとに折りたたむ。
 - 初めて読む順序：全体像 → 個人評価 → チーム確認 → 改善 → 詳細定義 → 書式。前後リンクも文書マップから生成。
 - 各ページ：見出し目次、版、本文、前後ページへのリンク。
 - ページURL：`index.md` は末尾 `/`、他は `.html`。例：`skills/implementation/react.form.html#lv3`、`checklists/security.html#c029`。

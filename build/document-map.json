@@ -316,7 +316,7 @@
     },
     {
       "path": "checklists/quality-and-types.md",
-      "title": "品質と型安全性",
+      "title": "コードベース",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -330,7 +330,7 @@
     },
     {
       "path": "checklists/development-tooling.md",
-      "title": "開発環境とツールの運用",
+      "title": "開発環境",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -344,7 +344,7 @@
     },
     {
       "path": "checklists/ui-components.md",
-      "title": "UIコンポーネントの設計と再利用",
+      "title": "UIコンポーネント",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -358,7 +358,7 @@
     },
     {
       "path": "checklists/user-centered-design.md",
-      "title": "ユーザー理解と設計の改善",
+      "title": "アプリケーション設計",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -372,7 +372,7 @@
     },
     {
       "path": "checklists/technology-selection.md",
-      "title": "技術情報の収集と技術選定",
+      "title": "技術選定",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -386,7 +386,7 @@
     },
     {
       "path": "checklists/performance.md",
-      "title": "Webパフォーマンス",
+      "title": "パフォーマンス",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -428,7 +428,7 @@
     },
     {
       "path": "checklists/privacy.md",
-      "title": "プライバシーと外部スクリプト",
+      "title": "プライバシー",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -442,7 +442,7 @@
     },
     {
       "path": "checklists/design-consistency.md",
-      "title": "デザインの一貫性とユーザーテスト",
+      "title": "デザイン",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -456,7 +456,7 @@
     },
     {
       "path": "checklists/testing.md",
-      "title": "テストの計画と保守",
+      "title": "テスト",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -470,7 +470,7 @@
     },
     {
       "path": "checklists/builds.md",
-      "title": "ビルドの計測と保守",
+      "title": "ビルド",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -484,7 +484,7 @@
     },
     {
       "path": "checklists/deployment.md",
-      "title": "デプロイとリリースの安全性",
+      "title": "デプロイ",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -498,7 +498,7 @@
     },
     {
       "path": "checklists/dependencies.md",
-      "title": "依存ライブラリの管理",
+      "title": "サプライチェーン",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -512,7 +512,7 @@
     },
     {
       "path": "checklists/cicd.md",
-      "title": "CI/CDの運用と改善",
+      "title": "CI/CD",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -526,7 +526,7 @@
     },
     {
       "path": "checklists/backend-collaboration.md",
-      "title": "バックエンドとの連携",
+      "title": "サーバー",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -540,7 +540,7 @@
     },
     {
       "path": "checklists/infrastructure.md",
-      "title": "インフラ設計と可用性",
+      "title": "インフラ",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -554,7 +554,7 @@
     },
     {
       "path": "checklists/caching.md",
-      "title": "キャッシュの設計と運用",
+      "title": "キャッシュ",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -568,7 +568,7 @@
     },
     {
       "path": "checklists/observability.md",
-      "title": "モニタリングとログ",
+      "title": "モニタリング",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -596,7 +596,7 @@
     },
     {
       "path": "checklists/knowledge-sharing.md",
-      "title": "学習とチーム間の知識共有",
+      "title": "専門性の育成",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -610,7 +610,7 @@
     },
     {
       "path": "checklists/engineering-improvement.md",
-      "title": "横断的な生産性向上と技術方針",
+      "title": "イネーブリング",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -624,7 +624,7 @@
     },
     {
       "path": "checklists/roles-and-growth.md",
-      "title": "職能・役割・育成",
+      "title": "職務定義",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -638,7 +638,7 @@
     },
     {
       "path": "checklists/business-collaboration.md",
-      "title": "他部門との連携と事業への貢献",
+      "title": "ビジネス連携",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
@@ -652,7 +652,7 @@
     },
     {
       "path": "checklists/technical-communication.md",
-      "title": "技術発信の継続",
+      "title": "外部発信",
       "kind": "checklist",
       "handbook": true,
       "numbers": [
