@@ -39,6 +39,12 @@
       "handbook": true
     },
     {
+      "path": "guide/learning.md",
+      "title": "学習コンテンツ",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
       "path": "guide/individual-assessment.md",
       "title": "個人の習熟度を評価する",
       "kind": "guide",
