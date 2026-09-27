@@ -57,7 +57,7 @@ npm run docs:preview
 | `docs:downloads` | 単一Markdown、空の4書式、ZIP、生成元・SHA-256を生成 |
 | `docs:build` | 文書検査・ダウンロード生成・サイトビルド |
 | `test:site` | 全HTMLのリンク・アンカーとブラウザの検索・表示・ダウンロードを検査 |
-| `check:migration` | 原稿1.1から140定義・100項目が変わっていないことを照合 |
+| `check:migration` | 移行ベースライン（原稿1.1の140定義と1.3.0で追加した15定義、100項目）から変わっていないことを照合 |
 | `check:links` | 要素技術・小テーマページの参考リンク（`build/references.json`）の到達確認。週次のワークフローでも実行 |
 
 `check:migration` は今回の移行確認用です。今後の意図した定義改訂では差分になるため、通常CIには含めていません。
