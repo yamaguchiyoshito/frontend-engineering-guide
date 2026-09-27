@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 PromiseやasyncとawaitによるJavaScriptの非同期処理を実装する要素技術です。読み込み中、成功、失敗の状態と処理の順序を扱い、競合、キャンセル、再試行を含む処理を設計できるかを評価します。
 
+::: start
+「JavaScript Primer」の非同期処理の章で、Promiseとasync/awaitがなぜ必要かと、その書き方を読みます。fetchで公開APIからデータを取得し、成功したときと失敗したときの表示を分けられれば、Lv1の入口です。まず読む：[JavaScript Primer：非同期処理](https://jsprimer.net/basic/async/)
+:::
+
 ## Lv0
 
 同期・非同期の違い、Promiseやawaitの役割を説明できず、処理順序や失敗時の動作を追うことに支援が必要である。
@@ -49,7 +53,7 @@ PromiseやasyncとawaitによるJavaScriptの非同期処理を実装する要�
 - [MDN：非同期JavaScript](https://developer.mozilla.org/ja/docs/Learn_web_development/Extensions/Async_JS) — Promise、async/awaitの入門
 - [MDN：Promise](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Promise) — Promiseのリファレンス
 - [MDN：AbortController](https://developer.mozilla.org/ja/docs/Web/API/AbortController) — 非同期処理のキャンセル
-- [JavaScript Primer：非同期処理](https://jsprimer.net/basic/async/) — コールバック、Promise、async/awaitの解説（日本語）
+- **まず読む** [JavaScript Primer：非同期処理](https://jsprimer.net/basic/async/) — コールバック、Promise、async/awaitの解説（日本語）
 
 **代表的なライブラリ・ツール**
 

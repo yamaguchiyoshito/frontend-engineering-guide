@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [デザインシステムとデザイントークン](../guide/glossary.md#デザインシステムとデザイントークン)、[コンポーネント](../guide/glossary.md#コンポーネント)、[Storybook](../guide/glossary.md#storybook)、[レスポンシブデザイン](../guide/glossary.md#レスポンシブデザイン)、[アクセシビリティ](../guide/glossary.md#アクセシビリティ)
+**前提となる用語：** [デザインシステムとデザイントークン](../guide/glossary.md#デザインシステムとデザイントークン)、[コンポーネント](../guide/glossary.md#コンポーネント)、[Storybook](../guide/glossary.md#storybook)、[レスポンシブデザイン](../guide/glossary.md#レスポンシブデザイン)、[アクセシビリティ](../guide/glossary.md#アクセシビリティ)  
+**関連する要素技術：** [レスポンシブ設計](../skills/applied-foundation/css.responsive.md)、[コンポーネント設計](../skills/implementation/react.component-design.md)、[Storybook](../skills/implementation/storybook.basic.md)
 
 <!-- terms:end -->
 
@@ -93,9 +94,5 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 - [Style Dictionary](https://styledictionary.com/) — デザイントークンの変換と配布
 - [Figma](https://www.figma.com/ja-jp/) — デザインとトークン定義の共同編集
 - [@storybook/addon-designs](https://storybook.js.org/addons/@storybook/addon-designs) — StoryとFigmaデザインの対照
-
-**関連する要素技術**
-
-- [レスポンシブ設計](../skills/applied-foundation/css.responsive.md)、[コンポーネント設計](../skills/implementation/react.component-design.md)、[Storybook](../skills/implementation/storybook.basic.md)
 
 <!-- references:end -->

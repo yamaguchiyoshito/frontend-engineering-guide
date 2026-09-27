@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 利用者の業務シナリオをブラウザ操作で検証する要素技術です。開始状態、操作、期待結果、後始末を実装してCIで実行し、複数ロールや外部連携を含むシナリオの安定性と速度を改善できるかを評価します。
 
+::: start
+Playwrightの「Getting started」で、導入、操作の記録、実行の流れを読みます。ログインして一覧が表示されるまでのシナリオを一つ書き、手元とCIの両方で実行できれば、Lv1の入口です。まず読む：[Playwright：ドキュメント](https://playwright.dev/docs/intro)
+:::
+
 ## Lv0
 
 利用者の業務シナリオとE2Eの検証範囲を説明できず、実行環境の準備や既存シナリオの確認に支援が必要である。
@@ -46,7 +50,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **仕様・公式ドキュメント**
 
-- [Playwright：ドキュメント](https://playwright.dev/docs/intro) — 導入からCI実行までの公式ガイド
+- **まず読む** [Playwright：ドキュメント](https://playwright.dev/docs/intro) — 導入からCI実行までの公式ガイド
 - [Playwright：ベストプラクティス](https://playwright.dev/docs/best-practices) — 安定した要素特定と待機の指針
 - [Cypress：ドキュメント](https://docs.cypress.io/) — 代替のE2Eテストツール
 - [Playwright：テストのシャーディング](https://playwright.dev/docs/test-sharding) — CIでの並列分割実行

@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [DORAの4指標](../guide/glossary.md#doraの4指標)、[コードレビュー](../guide/glossary.md#コードレビュー)、[ADR](../guide/glossary.md#adr)
+**前提となる用語：** [DORAの4指標](../guide/glossary.md#doraの4指標)、[コードレビュー](../guide/glossary.md#コードレビュー)、[ADR](../guide/glossary.md#adr)  
+**関連する要素技術：** [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
 
 <!-- terms:end -->
 
@@ -76,9 +77,5 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 - [Backstage](https://backstage.io/) — 社内開発者ポータル
 - [GitHub Discussions](https://docs.github.com/ja/discussions) — 取り決めとナレッジの蓄積
-
-**関連する要素技術**
-
-- [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
 
 <!-- references:end -->

@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 コンポーネントの責務と境界を設計する要素技術です。表示、業務処理、状態の役割を分け、利用側が理解できるpropsとイベントを定め、共通化の範囲と拡張性を判断できるかを評価します。
 
+::: start
+「Reactの流儀」で、画面をコンポーネントに分け、stateをどこに置くかを決める手順を読みます。既存の画面を三つ程度の部品に分割し、親から子へpropsを渡す形に書き直せれば、Lv1の入口です。まず読む：[React：Reactの流儀（日本語）](https://ja.react.dev/learn/thinking-in-react)
+:::
+
 ## Lv0
 
 コンポーネントの責務、公開インターフェース、再利用範囲を説明できず、分割の判断に個別の指示が必要である。
@@ -46,7 +50,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **仕様・公式ドキュメント**
 
-- [React：Reactの流儀（日本語）](https://ja.react.dev/learn/thinking-in-react) — 画面をコンポーネントに分ける手順
+- **まず読む** [React：Reactの流儀（日本語）](https://ja.react.dev/learn/thinking-in-react) — 画面をコンポーネントに分ける手順
 - [React：コンポーネントにpropsを渡す（日本語）](https://ja.react.dev/learn/passing-props-to-a-component) — propsの設計
 - [React：state構造の選択（日本語）](https://ja.react.dev/learn/choosing-the-state-structure) — 状態の置き場所と形
 

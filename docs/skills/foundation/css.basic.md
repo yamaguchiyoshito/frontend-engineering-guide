@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 CSSで画面の見た目とレイアウトを実装する要素技術です。セレクタ、カスケード、ボックスモデル、FlexboxやGridを理解し、表示の崩れを分析して保守しやすく修正できるかを評価します。
 
+::: start
+MDNの「CSSの学習」で、色、文字、余白の指定から始め、ボックスモデルとFlexboxまでを手を動かして確認します。開発者ツールで要素に当たっているスタイルを見て、自分の変更がどう反映されたかを説明できれば、Lv1の入口です。まず読む：[MDN：CSSの学習](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Styling_basics)
+:::
+
 ## Lv0
 
 セレクタ、余白、サイズ、ボックスモデルの基本を説明できず、指定された見た目への変更に手順ごとの指示が必要である。
@@ -47,7 +51,7 @@ CSSで画面の見た目とレイアウトを実装する要素技術です。�
 **仕様・公式ドキュメント**
 
 - [MDN：CSS](https://developer.mozilla.org/ja/docs/Web/CSS) — プロパティとセレクタのリファレンス
-- [MDN：CSSの学習](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Styling_basics) — カスケード、ボックスモデル、レイアウトの入門
+- **まず読む** [MDN：CSSの学習](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Styling_basics) — カスケード、ボックスモデル、レイアウトの入門
 - [MDN：Flexbox](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Flexbox) — 一次元レイアウトの解説
 - [MDN：グリッド](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Grids) — 二次元レイアウトの解説
 - [web.dev：Learn CSS](https://web.dev/learn/css?hl=ja) — CSSの体系的な学習コース

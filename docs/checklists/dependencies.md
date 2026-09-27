@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [パッケージと依存関係](../guide/glossary.md#パッケージと依存関係)、[サプライチェーン](../guide/glossary.md#サプライチェーン)、[脆弱性](../guide/glossary.md#脆弱性)、[依存関係の更新検知](../guide/glossary.md#依存関係の更新検知)
+**前提となる用語：** [パッケージと依存関係](../guide/glossary.md#パッケージと依存関係)、[サプライチェーン](../guide/glossary.md#サプライチェーン)、[脆弱性](../guide/glossary.md#脆弱性)、[依存関係の更新検知](../guide/glossary.md#依存関係の更新検知)  
+**関連する要素技術：** [Webセキュリティ](../skills/quality/web.security.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)
 
 <!-- terms:end -->
 
@@ -92,9 +93,5 @@ DependabotやRenovateなど依存ライブラリの更新を検知する仕組�
 - [Socket](https://socket.dev/) — 依存パッケージの供給元リスクの検査（自動到達確認の対象外）
 - [GitHub Advisory Database](https://github.com/advisories) — 脆弱性情報の検索
 - [Trivy](https://trivy.dev/) — 依存関係とコンテナイメージの脆弱性スキャン（OSS）
-
-**関連する要素技術**
-
-- [Webセキュリティ](../skills/quality/web.security.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)
 
 <!-- references:end -->

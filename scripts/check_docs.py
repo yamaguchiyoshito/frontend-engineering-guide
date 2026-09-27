@@ -9,7 +9,7 @@ def main():
  paths=[p['path'] for p in PAGES]
  assert len(paths)==len(set(paths)),'Duplicate page paths'
  assert files==set(paths),f'Unmapped/missing Markdown: {files.symmetric_difference(paths)}'
- assert len(paths)==78,'Expected 78 pages'
+ assert len(paths)==79,'Expected 79 pages'
  skills=[p for p in PAGES if p['kind']=='skill'];checks=[p for p in PAGES if p['kind']=='checklist']
  assert len(skills)==28 and len(checks)==25,'Expected 28 skills and 25 checklist groups'
  assert len({p['skillId'] for p in skills})==28,'Duplicate skill ID'
@@ -21,6 +21,14 @@ def main():
   for lv,text in ds.items():
    assert text.strip(),p['path']+': empty definition'
    definitions[p['skillId']+'.'+lv]=hashlib.sha256(text.encode()).hexdigest()
+ references=json.loads((ROOT/'build/references.json').read_text())
+ for p in skills:
+  text=body(p['path']);starts=re.findall(r'^::: start\n(.*?)\n:::$',text,re.M|re.S)
+  assert len(starts)==1 and '## Lv0' in text.split(starts[0])[1][:12],p['path']+': one ::: start block is required right before ## Lv0'
+  urls=re.findall(r'\]\((https?://[^)]+)\)',starts[0]);entry=references['skills'][p['skillId']]
+  first=[r['url'] for key in ('docs','tools') for r in entry.get(key,[]) if r.get('start')]
+  assert len(first)==1,p['path']+': exactly one reference must be marked start'
+  assert urls==first,p['path']+': the ::: start block must link the reference marked start'
  for p in checks:
   rows=checklist_data(p);assert list(rows)==[item_number(f'{p["sourceId"]}-{k}') for k in range(1,5)],p['path']+': item IDs differ'
   for num,row in rows.items():

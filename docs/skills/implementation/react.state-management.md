@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 画面の状態をどこに置き、どう更新するかを設計する要素技術です。ローカル、共有、URL、サーバー由来の状態を区別し、同期、キャッシュ、楽観的更新、部分的な失敗を含む遷移を扱えるかを評価します。
 
+::: start
+React公式の「stateの管理」で、stateの構造の選び方と、親コンポーネントへのリフトアップを読みます。二つのコンポーネントで共有する値を親に持ち上げ、両方の表示を同期できれば、Lv1の入口です。まず読む：[React：stateの管理（日本語）](https://ja.react.dev/learn/managing-state)
+:::
+
 ## Lv0
 
 状態と計算で求められる値の違い、状態の持ち主を説明できず、状態の追加・更新に手順ごとの指示が必要である。
@@ -46,7 +50,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **仕様・公式ドキュメント**
 
-- [React：stateの管理（日本語）](https://ja.react.dev/learn/managing-state) — 状態の設計とリフトアップ
+- **まず読む** [React：stateの管理（日本語）](https://ja.react.dev/learn/managing-state) — 状態の設計とリフトアップ
 - [React：useReducer（日本語）](https://ja.react.dev/reference/react/useReducer) — 複雑な更新ロジックの整理
 - [TanStack Query：概要](https://tanstack.com/query/latest/docs/framework/react/overview) — サーバー状態の考え方
 

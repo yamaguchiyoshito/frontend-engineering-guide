@@ -33,7 +33,7 @@ def catalog(page):
 
 REFERENCES=json.loads((ROOT/'build/references.json').read_text())
 def link(page,r):
- return f'- [{r["title"]}]({r["url"]})'+('（出典で言及）' if r.get('cited') else '')+f' — {r["note"]}'
+ return '- '+('**まず読む** ' if r.get('start') else '')+f'[{r["title"]}]({r["url"]})'+('（出典で言及）' if r.get('cited') else '')+f' — {r["note"]}'
 def references(page):
  path=page['path'];selection=f'選定は[技術選定]({rel(path,"checklists/technology-selection.md")})の観点で行ってください。'
  if page['kind']=='skill':
@@ -47,12 +47,12 @@ def references(page):
  else:return None
  for key,label in sections:
   if entry.get(key):out += ['',f'**{label}**','']+[link(page,r) for r in entry[key]]
- if entry.get('skills'):
-  pages={p['skillId']:p for p in PAGES if p['kind']=='skill'};paths={p['path']:p for p in PAGES};items=[]
-  for s in entry['skills']:
-   p=pages.get(s) or paths[s];items.append(f'[{p["title"]}]({rel(path,p["path"])})')
-  out += ['','**関連する要素技術**','','- '+'、'.join(items)]
  return '\n'.join(out)
+def related_skills(page):
+ """Checklist pages list their related element technologies in the header, next to the glossary terms."""
+ entry=REFERENCES['checklists'][page['sourceId']];pages={p['skillId']:p for p in PAGES if p['kind']=='skill'};paths={p['path']:p for p in PAGES}
+ items=[f'[{(pages.get(s) or paths[s])["title"]}]({rel(page["path"],(pages.get(s) or paths[s])["path"])})' for s in entry.get('skills',[])]
+ return '**関連する要素技術：** '+'、'.join(items)
 
 GLOSSARY=json.loads((ROOT/'build/glossary.json').read_text())
 TERMS={t['id']:t for t in GLOSSARY['terms']}
@@ -78,7 +78,8 @@ def terms(page):
  ids=GLOSSARY['pages'].get(page['path'])
  if not ids:return None
  target=rel(page['path'],GLOSSARY_PATH)
- return '**前提となる用語：** '+'、'.join(f'[{TERMS[i]["term"]}]({target}#{slug(TERMS[i]["term"])})' for i in ids)
+ line='**前提となる用語：** '+'、'.join(f'[{TERMS[i]["term"]}]({target}#{slug(TERMS[i]["term"])})' for i in ids)
+ return line+('  \n'+related_skills(page) if page['kind']=='checklist' else '')
 
 def blocks(page):
  for marker,value in [('catalog',catalog(page)),('references',references(page)),('terms',terms(page)),('glossary',glossary(page))]:

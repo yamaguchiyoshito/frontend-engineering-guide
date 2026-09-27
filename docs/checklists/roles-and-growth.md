@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [フロントエンドとバックエンド](../guide/glossary.md#フロントエンドとバックエンド)、[フレームワークとライブラリ](../guide/glossary.md#フレームワークとライブラリ)、[イネーブリング](../guide/glossary.md#イネーブリング)
+**前提となる用語：** [フロントエンドとバックエンド](../guide/glossary.md#フロントエンドとバックエンド)、[フレームワークとライブラリ](../guide/glossary.md#フレームワークとライブラリ)、[イネーブリング](../guide/glossary.md#イネーブリング)  
+**関連する要素技術：** [要素技術](../skills/index.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
 
 <!-- terms:end -->
 
@@ -74,9 +75,5 @@ Webフロントエンド技術領域の技術選定に責任をもつ職務上�
 
 - [IPA：デジタルスキル標準](https://www.ipa.go.jp/jinzai/skill-standard/dss/index.html) — 職務と学習項目の整理の参考
 - [SFIA](https://sfia-online.org/) — ITスキルの枠組み（英語）
-
-**関連する要素技術**
-
-- [要素技術](../skills/index.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
 
 <!-- references:end -->

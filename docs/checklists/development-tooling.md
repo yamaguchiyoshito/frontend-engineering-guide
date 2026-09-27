@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [環境](../guide/glossary.md#環境)、[ビルドとバンドル](../guide/glossary.md#ビルドとバンドル)、[Lintと静的検査](../guide/glossary.md#lintと静的検査)、[モック](../guide/glossary.md#モック)、[CI](../guide/glossary.md#ci)
+**前提となる用語：** [環境](../guide/glossary.md#環境)、[ビルドとバンドル](../guide/glossary.md#ビルドとバンドル)、[Lintと静的検査](../guide/glossary.md#lintと静的検査)、[モック](../guide/glossary.md#モック)、[CI](../guide/glossary.md#ci)  
+**関連する要素技術：** [JavaScript](../skills/foundation/javascript.basic.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)、[REST API連携](../skills/implementation/frontend.api-integration.md)、[Storybook](../skills/implementation/storybook.basic.md)
 
 <!-- terms:end -->
 
@@ -73,9 +74,5 @@ API仕様に沿ったモックを用意し、バックエンドをローカル�
 - [Biome](https://biomejs.dev/) — 整形と静的検査を一体化したツール
 - [Mock Service Worker](https://mswjs.io/) — APIモック
 - [GitHub Actions](https://docs.github.com/ja/actions) — ビルド・テスト時間の記録
-
-**関連する要素技術**
-
-- [JavaScript](../skills/foundation/javascript.basic.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)、[REST API連携](../skills/implementation/frontend.api-integration.md)、[Storybook](../skills/implementation/storybook.basic.md)
 
 <!-- references:end -->

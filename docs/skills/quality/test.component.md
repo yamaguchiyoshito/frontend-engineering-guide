@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 コンポーネントの表示と操作をテストする要素技術です。利用者が認識する状態、入力、イベント、エラーを基準に検証し、非同期の更新やフォーカスを扱い、不安定なテストを分析して改善できるかを評価します。
 
+::: start
+React Testing Libraryの入門で、利用者の見え方で要素を取得する考え方を読みます。ボタンを押すと表示が変わる部品について、操作と結果の確認をテストとして書ければ、Lv1の入口です。まず読む：[React Testing Library：入門](https://testing-library.com/docs/react-testing-library/intro/)
+:::
+
 ## Lv0
 
 コンポーネントの表示と利用者の操作を何で検証するか説明できず、既存テストの実行や変更に支援が必要である。
@@ -46,7 +50,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **仕様・公式ドキュメント**
 
-- [React Testing Library：入門](https://testing-library.com/docs/react-testing-library/intro/) — Reactコンポーネントの検証方法
+- **まず読む** [React Testing Library：入門](https://testing-library.com/docs/react-testing-library/intro/) — Reactコンポーネントの検証方法
 - [Testing Library：クエリの優先順位](https://testing-library.com/docs/queries/about/#priority) — 要素の特定方法の選び方
 - [Vitest：ブラウザモード](https://vitest.dev/guide/browser/) — 実ブラウザでのコンポーネントテスト
 

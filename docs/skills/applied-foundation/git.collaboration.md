@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 Pull Requestとレビューを通じてチームで開発を進める要素技術です。レビュー可能な単位で変更を分け、CIの確認と指摘対応を行い、複数人・複数ブランチの変更を調整できるかを評価します。
 
+::: start
+GitHub Docsの「Pull Request」で、ブランチで変更を提案し、レビューを受けてマージするまでの流れを読みます。練習用のリポジトリで自分のPRを一つ作り、指摘を受けて修正を追加のコミットとして積めれば、Lv1の入口です。まず読む：[GitHub Docs：Pull Request](https://docs.github.com/ja/pull-requests)
+:::
+
 ## Lv0
 
 PR／MR、レビュー、承認、保護ブランチの役割を説明できず、チームの変更手順を進めるために個別の指示が必要である。
@@ -46,7 +50,7 @@ PR／MR、レビュー、承認、保護ブランチの役割を説明できず�
 
 **仕様・公式ドキュメント**
 
-- [GitHub Docs：Pull Request](https://docs.github.com/ja/pull-requests) — PRの作成、レビュー、マージの手順
+- **まず読む** [GitHub Docs：Pull Request](https://docs.github.com/ja/pull-requests) — PRの作成、レビュー、マージの手順
 - [Google Engineering Practices：Code Review](https://google.github.io/eng-practices/review/) — コードレビューの指針（英語）
 - [Conventional Commits（日本語）](https://www.conventionalcommits.org/ja/) — コミットメッセージの規約
 - [Pro Git：ブランチ](https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF) — ブランチ運用の基礎

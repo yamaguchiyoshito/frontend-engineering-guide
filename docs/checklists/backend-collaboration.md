@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [フロントエンドとバックエンド](../guide/glossary.md#フロントエンドとバックエンド)、[API](../guide/glossary.md#api)、[REST API](../guide/glossary.md#rest-api)、[OpenAPI](../guide/glossary.md#openapi)、[JSON](../guide/glossary.md#json)、[モック](../guide/glossary.md#モック)、[Node.js](../guide/glossary.md#node-js)
+**前提となる用語：** [フロントエンドとバックエンド](../guide/glossary.md#フロントエンドとバックエンド)、[API](../guide/glossary.md#api)、[REST API](../guide/glossary.md#rest-api)、[OpenAPI](../guide/glossary.md#openapi)、[JSON](../guide/glossary.md#json)、[モック](../guide/glossary.md#モック)、[Node.js](../guide/glossary.md#node-js)  
+**関連する要素技術：** [REST API連携](../skills/implementation/frontend.api-integration.md)、[Web基礎](../skills/foundation/web.basic.md)、[React実装](../skills/implementation/react.basic.md)
 
 <!-- terms:end -->
 
@@ -86,9 +87,5 @@ Webフロントエンドとバックエンドの分業している場合、画�
 - [Pact](https://pact.io/) — 契約テスト
 - [Mock Service Worker](https://mswjs.io/) — APIモック
 - [OpenTelemetry](https://opentelemetry.io/ja/docs/) — リソース指標の収集の標準
-
-**関連する要素技術**
-
-- [REST API連携](../skills/implementation/frontend.api-integration.md)、[Web基礎](../skills/foundation/web.basic.md)、[React実装](../skills/implementation/react.basic.md)
 
 <!-- references:end -->

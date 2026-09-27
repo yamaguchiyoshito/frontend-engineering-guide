@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 JavaScriptの構文、関数、オブジェクト、配列を使って処理を実装する要素技術です。要件を関数に分解し、境界値や例外を扱い、スコープや参照が原因の不具合を分析できるかを評価します。
 
+::: start
+「JavaScript Primer」の基本文法（変数、関数、配列、オブジェクト）を、ブラウザの開発者ツールのコンソールで実行しながら読みます。短い関数を自分で書いて結果を確認し、エラーメッセージを読んで直せれば、Lv1の入口です。まず読む：[JavaScript Primer](https://jsprimer.net/)
+:::
+
 ## Lv0
 
 変数、条件分岐、繰り返し、関数の基本を説明できず、短い処理でも手順ごとの指示が必要である。
@@ -47,7 +51,7 @@ JavaScriptの構文、関数、オブジェクト、配列を使って処理を�
 **仕様・公式ドキュメント**
 
 - [MDN：JavaScript](https://developer.mozilla.org/ja/docs/Web/JavaScript) — 言語仕様と組み込みオブジェクトのリファレンス
-- [JavaScript Primer](https://jsprimer.net/) — ECMAScript 2015以降を前提にした入門書（日本語、OSS）
+- **まず読む** [JavaScript Primer](https://jsprimer.net/) — ECMAScript 2015以降を前提にした入門書（日本語、OSS）
 - [ECMAScript Language Specification](https://tc39.es/ecma262/) — JavaScriptの言語仕様（英語）
 
 **代表的なライブラリ・ツール**

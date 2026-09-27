@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [サーバー](../guide/glossary.md#サーバー)、[CDN](../guide/glossary.md#cdn)、[環境](../guide/glossary.md#環境)、[Infrastructure as Code](../guide/glossary.md#infrastructure-as-code)、[SLO](../guide/glossary.md#slo)
+**前提となる用語：** [サーバー](../guide/glossary.md#サーバー)、[CDN](../guide/glossary.md#cdn)、[環境](../guide/glossary.md#環境)、[Infrastructure as Code](../guide/glossary.md#infrastructure-as-code)、[SLO](../guide/glossary.md#slo)  
+**関連する要素技術：** [Web基礎](../skills/foundation/web.basic.md)、[Webパフォーマンス](../skills/quality/web.performance.md)
 
 <!-- terms:end -->
 
@@ -91,9 +92,5 @@ Platform as a Service の具体例として下記のものが挙げられる。
 - [Firebase](https://firebase.google.com/?hl=ja)（出典で言及） — Platform as a Service
 - [Supabase](https://supabase.com/)（出典で言及） — Platform as a Service
 - [AWS Amplify](https://aws.amazon.com/jp/amplify/)（出典で言及） — Platform as a Service
-
-**関連する要素技術**
-
-- [Web基礎](../skills/foundation/web.basic.md)、[Webパフォーマンス](../skills/quality/web.performance.md)
 
 <!-- references:end -->

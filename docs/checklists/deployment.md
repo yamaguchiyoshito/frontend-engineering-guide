@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [デプロイとCD](../guide/glossary.md#デプロイとcd)、[環境](../guide/glossary.md#環境)、[フィーチャーフラグ](../guide/glossary.md#フィーチャーフラグ)、[ロールバック](../guide/glossary.md#ロールバック)、[CI](../guide/glossary.md#ci)
+**前提となる用語：** [デプロイとCD](../guide/glossary.md#デプロイとcd)、[環境](../guide/glossary.md#環境)、[フィーチャーフラグ](../guide/glossary.md#フィーチャーフラグ)、[ロールバック](../guide/glossary.md#ロールバック)、[CI](../guide/glossary.md#ci)  
+**関連する要素技術：** [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)、[E2Eテスト](../skills/quality/test.e2e.md)
 
 <!-- terms:end -->
 
@@ -79,9 +80,5 @@ Webアプリケーションが依存する外部サービスにおいてリリ�
 - [OpenFeature](https://openfeature.dev/) — Feature Toggleの標準API
 - [GitHub Actions：環境](https://docs.github.com/ja/actions/deployment/targeting-different-environments/using-environments-for-deployment) — デプロイ先ごとの保護と承認
 - [GitLab CI/CD：Environments](https://docs.gitlab.com/ci/environments/) — 環境ごとのデプロイと保護
-
-**関連する要素技術**
-
-- [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)、[E2Eテスト](../skills/quality/test.e2e.md)
 
 <!-- references:end -->

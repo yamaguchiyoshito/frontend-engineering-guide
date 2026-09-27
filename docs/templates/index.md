@@ -18,4 +18,4 @@ description: "評価と改善を記録するための4種類の空の書式。�
 
 <!-- catalog:end -->
 
-[記入例：セキュリティ検査の整備](../examples/security-ci-improvement.md)も参照してください。
+[記入例](../examples/index.md)（チームの改善計画、個人の初回評価）も参照してください。

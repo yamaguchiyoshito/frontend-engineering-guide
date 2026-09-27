@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 入力値の検証を実装し、型定義とAPIの入出力を整合させる要素技術です。スキーマで空値、型変換、境界値、メッセージを扱い、フロントエンドとサーバー側の検証責務を区別できるかを評価します。
 
+::: start
+Zodの公式ドキュメントで、スキーマの定義と検証の書き方を読みます。フォームの入力値をスキーマで検証し、エラーメッセージを項目ごとに表示できれば、Lv1の入口です。まず読む：[Zod](https://zod.dev/)
+:::
+
 ## Lv0
 
 入力値の検証と型検査の違い、検証エラーの扱いを説明できず、検証条件の実装に手順ごとの指示が必要である。
@@ -52,7 +56,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **代表的なライブラリ・ツール**
 
-- [Zod](https://zod.dev/) — スキーマ定義と型の導出
+- **まず読む** [Zod](https://zod.dev/) — スキーマ定義と型の導出
 - [Valibot](https://valibot.dev/) — 軽量なスキーマ検証ライブラリ
 - [openapi-typescript](https://openapi-ts.dev/) — API仕様と型定義の整合
 - [openapi-zod-client](https://github.com/astahmer/openapi-zod-client) — OpenAPIからZodスキーマとクライアントを生成

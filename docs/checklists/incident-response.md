@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [インシデントとポストモーテム](../guide/glossary.md#インシデントとポストモーテム)、[ロールバック](../guide/glossary.md#ロールバック)、[モニタリングとオブザーバビリティ](../guide/glossary.md#モニタリングとオブザーバビリティ)、[SLO](../guide/glossary.md#slo)
+**前提となる用語：** [インシデントとポストモーテム](../guide/glossary.md#インシデントとポストモーテム)、[ロールバック](../guide/glossary.md#ロールバック)、[モニタリングとオブザーバビリティ](../guide/glossary.md#モニタリングとオブザーバビリティ)、[SLO](../guide/glossary.md#slo)  
+**関連する要素技術：** [フロントエンド品質保証](../skills/quality/frontend.quality.md)、[Web基礎](../skills/foundation/web.basic.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)
 
 <!-- terms:end -->
 
@@ -75,9 +76,5 @@ Webフロントエンドを主とする開発者にも障害対応のロール�
 
 - [Sentry](https://sentry.io/) — 障害に繋がるユーザーアクションの計測
 - [OpenTelemetry](https://opentelemetry.io/) — 原因調査のためのトレース
-
-**関連する要素技術**
-
-- [フロントエンド品質保証](../skills/quality/frontend.quality.md)、[Web基礎](../skills/foundation/web.basic.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)
 
 <!-- references:end -->

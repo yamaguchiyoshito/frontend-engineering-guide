@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 検索エンジンに公開ページを正しく巡回・索引登録させる要素技術です。タイトル、内部リンク、正規URL、サイトマップを設定し、重複URLや動的描画、移行時のリダイレクトの影響を調査できるかを評価します。
 
+::: start
+「Google検索セントラル」のSEOスターターガイドで、検索エンジンがページを見つけて理解する仕組みを読みます。title、説明文（meta description）、見出しを整え、LighthouseのSEO監査を通せれば、Lv1の入口です。まず読む：[Google検索セントラル](https://developers.google.com/search/docs?hl=ja)
+:::
+
 ## Lv0
 
 検索エンジンの巡回・索引登録と検索結果表示の違いを説明できず、公開ページの基本設定の確認に支援が必要である。
@@ -46,7 +50,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **仕様・公式ドキュメント**
 
-- [Google検索セントラル](https://developers.google.com/search/docs?hl=ja) — 検索エンジン向けの公式ガイド
+- **まず読む** [Google検索セントラル](https://developers.google.com/search/docs?hl=ja) — 検索エンジン向けの公式ガイド
 - [sitemaps.org：プロトコル](https://www.sitemaps.org/ja/protocol.html) — サイトマップの仕様
 - [Google：robots.txtの概要](https://developers.google.com/search/docs/crawling-indexing/robots/intro?hl=ja) — 巡回制御の設定
 

@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 DOMの操作とイベント処理を実装する要素技術です。イベントの伝播と既定動作、動的な要素、フォーカス移動を扱い、解除漏れや外部ライブラリとの干渉を分析できるかを評価します。
 
+::: start
+MDNの「イベント入門」で、要素の取得、内容の書き換え、クリックへの反応を試します。ボタンを押すと文字が変わる小さなページを作り、開発者ツールで登録したイベントリスナーを確認できれば、Lv1の入口です。まず読む：[MDN：イベント入門](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Scripting/Events)
+:::
+
 ## Lv0
 
 DOMとHTMLソースの関係やイベントの役割を説明できず、要素取得やイベント処理に手順ごとの指示が必要である。
@@ -47,7 +51,7 @@ DOM操作とイベント処理の設計原則、後始末、フォーカス管�
 **仕様・公式ドキュメント**
 
 - [MDN：DOM](https://developer.mozilla.org/ja/docs/Web/API/Document_Object_Model) — DOMのAPIリファレンス
-- [MDN：イベント入門](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Scripting/Events) — イベントの登録、伝播、既定動作
+- **まず読む** [MDN：イベント入門](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Scripting/Events) — イベントの登録、伝播、既定動作
 - [DOM Standard](https://dom.spec.whatwg.org/) — DOMの仕様（英語）
 
 **代表的なライブラリ・ツール**

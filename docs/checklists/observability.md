@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [モニタリングとオブザーバビリティ](../guide/glossary.md#モニタリングとオブザーバビリティ)、[SLO](../guide/glossary.md#slo)、[インシデントとポストモーテム](../guide/glossary.md#インシデントとポストモーテム)、[Webパフォーマンス](../guide/glossary.md#webパフォーマンス)
+**前提となる用語：** [モニタリングとオブザーバビリティ](../guide/glossary.md#モニタリングとオブザーバビリティ)、[SLO](../guide/glossary.md#slo)、[インシデントとポストモーテム](../guide/glossary.md#インシデントとポストモーテム)、[Webパフォーマンス](../guide/glossary.md#webパフォーマンス)  
+**関連する要素技術：** [Webパフォーマンス](../skills/quality/web.performance.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)、[Web基礎](../skills/foundation/web.basic.md)
 
 <!-- terms:end -->
 
@@ -87,9 +88,5 @@ SLI/SLOに関わるシステムの稼働を24時間365日モニタリングし�
 - [OpenTelemetry](https://opentelemetry.io/) — 統合トレースの標準
 - [Grafana](https://grafana.com/) — ダッシュボードとアラート
 - [Prometheus](https://prometheus.io/) — メトリクスの収集
-
-**関連する要素技術**
-
-- [Webパフォーマンス](../skills/quality/web.performance.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)、[Web基礎](../skills/foundation/web.basic.md)
 
 <!-- references:end -->

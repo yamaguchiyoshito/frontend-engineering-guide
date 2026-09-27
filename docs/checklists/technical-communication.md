@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [ADR](../guide/glossary.md#adr)、[リポジトリ](../guide/glossary.md#リポジトリ)、[イネーブリング](../guide/glossary.md#イネーブリング)
+**前提となる用語：** [ADR](../guide/glossary.md#adr)、[リポジトリ](../guide/glossary.md#リポジトリ)、[イネーブリング](../guide/glossary.md#イネーブリング)  
+**関連する要素技術：** [チーム開発](../skills/applied-foundation/git.collaboration.md)
 
 <!-- terms:end -->
 
@@ -83,9 +84,5 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 - [Qiita](https://qiita.com/) — 技術記事の公開
 - [Speaker Deck](https://speakerdeck.com/) — 登壇資料の公開
 - [connpass](https://connpass.com/) — 勉強会の開催
-
-**関連する要素技術**
-
-- [チーム開発](../skills/applied-foundation/git.collaboration.md)
 
 <!-- references:end -->

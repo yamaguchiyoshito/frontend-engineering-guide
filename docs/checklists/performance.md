@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [Webパフォーマンス](../guide/glossary.md#webパフォーマンス)、[Core Web Vitals](../guide/glossary.md#core-web-vitals)、[Lighthouse](../guide/glossary.md#lighthouse)、[モニタリングとオブザーバビリティ](../guide/glossary.md#モニタリングとオブザーバビリティ)、[SLO](../guide/glossary.md#slo)
+**前提となる用語：** [Webパフォーマンス](../guide/glossary.md#webパフォーマンス)、[Core Web Vitals](../guide/glossary.md#core-web-vitals)、[Lighthouse](../guide/glossary.md#lighthouse)、[モニタリングとオブザーバビリティ](../guide/glossary.md#モニタリングとオブザーバビリティ)、[SLO](../guide/glossary.md#slo)  
+**関連する要素技術：** [Webパフォーマンス](../skills/quality/web.performance.md)
 
 <!-- terms:end -->
 
@@ -79,9 +80,5 @@ Synthetic MonitoringやReal User Monitoringに対応したパフォーマンス�
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse?hl=ja) — 試験環境での自動計測
 - [PageSpeed Insights](https://pagespeed.web.dev/) — 実利用データを含む診断
 - [web-vitals](https://github.com/GoogleChrome/web-vitals) — 実利用の指標を計測するライブラリ
-
-**関連する要素技術**
-
-- [Webパフォーマンス](../skills/quality/web.performance.md)
 
 <!-- references:end -->

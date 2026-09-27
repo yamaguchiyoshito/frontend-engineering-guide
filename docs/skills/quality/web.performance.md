@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 画面の表示と操作の速度を計測し、改善する要素技術です。速度指標と計測条件を定めて画像、通信、JavaScript処理、描画のボトルネックを特定し、実利用データに基づく代替案を比較できるかを評価します。
 
+::: start
+web.devの「Core Web Vitals」で、LCP、INP、CLSがそれぞれ何を測るかを読みます。自分の画面をLighthouseで計測し、指摘された項目の意味を説明して一つ改善できれば、Lv1の入口です。まず読む：[web.dev：Core Web Vitals](https://web.dev/articles/vitals?hl=ja)
+:::
+
 ## Lv0
 
 表示・通信・操作の速度の違いや主な遅延要因を説明できず、性能計測の実行と結果の読み取りに支援が必要である。
@@ -46,7 +50,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **仕様・公式ドキュメント**
 
-- [web.dev：Core Web Vitals](https://web.dev/articles/vitals?hl=ja) — 主要な速度指標の定義
+- **まず読む** [web.dev：Core Web Vitals](https://web.dev/articles/vitals?hl=ja) — 主要な速度指標の定義
 - [MDN：Webパフォーマンス](https://developer.mozilla.org/ja/docs/Web/Performance) — 計測と改善の基礎
 - [Chrome DevTools：パフォーマンス](https://developer.chrome.com/docs/devtools/performance?hl=ja) — 処理と描画のプロファイル
 

@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [リポジトリ](../guide/glossary.md#リポジトリ)、[TypeScript](../guide/glossary.md#typescript)、[型検査](../guide/glossary.md#型検査)、[Lintと静的検査](../guide/glossary.md#lintと静的検査)、[API](../guide/glossary.md#api)、[OpenAPI](../guide/glossary.md#openapi)
+**前提となる用語：** [リポジトリ](../guide/glossary.md#リポジトリ)、[TypeScript](../guide/glossary.md#typescript)、[型検査](../guide/glossary.md#型検査)、[Lintと静的検査](../guide/glossary.md#lintと静的検査)、[API](../guide/glossary.md#api)、[OpenAPI](../guide/glossary.md#openapi)  
+**関連する要素技術：** [JavaScript](../skills/foundation/javascript.basic.md)、[TypeScript](../skills/applied-foundation/typescript.basic.md)、[REST API連携](../skills/implementation/frontend.api-integration.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)
 
 <!-- terms:end -->
 
@@ -87,9 +88,5 @@ API仕様を共通のスキーマで管理し、フロントエンドのAPIク�
 - [OpenAPI](https://www.openapis.org/)（出典で言及） — APIレベルの型共有
 - [GraphQL](https://graphql.org/)（出典で言及） — APIレベルの型共有
 - [tRPC](https://trpc.io/)（出典で言及） — TypeScript間の型共有
-
-**関連する要素技術**
-
-- [JavaScript](../skills/foundation/javascript.basic.md)、[TypeScript](../skills/applied-foundation/typescript.basic.md)、[REST API連携](../skills/implementation/frontend.api-integration.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)
 
 <!-- references:end -->

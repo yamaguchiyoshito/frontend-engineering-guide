@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [ビルドとバンドル](../guide/glossary.md#ビルドとバンドル)、[パッケージと依存関係](../guide/glossary.md#パッケージと依存関係)、[CI](../guide/glossary.md#ci)、[キャッシュ](../guide/glossary.md#キャッシュ)
+**前提となる用語：** [ビルドとバンドル](../guide/glossary.md#ビルドとバンドル)、[パッケージと依存関係](../guide/glossary.md#パッケージと依存関係)、[CI](../guide/glossary.md#ci)、[キャッシュ](../guide/glossary.md#キャッシュ)  
+**関連する要素技術：** [JavaScript](../skills/foundation/javascript.basic.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)、[Webパフォーマンス](../skills/quality/web.performance.md)
 
 <!-- terms:end -->
 
@@ -73,9 +74,5 @@ CI/CDのビルドごとに所要時間、成果物全体と主要ファイルの
 - [esbuild](https://esbuild.github.io/) — 高速なバンドラー
 - [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer) — 成果物の内訳の可視化
 - [size-limit](https://github.com/ai/size-limit) — 成果物の容量の上限管理
-
-**関連する要素技術**
-
-- [JavaScript](../skills/foundation/javascript.basic.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)、[Webパフォーマンス](../skills/quality/web.performance.md)
 
 <!-- references:end -->

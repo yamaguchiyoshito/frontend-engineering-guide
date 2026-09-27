@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 多様な利用者と支援技術で画面を操作できるようにする要素技術です。キーボード操作、読み上げ、状態変化の伝達を実装・検証し、自動検査で見つからない障壁を調査して改善できるかを評価します。
 
+::: start
+デジタル庁の「ウェブアクセシビリティ導入ガイドブック」で、誰にとって何が障壁になるのかを読みます。自分の画面をキーボードだけで操作し、画像の代替テキストと見出しの構造を確認して、Lighthouseの指摘を一つ直せれば、Lv1の入口です。まず読む：[デジタル庁：ウェブアクセシビリティ導入ガイドブック](https://www.digital.go.jp/resources/introduction-to-web-accessibility-guidebook)
+:::
+
 ## Lv0
 
 キーボード、読み上げ、色の識別などに関する利用上の障壁を説明できず、基本的な確認に手順ごとの指示が必要である。
@@ -49,7 +53,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 - [WCAG 2.2（日本語訳）](https://waic.jp/translations/WCAG22/) — Webアクセシビリティの国際規格
 - [WAI-ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/) — 複合ウィジェットの操作パターン（英語）
 - [MDN：アクセシビリティ](https://developer.mozilla.org/ja/docs/Web/Accessibility) — 実装ガイドとARIAのリファレンス
-- [デジタル庁：ウェブアクセシビリティ導入ガイドブック](https://www.digital.go.jp/resources/introduction-to-web-accessibility-guidebook) — 方針策定と実務の手引き
+- **まず読む** [デジタル庁：ウェブアクセシビリティ導入ガイドブック](https://www.digital.go.jp/resources/introduction-to-web-accessibility-guidebook) — 方針策定と実務の手引き
 
 **代表的なライブラリ・ツール**
 

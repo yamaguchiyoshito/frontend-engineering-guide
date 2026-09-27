@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [DORAの4指標](../guide/glossary.md#doraの4指標)、[フィーチャーフラグ](../guide/glossary.md#フィーチャーフラグ)、[モニタリングとオブザーバビリティ](../guide/glossary.md#モニタリングとオブザーバビリティ)
+**前提となる用語：** [DORAの4指標](../guide/glossary.md#doraの4指標)、[フィーチャーフラグ](../guide/glossary.md#フィーチャーフラグ)、[モニタリングとオブザーバビリティ](../guide/glossary.md#モニタリングとオブザーバビリティ)  
+**関連する要素技術：** [フロントエンド品質保証](../skills/quality/frontend.quality.md)、[REST API連携](../skills/implementation/frontend.api-integration.md)、[Webセキュリティ](../skills/quality/web.security.md)
 
 <!-- terms:end -->
 
@@ -76,9 +77,5 @@ Google Tag Managerなど開発を介さずツールやスクリプトを導入�
 **代表的なツール・サービス**
 
 - [Google タグ マネージャー](https://marketingplatform.google.com/intl/ja/about/tag-manager/)（出典で言及） — 開発を介さないタグ導入の仕組み
-
-**関連する要素技術**
-
-- [フロントエンド品質保証](../skills/quality/frontend.quality.md)、[REST API連携](../skills/implementation/frontend.api-integration.md)、[Webセキュリティ](../skills/quality/web.security.md)
 
 <!-- references:end -->

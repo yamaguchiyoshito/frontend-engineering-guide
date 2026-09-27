@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [キャッシュ](../guide/glossary.md#キャッシュ)、[CDN](../guide/glossary.md#cdn)、[HTTP](../guide/glossary.md#http)、[ステータスコード](../guide/glossary.md#ステータスコード)
+**前提となる用語：** [キャッシュ](../guide/glossary.md#キャッシュ)、[CDN](../guide/glossary.md#cdn)、[HTTP](../guide/glossary.md#http)、[ステータスコード](../guide/glossary.md#ステータスコード)  
+**関連する要素技術：** [Web基礎](../skills/foundation/web.basic.md)、[Webパフォーマンス](../skills/quality/web.performance.md)
 
 <!-- terms:end -->
 
@@ -82,9 +83,5 @@ CDNのパージ、サーバーキャッシュの無効化、静的ファイル�
 
 - [Chrome DevTools：Networkパネル](https://developer.chrome.com/docs/devtools/network?hl=ja) — キャッシュヒットの確認
 - [Vite：静的アセットの扱い](https://ja.vite.dev/guide/assets)（出典で言及） — ハッシュ付きファイル名によるキャッシュバスティング
-
-**関連する要素技術**
-
-- [Web基礎](../skills/foundation/web.basic.md)、[Webパフォーマンス](../skills/quality/web.performance.md)
 
 <!-- references:end -->
