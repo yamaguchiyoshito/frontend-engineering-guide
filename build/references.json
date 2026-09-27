@@ -122,6 +122,11 @@
           "title": "PostCSS",
           "url": "https://postcss.org/",
           "note": "CSSの変換とプラグイン基盤"
+        },
+        {
+          "title": "Tailwind CSS",
+          "url": "https://tailwindcss.com/docs",
+          "note": "ユーティリティクラスによるスタイリング"
         }
       ]
     },
@@ -163,6 +168,11 @@
           "title": "Chrome DevTools：JavaScriptのデバッグ",
           "url": "https://developer.chrome.com/docs/devtools/javascript?hl=ja",
           "note": "ブレークポイントと変数の確認"
+        },
+        {
+          "title": "pnpm",
+          "url": "https://pnpm.io/ja/",
+          "note": "ディスク効率の高いパッケージ管理"
         }
       ]
     },
@@ -470,6 +480,11 @@
           "title": "Pro Git：ブランチ",
           "url": "https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF",
           "note": "ブランチ運用の基礎"
+        },
+        {
+          "title": "GitLab Docs：Merge Requests",
+          "url": "https://docs.gitlab.com/user/project/merge_requests/",
+          "note": "GitLabでのレビューとマージ"
         }
       ],
       "tools": [
@@ -501,6 +516,11 @@
           "title": "React：Reactのルール（日本語）",
           "url": "https://ja.react.dev/reference/rules",
           "note": "コンポーネントとHooksの規則"
+        },
+        {
+          "title": "Next.js：App Router",
+          "url": "https://nextjs.org/docs/app",
+          "note": "Server Components、Server Actions、ルーティング"
         }
       ],
       "tools": [
@@ -548,12 +568,17 @@
         {
           "title": "Radix Primitives",
           "url": "https://www.radix-ui.com/primitives",
-          "note": "スタイルなしのアクセシブルな部品"
+          "note": "スタイルなしのアクセシブルな部品。shadcn/uiの基盤"
         },
         {
           "title": "React Aria",
           "url": "https://react-spectrum.adobe.com/react-aria/",
           "note": "アクセシブルなUI部品を作るHooks群"
+        },
+        {
+          "title": "shadcn/ui",
+          "url": "https://ui.shadcn.com/docs",
+          "note": "Radixを基盤にした複製して使うUI部品集"
         }
       ]
     },
@@ -672,6 +697,11 @@
           "title": "orval",
           "url": "https://orval.dev/",
           "note": "OpenAPIからのクライアントと型の生成"
+        },
+        {
+          "title": "openapi-zod-client",
+          "url": "https://github.com/astahmer/openapi-zod-client",
+          "note": "OpenAPIからZodスキーマとクライアントを生成"
         }
       ]
     },
@@ -708,6 +738,11 @@
           "title": "openapi-typescript",
           "url": "https://openapi-ts.dev/",
           "note": "API仕様と型定義の整合"
+        },
+        {
+          "title": "openapi-zod-client",
+          "url": "https://github.com/astahmer/openapi-zod-client",
+          "note": "OpenAPIからZodスキーマとクライアントを生成"
         }
       ]
     },
@@ -727,6 +762,16 @@
           "title": "Storybook：Autodocs",
           "url": "https://storybook.js.org/docs/writing-docs/autodocs",
           "note": "Storyからの文書生成"
+        },
+        {
+          "title": "Storybook：Vitest addon",
+          "url": "https://storybook.js.org/docs/writing-tests/integrations/vitest-addon",
+          "note": "StoryをVitestのテストとして実行"
+        },
+        {
+          "title": "Storybook：アクセシビリティテスト",
+          "url": "https://storybook.js.org/docs/writing-tests/accessibility-testing",
+          "note": "Story上でのaxe検証"
         }
       ],
       "tools": [
@@ -743,7 +788,22 @@
         {
           "title": "Chromatic",
           "url": "https://www.chromatic.com/",
-          "note": "ビジュアルリグレッションテスト（商用）"
+          "note": "ビジュアルリグレッションテスト（商用）。OSSの代替はstorycap＋reg-suit"
+        },
+        {
+          "title": "@storybook/addon-designs",
+          "url": "https://storybook.js.org/addons/@storybook/addon-designs",
+          "note": "StoryにFigmaのデザインを並べて表示"
+        },
+        {
+          "title": "storycap",
+          "url": "https://github.com/reg-viz/storycap",
+          "note": "全Storyのスクリーンショット取得"
+        },
+        {
+          "title": "reg-suit",
+          "url": "https://github.com/reg-viz/reg-suit",
+          "note": "スクリーンショット差分の検出と報告（OSS）"
         }
       ]
     },
@@ -763,6 +823,11 @@
           "title": "Testing Library：指針",
           "url": "https://testing-library.com/docs/guiding-principles",
           "note": "利用者視点で検証する考え方（英語）"
+        },
+        {
+          "title": "Vitest：モック",
+          "url": "https://vitest.dev/guide/mocking.html",
+          "note": "時刻、乱数、モジュールの固定と差し替え"
         }
       ],
       "tools": [
@@ -816,6 +881,11 @@
           "title": "Storybook インタラクションテスト",
           "url": "https://storybook.js.org/docs/writing-tests/interaction-testing",
           "note": "Story上での検証"
+        },
+        {
+          "title": "vitest-axe",
+          "url": "https://github.com/chaance/vitest-axe",
+          "note": "Vitestでのアクセシビリティ自動検証"
         }
       ]
     },
@@ -871,6 +941,16 @@
           "title": "Cypress：ドキュメント",
           "url": "https://docs.cypress.io/",
           "note": "代替のE2Eテストツール"
+        },
+        {
+          "title": "Playwright：テストのシャーディング",
+          "url": "https://playwright.dev/docs/test-sharding",
+          "note": "CIでの並列分割実行"
+        },
+        {
+          "title": "Playwright：スクリーンショット比較",
+          "url": "https://playwright.dev/docs/test-snapshots",
+          "note": "toHaveScreenshotによる視覚差分の検証"
         }
       ],
       "tools": [
@@ -888,6 +968,16 @@
           "title": "GitHub Actions",
           "url": "https://docs.github.com/ja/actions",
           "note": "CIでの実行と証跡の保存"
+        },
+        {
+          "title": "MagicPod",
+          "url": "https://magicpod.com/",
+          "note": "ノーコードのE2Eテスト自動化（商用）"
+        },
+        {
+          "title": "GitLab CI/CD",
+          "url": "https://docs.gitlab.com/ci/",
+          "note": "GitLabでのパイプライン実行"
         }
       ]
     },
@@ -908,6 +998,11 @@
           "url": "https://www.iso.org/standard/79430.html",
           "note": "テスト設計技法の国際規格（有償。自動到達確認の対象外）",
           "check": false
+        },
+        {
+          "title": "Martin Fowler：UnitTest",
+          "url": "https://martinfowler.com/bliki/UnitTest.html",
+          "note": "SociableテストとSolitaryテストの区別（英語）"
         }
       ],
       "tools": [
@@ -962,6 +1057,11 @@
           "url": "https://www.webpagetest.org/",
           "note": "条件を指定した詳細計測（自動到達確認の対象外）",
           "check": false
+        },
+        {
+          "title": "Lighthouse CI",
+          "url": "https://github.com/GoogleChrome/lighthouse-ci",
+          "note": "CIでの計測と基準値の判定"
         }
       ]
     },
@@ -1188,7 +1288,17 @@
         {
           "title": "Radix Primitives",
           "url": "https://www.radix-ui.com/primitives",
-          "note": "責務を絞ったアクセシブルな部品"
+          "note": "責務を絞ったアクセシブルな部品。shadcn/uiの基盤"
+        },
+        {
+          "title": "shadcn/ui",
+          "url": "https://ui.shadcn.com/docs",
+          "note": "Radixを基盤にしたUI部品集"
+        },
+        {
+          "title": "Tailwind CSS",
+          "url": "https://tailwindcss.com/docs",
+          "note": "ユーティリティクラスによるスタイリング"
         }
       ],
       "skills": [
@@ -1478,6 +1588,11 @@
           "title": "デジタル庁：デザインシステム",
           "url": "https://design.digital.go.jp/",
           "note": "一貫性の体系化の公開例"
+        },
+        {
+          "title": "Figma：バリアブルのガイド",
+          "url": "https://help.figma.com/hc/ja/articles/15339657135383",
+          "note": "デザイントークンをFigmaで一元管理"
         }
       ],
       "tools": [
@@ -1490,6 +1605,16 @@
           "title": "Style Dictionary",
           "url": "https://styledictionary.com/",
           "note": "デザイントークンの変換と配布"
+        },
+        {
+          "title": "Figma",
+          "url": "https://www.figma.com/ja-jp/",
+          "note": "デザインとトークン定義の共同編集"
+        },
+        {
+          "title": "@storybook/addon-designs",
+          "url": "https://storybook.js.org/addons/@storybook/addon-designs",
+          "note": "StoryとFigmaデザインの対照"
         }
       ],
       "skills": [
@@ -1514,6 +1639,16 @@
           "title": "Testing Library：指針",
           "url": "https://testing-library.com/docs/guiding-principles",
           "note": "頑健なテストの考え方（英語）"
+        },
+        {
+          "title": "Martin Fowler：UnitTest",
+          "url": "https://martinfowler.com/bliki/UnitTest.html",
+          "note": "SociableテストとSolitaryテストの区別（英語）"
+        },
+        {
+          "title": "Playwright：テストのシャーディング",
+          "url": "https://playwright.dev/docs/test-sharding",
+          "note": "CIでの並列分割実行"
         }
       ],
       "tools": [
@@ -1531,6 +1666,26 @@
           "title": "GitHub Actions",
           "url": "https://docs.github.com/ja/actions",
           "note": "CIでの実行と時間の記録"
+        },
+        {
+          "title": "storycap",
+          "url": "https://github.com/reg-viz/storycap",
+          "note": "全Storyのスクリーンショット取得"
+        },
+        {
+          "title": "reg-suit",
+          "url": "https://github.com/reg-viz/reg-suit",
+          "note": "スクリーンショット差分の検出と報告（OSS）"
+        },
+        {
+          "title": "MagicPod",
+          "url": "https://magicpod.com/",
+          "note": "ノーコードのE2Eテスト自動化（商用）"
+        },
+        {
+          "title": "GitLab CI/CD",
+          "url": "https://docs.gitlab.com/ci/",
+          "note": "GitLabでのパイプライン実行"
         }
       ],
       "skills": [
@@ -1613,6 +1768,11 @@
           "title": "GitHub Actions：環境",
           "url": "https://docs.github.com/ja/actions/deployment/targeting-different-environments/using-environments-for-deployment",
           "note": "デプロイ先ごとの保護と承認"
+        },
+        {
+          "title": "GitLab CI/CD：Environments",
+          "url": "https://docs.gitlab.com/ci/environments/",
+          "note": "環境ごとのデプロイと保護"
         }
       ],
       "skills": [
@@ -1637,6 +1797,11 @@
           "title": "OpenSSF Scorecard",
           "url": "https://scorecard.dev/",
           "note": "依存先の保守状況の評価（英語）"
+        },
+        {
+          "title": "pnpm Docs：pnpm audit",
+          "url": "https://pnpm.io/ja/cli/audit",
+          "note": "pnpmでの依存関係の脆弱性の確認"
         }
       ],
       "tools": [
@@ -1662,6 +1827,11 @@
           "title": "GitHub Advisory Database",
           "url": "https://github.com/advisories",
           "note": "脆弱性情報の検索"
+        },
+        {
+          "title": "Trivy",
+          "url": "https://trivy.dev/",
+          "note": "依存関係とコンテナイメージの脆弱性スキャン（OSS）"
         }
       ],
       "skills": [
@@ -1680,6 +1850,11 @@
           "title": "DORA：継続的デリバリー",
           "url": "https://dora.dev/capabilities/continuous-delivery/",
           "note": "CI/CDの能力の解説（英語）"
+        },
+        {
+          "title": "GitLab Docs：CI/CD",
+          "url": "https://docs.gitlab.com/ci/",
+          "note": "GitLabでのパイプラインの構成と運用"
         }
       ],
       "tools": [
@@ -1697,6 +1872,11 @@
           "title": "act",
           "url": "https://github.com/nektos/act",
           "note": "ワークフローのローカル実行"
+        },
+        {
+          "title": "GitLab CI/CD",
+          "url": "https://docs.gitlab.com/ci/",
+          "note": "GitLabでのパイプラインの自動化"
         }
       ],
       "skills": [

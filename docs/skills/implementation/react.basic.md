@@ -43,6 +43,7 @@ React実装の基本構成、Hooksの設計方針、共通処理、検証・レ�
 - [React：学習（日本語）](https://ja.react.dev/learn) — 公式チュートリアルと概念の解説
 - [React：リファレンス（日本語）](https://ja.react.dev/reference/react) — HooksとAPIのリファレンス
 - [React：Reactのルール（日本語）](https://ja.react.dev/reference/rules) — コンポーネントとHooksの規則
+- [Next.js：App Router](https://nextjs.org/docs/app) — Server Components、Server Actions、ルーティング
 
 **代表的なライブラリ・ツール**
 

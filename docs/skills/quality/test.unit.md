@@ -43,6 +43,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 - [Vitest：ガイド](https://vitest.dev/guide/) — Vite互換のテストランナーの公式ガイド
 - [Jest（日本語）](https://jestjs.io/ja/) — テストランナーの公式ドキュメント
 - [Testing Library：指針](https://testing-library.com/docs/guiding-principles) — 利用者視点で検証する考え方（英語）
+- [Vitest：モック](https://vitest.dev/guide/mocking.html) — 時刻、乱数、モジュールの固定と差し替え
 
 **代表的なライブラリ・ツール**
 

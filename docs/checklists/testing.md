@@ -61,12 +61,18 @@ CIで実行する各テストジョブと、取得可能なテストケース単
 - [Martin Fowler：The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) — テスト層の配分と方針の文書化（英語）
 - [Playwright：ベストプラクティス](https://playwright.dev/docs/best-practices) — 不安定なテストを減らす指針
 - [Testing Library：指針](https://testing-library.com/docs/guiding-principles) — 頑健なテストの考え方（英語）
+- [Martin Fowler：UnitTest](https://martinfowler.com/bliki/UnitTest.html) — SociableテストとSolitaryテストの区別（英語）
+- [Playwright：テストのシャーディング](https://playwright.dev/docs/test-sharding) — CIでの並列分割実行
 
 **代表的なツール・サービス**
 
 - [Vitest](https://vitest.dev/) — 単体・コンポーネントテスト
 - [Playwright](https://playwright.dev/) — E2Eテストと所要時間の記録
 - [GitHub Actions](https://docs.github.com/ja/actions) — CIでの実行と時間の記録
+- [storycap](https://github.com/reg-viz/storycap) — 全Storyのスクリーンショット取得
+- [reg-suit](https://github.com/reg-viz/reg-suit) — スクリーンショット差分の検出と報告（OSS）
+- [MagicPod](https://magicpod.com/) — ノーコードのE2Eテスト自動化（商用）
+- [GitLab CI/CD](https://docs.gitlab.com/ci/) — GitLabでのパイプライン実行
 
 **関連する要素技術**
 

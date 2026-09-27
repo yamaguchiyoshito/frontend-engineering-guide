@@ -67,7 +67,9 @@ UIコンポーネントの設計パターンが開発者間で共有されてお
 - [Vue.js](https://ja.vuejs.org/)（出典で言及） — コンポーネント指向のUIフレームワーク
 - [Angular](https://angular.dev/)（出典で言及） — コンポーネント指向のUIフレームワーク
 - [Storybook](https://storybook.js.org/) — UIコンポーネントのカタログ
-- [Radix Primitives](https://www.radix-ui.com/primitives) — 責務を絞ったアクセシブルな部品
+- [Radix Primitives](https://www.radix-ui.com/primitives) — 責務を絞ったアクセシブルな部品。shadcn/uiの基盤
+- [shadcn/ui](https://ui.shadcn.com/docs) — Radixを基盤にしたUI部品集
+- [Tailwind CSS](https://tailwindcss.com/docs) — ユーティリティクラスによるスタイリング
 
 **関連する要素技術**
 

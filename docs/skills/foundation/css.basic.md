@@ -51,5 +51,6 @@ CSSで画面の見た目とレイアウトを実装する要素技術です。�
 - [Chrome DevTools：CSSの検査](https://developer.chrome.com/docs/devtools/css?hl=ja) — 適用スタイルとボックスモデルの確認
 - [Stylelint](https://stylelint.io/) — CSSの静的検査
 - [PostCSS](https://postcss.org/) — CSSの変換とプラグイン基盤
+- [Tailwind CSS](https://tailwindcss.com/docs) — ユーティリティクラスによるスタイリング
 
 <!-- references:end -->

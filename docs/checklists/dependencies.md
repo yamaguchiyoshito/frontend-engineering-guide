@@ -77,6 +77,7 @@ DependabotやRenovateなど依存ライブラリの更新を検知する仕組�
 - [OWASP：Software Supply Chain Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet.html) — 依存関係の管理と検証の指針（英語）
 - [npm Docs：npm audit](https://docs.npmjs.com/cli/v10/commands/npm-audit) — 依存関係の脆弱性の確認
 - [OpenSSF Scorecard](https://scorecard.dev/) — 依存先の保守状況の評価（英語）
+- [pnpm Docs：pnpm audit](https://pnpm.io/ja/cli/audit) — pnpmでの依存関係の脆弱性の確認
 
 **代表的なツール・サービス**
 
@@ -84,6 +85,7 @@ DependabotやRenovateなど依存ライブラリの更新を検知する仕組�
 - [Renovate](https://docs.renovatebot.com/)（出典で言及） — 更新ポリシーを細かく設定できる自動更新
 - [Socket](https://socket.dev/) — 依存パッケージの供給元リスクの検査（自動到達確認の対象外）
 - [GitHub Advisory Database](https://github.com/advisories) — 脆弱性情報の検索
+- [Trivy](https://trivy.dev/) — 依存関係とコンテナイメージの脆弱性スキャン（OSS）
 
 **関連する要素技術**
 

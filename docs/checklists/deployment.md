@@ -72,6 +72,7 @@ Webアプリケーションが依存する外部サービスにおいてリリ�
 
 - [OpenFeature](https://openfeature.dev/) — Feature Toggleの標準API
 - [GitHub Actions：環境](https://docs.github.com/ja/actions/deployment/targeting-different-environments/using-environments-for-deployment) — デプロイ先ごとの保護と承認
+- [GitLab CI/CD：Environments](https://docs.gitlab.com/ci/environments/) — 環境ごとのデプロイと保護
 
 **関連する要素技術**
 

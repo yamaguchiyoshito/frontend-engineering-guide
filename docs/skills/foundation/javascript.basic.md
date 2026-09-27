@@ -50,5 +50,6 @@ JavaScriptの構文、関数、オブジェクト、配列を使って処理を�
 - [ESLint](https://eslint.org/) — JavaScriptの静的検査
 - [Prettier](https://prettier.io/) — コード整形
 - [Chrome DevTools：JavaScriptのデバッグ](https://developer.chrome.com/docs/devtools/javascript?hl=ja) — ブレークポイントと変数の確認
+- [pnpm](https://pnpm.io/ja/) — ディスク効率の高いパッケージ管理
 
 <!-- references:end -->

@@ -43,11 +43,16 @@ Storyの作成・更新・公開の規約とCI検証を整備し、設計・レ�
 - [Storybook：ドキュメント](https://storybook.js.org/docs) — 設定、Story、アドオンの公式ガイド
 - [Storybook：インタラクションテスト](https://storybook.js.org/docs/writing-tests/interaction-testing) — Story上での操作と検証
 - [Storybook：Autodocs](https://storybook.js.org/docs/writing-docs/autodocs) — Storyからの文書生成
+- [Storybook：Vitest addon](https://storybook.js.org/docs/writing-tests/integrations/vitest-addon) — StoryをVitestのテストとして実行
+- [Storybook：アクセシビリティテスト](https://storybook.js.org/docs/writing-tests/accessibility-testing) — Story上でのaxe検証
 
 **代表的なライブラリ・ツール**
 
 - [Storybook](https://storybook.js.org/) — コンポーネントのカタログと検証環境
 - [msw-storybook-addon](https://github.com/mswjs/msw-storybook-addon) — Story内でのAPIモック
-- [Chromatic](https://www.chromatic.com/) — ビジュアルリグレッションテスト（商用）
+- [Chromatic](https://www.chromatic.com/) — ビジュアルリグレッションテスト（商用）。OSSの代替はstorycap＋reg-suit
+- [@storybook/addon-designs](https://storybook.js.org/addons/@storybook/addon-designs) — StoryにFigmaのデザインを並べて表示
+- [storycap](https://github.com/reg-viz/storycap) — 全Storyのスクリーンショット取得
+- [reg-suit](https://github.com/reg-viz/reg-suit) — スクリーンショット差分の検出と報告（OSS）
 
 <!-- references:end -->

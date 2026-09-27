@@ -66,12 +66,14 @@ Webフロントエンド技術の知見を活かすことでCI/CDパイプライ
 
 - [GitHub Docs：GitHub Actions](https://docs.github.com/ja/actions) — パイプラインの構成と運用
 - [DORA：継続的デリバリー](https://dora.dev/capabilities/continuous-delivery/) — CI/CDの能力の解説（英語）
+- [GitLab Docs：CI/CD](https://docs.gitlab.com/ci/) — GitLabでのパイプラインの構成と運用
 
 **代表的なツール・サービス**
 
 - [GitHub Actions](https://docs.github.com/ja/actions) — パイプラインの自動化
 - [actionlint](https://github.com/rhysd/actionlint) — ワークフロー定義の静的検査
 - [act](https://github.com/nektos/act) — ワークフローのローカル実行
+- [GitLab CI/CD](https://docs.gitlab.com/ci/) — GitLabでのパイプラインの自動化
 
 **関連する要素技術**
 
