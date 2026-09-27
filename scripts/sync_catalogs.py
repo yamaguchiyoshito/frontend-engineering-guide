@@ -2,21 +2,23 @@
 from common import *
 import sys
 
+def skill_table(path,area):
+ rows=[]
+ for p in PAGES:
+  if p['kind']=='skill' and p['area']==area:
+   label,prerequisite=re.search(r'\*\*(評価対象|主な前提)：\*\* (.+)',body(p['path'])).groups()
+   rows.append((label,f'| `{p["skillId"]}` | [{p["title"]}]({rel(path,p["path"])}) | {prerequisite.strip()} |'))
+ labels={label for label,_ in rows};header=labels.pop() if len(labels)==1 else '評価対象・主な前提'
+ return [f'| スキルID | スキル | {header} |','| :--- | :--- | :--- |']+[row for _,row in rows]
+
 def catalog(page):
  path=page['path'];kind=page['kind'];out=[]
  if kind=='skill-index':
-  out=['| 領域 | スキル数 |','| :--- | :---: |']
   for area in MAP['areas']:
    target=f'skills/{area["id"]}/index.md';count=sum(p['kind']=='skill' and p['area']==area['id'] for p in PAGES)
-   out.append(f'| [{area["title"]}]({rel(path,target)}) | {count} |')
+   out += ['',f'## {area["title"]}（{count}スキル）','']+skill_table(path,area['id'])
  elif kind=='area':
-  rows=[]
-  for p in PAGES:
-   if p['kind']=='skill' and p['area']==page['area']:
-    label,prerequisite=re.search(r'\*\*(評価対象|主な前提)：\*\* (.+)',body(p['path'])).groups()
-    rows.append((label,f'| `{p["skillId"]}` | [{p["title"]}]({rel(path,p["path"])}) | {prerequisite.strip()} |'))
-  labels={label for label,_ in rows};header=labels.pop() if len(labels)==1 else '評価対象・主な前提'
-  out=[f'| スキルID | スキル | {header} |','| :--- | :--- | :--- |']+[row for _,row in rows]
+  out=skill_table(path,page['area'])
  elif kind=='checklist-index':
   section=None
   for p in PAGES:
