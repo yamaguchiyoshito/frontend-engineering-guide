@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 2. ユーザー体験を支える品質  
 **小テーマ：** 2-2 アクセシビリティ
 
+<!-- terms:start -->
+
+**前提となる用語：** [アクセシビリティ](../guide/glossary.md#アクセシビリティ)、[WCAG](../guide/glossary.md#wcag)、[支援技術とスクリーンリーダー](../guide/glossary.md#支援技術とスクリーンリーダー)、[セマンティックHTML](../guide/glossary.md#セマンティックhtml)、[Lighthouse](../guide/glossary.md#lighthouse)
+
+<!-- terms:end -->
+
 ## 2-2-1：メトリクスの計測
 
 Lighthouseやaxe-coreなどを利用した自動アクセシビリティテストを日常的（日ごと〜週ごと）に実施している。

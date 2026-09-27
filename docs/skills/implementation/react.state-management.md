@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [フレームワーク・実装領域](index.md)  
 **主な前提：** React、非同期処理
 
+<!-- terms:start -->
+
+**前提となる用語：** [React](../../guide/glossary.md#react)、[propsと状態](../../guide/glossary.md#propsと状態)、[状態管理](../../guide/glossary.md#状態管理)、[非同期処理](../../guide/glossary.md#非同期処理)、[キャッシュ](../../guide/glossary.md#キャッシュ)、[楽観的更新](../../guide/glossary.md#楽観的更新)
+
+<!-- terms:end -->
+
 画面の状態をどこに置き、どう更新するかを設計する要素技術です。ローカル、共有、URL、サーバー由来の状態を区別し、同期、キャッシュ、楽観的更新、部分的な失敗を含む遷移を扱えるかを評価します。
 
 ## Lv0

@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 1. 持続可能な技術スタック  
 **小テーマ：** 1-2 開発環境
 
+<!-- terms:start -->
+
+**前提となる用語：** [環境](../guide/glossary.md#環境)、[ビルドとバンドル](../guide/glossary.md#ビルドとバンドル)、[Lintと静的検査](../guide/glossary.md#lintと静的検査)、[モック](../guide/glossary.md#モック)、[CI](../guide/glossary.md#ci)
+
+<!-- terms:end -->
+
 ## 1-2-1：メトリクスの計測
 
 ビルド時間、テスト実行時間、デプロイ時間などのメトリクスを取り、それらを元に定期的（月ごと〜半年ごと）に開発効率の改善を計画・実施している。

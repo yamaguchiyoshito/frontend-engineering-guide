@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 4. 効果的なシステム設計  
 **小テーマ：** 4-3 キャッシュ
 
+<!-- terms:start -->
+
+**前提となる用語：** [キャッシュ](../guide/glossary.md#キャッシュ)、[CDN](../guide/glossary.md#cdn)、[HTTP](../guide/glossary.md#http)、[ステータスコード](../guide/glossary.md#ステータスコード)
+
+<!-- terms:end -->
+
 ## 4-3-1：メトリクスの計測
 
 計測可能なキャッシュヒット率について、定期的（月ごと〜半年ごと）に改善のためのアクションを検討している。

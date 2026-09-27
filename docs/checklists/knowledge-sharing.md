@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 5. 成長できるチーム  
 **小テーマ：** 5-1 専門性の育成
 
+<!-- terms:start -->
+
+**前提となる用語：** [イネーブリング](../guide/glossary.md#イネーブリング)、[デザインシステムとデザイントークン](../guide/glossary.md#デザインシステムとデザイントークン)、[ADR](../guide/glossary.md#adr)、[Storybook](../guide/glossary.md#storybook)
+
+<!-- terms:end -->
+
 ## 5-1-1：メトリクスの計測
 
 複数の開発チームがあるとき、使用技術や問題点を互いに共有をする機会を定期的（月ごと〜半年ごと）に設けている。

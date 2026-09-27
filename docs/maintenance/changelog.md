@@ -5,6 +5,13 @@ description: "本ガイドの版ごとの変更内容。"
 
 # 改訂履歴
 
+## 1.2.13 — 2026年9月27日
+
+- フロントエンド開発に不慣れな読者向けに、使い方ガイドへ「フロントエンド開発の前提知識」（フロントエンドとバックエンド、画面が表示されるまで、HTML・CSS・JavaScriptの役割、チーム開発の流れ）と「用語集」（92語、5分類）を追加。
+- 28の要素技術ページ、25の小テーマページ、使い方ガイド3ページの冒頭に「前提となる用語」を追加し、用語集の該当見出しへリンク。用語と対応は `build/glossary.json` で管理し、`docs:sync` で展開、`docs:check` で参照を検査。
+- トップページの「はじめて使う方へ」を、不慣れな方向けと評価担当者向けの二つの読み順に分割。PR／MRの表記の注記を前提知識ページへ移動。
+- 到達状態、チェック項目、回答例の変更なし。
+
 ## 1.2.12 — 2026年9月27日
 
 - 参考リンクを追加・更新。要素技術14ページと小テーマ6ページに、Next.js App Router、Tailwind CSS、shadcn/ui、Figma、Storybook 10のVitest addonとアクセシビリティテスト、@storybook/addon-designs、vitest-axe、pnpm、openapi-zod-client、Trivy、GitLab CI/CDとMerge Requests、Playwrightのシャーディングとスクリーンショット比較、Martin FowlerのSociable／Solitaryテストの区別、MagicPod、OSSのビジュアルリグレッションテスト（storycap、reg-suit）などを追加。Radix PrimitivesとChromaticの注記を更新。

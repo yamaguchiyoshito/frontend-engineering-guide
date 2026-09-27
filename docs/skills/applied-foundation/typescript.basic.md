@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [応用基礎領域](index.md)  
 **主な前提：** JavaScript
 
+<!-- terms:start -->
+
+**前提となる用語：** [JavaScript](../../guide/glossary.md#javascript)、[TypeScript](../../guide/glossary.md#typescript)、[型検査](../../guide/glossary.md#型検査)、[ビルドとバンドル](../../guide/glossary.md#ビルドとバンドル)
+
+<!-- terms:end -->
+
 TypeScriptの型でプログラムの入出力と状態を表現する要素技術です。ユニオン型や型の絞り込みを使い、外部データの実行時確認と型定義を整合させ、あり得ない状態を型で防げるかを評価します。
 
 ## Lv0

@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [応用基礎領域](index.md)  
 **主な前提：** JavaScript
 
+<!-- terms:start -->
+
+**前提となる用語：** [JavaScript](../../guide/glossary.md#javascript)、[DOM](../../guide/glossary.md#dom)、[イベント](../../guide/glossary.md#イベント)、[レンダリング](../../guide/glossary.md#レンダリング)
+
+<!-- terms:end -->
+
 DOMの操作とイベント処理を実装する要素技術です。イベントの伝播と既定動作、動的な要素、フォーカス移動を扱い、解除漏れや外部ライブラリとの干渉を分析できるかを評価します。
 
 ## Lv0

@@ -33,6 +33,12 @@
       "handbook": true
     },
     {
+      "path": "guide/prerequisites.md",
+      "title": "フロントエンド開発の前提知識",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
       "path": "guide/individual-assessment.md",
       "title": "個人の習熟度を評価する",
       "kind": "guide",
@@ -47,6 +53,12 @@
     {
       "path": "guide/improvement.md",
       "title": "評価結果を改善につなげる",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
+      "path": "guide/glossary.md",
+      "title": "用語集",
       "kind": "guide",
       "handbook": true
     },

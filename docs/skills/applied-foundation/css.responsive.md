@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [応用基礎領域](index.md)  
 **主な前提：** CSS
 
+<!-- terms:start -->
+
+**前提となる用語：** [CSS](../../guide/glossary.md#css)、[レスポンシブデザイン](../../guide/glossary.md#レスポンシブデザイン)、[FlexboxとGrid](../../guide/glossary.md#flexboxとgrid)、[開発者ツール](../../guide/glossary.md#開発者ツール)
+
+<!-- terms:end -->
+
 画面幅、向き、文字量、操作方法の違いに応じてレイアウトを設計する要素技術です。コンテンツの優先順位から表示の切り替えを決め、固定値に依存しない実装へ改善できるかを評価します。
 
 ## Lv0

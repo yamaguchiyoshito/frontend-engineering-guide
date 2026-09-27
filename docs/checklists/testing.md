@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 3. 安定的なデリバリー  
 **小テーマ：** 3-1 テスト
 
+<!-- terms:start -->
+
+**前提となる用語：** [テストピラミッド](../guide/glossary.md#テストピラミッド)、[単体テスト](../guide/glossary.md#単体テスト)、[コンポーネントテスト](../guide/glossary.md#コンポーネントテスト)、[結合テスト](../guide/glossary.md#結合テスト)、[E2Eテスト](../guide/glossary.md#e2eテスト)、[CI](../guide/glossary.md#ci)、[不安定なテスト](../guide/glossary.md#不安定なテスト)、[カバレッジ](../guide/glossary.md#カバレッジ)
+
+<!-- terms:end -->
+
 ## 3-1-1：メトリクスの計測
 
 CIにおける各種テストの所要時間が常に記録されていて必要なときに参照できる状態にある。

@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [フレームワーク・実装領域](index.md)  
 **主な前提：** React、UI実装
 
+<!-- terms:start -->
+
+**前提となる用語：** [React](../../guide/glossary.md#react)、[コンポーネント](../../guide/glossary.md#コンポーネント)、[propsと状態](../../guide/glossary.md#propsと状態)、[Storybook](../../guide/glossary.md#storybook)、[アクセシビリティ](../../guide/glossary.md#アクセシビリティ)
+
+<!-- terms:end -->
+
 コンポーネントの責務と境界を設計する要素技術です。表示、業務処理、状態の役割を分け、利用側が理解できるpropsとイベントを定め、共通化の範囲と拡張性を判断できるかを評価します。
 
 ## Lv0

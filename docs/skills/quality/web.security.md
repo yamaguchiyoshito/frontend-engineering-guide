@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [品質・高度化領域](index.md)  
 **主な前提：** Web基礎、JavaScript、API連携
 
+<!-- terms:start -->
+
+**前提となる用語：** [脆弱性](../../guide/glossary.md#脆弱性)、[XSS](../../guide/glossary.md#xss)、[CSP](../../guide/glossary.md#csp)、[クロスオリジンとCORS](../../guide/glossary.md#クロスオリジンとcors)、[機密情報とシークレット管理](../../guide/glossary.md#機密情報とシークレット管理)、[認証と認可](../../guide/glossary.md#認証と認可)
+
+<!-- terms:end -->
+
 Webアプリケーションの代表的なリスクを理解し、対策を実装する要素技術です。XSS、CSRF、認可漏れ、機密情報の露出を実装箇所と結び付け、データの流れと信頼境界から脅威を評価できるかを評価します。
 
 ## Lv0

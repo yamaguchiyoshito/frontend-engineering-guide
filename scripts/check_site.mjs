@@ -24,7 +24,7 @@ const server = createServer(async (req, res) => {
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const origin = `http://127.0.0.1:${server.address().port}`;
 const url = origin + base;
-const results = { base, pages: 76, definitions: 140, checklistItems: 100, checks: [] };
+const results = { base, pages: 78, definitions: 140, checklistItems: 100, checks: [] };
 let browser;
 try {
   browser = await chromium.launch({ headless: true, ...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH, args: JSON.parse(process.env.PLAYWRIGHT_CHROMIUM_ARGS || '["--no-sandbox","--disable-dev-shm-usage"]') } : {}) });
@@ -40,10 +40,10 @@ try {
   await page.screenshot({ path: 'artifacts/home-desktop.png', fullPage: true });
   results.checks.push('desktop home and navigation');
 
-  for (const [route, heading] of [['skills/implementation/react.form.html#lv3', 'フォーム実装'], ['checklists/security.html#_2-3-1-メトリクスの計測', 'セキュリティ']]) {
+  for (const [route, heading, anchor] of [['skills/implementation/react.form.html#lv3', 'フォーム実装', 'lv3'], ['checklists/security.html#_2-3-1-メトリクスの計測', 'セキュリティ', '_2-3-1-メトリクスの計測'], ['guide/glossary.html#カスケードと詳細度', '用語集', 'カスケードと詳細度']]) {
     await page.goto(url + route); await page.reload();
     await expect(page.locator('h1')).toHaveText(heading);
-    await expect(page.locator(route.includes('lv3') ? '#lv3' : '[id="_2-3-1-メトリクスの計測"]')).toBeVisible();
+    await expect(page.locator(`[id="${anchor.normalize("NFKD")}"]`)).toBeVisible(); // VitePress keeps heading ids in NFKD
   }
   results.checks.push('deep links, anchor navigation and refresh');
 

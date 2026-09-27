@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [応用基礎領域](index.md)  
 **主な前提：** Git
 
+<!-- terms:start -->
+
+**前提となる用語：** [Git](../../guide/glossary.md#git)、[ブランチ](../../guide/glossary.md#ブランチ)、[マージ](../../guide/glossary.md#マージ)、[Pull RequestとMerge Request](../../guide/glossary.md#pull-requestとmerge-request)、[コードレビュー](../../guide/glossary.md#コードレビュー)、[CI](../../guide/glossary.md#ci)
+
+<!-- terms:end -->
+
 Pull Requestとレビューを通じてチームで開発を進める要素技術です。レビュー可能な単位で変更を分け、CIの確認と指摘対応を行い、複数人・複数ブランチの変更を調整できるかを評価します。
 
 ## Lv0

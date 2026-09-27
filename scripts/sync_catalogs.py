@@ -54,8 +54,34 @@ def references(page):
   out += ['','**関連する要素技術**','','- '+'、'.join(items)]
  return '\n'.join(out)
 
+GLOSSARY=json.loads((ROOT/'build/glossary.json').read_text())
+TERMS={t['id']:t for t in GLOSSARY['terms']}
+GLOSSARY_PATH='guide/glossary.md'
+def related(path,ref):
+ """Resolve a glossary 'see' entry (skill ID, checklist source ID or page path) to a link."""
+ for p in PAGES:
+  if p.get('skillId')==ref:return f'[{p["title"]}]({rel(path,p["path"])})'
+  if p.get('sourceId')==ref:return f'[{p["sourceId"]} {p["title"]}]({rel(path,p["path"])})'
+  if p['path']==ref:return f'[{p["title"]}]({rel(path,p["path"])})'
+ raise ValueError(f'glossary: unknown reference {ref}')
+def glossary(page):
+ if page['path']!=GLOSSARY_PATH:return None
+ path=page['path'];out=[GLOSSARY['note']]
+ for category in GLOSSARY['categories']:
+  out += ['',f'## {category}']
+  for t in GLOSSARY['terms']:
+   if t['category']!=category:continue
+   out += ['',f'### {t["term"]}','',t['definition']]
+   if t.get('see'):out += ['','関連：'+'、'.join(related(path,ref) for ref in t['see'])]
+ return '\n'.join(out)
+def terms(page):
+ ids=GLOSSARY['pages'].get(page['path'])
+ if not ids:return None
+ target=rel(page['path'],GLOSSARY_PATH)
+ return '**前提となる用語：** '+'、'.join(f'[{TERMS[i]["term"]}]({target}#{slug(TERMS[i]["term"])})' for i in ids)
+
 def blocks(page):
- for marker,value in [('catalog',catalog(page)),('references',references(page))]:
+ for marker,value in [('catalog',catalog(page)),('references',references(page)),('terms',terms(page)),('glossary',glossary(page))]:
   if value is not None:yield marker,value
 
 def sync(check=False):

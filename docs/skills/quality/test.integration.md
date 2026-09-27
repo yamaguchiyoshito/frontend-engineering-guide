@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [品質・高度化領域](index.md)  
 **主な前提：** React、API連携
 
+<!-- terms:start -->
+
+**前提となる用語：** [結合テスト](../../guide/glossary.md#結合テスト)、[モック](../../guide/glossary.md#モック)、[API](../../guide/glossary.md#api)、[不安定なテスト](../../guide/glossary.md#不安定なテスト)
+
+<!-- terms:end -->
+
 画面、状態管理、APIなど複数の部品を結合して検証する要素技術です。結合範囲と実物とモックの境界を明示し、機能横断の状態遷移や部分失敗を検証して障害箇所を切り分けられるかを評価します。
 
 ## Lv0

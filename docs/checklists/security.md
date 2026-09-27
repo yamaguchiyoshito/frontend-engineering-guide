@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 2. ユーザー体験を支える品質  
 **小テーマ：** 2-3 セキュリティ
 
+<!-- terms:start -->
+
+**前提となる用語：** [脆弱性](../guide/glossary.md#脆弱性)、[SAST](../guide/glossary.md#sast)、[CI](../guide/glossary.md#ci)、[サプライチェーン](../guide/glossary.md#サプライチェーン)、[依存関係の更新検知](../guide/glossary.md#依存関係の更新検知)、[機密情報とシークレット管理](../guide/glossary.md#機密情報とシークレット管理)
+
+<!-- terms:end -->
+
 ## 2-3-1：メトリクスの計測
 
 SASTに相当する静的検査がPull Requestごとに実行されて一定の基準を満たさないコードが混入しない仕組みになっている。

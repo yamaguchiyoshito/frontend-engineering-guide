@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [基礎領域](index.md)  
 **評価対象：** branch、commit、merge、rebase
 
+<!-- terms:start -->
+
+**前提となる用語：** [Git](../../guide/glossary.md#git)、[リポジトリ](../../guide/glossary.md#リポジトリ)、[コミット](../../guide/glossary.md#コミット)、[ブランチ](../../guide/glossary.md#ブランチ)、[マージ](../../guide/glossary.md#マージ)
+
+<!-- terms:end -->
+
 Gitで変更履歴を管理する要素技術です。branch、commit、merge、rebaseの操作と違いを理解し、競合の解消や誤った変更からの復旧を、他者の作業に影響を与えずに行えるかを評価します。
 
 ## Lv0

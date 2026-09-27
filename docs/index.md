@@ -13,12 +13,15 @@ description: "個人の習熟度（28の要素技術、Lv0〜Lv4）とチーム�
 
 ## はじめて使う方へ
 
-[全体像](guide/overview.md) → [個人の評価](guide/individual-assessment.md) → [チームの確認](guide/team-assessment.md) → [改善への接続](guide/improvement.md)の順に読むと、評価と改善の進め方を理解できます。
+**フロントエンド開発に不慣れな方**は、[前提知識](guide/prerequisites.md)でブラウザとサーバーの関係やチーム開発の流れを確認し、分からない用語は[用語集](guide/glossary.md)で調べながら、[基礎領域](skills/foundation/index.md)の要素技術から読み進めてください。
+
+**評価を担当する方**は、[全体像](guide/overview.md) → [個人の評価](guide/individual-assessment.md) → [チームの確認](guide/team-assessment.md) → [改善への接続](guide/improvement.md)の順に読むと、評価と改善の進め方を理解できます。
 
 ## 目的から探す
 
 | 行いたいこと | 参照するページ |
 | :--- | :--- |
+| 用語の意味を確認する | [用語集](guide/glossary.md)・[前提知識](guide/prerequisites.md) |
 | 自分の実行できる範囲を確認する | [要素技術：28の要素技術のLv0〜Lv4](skills/index.md) |
 | チームの仕組みを見直す | [チームチェック：出典の分類による100項目と回答例](checklists/index.md) |
 | 評価と改善を記録する | [空の書式](templates/index.md)・[記入例](examples/index.md) |
