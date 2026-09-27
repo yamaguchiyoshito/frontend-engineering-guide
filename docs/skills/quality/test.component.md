@@ -49,5 +49,6 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 - [Testing Library](https://testing-library.com/) — 利用者視点の要素特定と操作
 - [user-event](https://testing-library.com/docs/user-event/intro) — 実際の操作に近いイベント発火
 - [Storybook インタラクションテスト](https://storybook.js.org/docs/writing-tests/interaction-testing) — Story上での検証
+- [vitest-axe](https://github.com/chaance/vitest-axe) — Vitestでのアクセシビリティ自動検証
 
 <!-- references:end -->

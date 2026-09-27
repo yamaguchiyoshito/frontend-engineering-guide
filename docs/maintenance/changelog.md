@@ -5,6 +5,11 @@ description: "本ガイドの版ごとの変更内容。"
 
 # 改訂履歴
 
+## 1.2.12 — 2026年9月27日
+
+- 参考リンクを追加・更新。要素技術14ページと小テーマ6ページに、Next.js App Router、Tailwind CSS、shadcn/ui、Figma、Storybook 10のVitest addonとアクセシビリティテスト、@storybook/addon-designs、vitest-axe、pnpm、openapi-zod-client、Trivy、GitLab CI/CDとMerge Requests、Playwrightのシャーディングとスクリーンショット比較、Martin FowlerのSociable／Solitaryテストの区別、MagicPod、OSSのビジュアルリグレッションテスト（storycap、reg-suit）などを追加。Radix PrimitivesとChromaticの注記を更新。
+- 到達状態、チェック項目、回答例の変更なし。
+
 ## 1.2.11 — 2026年9月27日
 
 - 全体像ページから「領域」の節（4領域の表）を削除。要素技術の一覧ページと重複するため、概念の説明に一文を残し一覧へのリンクに置き換え。

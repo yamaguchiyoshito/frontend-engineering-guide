@@ -47,7 +47,8 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **代表的なライブラリ・ツール**
 
 - [Storybook](https://storybook.js.org/) — コンポーネントの単独開発とカタログ化
-- [Radix Primitives](https://www.radix-ui.com/primitives) — スタイルなしのアクセシブルな部品
+- [Radix Primitives](https://www.radix-ui.com/primitives) — スタイルなしのアクセシブルな部品。shadcn/uiの基盤
 - [React Aria](https://react-spectrum.adobe.com/react-aria/) — アクセシブルなUI部品を作るHooks群
+- [shadcn/ui](https://ui.shadcn.com/docs) — Radixを基盤にした複製して使うUI部品集
 
 <!-- references:end -->

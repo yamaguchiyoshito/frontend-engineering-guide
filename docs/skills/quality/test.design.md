@@ -43,6 +43,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 - [JSTQB](https://jstqb.jp/) — テスト技術者資格制度。シラバスと用語集を公開（日本語）
 - [Martin Fowler：The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) — テスト層の配分（英語）
 - [ISO/IEC/IEEE 29119-4：テスト技法](https://www.iso.org/standard/79430.html) — テスト設計技法の国際規格（有償。自動到達確認の対象外）
+- [Martin Fowler：UnitTest](https://martinfowler.com/bliki/UnitTest.html) — SociableテストとSolitaryテストの区別（英語）
 
 **代表的なライブラリ・ツール**
 

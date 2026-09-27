@@ -43,11 +43,15 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 - [Playwright：ドキュメント](https://playwright.dev/docs/intro) — 導入からCI実行までの公式ガイド
 - [Playwright：ベストプラクティス](https://playwright.dev/docs/best-practices) — 安定した要素特定と待機の指針
 - [Cypress：ドキュメント](https://docs.cypress.io/) — 代替のE2Eテストツール
+- [Playwright：テストのシャーディング](https://playwright.dev/docs/test-sharding) — CIでの並列分割実行
+- [Playwright：スクリーンショット比較](https://playwright.dev/docs/test-snapshots) — toHaveScreenshotによる視覚差分の検証
 
 **代表的なライブラリ・ツール**
 
 - [Playwright](https://playwright.dev/) — 複数ブラウザ対応のE2Eテスト
 - [Cypress](https://www.cypress.io/) — ブラウザ内で動くE2Eテスト
 - [GitHub Actions](https://docs.github.com/ja/actions) — CIでの実行と証跡の保存
+- [MagicPod](https://magicpod.com/) — ノーコードのE2Eテスト自動化（商用）
+- [GitLab CI/CD](https://docs.gitlab.com/ci/) — GitLabでのパイプライン実行
 
 <!-- references:end -->

@@ -79,11 +79,14 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 - [Design Tokens Format Module](https://tr.designtokens.org/format/) — デザイントークンの標準形式（英語）
 - [MDN：レスポンシブデザイン](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)（出典で言及） — レスポンシブWebデザインの基礎
 - [デジタル庁：デザインシステム](https://design.digital.go.jp/) — 一貫性の体系化の公開例
+- [Figma：バリアブルのガイド](https://help.figma.com/hc/ja/articles/15339657135383) — デザイントークンをFigmaで一元管理
 
 **代表的なツール・サービス**
 
 - [Storybook](https://storybook.js.org/) — UIのバリエーションの棚卸し
 - [Style Dictionary](https://styledictionary.com/) — デザイントークンの変換と配布
+- [Figma](https://www.figma.com/ja-jp/) — デザインとトークン定義の共同編集
+- [@storybook/addon-designs](https://storybook.js.org/addons/@storybook/addon-designs) — StoryとFigmaデザインの対照
 
 **関連する要素技術**
 

@@ -50,5 +50,6 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 - [PageSpeed Insights](https://pagespeed.web.dev/) — 実利用データを含む診断
 - [web-vitals](https://github.com/GoogleChrome/web-vitals) — 実利用の指標を計測するライブラリ
 - [WebPageTest](https://www.webpagetest.org/) — 条件を指定した詳細計測（自動到達確認の対象外）
+- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) — CIでの計測と基準値の判定
 
 <!-- references:end -->

@@ -49,5 +49,6 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 - [Zod](https://zod.dev/) — スキーマ定義と型の導出
 - [Valibot](https://valibot.dev/) — 軽量なスキーマ検証ライブラリ
 - [openapi-typescript](https://openapi-ts.dev/) — API仕様と型定義の整合
+- [openapi-zod-client](https://github.com/astahmer/openapi-zod-client) — OpenAPIからZodスキーマとクライアントを生成
 
 <!-- references:end -->

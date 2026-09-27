@@ -50,5 +50,6 @@ APIクライアント、型生成・契約確認、共通エラー処理、通�
 - [Mock Service Worker](https://mswjs.io/) — ネットワーク層でのAPIモック
 - [openapi-typescript](https://openapi-ts.dev/) — OpenAPIからの型生成
 - [orval](https://orval.dev/) — OpenAPIからのクライアントと型の生成
+- [openapi-zod-client](https://github.com/astahmer/openapi-zod-client) — OpenAPIからZodスキーマとクライアントを生成
 
 <!-- references:end -->
