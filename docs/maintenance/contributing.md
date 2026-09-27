@@ -15,6 +15,7 @@ description: "正本のファイル、ローカルでの確認手順、Pull Requ
 | 記録書式 | `docs/templates/*.md` のテンプレート欄 |
 | 要素技術・小テーマの参考リンク | `build/references.json`（`docs:sync` で各ページへ展開） |
 | 用語集と各ページの「前提となる用語」 | `build/glossary.json`（`docs:sync` で用語集ページと各ページ冒頭へ展開） |
+| 図 | Markdownの ```mermaid コードブロック（サイトでは `vitepress-plugin-mermaid` が描画。単一MarkdownではGitHubがそのまま描画） |
 | ページの追加・順序・分類 | `build/document-map.json` |
 | 公開版 | `package.json` のversion・このサイトの改訂履歴 |
 

@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 import container from 'markdown-it-container'
 import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
@@ -27,7 +28,7 @@ const checks = [
 const forms = [{ text: '記録書式', link: '/templates/', items: by('template').map(item) }, { text: '記入例', link: '/examples/', items: by('example').map(item) }, { text: 'ダウンロード', link: '/downloads', items: [] }]
 const maintenance = [{ text: '運用・改訂', items: by('maintenance').map(item) }]
 const ordered = pages.filter((p: any) => p.handbook)
-export default defineConfig({
+export default withMermaid(defineConfig({
   lang: 'ja-JP', title: 'フロントエンド開発ガイド', titleTemplate: ':title | 開発ガイド',
   description: '28の要素技術の習熟度と100項目のチームチェック。共通の基準で評価し、育成と開発環境の改善につなげます。',
   base, cleanUrls: false, appearance: true,
@@ -115,4 +116,4 @@ export default defineConfig({
       }
     }
   }
-})
+}))

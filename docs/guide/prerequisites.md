@@ -31,6 +31,26 @@ Webアプリケーションは、利用者の手元で動く部分と、遠く�
 | 5 | JavaScriptが動き始め、ボタンや入力欄などの操作を受け付けられるようになります。 | JavaScript、イベント |
 | 6 | 利用者の操作に応じて、JavaScriptがAPIを呼び出してデータを取得・更新し、画面の一部を書き換えます。 | API、非同期処理、状態管理 |
 
+同じ流れを、利用者、ブラウザ、サーバーの間のやり取りとして示します。実線の矢印が要求、破線の矢印が応答です。
+
+```mermaid
+sequenceDiagram
+    actor U as 利用者
+    participant B as ブラウザ
+    participant S as サーバー
+    U->>B: URLを入力する、またはリンクを押す
+    B->>S: HTTPリクエスト（GET /）
+    S-->>B: HTTPレスポンス（200、HTML）
+    B->>S: HTML内で参照されたCSSとJavaScriptを要求
+    S-->>B: CSSとJavaScript
+    Note over B: HTMLからDOMを作り、CSSを当てて画面を描く
+    Note over B: JavaScriptが動き始め、操作を受け付ける
+    U->>B: ボタンを押す
+    B->>S: APIを呼び出す（GET /api/items）
+    S-->>B: JSON
+    Note over B: 受け取ったデータで画面の一部を書き換える
+```
+
 3までが通信、4と5が描画、6以降が画面上の動作です。表示が遅い、表示が崩れる、操作しても反応しないという不具合は、どの段階で起きているかを切り分けると原因に近づけます。ブラウザの開発者ツールは、この各段階を確認するための道具です。
 
 ## HTML・CSS・JavaScriptの役割
