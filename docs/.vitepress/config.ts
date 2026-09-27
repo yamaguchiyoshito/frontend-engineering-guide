@@ -21,7 +21,7 @@ const skills = [
 ]
 const checks = [
   { text: 'チームチェック', link: '/checklists/', items: [] },
-  ...['設計・開発', '品質', '開発・運用', '組織・連携'].map(section => ({ text: section, collapsed: true, items: by('checklist').filter((p: any) => p.section === section).map((p: any) => ({ text: `${p.numbers[0]}–${p.numbers[3]} ${p.title}`, link: url(p) })) }))
+  ...[...new Set(by('checklist').map((p: any) => p.section as string))].map(section => ({ text: section, collapsed: true, items: by('checklist').filter((p: any) => p.section === section).map((p: any) => ({ text: `${p.sourceId} ${p.title}`, link: url(p) })) }))
 ]
 const forms = [{ text: '記録書式', link: '/templates/', items: by('template').map(item) }, { text: '記入例', link: '/examples/', items: by('example').map(item) }, { text: 'ダウンロード', link: '/downloads', items: [] }]
 const maintenance = [{ text: '運用・改訂', items: by('maintenance').map(item) }]
@@ -63,7 +63,7 @@ export default defineConfig({
     sidebarMenuLabel: '目次', returnToTopLabel: 'ページの先頭へ',
     darkModeSwitchLabel: '表示モード', lightModeSwitchTitle: 'ライトモード', darkModeSwitchTitle: 'ダークモード',
     skipToContentLabel: '本文へ移動',
-    footer: { message: '公開基準・空の書式・架空の回答例', copyright: `文書版 ${version}` },
+    footer: { message: 'チェック項目の原文：一般社団法人日本CTO協会「<a href="https://dxcriteria.cto-a.org/frontend" target="_blank" rel="noopener">Webフロントエンド版DX Criteria</a>」（<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener">CC BY-SA 4.0</a>）', copyright: `本ガイド全体：<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener">CC BY-SA 4.0</a> · 公開基準・空の書式・架空の回答例 · 文書版 ${version}` },
     search: {
       provider: 'local',
       options: {
