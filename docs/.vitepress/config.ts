@@ -89,9 +89,6 @@ export default defineConfig({
                   if (i + 1 < chars.length) terms.add(chars[i] + chars[i + 1])
                 }
               }
-              for (const match of input.matchAll(/\b(?:c|no\.?\s*)?(\d{3})\b/g)) {
-                terms.add(match[1]); terms.add('c' + match[1])
-              }
               return [...terms]
             },
             processTerm: (term: string) => term.toLowerCase()

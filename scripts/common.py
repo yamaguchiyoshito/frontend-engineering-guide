@@ -9,9 +9,12 @@ def body(path):
  text=(DOCS/path).read_text()
  return re.sub(r'\A---\n.*?\n---\n','',text,count=1,flags=re.S).strip()
 def slug(text):
- text=re.sub(r'<[^>]+>','',text).strip().lower()
- text=re.sub(r'[^\w\-\s\u0080-\uffff]','',text)
- return re.sub(r'\s+','-',text)
+ """Match VitePress heading anchors (@mdit-vue/shared slugify) so links written for the site resolve in the handbook."""
+ text=unicodedata.normalize('NFKD',re.sub(r'<[^>]+>','',text).strip())
+ text=re.sub(r'[\u0300-\u036f]','',text);text=re.sub(r'[\x00-\x1f]','',text)
+ text=re.sub(r'[\s~`!@#$%^&*()\-_+=\[\]{}|\\;:"\'<>,.?/]+','-',text)
+ text=re.sub(r'-{2,}','-',text).strip('-')
+ return re.sub(r'^(\d)',r'_\1',text).lower()
 def page_id(path):return path.removesuffix('.md').replace('/','-').replace('.','-')
 def rel(source,target):return os.path.relpath(target,Path(source).parent).replace('\\','/')
 def commit():
@@ -21,12 +24,15 @@ def without_code(text):return re.sub(r'```.*?```','',text,flags=re.S)
 def definition_data(page):
  text=body(page['path'])
  return {lv:definition.strip() for lv,definition in re.findall(r'^## (Lv[0-4])\n\n(.*?)(?=^## |\Z)',text,re.M|re.S)}
+def item_number(sid):
+ """Sequential key (001-100) for a source ID like 2-3-1, used only for the migration baseline."""
+ t,s,k=(int(x) for x in sid.split('-'));return f'{(t-1)*20+(s-1)*4+k:03}'
 def checklist_data(page):
  text=body(page['path']);result={}
- for num,section in re.findall(r'^## C(\d{3})\n\n(.*?)(?=^## C\d{3}|\Z)',text,re.M|re.S):
-  m=re.search(r'\*\*チェック項目 No\.\d{3}[^*\n]*\*\*\n\n(.*?)\n\n(?:\*\*原典の補足\*\*\n\n.*?\n\n)?### 望ましい回答例\n\n(.*?)\n\n\[原文の参照先\]\((https://[^)]+)\)',section,re.S)
-  if not m:raise ValueError(f'{page["path"]}: C{num}の構造を確認してください')
-  criterion,answer,url=m.groups()
+ for sid,section in re.findall(r'^## (\d-\d-\d)：[^\n]+\n\n(.*?)(?=^## \d-\d-\d：|\Z)',text,re.M|re.S):
+  m=re.match(r'(.*?)\n\n(?:\*\*補足\*\*\n\n.*?\n\n)?### 望ましい回答例\n\n(.*?)\n\n\[原文の参照先\]\((https://[^)]+)\)',section,re.S)
+  if not m:raise ValueError(f'{page["path"]}: {sid}の構造を確認してください')
+  criterion,answer,url=m.groups();num=item_number(sid)
   # The source's fourth perspective in every sub-theme is アンチパターン, whose desirable answer is FALSE.
   desired='FALSE' if int(num)%4==0 else 'TRUE';result[num]=[criterion,url,desired,answer]
  return result

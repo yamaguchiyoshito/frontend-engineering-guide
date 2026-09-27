@@ -40,14 +40,14 @@ try {
   await page.screenshot({ path: 'artifacts/home-desktop.png', fullPage: true });
   results.checks.push('desktop home and navigation');
 
-  for (const [route, heading] of [['skills/implementation/react.form.html#lv3', 'フォーム実装'], ['checklists/security.html#c029', 'セキュリティ']]) {
+  for (const [route, heading] of [['skills/implementation/react.form.html#lv3', 'フォーム実装'], ['checklists/security.html#_2-3-1-メトリクスの計測', 'セキュリティ']]) {
     await page.goto(url + route); await page.reload();
     await expect(page.locator('h1')).toHaveText(heading);
-    await expect(page.locator(route.includes('lv3') ? '#lv3' : '#c029')).toBeVisible();
+    await expect(page.locator(route.includes('lv3') ? '#lv3' : '[id="_2-3-1-メトリクスの計測"]')).toBeVisible();
   }
   results.checks.push('deep links, anchor navigation and refresh');
 
-  for (const [query, target] of [['react.form', 'react.form'], ['C029', 'security'], ['029', 'security'], ['セキュリティ', 'security'], ['非同期', 'javascript.async']]) {
+  for (const [query, target] of [['react.form', 'react.form'], ['2-3-1', 'security'], ['セキュリティ', 'security'], ['非同期', 'javascript.async']]) {
     await page.locator('button.DocSearch-Button').click();
     const input = page.locator('#localsearch-input');
     await expect(input).toBeVisible(); await input.fill(query);
