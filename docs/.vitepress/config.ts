@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import container from 'markdown-it-container'
 import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 const root = new URL('../../', import.meta.url)
@@ -33,7 +34,17 @@ export default defineConfig({
   srcExclude: ['public/**'],
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}assets/favicon.svg` }]],
   ...(origin ? { sitemap: { hostname: origin + base } } : {}),
-  markdown: { lineNumbers: false },
+  markdown: {
+    lineNumbers: false,
+    config(md) {
+      // ::: example … ::: marks this guide's sample answers apart from the source text.
+      md.use(container, 'example', {
+        render: (tokens: any[], idx: number) => tokens[idx].nesting === 1
+          ? '<div class="answer-example"><p class="answer-example-title">望ましい回答例<span>架空の記入例。実際の回答には実態と根拠を記載</span></p>\n'
+          : '</div>\n'
+      })
+    }
+  },
   vite: { server: { fs: { allow: [fileURLToPath(root)] } } },
   transformPageData(pageData) {
     const i = ordered.findIndex((p: any) => p.path === pageData.relativePath)

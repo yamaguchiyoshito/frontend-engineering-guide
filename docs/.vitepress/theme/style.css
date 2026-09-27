@@ -15,6 +15,11 @@
 .vp-doc th, .vp-doc td { font-size: 15px; line-height: 1.8; min-width: 100px; }
 .vp-doc table { width: 100%; }
 .vp-doc a { text-underline-offset: 4px; }
+.vp-doc .answer-example { margin: 20px 0 24px; padding: 14px 20px 16px; border: 1px solid var(--vp-c-divider); border-left: 4px solid var(--vp-c-brand-1); border-radius: 6px; background: var(--vp-c-bg-soft); }
+.vp-doc .answer-example-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin: 0 0 6px; font-size: 14px; font-weight: 700; color: var(--vp-c-brand-1); line-height: 1.6; }
+.vp-doc .answer-example-title span { font-size: 12px; font-weight: 400; color: var(--vp-c-text-3); }
+.vp-doc .answer-example p:not(.answer-example-title) { margin: 0; font-size: 15px; line-height: 1.85; }
+.vp-doc .answer-example p + p:not(.answer-example-title) { margin-top: 8px; }
 .VPNavBarTitle .title { font-size: 16px; font-weight: 700; }
 .VPSidebarItem .text { font-size: 14px; }
 .document-meta { display: flex; gap: 12px; font-size: 13px; color: var(--vp-c-text-2); margin: 0 0 16px; align-items: center; }

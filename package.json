@@ -1,6 +1,6 @@
 {
   "name": "frontend-engineering-guide",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "private": true,
   "license": "CC-BY-SA-4.0",
   "type": "module",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@playwright/test": "1.58.2",
+    "markdown-it-container": "4.0.0",
     "vitepress": "1.6.4"
   },
   "overrides": {
