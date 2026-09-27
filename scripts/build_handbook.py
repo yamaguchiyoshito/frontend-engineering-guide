@@ -18,6 +18,7 @@ linkre=re.compile(r'\]\(([^)]+)\)')
 for p in selected:
  path=p['path'];text=body(path)
  text=re.sub(r'<!-- (?:catalog|template):(start|end) -->\n?','',text)
+ text=re.sub(r'^::: example\n(.*?)\n:::$',lambda m:'> **望ましい回答例**（架空の記入例）\n>\n'+'\n'.join('> '+l if l else '>' for l in m.group(1).split('\n')),text,flags=re.M|re.S)
  def convert(m):
   url=m.group(1)
   if re.match(r'^(https?://|mailto:)',url):return m.group(0)
