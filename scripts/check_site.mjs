@@ -47,6 +47,10 @@ try {
   }
   results.checks.push('deep links, anchor navigation and refresh');
 
+  await page.goto(url + 'guide/prerequisites.html');
+  await expect(page.locator('.mermaid svg').first()).toBeVisible({ timeout: 15000 });
+  results.checks.push('mermaid sequence diagram renders');
+
   for (const [query, target] of [['react.form', 'react.form'], ['2-3-1', 'security'], ['セキュリティ', 'security'], ['非同期', 'javascript.async']]) {
     await page.locator('button.DocSearch-Button').click();
     const input = page.locator('#localsearch-input');
