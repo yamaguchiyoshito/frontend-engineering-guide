@@ -1,0 +1,1049 @@
+{
+  "checked": "2026年9月",
+  "note": "参考資料であり、採用の推奨ではありません。",
+  "skills": {
+    "web.basic": {
+      "docs": [
+        {
+          "title": "MDN：Webの仕組み",
+          "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
+          "note": "ブラウザとサーバーの通信の流れ"
+        },
+        {
+          "title": "MDN：HTTP",
+          "url": "https://developer.mozilla.org/ja/docs/Web/HTTP",
+          "note": "要求と応答、ヘッダー、ステータスコードのリファレンス"
+        },
+        {
+          "title": "MDN：HTTP Cookie",
+          "url": "https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Cookies",
+          "note": "Cookieの属性と送信条件"
+        },
+        {
+          "title": "MDN：HTTPキャッシュ",
+          "url": "https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Caching",
+          "note": "ブラウザと中間キャッシュの動作"
+        },
+        {
+          "title": "RFC 9110：HTTP Semantics",
+          "url": "https://www.rfc-editor.org/rfc/rfc9110",
+          "note": "HTTPの意味論を定める標準仕様（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Chrome DevTools：Networkパネル",
+          "url": "https://developer.chrome.com/docs/devtools/network?hl=ja",
+          "note": "通信内容とタイミングの確認"
+        },
+        {
+          "title": "curl",
+          "url": "https://curl.se/docs/",
+          "note": "コマンドラインからのHTTP要求と応答の確認"
+        }
+      ]
+    },
+    "html.basic": {
+      "docs": [
+        {
+          "title": "MDN：HTML",
+          "url": "https://developer.mozilla.org/ja/docs/Web/HTML",
+          "note": "要素と属性のリファレンス"
+        },
+        {
+          "title": "MDN：HTMLの学習",
+          "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Structuring_content",
+          "note": "文書構造とフォームの入門"
+        },
+        {
+          "title": "HTML Living Standard",
+          "url": "https://html.spec.whatwg.org/multipage/",
+          "note": "HTMLの仕様（英語）"
+        },
+        {
+          "title": "web.dev：Learn HTML",
+          "url": "https://web.dev/learn/html?hl=ja",
+          "note": "HTMLの体系的な学習コース"
+        }
+      ],
+      "tools": [
+        {
+          "title": "W3C Markup Validation Service",
+          "url": "https://validator.w3.org/nu/",
+          "note": "HTMLの構文検査"
+        },
+        {
+          "title": "Chrome DevTools：Elementsパネル",
+          "url": "https://developer.chrome.com/docs/devtools/dom?hl=ja",
+          "note": "DOM構造と属性の確認"
+        }
+      ]
+    },
+    "css.basic": {
+      "docs": [
+        {
+          "title": "MDN：CSS",
+          "url": "https://developer.mozilla.org/ja/docs/Web/CSS",
+          "note": "プロパティとセレクタのリファレンス"
+        },
+        {
+          "title": "MDN：CSSの学習",
+          "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Styling_basics",
+          "note": "カスケード、ボックスモデル、レイアウトの入門"
+        },
+        {
+          "title": "MDN：Flexbox",
+          "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Flexbox",
+          "note": "一次元レイアウトの解説"
+        },
+        {
+          "title": "MDN：グリッド",
+          "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Grids",
+          "note": "二次元レイアウトの解説"
+        },
+        {
+          "title": "web.dev：Learn CSS",
+          "url": "https://web.dev/learn/css?hl=ja",
+          "note": "CSSの体系的な学習コース"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Chrome DevTools：CSSの検査",
+          "url": "https://developer.chrome.com/docs/devtools/css?hl=ja",
+          "note": "適用スタイルとボックスモデルの確認"
+        },
+        {
+          "title": "Stylelint",
+          "url": "https://stylelint.io/",
+          "note": "CSSの静的検査"
+        },
+        {
+          "title": "PostCSS",
+          "url": "https://postcss.org/",
+          "note": "CSSの変換とプラグイン基盤"
+        }
+      ]
+    },
+    "javascript.basic": {
+      "docs": [
+        {
+          "title": "MDN：JavaScript",
+          "url": "https://developer.mozilla.org/ja/docs/Web/JavaScript",
+          "note": "言語仕様と組み込みオブジェクトのリファレンス"
+        },
+        {
+          "title": "JavaScript Primer",
+          "url": "https://jsprimer.net/",
+          "note": "ECMAScript 2015以降を前提にした入門書（日本語、OSS）"
+        },
+        {
+          "title": "ECMAScript Language Specification",
+          "url": "https://tc39.es/ecma262/",
+          "note": "JavaScriptの言語仕様（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Node.js",
+          "url": "https://nodejs.org/ja",
+          "note": "JavaScriptの実行環境"
+        },
+        {
+          "title": "ESLint",
+          "url": "https://eslint.org/",
+          "note": "JavaScriptの静的検査"
+        },
+        {
+          "title": "Prettier",
+          "url": "https://prettier.io/",
+          "note": "コード整形"
+        },
+        {
+          "title": "Chrome DevTools：JavaScriptのデバッグ",
+          "url": "https://developer.chrome.com/docs/devtools/javascript?hl=ja",
+          "note": "ブレークポイントと変数の確認"
+        }
+      ]
+    },
+    "git.basic": {
+      "docs": [
+        {
+          "title": "Pro Git（日本語版）",
+          "url": "https://git-scm.com/book/ja/v2",
+          "note": "Gitの基本操作と内部構造の解説書"
+        },
+        {
+          "title": "Git Reference",
+          "url": "https://git-scm.com/docs",
+          "note": "コマンドのリファレンス（英語）"
+        },
+        {
+          "title": "GitHub Docs：Gitの使用",
+          "url": "https://docs.github.com/ja/get-started/using-git",
+          "note": "日常的な操作の手順"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Git",
+          "url": "https://git-scm.com/",
+          "note": "公式サイトとダウンロード"
+        },
+        {
+          "title": "GitHub CLI",
+          "url": "https://cli.github.com/",
+          "note": "コマンドラインからのGitHub操作"
+        },
+        {
+          "title": "GitHub Desktop",
+          "url": "https://desktop.github.com/",
+          "note": "GUIでのGit操作"
+        }
+      ]
+    },
+    "html.semantic": {
+      "docs": [
+        {
+          "title": "MDN：HTML要素リファレンス",
+          "url": "https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements",
+          "note": "各要素の意味と使い方"
+        },
+        {
+          "title": "HTML Living Standard：セクションと見出し",
+          "url": "https://html.spec.whatwg.org/multipage/sections.html",
+          "note": "文書構造の仕様（英語）"
+        },
+        {
+          "title": "ARIA in HTML",
+          "url": "https://www.w3.org/TR/html-aria/",
+          "note": "HTML要素に許可されるARIAロールの対応表（英語）"
+        },
+        {
+          "title": "web.dev：Learn HTML（セマンティクス）",
+          "url": "https://web.dev/learn/html/semantic-html?hl=ja",
+          "note": "意味構造の考え方"
+        }
+      ],
+      "tools": [
+        {
+          "title": "W3C Markup Validation Service",
+          "url": "https://validator.w3.org/nu/",
+          "note": "構造と入れ子の検査"
+        },
+        {
+          "title": "Chrome DevTools：アクセシビリティツリー",
+          "url": "https://developer.chrome.com/docs/devtools/accessibility/reference?hl=ja",
+          "note": "支援技術に伝わる構造の確認"
+        }
+      ]
+    },
+    "css.responsive": {
+      "docs": [
+        {
+          "title": "MDN：レスポンシブデザイン",
+          "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+          "note": "メディアクエリと流動的なレイアウトの入門"
+        },
+        {
+          "title": "MDN：コンテナクエリ",
+          "url": "https://developer.mozilla.org/ja/docs/Web/CSS/CSS_containment/Container_queries",
+          "note": "親要素の大きさに応じたスタイル"
+        },
+        {
+          "title": "web.dev：Learn Responsive Design",
+          "url": "https://web.dev/learn/design?hl=ja",
+          "note": "レスポンシブ設計の学習コース"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Chrome DevTools：デバイスモード",
+          "url": "https://developer.chrome.com/docs/devtools/device-mode?hl=ja",
+          "note": "画面幅と端末の模擬表示"
+        },
+        {
+          "title": "Can I use",
+          "url": "https://caniuse.com/",
+          "note": "ブラウザ対応状況の確認"
+        }
+      ]
+    },
+    "javascript.dom": {
+      "docs": [
+        {
+          "title": "MDN：DOM",
+          "url": "https://developer.mozilla.org/ja/docs/Web/API/Document_Object_Model",
+          "note": "DOMのAPIリファレンス"
+        },
+        {
+          "title": "MDN：イベント入門",
+          "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Scripting/Events",
+          "note": "イベントの登録、伝播、既定動作"
+        },
+        {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/",
+          "note": "DOMの仕様（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Chrome DevTools：イベントリスナーの確認",
+          "url": "https://developer.chrome.com/docs/devtools/dom?hl=ja",
+          "note": "要素に登録されたリスナーの確認"
+        },
+        {
+          "title": "Chrome DevTools：メモリ",
+          "url": "https://developer.chrome.com/docs/devtools/memory?hl=ja",
+          "note": "解除漏れによるリークの調査"
+        }
+      ]
+    },
+    "javascript.async": {
+      "docs": [
+        {
+          "title": "MDN：非同期JavaScript",
+          "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Extensions/Async_JS",
+          "note": "Promise、async/awaitの入門"
+        },
+        {
+          "title": "MDN：Promise",
+          "url": "https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+          "note": "Promiseのリファレンス"
+        },
+        {
+          "title": "MDN：AbortController",
+          "url": "https://developer.mozilla.org/ja/docs/Web/API/AbortController",
+          "note": "非同期処理のキャンセル"
+        },
+        {
+          "title": "JavaScript Primer：非同期処理",
+          "url": "https://jsprimer.net/basic/async/",
+          "note": "コールバック、Promise、async/awaitの解説（日本語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "typescript-eslint：no-floating-promises",
+          "url": "https://typescript-eslint.io/rules/no-floating-promises/",
+          "note": "未処理のPromiseの検出"
+        },
+        {
+          "title": "eslint-plugin-promise",
+          "url": "https://github.com/eslint-community/eslint-plugin-promise",
+          "note": "Promiseの誤用の検出"
+        }
+      ]
+    },
+    "typescript.basic": {
+      "docs": [
+        {
+          "title": "TypeScript Handbook（日本語）",
+          "url": "https://www.typescriptlang.org/ja/docs/handbook/intro.html",
+          "note": "公式ハンドブック"
+        },
+        {
+          "title": "サバイバルTypeScript",
+          "url": "https://typescriptbook.jp/",
+          "note": "実務向けの入門書（日本語、OSS）"
+        },
+        {
+          "title": "TypeScript Deep Dive（日本語版）",
+          "url": "https://typescript-jp.gitbook.io/deep-dive",
+          "note": "型システムの詳細解説"
+        }
+      ],
+      "tools": [
+        {
+          "title": "TypeScript",
+          "url": "https://www.typescriptlang.org/",
+          "note": "公式サイトとPlayground"
+        },
+        {
+          "title": "typescript-eslint",
+          "url": "https://typescript-eslint.io/",
+          "note": "TypeScript向けの静的検査"
+        },
+        {
+          "title": "tsc（コンパイラオプション）",
+          "url": "https://www.typescriptlang.org/ja/tsconfig/",
+          "note": "strict設定などの構成"
+        }
+      ]
+    },
+    "web.accessibility": {
+      "docs": [
+        {
+          "title": "WCAG 2.2（日本語訳）",
+          "url": "https://waic.jp/translations/WCAG22/",
+          "note": "Webアクセシビリティの国際規格"
+        },
+        {
+          "title": "WAI-ARIA Authoring Practices Guide",
+          "url": "https://www.w3.org/WAI/ARIA/apg/",
+          "note": "複合ウィジェットの操作パターン（英語）"
+        },
+        {
+          "title": "MDN：アクセシビリティ",
+          "url": "https://developer.mozilla.org/ja/docs/Web/Accessibility",
+          "note": "実装ガイドとARIAのリファレンス"
+        },
+        {
+          "title": "デジタル庁：ウェブアクセシビリティ導入ガイドブック",
+          "url": "https://www.digital.go.jp/resources/introduction-to-web-accessibility-guidebook",
+          "note": "方針策定と実務の手引き"
+        }
+      ],
+      "tools": [
+        {
+          "title": "axe-core",
+          "url": "https://github.com/dequelabs/axe-core",
+          "note": "自動アクセシビリティ検査エンジン"
+        },
+        {
+          "title": "Lighthouse",
+          "url": "https://developer.chrome.com/docs/lighthouse?hl=ja",
+          "note": "アクセシビリティ監査を含むページ診断"
+        },
+        {
+          "title": "eslint-plugin-jsx-a11y",
+          "url": "https://github.com/jsx-eye/eslint-plugin-jsx-a11y",
+          "note": "JSXの静的検査"
+        },
+        {
+          "title": "NVDA",
+          "url": "https://www.nvaccess.org/",
+          "note": "Windows向けスクリーンリーダー（無償）"
+        }
+      ]
+    },
+    "web.seo": {
+      "docs": [
+        {
+          "title": "Google検索セントラル",
+          "url": "https://developers.google.com/search/docs?hl=ja",
+          "note": "検索エンジン向けの公式ガイド"
+        },
+        {
+          "title": "sitemaps.org：プロトコル",
+          "url": "https://www.sitemaps.org/ja/protocol.html",
+          "note": "サイトマップの仕様"
+        },
+        {
+          "title": "Google：robots.txtの概要",
+          "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro?hl=ja",
+          "note": "巡回制御の設定"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Google Search Console",
+          "url": "https://search.google.com/search-console/about?hl=ja",
+          "note": "索引登録状況と検索パフォーマンスの確認"
+        },
+        {
+          "title": "Lighthouse",
+          "url": "https://developer.chrome.com/docs/lighthouse?hl=ja",
+          "note": "SEO監査を含むページ診断"
+        }
+      ]
+    },
+    "git.collaboration": {
+      "docs": [
+        {
+          "title": "GitHub Docs：Pull Request",
+          "url": "https://docs.github.com/ja/pull-requests",
+          "note": "PRの作成、レビュー、マージの手順"
+        },
+        {
+          "title": "Google Engineering Practices：Code Review",
+          "url": "https://google.github.io/eng-practices/review/",
+          "note": "コードレビューの指針（英語）"
+        },
+        {
+          "title": "Conventional Commits（日本語）",
+          "url": "https://www.conventionalcommits.org/ja/",
+          "note": "コミットメッセージの規約"
+        },
+        {
+          "title": "Pro Git：ブランチ",
+          "url": "https://git-scm.com/book/ja/v2/Git-のブランチ機能-ブランチとは",
+          "note": "ブランチ運用の基礎"
+        }
+      ],
+      "tools": [
+        {
+          "title": "GitHub CLI",
+          "url": "https://cli.github.com/",
+          "note": "コマンドラインからのPR操作"
+        },
+        {
+          "title": "GitHub Actions",
+          "url": "https://docs.github.com/ja/actions",
+          "note": "CIの設定"
+        }
+      ]
+    },
+    "react.basic": {
+      "docs": [
+        {
+          "title": "React：学習（日本語）",
+          "url": "https://ja.react.dev/learn",
+          "note": "公式チュートリアルと概念の解説"
+        },
+        {
+          "title": "React：リファレンス（日本語）",
+          "url": "https://ja.react.dev/reference/react",
+          "note": "HooksとAPIのリファレンス"
+        },
+        {
+          "title": "React：Reactのルール（日本語）",
+          "url": "https://ja.react.dev/reference/rules",
+          "note": "コンポーネントとHooksの規則"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Vite",
+          "url": "https://ja.vite.dev/",
+          "note": "開発サーバーとビルドツール"
+        },
+        {
+          "title": "React Developer Tools",
+          "url": "https://ja.react.dev/learn/react-developer-tools",
+          "note": "コンポーネント階層と再描画の確認"
+        },
+        {
+          "title": "Next.js",
+          "url": "https://nextjs.org/docs",
+          "note": "Reactのフルスタックフレームワーク"
+        }
+      ]
+    },
+    "react.component-design": {
+      "docs": [
+        {
+          "title": "React：Reactの流儀（日本語）",
+          "url": "https://ja.react.dev/learn/thinking-in-react",
+          "note": "画面をコンポーネントに分ける手順"
+        },
+        {
+          "title": "React：コンポーネントにpropsを渡す（日本語）",
+          "url": "https://ja.react.dev/learn/passing-props-to-a-component",
+          "note": "propsの設計"
+        },
+        {
+          "title": "React：state構造の選択（日本語）",
+          "url": "https://ja.react.dev/learn/choosing-the-state-structure",
+          "note": "状態の置き場所と形"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Storybook",
+          "url": "https://storybook.js.org/",
+          "note": "コンポーネントの単独開発とカタログ化"
+        },
+        {
+          "title": "Radix Primitives",
+          "url": "https://www.radix-ui.com/primitives",
+          "note": "スタイルなしのアクセシブルな部品"
+        },
+        {
+          "title": "React Aria",
+          "url": "https://react-spectrum.adobe.com/react-aria/",
+          "note": "アクセシブルなUI部品を作るHooks群"
+        }
+      ]
+    },
+    "react.state-management": {
+      "docs": [
+        {
+          "title": "React：stateの管理（日本語）",
+          "url": "https://ja.react.dev/learn/managing-state",
+          "note": "状態の設計とリフトアップ"
+        },
+        {
+          "title": "React：useReducer（日本語）",
+          "url": "https://ja.react.dev/reference/react/useReducer",
+          "note": "複雑な更新ロジックの整理"
+        },
+        {
+          "title": "TanStack Query：概要",
+          "url": "https://tanstack.com/query/latest/docs/framework/react/overview",
+          "note": "サーバー状態の考え方"
+        }
+      ],
+      "tools": [
+        {
+          "title": "TanStack Query",
+          "url": "https://tanstack.com/query",
+          "note": "サーバー状態の取得、キャッシュ、更新"
+        },
+        {
+          "title": "Zustand",
+          "url": "https://zustand.docs.pmnd.rs/",
+          "note": "軽量な共有状態管理"
+        },
+        {
+          "title": "Jotai",
+          "url": "https://jotai.org/",
+          "note": "原子単位の状態管理"
+        },
+        {
+          "title": "Redux Toolkit",
+          "url": "https://redux-toolkit.js.org/",
+          "note": "Reduxの標準ツールセット"
+        }
+      ]
+    },
+    "react.form": {
+      "docs": [
+        {
+          "title": "React：form要素（日本語）",
+          "url": "https://ja.react.dev/reference/react-dom/components/form",
+          "note": "フォーム送信とアクションの公式解説"
+        },
+        {
+          "title": "MDN：フォームデータの検証",
+          "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Extensions/Forms/Form_validation",
+          "note": "HTML標準の検証と制約検証API"
+        },
+        {
+          "title": "WAI：フォームのチュートリアル",
+          "url": "https://www.w3.org/WAI/tutorials/forms/",
+          "note": "ラベル、エラー通知、必須項目の指針（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "React Hook Form",
+          "url": "https://react-hook-form.com/",
+          "note": "非制御入力を基本にしたフォーム状態管理"
+        },
+        {
+          "title": "TanStack Form",
+          "url": "https://tanstack.com/form",
+          "note": "型安全なフォーム状態管理"
+        },
+        {
+          "title": "Zod",
+          "url": "https://zod.dev/",
+          "note": "スキーマ定義と実行時検証"
+        }
+      ]
+    },
+    "frontend.api-integration": {
+      "docs": [
+        {
+          "title": "MDN：Fetch API",
+          "url": "https://developer.mozilla.org/ja/docs/Web/API/Fetch_API",
+          "note": "HTTP要求のリファレンス"
+        },
+        {
+          "title": "OpenAPI Specification",
+          "url": "https://spec.openapis.org/oas/latest.html",
+          "note": "REST APIの仕様記述形式（英語）"
+        },
+        {
+          "title": "MDN：CORS",
+          "url": "https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/CORS",
+          "note": "オリジン間要求の仕組み"
+        }
+      ],
+      "tools": [
+        {
+          "title": "TanStack Query",
+          "url": "https://tanstack.com/query",
+          "note": "取得、キャッシュ、再試行、更新の管理"
+        },
+        {
+          "title": "Mock Service Worker",
+          "url": "https://mswjs.io/",
+          "note": "ネットワーク層でのAPIモック"
+        },
+        {
+          "title": "openapi-typescript",
+          "url": "https://openapi-ts.dev/",
+          "note": "OpenAPIからの型生成"
+        },
+        {
+          "title": "orval",
+          "url": "https://orval.dev/",
+          "note": "OpenAPIからのクライアントと型の生成"
+        }
+      ]
+    },
+    "frontend.validation": {
+      "docs": [
+        {
+          "title": "MDN：制約検証",
+          "url": "https://developer.mozilla.org/ja/docs/Web/HTML/Guides/Constraint_validation",
+          "note": "HTML標準の入力検証"
+        },
+        {
+          "title": "OWASP：Input Validation Cheat Sheet",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html",
+          "note": "サーバー側で必須となる検証の指針（英語）"
+        },
+        {
+          "title": "TypeScript Handbook：型の絞り込み（日本語）",
+          "url": "https://www.typescriptlang.org/ja/docs/handbook/2/narrowing.html",
+          "note": "外部データを型安全に扱う基礎"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Zod",
+          "url": "https://zod.dev/",
+          "note": "スキーマ定義と型の導出"
+        },
+        {
+          "title": "Valibot",
+          "url": "https://valibot.dev/",
+          "note": "軽量なスキーマ検証ライブラリ"
+        },
+        {
+          "title": "openapi-typescript",
+          "url": "https://openapi-ts.dev/",
+          "note": "API仕様と型定義の整合"
+        }
+      ]
+    },
+    "storybook.basic": {
+      "docs": [
+        {
+          "title": "Storybook：ドキュメント",
+          "url": "https://storybook.js.org/docs",
+          "note": "設定、Story、アドオンの公式ガイド"
+        },
+        {
+          "title": "Storybook：インタラクションテスト",
+          "url": "https://storybook.js.org/docs/writing-tests/interaction-testing",
+          "note": "Story上での操作と検証"
+        },
+        {
+          "title": "Storybook：Autodocs",
+          "url": "https://storybook.js.org/docs/writing-docs/autodocs",
+          "note": "Storyからの文書生成"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Storybook",
+          "url": "https://storybook.js.org/",
+          "note": "コンポーネントのカタログと検証環境"
+        },
+        {
+          "title": "msw-storybook-addon",
+          "url": "https://github.com/mswjs/msw-storybook-addon",
+          "note": "Story内でのAPIモック"
+        },
+        {
+          "title": "Chromatic",
+          "url": "https://www.chromatic.com/",
+          "note": "ビジュアルリグレッションテスト（商用）"
+        }
+      ]
+    },
+    "test.unit": {
+      "docs": [
+        {
+          "title": "Vitest：ガイド",
+          "url": "https://vitest.dev/guide/",
+          "note": "Vite互換のテストランナーの公式ガイド"
+        },
+        {
+          "title": "Jest（日本語）",
+          "url": "https://jestjs.io/ja/",
+          "note": "テストランナーの公式ドキュメント"
+        },
+        {
+          "title": "Testing Library：指針",
+          "url": "https://testing-library.com/docs/guiding-principles",
+          "note": "利用者視点で検証する考え方（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Vitest",
+          "url": "https://vitest.dev/",
+          "note": "テストランナーとモック機能"
+        },
+        {
+          "title": "Jest",
+          "url": "https://jestjs.io/ja/",
+          "note": "テストランナーとモック機能"
+        },
+        {
+          "title": "Testing Library",
+          "url": "https://testing-library.com/",
+          "note": "DOMを利用者の視点で検証する補助"
+        }
+      ]
+    },
+    "test.component": {
+      "docs": [
+        {
+          "title": "React Testing Library：入門",
+          "url": "https://testing-library.com/docs/react-testing-library/intro/",
+          "note": "Reactコンポーネントの検証方法"
+        },
+        {
+          "title": "Testing Library：クエリの優先順位",
+          "url": "https://testing-library.com/docs/queries/about/#priority",
+          "note": "要素の特定方法の選び方"
+        },
+        {
+          "title": "Vitest：ブラウザモード",
+          "url": "https://vitest.dev/guide/browser/",
+          "note": "実ブラウザでのコンポーネントテスト"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Testing Library",
+          "url": "https://testing-library.com/",
+          "note": "利用者視点の要素特定と操作"
+        },
+        {
+          "title": "user-event",
+          "url": "https://testing-library.com/docs/user-event/intro",
+          "note": "実際の操作に近いイベント発火"
+        },
+        {
+          "title": "Storybook インタラクションテスト",
+          "url": "https://storybook.js.org/docs/writing-tests/interaction-testing",
+          "note": "Story上での検証"
+        }
+      ]
+    },
+    "test.integration": {
+      "docs": [
+        {
+          "title": "Mock Service Worker：ドキュメント",
+          "url": "https://mswjs.io/docs/",
+          "note": "APIモックの設計と使い方"
+        },
+        {
+          "title": "Playwright：コンポーネントテスト",
+          "url": "https://playwright.dev/docs/test-components",
+          "note": "実ブラウザでの結合検証（実験的機能）"
+        },
+        {
+          "title": "Martin Fowler：The Practical Test Pyramid",
+          "url": "https://martinfowler.com/articles/practical-test-pyramid.html",
+          "note": "テスト層の役割分担（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Mock Service Worker",
+          "url": "https://mswjs.io/",
+          "note": "実物とモックの境界の制御"
+        },
+        {
+          "title": "Testing Library",
+          "url": "https://testing-library.com/",
+          "note": "画面と状態の検証"
+        },
+        {
+          "title": "Playwright",
+          "url": "https://playwright.dev/",
+          "note": "ブラウザを使った結合検証"
+        }
+      ]
+    },
+    "test.e2e": {
+      "docs": [
+        {
+          "title": "Playwright：ドキュメント",
+          "url": "https://playwright.dev/docs/intro",
+          "note": "導入からCI実行までの公式ガイド"
+        },
+        {
+          "title": "Playwright：ベストプラクティス",
+          "url": "https://playwright.dev/docs/best-practices",
+          "note": "安定した要素特定と待機の指針"
+        },
+        {
+          "title": "Cypress：ドキュメント",
+          "url": "https://docs.cypress.io/",
+          "note": "代替のE2Eテストツール"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Playwright",
+          "url": "https://playwright.dev/",
+          "note": "複数ブラウザ対応のE2Eテスト"
+        },
+        {
+          "title": "Cypress",
+          "url": "https://www.cypress.io/",
+          "note": "ブラウザ内で動くE2Eテスト"
+        },
+        {
+          "title": "GitHub Actions",
+          "url": "https://docs.github.com/ja/actions",
+          "note": "CIでの実行と証跡の保存"
+        }
+      ]
+    },
+    "test.design": {
+      "docs": [
+        {
+          "title": "JSTQB：シラバス",
+          "url": "https://jstqb.jp/syllabus.html",
+          "note": "テスト技法と用語の標準（日本語）"
+        },
+        {
+          "title": "Martin Fowler：The Practical Test Pyramid",
+          "url": "https://martinfowler.com/articles/practical-test-pyramid.html",
+          "note": "テスト層の配分（英語）"
+        },
+        {
+          "title": "ISO/IEC/IEEE 29119-4：テスト技法",
+          "url": "https://www.iso.org/standard/79430.html",
+          "note": "テスト設計技法の国際規格（有償）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "PICT",
+          "url": "https://github.com/microsoft/pict",
+          "note": "ペアワイズ法による組み合わせ生成"
+        },
+        {
+          "title": "PlantUML",
+          "url": "https://plantuml.com/ja/",
+          "note": "状態遷移図などの作図"
+        }
+      ]
+    },
+    "web.performance": {
+      "docs": [
+        {
+          "title": "web.dev：Core Web Vitals",
+          "url": "https://web.dev/articles/vitals?hl=ja",
+          "note": "主要な速度指標の定義"
+        },
+        {
+          "title": "MDN：Webパフォーマンス",
+          "url": "https://developer.mozilla.org/ja/docs/Web/Performance",
+          "note": "計測と改善の基礎"
+        },
+        {
+          "title": "Chrome DevTools：パフォーマンス",
+          "url": "https://developer.chrome.com/docs/devtools/performance?hl=ja",
+          "note": "処理と描画のプロファイル"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Lighthouse",
+          "url": "https://developer.chrome.com/docs/lighthouse?hl=ja",
+          "note": "試験環境での診断"
+        },
+        {
+          "title": "PageSpeed Insights",
+          "url": "https://pagespeed.web.dev/",
+          "note": "実利用データを含む診断"
+        },
+        {
+          "title": "web-vitals",
+          "url": "https://github.com/GoogleChrome/web-vitals",
+          "note": "実利用の指標を計測するライブラリ"
+        },
+        {
+          "title": "WebPageTest",
+          "url": "https://www.webpagetest.org/",
+          "note": "条件を指定した詳細計測"
+        }
+      ]
+    },
+    "web.security": {
+      "docs": [
+        {
+          "title": "OWASP Top 10",
+          "url": "https://owasp.org/www-project-top-ten/",
+          "note": "代表的なリスクの一覧（英語）"
+        },
+        {
+          "title": "OWASP Cheat Sheet Series",
+          "url": "https://cheatsheetseries.owasp.org/",
+          "note": "対策の実装指針（英語）"
+        },
+        {
+          "title": "MDN：Webセキュリティ",
+          "url": "https://developer.mozilla.org/ja/docs/Web/Security",
+          "note": "ブラウザのセキュリティ機構の解説"
+        },
+        {
+          "title": "MDN：Content Security Policy",
+          "url": "https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/CSP",
+          "note": "スクリプト実行の制限"
+        },
+        {
+          "title": "IPA：安全なウェブサイトの作り方",
+          "url": "https://www.ipa.go.jp/security/vuln/websecurity.html",
+          "note": "脆弱性別の対策（日本語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "GitHub code scanning",
+          "url": "https://docs.github.com/ja/code-security/code-scanning",
+          "note": "PRごとの静的検査"
+        },
+        {
+          "title": "Dependabot",
+          "url": "https://docs.github.com/ja/code-security/dependabot",
+          "note": "依存関係の脆弱性検知と更新"
+        },
+        {
+          "title": "DOMPurify",
+          "url": "https://github.com/cure53/DOMPurify",
+          "note": "HTMLのサニタイズ"
+        }
+      ]
+    },
+    "frontend.quality": {
+      "docs": [
+        {
+          "title": "ISO/IEC 25010",
+          "url": "https://www.iso.org/standard/78176.html",
+          "note": "ソフトウェア品質特性の国際規格（有償）"
+        },
+        {
+          "title": "JSTQB：シラバス",
+          "url": "https://jstqb.jp/syllabus.html",
+          "note": "テストプロセスと管理の標準（日本語）"
+        },
+        {
+          "title": "Webフロントエンド版DX Criteria",
+          "url": "https://dxcriteria.cto-a.org/frontend",
+          "note": "チームの品質活動のチェック項目"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Lighthouse CI",
+          "url": "https://github.com/GoogleChrome/lighthouse-ci",
+          "note": "品質指標のCIでの継続計測"
+        },
+        {
+          "title": "Sentry",
+          "url": "https://sentry.io/",
+          "note": "エラー監視（商用、OSS版あり）"
+        },
+        {
+          "title": "GitHub Actions",
+          "url": "https://docs.github.com/ja/actions",
+          "note": "検査と配布の自動化"
+        }
+      ]
+    }
+  }
+}

@@ -31,3 +31,23 @@ Reactで画面をコンポーネントとして実装する要素技術です。
 ## Lv4
 
 React実装の基本構成、Hooksの設計方針、共通処理、検証・レビューの基準を整備できる。他者への展開と更新対応を支援し、同種不具合や実装工数の改善を確認できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [React：学習（日本語）](https://ja.react.dev/learn) — 公式チュートリアルと概念の解説
+- [React：リファレンス（日本語）](https://ja.react.dev/reference/react) — HooksとAPIのリファレンス
+- [React：Reactのルール（日本語）](https://ja.react.dev/reference/rules) — コンポーネントとHooksの規則
+
+**代表的なライブラリ・ツール**
+
+- [Vite](https://ja.vite.dev/) — 開発サーバーとビルドツール
+- [React Developer Tools](https://ja.react.dev/learn/react-developer-tools) — コンポーネント階層と再描画の確認
+- [Next.js](https://nextjs.org/docs) — Reactのフルスタックフレームワーク
+
+<!-- references:end -->

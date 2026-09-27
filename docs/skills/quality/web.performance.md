@@ -31,3 +31,24 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 性能目標、計測条件、継続監視、性能予算、悪化検知と対応の仕組みを整備できる。チームの開発・運用へ組み込み、利用者の所要時間と性能劣化の再発を継続して改善できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [web.dev：Core Web Vitals](https://web.dev/articles/vitals?hl=ja) — 主要な速度指標の定義
+- [MDN：Webパフォーマンス](https://developer.mozilla.org/ja/docs/Web/Performance) — 計測と改善の基礎
+- [Chrome DevTools：パフォーマンス](https://developer.chrome.com/docs/devtools/performance?hl=ja) — 処理と描画のプロファイル
+
+**代表的なライブラリ・ツール**
+
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse?hl=ja) — 試験環境での診断
+- [PageSpeed Insights](https://pagespeed.web.dev/) — 実利用データを含む診断
+- [web-vitals](https://github.com/GoogleChrome/web-vitals) — 実利用の指標を計測するライブラリ
+- [WebPageTest](https://www.webpagetest.org/) — 条件を指定した詳細計測
+
+<!-- references:end -->

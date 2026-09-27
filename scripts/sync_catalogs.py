@@ -31,17 +31,29 @@ def catalog(page):
  else:return None
  return '\n'.join(out).strip()
 
+REFERENCES=json.loads((ROOT/'build/references.json').read_text())
+def references(page):
+ if page['kind']!='skill':return None
+ entry=REFERENCES['skills'][page['skillId']]
+ out=[f'{REFERENCES["note"]}選定は[技術選定]({rel(page["path"],"checklists/technology-selection.md")})の観点で行ってください。{REFERENCES["checked"]}確認。']
+ for key,label in [('docs','仕様・公式ドキュメント'),('tools','代表的なライブラリ・ツール')]:
+  out += ['',f'**{label}**','']+[f'- [{r["title"]}]({r["url"]}) — {r["note"]}' for r in entry[key]]
+ return '\n'.join(out)
+
+def blocks(page):
+ for marker,value in [('catalog',catalog(page)),('references',references(page))]:
+  if value is not None:yield marker,value
+
 def sync(check=False):
  dirty=[]
  for page in PAGES:
-  value=catalog(page)
-  if value is None:continue
-  file=DOCS/page['path'];text=file.read_text()
-  new,count=re.subn(r'<!-- catalog:start -->.*?<!-- catalog:end -->',f'<!-- catalog:start -->\n\n{value}\n\n<!-- catalog:end -->',text,flags=re.S)
-  if count!=1:raise ValueError(f'{file}: catalog markers missing or duplicated')
-  if new!=text:
-   dirty.append(page['path'])
-   if not check:file.write_text(new)
+  for marker,value in blocks(page):
+   file=DOCS/page['path'];text=file.read_text()
+   new,count=re.subn(rf'<!-- {marker}:start -->.*?<!-- {marker}:end -->',f'<!-- {marker}:start -->\n\n{value}\n\n<!-- {marker}:end -->',text,flags=re.S)
+   if count!=1:raise ValueError(f'{file}: {marker} markers missing or duplicated')
+   if new!=text:
+    dirty.append(page['path'])
+    if not check:file.write_text(new)
  if check and dirty:raise ValueError('Run npm run docs:sync: '+', '.join(dirty))
  return dirty
 if __name__=='__main__':

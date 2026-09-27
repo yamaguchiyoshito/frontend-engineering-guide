@@ -31,3 +31,24 @@ API仕様から要求・応答を実装し、読み込み中、空データ、�
 ## Lv4
 
 APIクライアント、型生成・契約確認、共通エラー処理、通信の観測方法を整備できる。フロントエンドとバックエンドの双方へ展開し、連携不具合と仕様変更時の手戻りを減らせる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [MDN：Fetch API](https://developer.mozilla.org/ja/docs/Web/API/Fetch_API) — HTTP要求のリファレンス
+- [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — REST APIの仕様記述形式（英語）
+- [MDN：CORS](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/CORS) — オリジン間要求の仕組み
+
+**代表的なライブラリ・ツール**
+
+- [TanStack Query](https://tanstack.com/query) — 取得、キャッシュ、再試行、更新の管理
+- [Mock Service Worker](https://mswjs.io/) — ネットワーク層でのAPIモック
+- [openapi-typescript](https://openapi-ts.dev/) — OpenAPIからの型生成
+- [orval](https://orval.dev/) — OpenAPIからのクライアントと型の生成
+
+<!-- references:end -->

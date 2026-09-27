@@ -31,3 +31,22 @@ DOMとHTMLソースの関係やイベントの役割を説明できず、要素�
 ## Lv4
 
 DOM操作とイベント処理の設計原則、後始末、フォーカス管理の共通パターンを整備できる。他者の実装に展開し、操作不具合やリソースの解放漏れの減少を確認できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [MDN：DOM](https://developer.mozilla.org/ja/docs/Web/API/Document_Object_Model) — DOMのAPIリファレンス
+- [MDN：イベント入門](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Scripting/Events) — イベントの登録、伝播、既定動作
+- [DOM Standard](https://dom.spec.whatwg.org/) — DOMの仕様（英語）
+
+**代表的なライブラリ・ツール**
+
+- [Chrome DevTools：イベントリスナーの確認](https://developer.chrome.com/docs/devtools/dom?hl=ja) — 要素に登録されたリスナーの確認
+- [Chrome DevTools：メモリ](https://developer.chrome.com/docs/devtools/memory?hl=ja) — 解除漏れによるリークの調査
+
+<!-- references:end -->

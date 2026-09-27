@@ -31,3 +31,23 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 開発前の品質計画からCIによる検証、リリース判断、運用の観測、改善までを継続する仕組みを整備できる。チームや案件への展開を支援し、流出不具合、手戻り、変更のリードタイム、利用者への影響を基に品質保証の方法を改善できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [ISO/IEC 25010](https://www.iso.org/standard/78176.html) — ソフトウェア品質特性の国際規格（有償）
+- [JSTQB：シラバス](https://jstqb.jp/syllabus.html) — テストプロセスと管理の標準（日本語）
+- [Webフロントエンド版DX Criteria](https://dxcriteria.cto-a.org/frontend) — チームの品質活動のチェック項目
+
+**代表的なライブラリ・ツール**
+
+- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) — 品質指標のCIでの継続計測
+- [Sentry](https://sentry.io/) — エラー監視（商用、OSS版あり）
+- [GitHub Actions](https://docs.github.com/ja/actions) — 検査と配布の自動化
+
+<!-- references:end -->

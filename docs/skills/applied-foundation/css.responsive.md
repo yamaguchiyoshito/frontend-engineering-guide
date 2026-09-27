@@ -31,3 +31,22 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 対応範囲、ブレークポイントの判断基準、レイアウト部品、検証パターンを共通化できる。チームへの展開後に、端末差による不具合や確認工数の改善を評価できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [MDN：レスポンシブデザイン](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Responsive_Design) — メディアクエリと流動的なレイアウトの入門
+- [MDN：コンテナクエリ](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_containment/Container_queries) — 親要素の大きさに応じたスタイル
+- [web.dev：Learn Responsive Design](https://web.dev/learn/design?hl=ja) — レスポンシブ設計の学習コース
+
+**代表的なライブラリ・ツール**
+
+- [Chrome DevTools：デバイスモード](https://developer.chrome.com/docs/devtools/device-mode?hl=ja) — 画面幅と端末の模擬表示
+- [Can I use](https://caniuse.com/) — ブラウザ対応状況の確認
+
+<!-- references:end -->

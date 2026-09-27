@@ -31,3 +31,25 @@ CSSで画面の見た目とレイアウトを実装する要素技術です。�
 ## Lv4
 
 スタイルの責任範囲、命名、共通値、例外の扱いをチームの規約と共通部品にできる。複数画面への適用を支援し、重複や表示不具合、変更工数の改善を確認できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [MDN：CSS](https://developer.mozilla.org/ja/docs/Web/CSS) — プロパティとセレクタのリファレンス
+- [MDN：CSSの学習](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Styling_basics) — カスケード、ボックスモデル、レイアウトの入門
+- [MDN：Flexbox](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Flexbox) — 一次元レイアウトの解説
+- [MDN：グリッド](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Grids) — 二次元レイアウトの解説
+- [web.dev：Learn CSS](https://web.dev/learn/css?hl=ja) — CSSの体系的な学習コース
+
+**代表的なライブラリ・ツール**
+
+- [Chrome DevTools：CSSの検査](https://developer.chrome.com/docs/devtools/css?hl=ja) — 適用スタイルとボックスモデルの確認
+- [Stylelint](https://stylelint.io/) — CSSの静的検査
+- [PostCSS](https://postcss.org/) — CSSの変換とプラグイン基盤
+
+<!-- references:end -->

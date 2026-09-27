@@ -31,3 +31,22 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 リスク分析、観点抽出、仕様との対応付け、ケース記述、レビューの標準と支援ツールを整備できる。他者の設計結果と流出不具合を分析し、ケース数だけに依存しない網羅性と設計効率の改善を進められる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [JSTQB：シラバス](https://jstqb.jp/syllabus.html) — テスト技法と用語の標準（日本語）
+- [Martin Fowler：The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) — テスト層の配分（英語）
+- [ISO/IEC/IEEE 29119-4：テスト技法](https://www.iso.org/standard/79430.html) — テスト設計技法の国際規格（有償）
+
+**代表的なライブラリ・ツール**
+
+- [PICT](https://github.com/microsoft/pict) — ペアワイズ法による組み合わせ生成
+- [PlantUML](https://plantuml.com/ja/) — 状態遷移図などの作図
+
+<!-- references:end -->

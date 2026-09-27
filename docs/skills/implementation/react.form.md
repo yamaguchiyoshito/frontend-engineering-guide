@@ -31,3 +31,23 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 入力部品、状態管理、エラー表示、送信・復帰の共通パターンと検証方法を整備できる。他者の利用を支援し、フォームごとの挙動のばらつきや入力・送信不具合を減らせる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [React：form要素（日本語）](https://ja.react.dev/reference/react-dom/components/form) — フォーム送信とアクションの公式解説
+- [MDN：フォームデータの検証](https://developer.mozilla.org/ja/docs/Learn_web_development/Extensions/Forms/Form_validation) — HTML標準の検証と制約検証API
+- [WAI：フォームのチュートリアル](https://www.w3.org/WAI/tutorials/forms/) — ラベル、エラー通知、必須項目の指針（英語）
+
+**代表的なライブラリ・ツール**
+
+- [React Hook Form](https://react-hook-form.com/) — 非制御入力を基本にしたフォーム状態管理
+- [TanStack Form](https://tanstack.com/form) — 型安全なフォーム状態管理
+- [Zod](https://zod.dev/) — スキーマ定義と実行時検証
+
+<!-- references:end -->

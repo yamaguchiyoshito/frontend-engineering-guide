@@ -31,3 +31,25 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 対象範囲と適合目標、共通UI、検証手順、例外管理、教育を一体で整備できる。利用者による確認やチームの運用実績を基に、障壁の解消と継続的な品質維持を進められる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [WCAG 2.2（日本語訳）](https://waic.jp/translations/WCAG22/) — Webアクセシビリティの国際規格
+- [WAI-ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/) — 複合ウィジェットの操作パターン（英語）
+- [MDN：アクセシビリティ](https://developer.mozilla.org/ja/docs/Web/Accessibility) — 実装ガイドとARIAのリファレンス
+- [デジタル庁：ウェブアクセシビリティ導入ガイドブック](https://www.digital.go.jp/resources/introduction-to-web-accessibility-guidebook) — 方針策定と実務の手引き
+
+**代表的なライブラリ・ツール**
+
+- [axe-core](https://github.com/dequelabs/axe-core) — 自動アクセシビリティ検査エンジン
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse?hl=ja) — アクセシビリティ監査を含むページ診断
+- [eslint-plugin-jsx-a11y](https://github.com/jsx-eye/eslint-plugin-jsx-a11y) — JSXの静的検査
+- [NVDA](https://www.nvaccess.org/) — Windows向けスクリーンリーダー（無償）
+
+<!-- references:end -->

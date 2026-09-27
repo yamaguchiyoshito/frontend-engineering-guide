@@ -31,3 +31,23 @@ HTMLで文書の構造とフォームを組み立てる要素技術です。要�
 ## Lv4
 
 HTMLの実装規約、フォームの共通パターン、確認項目を整備し、テンプレートや自動検査として利用できる状態にできる。チームでの利用結果から修正漏れや手戻りの減少を確認できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [MDN：HTML](https://developer.mozilla.org/ja/docs/Web/HTML) — 要素と属性のリファレンス
+- [MDN：HTMLの学習](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Structuring_content) — 文書構造とフォームの入門
+- [HTML Living Standard](https://html.spec.whatwg.org/multipage/) — HTMLの仕様（英語）
+- [web.dev：Learn HTML](https://web.dev/learn/html?hl=ja) — HTMLの体系的な学習コース
+
+**代表的なライブラリ・ツール**
+
+- [W3C Markup Validation Service](https://validator.w3.org/nu/) — HTMLの構文検査
+- [Chrome DevTools：Elementsパネル](https://developer.chrome.com/docs/devtools/dom?hl=ja) — DOM構造と属性の確認
+
+<!-- references:end -->

@@ -31,3 +31,22 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 ## Lv4
 
 公開サイトのSEO要件、共通テンプレート、公開前の検査、運用指標を整備できる。コンテンツ担当者と運用を定着させ、索引登録上の問題や検索経由の利用状況から改善できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [Google検索セントラル](https://developers.google.com/search/docs?hl=ja) — 検索エンジン向けの公式ガイド
+- [sitemaps.org：プロトコル](https://www.sitemaps.org/ja/protocol.html) — サイトマップの仕様
+- [Google：robots.txtの概要](https://developers.google.com/search/docs/crawling-indexing/robots/intro?hl=ja) — 巡回制御の設定
+
+**代表的なライブラリ・ツール**
+
+- [Google Search Console](https://search.google.com/search-console/about?hl=ja) — 索引登録状況と検索パフォーマンスの確認
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse?hl=ja) — SEO監査を含むページ診断
+
+<!-- references:end -->

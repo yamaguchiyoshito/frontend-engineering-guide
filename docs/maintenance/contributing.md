@@ -13,6 +13,7 @@ description: "正本のファイル、ローカルでの確認手順、Pull Requ
 | 習熟度の定義 | `docs/skills/<領域>/<要素技術ID>.md` |
 | チェック項目・回答例 | `docs/checklists/<小テーマ>.md`（項目文は出典のとおり。回答例のみ編集） |
 | 記録書式 | `docs/templates/*.md` のテンプレート欄 |
+| 要素技術の参考リンク | `build/references.json`（`docs:sync` で各ページへ展開） |
 | ページの追加・順序・分類 | `build/document-map.json` |
 | 公開版 | `package.json` のversion・このサイトの改訂履歴 |
 

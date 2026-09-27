@@ -31,3 +31,23 @@ TypeScriptの型でプログラムの入出力と状態を表現する要素技�
 ## Lv4
 
 型設計の規約、公開インターフェース、型検査設定、例外の扱いをチームへ展開できる。移行や教育を支援し、型関連の不具合と回避コードの減少を確認できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [TypeScript Handbook（日本語）](https://www.typescriptlang.org/ja/docs/handbook/intro.html) — 公式ハンドブック
+- [サバイバルTypeScript](https://typescriptbook.jp/) — 実務向けの入門書（日本語、OSS）
+- [TypeScript Deep Dive（日本語版）](https://typescript-jp.gitbook.io/deep-dive) — 型システムの詳細解説
+
+**代表的なライブラリ・ツール**
+
+- [TypeScript](https://www.typescriptlang.org/) — 公式サイトとPlayground
+- [typescript-eslint](https://typescript-eslint.io/) — TypeScript向けの静的検査
+- [tsc（コンパイラオプション）](https://www.typescriptlang.org/ja/tsconfig/) — strict設定などの構成
+
+<!-- references:end -->

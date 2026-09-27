@@ -31,3 +31,23 @@ PR／MR、レビュー、承認、保護ブランチの役割を説明できず�
 ## Lv4
 
 ブランチ方針、レビュー基準、承認・保護設定、CIとの連携、参加者向けガイドを整備できる。チームで運用し、変更の滞留時間や手戻りの改善を確認できる。
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。選定は[技術選定](../../checklists/technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**仕様・公式ドキュメント**
+
+- [GitHub Docs：Pull Request](https://docs.github.com/ja/pull-requests) — PRの作成、レビュー、マージの手順
+- [Google Engineering Practices：Code Review](https://google.github.io/eng-practices/review/) — コードレビューの指針（英語）
+- [Conventional Commits（日本語）](https://www.conventionalcommits.org/ja/) — コミットメッセージの規約
+- [Pro Git：ブランチ](https://git-scm.com/book/ja/v2/Git-のブランチ機能-ブランチとは) — ブランチ運用の基礎
+
+**代表的なライブラリ・ツール**
+
+- [GitHub CLI](https://cli.github.com/) — コマンドラインからのPR操作
+- [GitHub Actions](https://docs.github.com/ja/actions) — CIの設定
+
+<!-- references:end -->
