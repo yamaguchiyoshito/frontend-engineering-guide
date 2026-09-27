@@ -8,7 +8,7 @@
 | :--- | :--- |
 | `README.md` | 初回登録、公開、ローカル実行の入口 |
 | `ARCHITECTURE.md` | ページ構成と生成・公開設計 |
-| `CONTRIBUTING.md` / `CHANGELOG.md` | 公開側の編集手順・改訂履歴への入口 |
+| `CHANGELOG.md` | 改訂履歴の正本 `docs/maintenance/changelog.md` への入口。編集手順は `docs/maintenance/contributing.md` |
 | `docs/index.md` | 読む順序と目的別の入口 |
 | `docs/guide/` | 個人・チームの評価手順と改善方法 |
 | `docs/skills/<領域>/<ID>.md` | 1スキル1ファイル、Lv0〜Lv4の正本 |

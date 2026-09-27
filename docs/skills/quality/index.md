@@ -1,6 +1,6 @@
 ---
 title: "品質・高度化領域"
-description: "品質・高度化領域の基準と使い方。フロントエンド開発のスキル評価・チーム改善ガイド。"
+description: "品質・高度化領域に含まれる8スキルの一覧。スキルID、評価対象・主な前提、Lv0〜Lv4の定義への入口。"
 ---
 
 # 品質・高度化領域
@@ -9,7 +9,7 @@ description: "品質・高度化領域の基準と使い方。フロントエン
 
 <!-- catalog:start -->
 
-| スキルID | スキル | 評価対象・主な前提 |
+| スキルID | スキル | 主な前提 |
 | :--- | :--- | :--- |
 | `test.unit` | [単体テスト](test.unit.md) | JavaScript、TypeScript |
 | `test.component` | [コンポーネントテスト](test.component.md) | React |

@@ -1,6 +1,6 @@
 ---
 title: "フレームワーク・実装領域"
-description: "フレームワーク・実装領域の基準と使い方。フロントエンド開発のスキル評価・チーム改善ガイド。"
+description: "フレームワーク・実装領域に含まれる7スキルの一覧。スキルID、評価対象・主な前提、Lv0〜Lv4の定義への入口。"
 ---
 
 # フレームワーク・実装領域
@@ -9,7 +9,7 @@ description: "フレームワーク・実装領域の基準と使い方。フロ
 
 <!-- catalog:start -->
 
-| スキルID | スキル | 評価対象・主な前提 |
+| スキルID | スキル | 主な前提 |
 | :--- | :--- | :--- |
 | `react.basic` | [React実装](react.basic.md) | JavaScript、TypeScript、DOM |
 | `react.component-design` | [コンポーネント設計](react.component-design.md) | React、UI実装 |
