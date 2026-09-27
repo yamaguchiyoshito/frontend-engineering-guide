@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 2. ユーザー体験を支える品質  
 **小テーマ：** 2-1 パフォーマンス
 
+<!-- terms:start -->
+
+**前提となる用語：** [Webパフォーマンス](../guide/glossary.md#webパフォーマンス)、[Core Web Vitals](../guide/glossary.md#core-web-vitals)、[Lighthouse](../guide/glossary.md#lighthouse)、[モニタリングとオブザーバビリティ](../guide/glossary.md#モニタリングとオブザーバビリティ)、[SLO](../guide/glossary.md#slo)
+
+<!-- terms:end -->
+
 ## 2-1-1：メトリクスの計測
 
 Core Web Vitalsやプロダクトのコアな価値に通じる速度指標についてパフォーマンス計測を週1回以上の頻度で自動的に計測している。

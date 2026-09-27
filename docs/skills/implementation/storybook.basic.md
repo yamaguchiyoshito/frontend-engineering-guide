@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [フレームワーク・実装領域](index.md)  
 **主な前提：** React、コンポーネント設計
 
+<!-- terms:start -->
+
+**前提となる用語：** [Storybook](../../guide/glossary.md#storybook)、[コンポーネント](../../guide/glossary.md#コンポーネント)、[モック](../../guide/glossary.md#モック)、[ビジュアルリグレッションテスト](../../guide/glossary.md#ビジュアルリグレッションテスト)、[アクセシビリティ](../../guide/glossary.md#アクセシビリティ)
+
+<!-- terms:end -->
+
 Storybookでコンポーネントの状態と振る舞いをカタログ化する要素技術です。主要な状態、境界値、操作をStoryとして記述し、画面に近い構成や非同期処理を再現して実装との不整合を発見できるかを評価します。
 
 ## Lv0

@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 1. 持続可能な技術スタック  
 **小テーマ：** 1-4 アプリケーション設計
 
+<!-- terms:start -->
+
+**前提となる用語：** [Webパフォーマンス](../guide/glossary.md#webパフォーマンス)、[Core Web Vitals](../guide/glossary.md#core-web-vitals)、[状態管理](../guide/glossary.md#状態管理)、[レンダリング](../guide/glossary.md#レンダリング)
+
+<!-- terms:end -->
+
 ## 1-4-1：メトリクスの計測
 
 アプリケーションの特性に応じてメトリクスの計測を行い、定期的（月ごと〜半年ごと）に改善アクションを計画、実施している。

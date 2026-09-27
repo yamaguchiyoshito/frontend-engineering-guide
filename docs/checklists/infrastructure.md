@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 4. 効果的なシステム設計  
 **小テーマ：** 4-2 インフラ
 
+<!-- terms:start -->
+
+**前提となる用語：** [サーバー](../guide/glossary.md#サーバー)、[CDN](../guide/glossary.md#cdn)、[環境](../guide/glossary.md#環境)、[Infrastructure as Code](../guide/glossary.md#infrastructure-as-code)、[SLO](../guide/glossary.md#slo)
+
+<!-- terms:end -->
+
 ## 4-2-1：メトリクスの計測
 
 インフラおよびシステムの可用性についてメトリクスを収集している。

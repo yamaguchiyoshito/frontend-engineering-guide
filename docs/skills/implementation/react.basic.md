@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [フレームワーク・実装領域](index.md)  
 **主な前提：** JavaScript、TypeScript、DOM
 
+<!-- terms:start -->
+
+**前提となる用語：** [JavaScript](../../guide/glossary.md#javascript)、[フレームワークとライブラリ](../../guide/glossary.md#フレームワークとライブラリ)、[React](../../guide/glossary.md#react)、[コンポーネント](../../guide/glossary.md#コンポーネント)、[propsと状態](../../guide/glossary.md#propsと状態)、[DOM](../../guide/glossary.md#dom)
+
+<!-- terms:end -->
+
 Reactで画面をコンポーネントとして実装する要素技術です。イベント、状態更新、外部処理との同期をHooksの規則に沿って実装し、再描画や依存配列に起因する不具合を分析できるかを評価します。
 
 ## Lv0

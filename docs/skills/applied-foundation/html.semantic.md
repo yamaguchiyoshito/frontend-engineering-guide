@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [応用基礎領域](index.md)  
 **主な前提：** HTML
 
+<!-- terms:start -->
+
+**前提となる用語：** [HTML](../../guide/glossary.md#html)、[セマンティックHTML](../../guide/glossary.md#セマンティックhtml)、[DOM](../../guide/glossary.md#dom)、[アクセシビリティ](../../guide/glossary.md#アクセシビリティ)、[支援技術とスクリーンリーダー](../../guide/glossary.md#支援技術とスクリーンリーダー)
+
+<!-- terms:end -->
+
 画面の情報構造を意味に沿ったHTMLで表現する要素技術です。見出し、ランドマーク、リスト、表、フォームを目的に合わせて選び、見た目と意味構造の不一致が操作や読み上げに与える影響を判断できるかを評価します。
 
 ## Lv0

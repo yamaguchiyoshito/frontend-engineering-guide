@@ -9,7 +9,7 @@ def main():
  paths=[p['path'] for p in PAGES]
  assert len(paths)==len(set(paths)),'Duplicate page paths'
  assert files==set(paths),f'Unmapped/missing Markdown: {files.symmetric_difference(paths)}'
- assert len(paths)==76,'Initial release must contain 76 pages'
+ assert len(paths)==78,'Expected 78 pages'
  skills=[p for p in PAGES if p['kind']=='skill'];checks=[p for p in PAGES if p['kind']=='checklist']
  assert len(skills)==28 and len(checks)==25,'Expected 28 skills and 25 checklist groups'
  assert len({p['skillId'] for p in skills})==28,'Duplicate skill ID'
@@ -36,12 +36,24 @@ def main():
    target=url.split('#')[0]
    assert not target.startswith('/'),f'{p["path"]}: use relative Markdown links: {url}'
    assert (DOCS/p['path']).parent.joinpath(target).exists(),f'{p["path"]}: broken link {url}'
+ glossary=json.loads((ROOT/'build/glossary.json').read_text());terms=glossary['terms']
+ ids=[t['id'] for t in terms];names=[t['term'] for t in terms];anchors=[slug(n) for n in names]
+ assert len(ids)==len(set(ids)) and len(names)==len(set(names)) and len(anchors)==len(set(anchors)),'Glossary terms must be unique'
+ refs={p.get('skillId') for p in skills}|{p.get('sourceId') for p in checks}|set(paths)
+ for t in terms:
+  assert t['category'] in glossary['categories'],t['id']+': unknown category'
+  assert t['definition'].strip(),t['id']+': empty definition'
+  for ref in t.get('see',[]):assert ref in refs,t['id']+': unknown related page '+ref
+ for path,tids in glossary['pages'].items():
+  assert path in paths,'glossary.pages: unknown page '+path
+  assert tids and len(tids)==len(set(tids)) and all(i in ids for i in tids),'glossary.pages: bad term list for '+path
+ for p in skills+checks:assert p['path'] in glossary['pages'],p['path']+': add its terms to build/glossary.json'
  if '--migration' in sys.argv:
   baseline=json.loads((ROOT/'build/migration-baseline.json').read_text())
   assert definitions==baseline['skills'],'Skill definitions differ from source 1.1'
   assert items==baseline['checks'],'Checklist content differs from source 1.1'
   print('Migration verified: all 140 definitions and 100 complete checklist entries unchanged')
- print(f'Docs OK: {len(paths)} pages, {len(definitions)} definitions, {len(items)} items (75 TRUE / 25 FALSE)')
+ print(f'Docs OK: {len(paths)} pages, {len(definitions)} definitions, {len(items)} items (75 TRUE / 25 FALSE), {len(terms)} glossary terms')
 if __name__=='__main__':
  try:main()
  except (AssertionError,ValueError) as e:sys.exit(str(e))

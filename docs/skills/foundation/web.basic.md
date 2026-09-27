@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [基礎領域](index.md)  
 **評価対象：** HTTP、URL、ブラウザ、Cookie、キャッシュ
 
+<!-- terms:start -->
+
+**前提となる用語：** [ブラウザ](../../guide/glossary.md#ブラウザ)、[サーバー](../../guide/glossary.md#サーバー)、[HTTP](../../guide/glossary.md#http)、[リクエストとレスポンス](../../guide/glossary.md#リクエストとレスポンス)、[ステータスコード](../../guide/glossary.md#ステータスコード)、[URL](../../guide/glossary.md#url)、[Cookie](../../guide/glossary.md#cookie)、[キャッシュ](../../guide/glossary.md#キャッシュ)、[開発者ツール](../../guide/glossary.md#開発者ツール)
+
+<!-- terms:end -->
+
 ブラウザがサーバーと通信して画面を表示するまでの仕組みを扱う要素技術です。HTTPの要求と応答、URL、Cookie、キャッシュの動作を理解し、通信の内容から不具合を切り分けられるかを評価します。
 
 ## Lv0

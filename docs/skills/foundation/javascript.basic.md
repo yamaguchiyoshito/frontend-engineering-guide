@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [基礎領域](index.md)  
 **評価対象：** 構文、関数、オブジェクト、配列
 
+<!-- terms:start -->
+
+**前提となる用語：** [JavaScript](../../guide/glossary.md#javascript)、[DOM](../../guide/glossary.md#dom)、[Node.js](../../guide/glossary.md#node-js)、[Lintと静的検査](../../guide/glossary.md#lintと静的検査)
+
+<!-- terms:end -->
+
 JavaScriptの構文、関数、オブジェクト、配列を使って処理を実装する要素技術です。要件を関数に分解し、境界値や例外を扱い、スコープや参照が原因の不具合を分析できるかを評価します。
 
 ## Lv0

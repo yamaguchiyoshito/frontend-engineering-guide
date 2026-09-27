@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 4. 効果的なシステム設計  
 **小テーマ：** 4-1 サーバー
 
+<!-- terms:start -->
+
+**前提となる用語：** [フロントエンドとバックエンド](../guide/glossary.md#フロントエンドとバックエンド)、[API](../guide/glossary.md#api)、[REST API](../guide/glossary.md#rest-api)、[OpenAPI](../guide/glossary.md#openapi)、[JSON](../guide/glossary.md#json)、[モック](../guide/glossary.md#モック)、[Node.js](../guide/glossary.md#node-js)
+
+<!-- terms:end -->
+
 ## 4-1-1：メトリクスの計測
 
 サーバーアプリケーションのリソースについてメトリクスを収集している。

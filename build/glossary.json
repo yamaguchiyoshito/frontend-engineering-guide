@@ -1,0 +1,1224 @@
+{
+  "categories": [
+    "Webとブラウザ",
+    "HTML・CSS・JavaScript",
+    "チーム開発の流れ",
+    "品質・テスト",
+    "セキュリティ・運用・チーム"
+  ],
+  "note": "厳密な定義は、各用語の「関連」に示したページと、そのページの参考リンクを参照してください。",
+  "terms": [
+    {
+      "id": "browser",
+      "term": "ブラウザ",
+      "category": "Webとブラウザ",
+      "definition": "Webページを表示するソフトウェアです。Chrome、Safari、Firefoxなどがあります。サーバーから受け取ったHTML・CSS・JavaScriptを解釈して画面を描き、利用者の操作を受け付けます。",
+      "see": [
+        "web.basic"
+      ]
+    },
+    {
+      "id": "server",
+      "term": "サーバー",
+      "category": "Webとブラウザ",
+      "definition": "ブラウザからの要求を受け取り、HTMLやデータを返すコンピューターやプログラムです。利用者の手元で動くブラウザ側をクライアントと呼びます。"
+    },
+    {
+      "id": "frontend-backend",
+      "term": "フロントエンドとバックエンド",
+      "category": "Webとブラウザ",
+      "definition": "フロントエンドは利用者のブラウザで動く、画面と操作を担う部分です。バックエンドはサーバーで動く、データの処理・保存・認証などを担う部分です。両者はAPIを通じてやり取りします。",
+      "see": [
+        "guide/prerequisites.md"
+      ]
+    },
+    {
+      "id": "http",
+      "term": "HTTP",
+      "category": "Webとブラウザ",
+      "definition": "ブラウザとサーバーが情報をやり取りするときの約束事（プロトコル）です。ブラウザが要求（リクエスト）を送り、サーバーが応答（レスポンス）を返します。通信を暗号化したものがHTTPSです。",
+      "see": [
+        "web.basic"
+      ]
+    },
+    {
+      "id": "request-response",
+      "term": "リクエストとレスポンス",
+      "category": "Webとブラウザ",
+      "definition": "ブラウザからサーバーへの要求と、それに対する返答です。要求にはURLとメソッド（GETは取得、POSTは送信など）が含まれ、返答には結果を示すステータスコードと本文が含まれます。",
+      "see": [
+        "web.basic"
+      ]
+    },
+    {
+      "id": "status-code",
+      "term": "ステータスコード",
+      "category": "Webとブラウザ",
+      "definition": "レスポンスに含まれる3桁の数字で、要求の結果を表します。200は成功、301や302は別の場所への移動（リダイレクト）、404は見つからない、500はサーバー側の失敗です。"
+    },
+    {
+      "id": "url",
+      "term": "URL",
+      "category": "Webとブラウザ",
+      "definition": "Web上の場所を示す文字列です。`https://example.com/docs?page=2#top` のように、方式、ホスト名、パス、クエリ（?以降）、フラグメント（#以降）で構成されます。",
+      "see": [
+        "web.basic"
+      ]
+    },
+    {
+      "id": "cookie",
+      "term": "Cookie",
+      "category": "Webとブラウザ",
+      "definition": "サーバーの指示でブラウザが保存し、次回以降の要求に自動で付ける小さなデータです。ログイン状態の維持などに使います。利用者の追跡にも使われるため、プライバシーの配慮が必要です。",
+      "see": [
+        "web.basic",
+        "2-4"
+      ]
+    },
+    {
+      "id": "cache",
+      "term": "キャッシュ",
+      "category": "Webとブラウザ",
+      "definition": "一度取得したファイルやデータを手元に保存し、次回は取得を省いて速く表示する仕組みです。ブラウザ、CDN、サーバーなど複数の層にあり、古い内容が表示され続ける原因にもなります。",
+      "see": [
+        "web.basic",
+        "4-3"
+      ]
+    },
+    {
+      "id": "cdn",
+      "term": "CDN",
+      "category": "Webとブラウザ",
+      "definition": "Content Delivery Network。利用者に近い場所に配置した配信サーバー群です。画像、CSS、JavaScriptなどの静的ファイルを速く届け、元のサーバーの負荷を減らします。",
+      "see": [
+        "4-2"
+      ]
+    },
+    {
+      "id": "cors",
+      "term": "クロスオリジンとCORS",
+      "category": "Webとブラウザ",
+      "definition": "表示中のページと異なるドメイン（オリジン）のサーバーへ通信することをクロスオリジンと呼びます。ブラウザは安全のためこれを制限しており、通信先のサーバーが許可を宣言する仕組みがCORSです。",
+      "see": [
+        "web.basic",
+        "web.security"
+      ]
+    },
+    {
+      "id": "api",
+      "term": "API",
+      "category": "Webとブラウザ",
+      "definition": "Application Programming Interface。プログラム同士が決められた形式でやり取りするための窓口です。フロントエンドはAPIを呼び出して、バックエンドからデータを取得・更新します。",
+      "see": [
+        "frontend.api-integration"
+      ]
+    },
+    {
+      "id": "rest",
+      "term": "REST API",
+      "category": "Webとブラウザ",
+      "definition": "URLとHTTPメソッドで「どの資源に何をするか」を表現するAPIの設計様式です。例えば `GET /users/1` は利用者1の情報を取得する、という意味になります。",
+      "see": [
+        "frontend.api-integration"
+      ]
+    },
+    {
+      "id": "json",
+      "term": "JSON",
+      "category": "Webとブラウザ",
+      "definition": "データを `{\"name\": \"山田\"}` のような文字列で表す形式です。APIの送受信で広く使われ、JavaScriptからそのまま扱えます。"
+    },
+    {
+      "id": "openapi",
+      "term": "OpenAPI",
+      "category": "Webとブラウザ",
+      "definition": "APIの仕様（URL、入力と出力の形）を、機械が読める形式で記述する規格です。仕様から型定義、モック、通信用のコードを自動生成でき、フロントエンドとバックエンドの認識のずれを防ぎます。",
+      "see": [
+        "frontend.api-integration",
+        "4-1"
+      ]
+    },
+    {
+      "id": "auth",
+      "term": "認証と認可",
+      "category": "Webとブラウザ",
+      "definition": "認証は、相手が誰かを確認すること（ログイン）です。認可は、その相手に何を許すかを判断すること（権限）です。両者を分けて考えます。",
+      "see": [
+        "web.security"
+      ]
+    },
+    {
+      "id": "rendering",
+      "term": "レンダリング",
+      "category": "Webとブラウザ",
+      "definition": "ブラウザがHTML・CSS・JavaScriptから画面を描く処理です。サーバー側でHTMLを組み立てて返す方式をSSR、ブラウザ側でJavaScriptが組み立てる方式をCSRと呼びます。",
+      "see": [
+        "web.performance"
+      ]
+    },
+    {
+      "id": "html",
+      "term": "HTML",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "見出し、段落、リンク、画像、フォームなど、ページの構造と内容を記述する言語です。要素は `<p>…</p>` のようなタグで表します。",
+      "see": [
+        "html.basic"
+      ]
+    },
+    {
+      "id": "semantic-html",
+      "term": "セマンティックHTML",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "見た目ではなく意味に沿って要素を選ぶHTMLの書き方です。見出しには見出し要素、ボタンにはボタン要素を使います。支援技術や検索エンジンが内容を正しく解釈できるようになります。",
+      "see": [
+        "html.semantic"
+      ]
+    },
+    {
+      "id": "css",
+      "term": "CSS",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "色、文字、余白、配置など、ページの見た目を指定する言語です。HTMLの要素に対してスタイルを当てます。",
+      "see": [
+        "css.basic"
+      ]
+    },
+    {
+      "id": "selector",
+      "term": "セレクタ",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "CSSでスタイルを当てる対象を指定する記法です。要素名（`p`）、クラス（`.button`）、ID（`#main`）などで選びます。",
+      "see": [
+        "css.basic"
+      ]
+    },
+    {
+      "id": "cascade",
+      "term": "カスケードと詳細度",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "同じ要素に複数のスタイルが当たるとき、どれを優先するかを決める規則です。指定方法の具体性（詳細度）が高いもの、後に書かれたものが優先されます。表示が思いどおりにならない原因の多くはここにあります。",
+      "see": [
+        "css.basic"
+      ]
+    },
+    {
+      "id": "box-model",
+      "term": "ボックスモデル",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "各要素を、内容、内側の余白（padding）、枠線（border）、外側の余白（margin）の四層の箱として扱う考え方です。幅や高さの計算の基礎になります。",
+      "see": [
+        "css.basic"
+      ]
+    },
+    {
+      "id": "layout",
+      "term": "FlexboxとGrid",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "CSSで要素を並べる仕組みです。Flexboxは横一列や縦一列といった一方向の配置に、Gridは行と列を持つ二次元の配置に向いています。",
+      "see": [
+        "css.basic"
+      ]
+    },
+    {
+      "id": "responsive",
+      "term": "レスポンシブデザイン",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "画面の幅や機器に応じて配置や文字の大きさを変え、スマートフォンからPCまで一つのHTMLで対応する設計です。",
+      "see": [
+        "css.responsive"
+      ]
+    },
+    {
+      "id": "javascript",
+      "term": "JavaScript",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "ブラウザ上でページに動きを付けるプログラミング言語です。操作への反応、データの取得、画面の更新を担います。Node.jsを使うとサーバーや開発ツールでも動きます。",
+      "see": [
+        "javascript.basic"
+      ]
+    },
+    {
+      "id": "dom",
+      "term": "DOM",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "Document Object Model。ブラウザがHTMLを読み込んで作る、要素の木構造です。JavaScriptはDOMを通じて要素を探し、内容や見た目を変更します。",
+      "see": [
+        "javascript.dom"
+      ]
+    },
+    {
+      "id": "event",
+      "term": "イベント",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "クリック、文字入力、スクロール、読み込み完了など、ブラウザで起きる出来事です。JavaScriptはイベントに処理（ハンドラー）を登録して反応します。",
+      "see": [
+        "javascript.dom"
+      ]
+    },
+    {
+      "id": "async",
+      "term": "非同期処理",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "通信やタイマーのように時間のかかる処理を待つ間、他の処理を止めずに進める仕組みです。結果はPromiseやasync/awaitで受け取ります。",
+      "see": [
+        "javascript.async"
+      ]
+    },
+    {
+      "id": "promise",
+      "term": "Promise",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "非同期処理の「あとで届く結果」を表すオブジェクトです。成功か失敗のどちらかに落ち着き、`then` や `await` で結果を受け取ります。",
+      "see": [
+        "javascript.async"
+      ]
+    },
+    {
+      "id": "typescript",
+      "term": "TypeScript",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "JavaScriptに型（値の種類の宣言）を加えた言語です。実行前に誤りを見つけやすく、エディタの補完が効きます。ビルド時にJavaScriptへ変換して動かします。",
+      "see": [
+        "typescript.basic"
+      ]
+    },
+    {
+      "id": "type-check",
+      "term": "型検査",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "変数や関数の値の種類が宣言と一致しているかを、実行前に機械的に確認することです。TypeScriptのコンパイラ（tsc）が行い、CIに組み込んで誤りの混入を防ぎます。",
+      "see": [
+        "typescript.basic",
+        "1-1"
+      ]
+    },
+    {
+      "id": "framework",
+      "term": "フレームワークとライブラリ",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "ライブラリは特定の機能を提供する部品の集まりです。フレームワークは画面の構成方法や処理の流れまで含む土台です。ReactはUIを組み立てるライブラリ、Next.jsはReactを基にしたフレームワークです。",
+      "see": [
+        "1-5"
+      ]
+    },
+    {
+      "id": "react",
+      "term": "React",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "画面をコンポーネントという部品の組み合わせとして記述するUIライブラリです。データが変わると、画面の該当部分を自動で更新します。",
+      "see": [
+        "react.basic"
+      ]
+    },
+    {
+      "id": "component",
+      "term": "コンポーネント",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "見た目と動きをひとまとめにした、再利用できる画面の部品です。ボタン、入力欄、一覧などがあり、組み合わせて画面を作ります。",
+      "see": [
+        "react.component-design",
+        "1-3"
+      ]
+    },
+    {
+      "id": "props-state",
+      "term": "propsと状態",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "propsは親の部品から子の部品へ渡す設定値です。状態（state）は部品が持ち、操作や通信によって変わる値です。状態が変わると画面が再描画されます。",
+      "see": [
+        "react.basic"
+      ]
+    },
+    {
+      "id": "state-management",
+      "term": "状態管理",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "画面の状態をどこに置き、どう更新・共有するかの設計です。部品の中だけで使う状態、複数の画面で共有する状態、URLに持たせる状態、サーバーから取得したデータを区別します。",
+      "see": [
+        "react.state-management"
+      ]
+    },
+    {
+      "id": "optimistic",
+      "term": "楽観的更新",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "サーバーの応答を待たずに画面を先に更新し、失敗したら元に戻す手法です。操作の体感速度を上げます。",
+      "see": [
+        "react.state-management"
+      ]
+    },
+    {
+      "id": "form",
+      "term": "フォーム",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "入力欄、選択肢、送信ボタンからなる、利用者が情報を入力する部分です。入力値の管理、検証、送信、エラー表示を扱います。",
+      "see": [
+        "react.form"
+      ]
+    },
+    {
+      "id": "validation",
+      "term": "入力検証",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "入力値が必須項目を満たすか、形式や範囲が正しいかを確認することです。ブラウザ側で即時に確認して利用者に伝え、サーバー側でも必ず確認します。",
+      "see": [
+        "frontend.validation"
+      ]
+    },
+    {
+      "id": "schema",
+      "term": "スキーマ",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "データの形（項目名、型、必須かどうか）の定義です。Zodなどのライブラリで定義すると、実行時の検証と型定義の両方に使えます。",
+      "see": [
+        "frontend.validation"
+      ]
+    },
+    {
+      "id": "storybook",
+      "term": "Storybook",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "コンポーネントを一つずつ表示・操作して確認できる開発ツールです。部品のカタログ、文書、テストの土台になります。",
+      "see": [
+        "storybook.basic"
+      ]
+    },
+    {
+      "id": "package",
+      "term": "パッケージと依存関係",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "パッケージは公開されている再利用可能なコードの単位です。プロジェクトが利用するパッケージを依存関係と呼び、npmやpnpmなどのパッケージ管理ツールで導入・更新します。",
+      "see": [
+        "3-4"
+      ]
+    },
+    {
+      "id": "build",
+      "term": "ビルドとバンドル",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "開発時に書いたTypeScriptや多数のファイルを、ブラウザが読める形にまとめて変換する処理です。まとめた結果のファイルをバンドルと呼び、その大きさが表示速度に影響します。",
+      "see": [
+        "3-2"
+      ]
+    },
+    {
+      "id": "lint",
+      "term": "Lintと静的検査",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "コードを実行せずに、書き方の誤りや規約違反を機械的に見つけることです。ESLintやStylelintなどのツールを使います。字下げや改行を整えるにはPrettierなどのフォーマッタを使います。",
+      "see": [
+        "javascript.basic",
+        "1-1"
+      ]
+    },
+    {
+      "id": "devtools",
+      "term": "開発者ツール",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "ブラウザに内蔵された調査機能です。要素とスタイルの確認、通信の一覧、JavaScriptの実行とデバッグ、性能の計測ができます。多くのブラウザでF12キーから開けます。",
+      "see": [
+        "web.basic"
+      ]
+    },
+    {
+      "id": "repository",
+      "term": "リポジトリ",
+      "category": "チーム開発の流れ",
+      "definition": "ソースコードと変更履歴を保管する場所です。GitHubやGitLabなどのサービス上で共有します。",
+      "see": [
+        "git.basic"
+      ]
+    },
+    {
+      "id": "git",
+      "term": "Git",
+      "category": "チーム開発の流れ",
+      "definition": "ファイルの変更履歴を記録し、複数人の並行作業を統合するためのバージョン管理システムです。",
+      "see": [
+        "git.basic"
+      ]
+    },
+    {
+      "id": "commit",
+      "term": "コミット",
+      "category": "チーム開発の流れ",
+      "definition": "変更を履歴として記録する操作と、その記録の単位です。何を変えたかの説明（コミットメッセージ）を付けます。",
+      "see": [
+        "git.basic"
+      ]
+    },
+    {
+      "id": "branch",
+      "term": "ブランチ",
+      "category": "チーム開発の流れ",
+      "definition": "履歴を分岐させ、本流に影響を与えずに作業する仕組みです。作業が終わったらマージで本流に戻します。",
+      "see": [
+        "git.basic"
+      ]
+    },
+    {
+      "id": "merge",
+      "term": "マージ",
+      "category": "チーム開発の流れ",
+      "definition": "分岐したブランチの変更を別のブランチへ統合することです。同じ箇所を別々に変えていると衝突（コンフリクト）が起き、手作業で解消します。",
+      "see": [
+        "git.basic"
+      ]
+    },
+    {
+      "id": "pull-request",
+      "term": "Pull RequestとMerge Request",
+      "category": "チーム開発の流れ",
+      "definition": "ブランチの変更を本流へ取り込んでほしいと依頼し、レビューと自動検査を受ける仕組みです。GitHubではPull Request（PR）、GitLabではMerge Request（MR）と呼びます。本書ではPRと表記し、GitLabではMRと読み替えます。",
+      "see": [
+        "git.collaboration"
+      ]
+    },
+    {
+      "id": "code-review",
+      "term": "コードレビュー",
+      "category": "チーム開発の流れ",
+      "definition": "他の開発者が変更内容を読み、誤り、設計、読みやすさを確認して指摘することです。PR上で行います。",
+      "see": [
+        "git.collaboration"
+      ]
+    },
+    {
+      "id": "ci",
+      "term": "CI",
+      "category": "チーム開発の流れ",
+      "definition": "Continuous Integration（継続的インテグレーション）。変更がリポジトリに送られるたびに、ビルド、Lint、型検査、テストを自動で実行する仕組みです。GitHub ActionsやGitLab CI/CDで構成し、失敗した変更をマージできない設定にして品質を守ります。",
+      "see": [
+        "3-5"
+      ]
+    },
+    {
+      "id": "cd",
+      "term": "デプロイとCD",
+      "category": "チーム開発の流れ",
+      "definition": "デプロイは、作成したアプリケーションを利用者が使えるサーバーや配信環境に配置することです。CD（継続的デリバリー）はそれを自動化し、いつでも安全に公開できる状態を保つことです。",
+      "see": [
+        "3-3"
+      ]
+    },
+    {
+      "id": "environment",
+      "term": "環境",
+      "category": "チーム開発の流れ",
+      "definition": "同じアプリケーションを動かす場所の区分です。開発者の手元（ローカル）、本番と同じ構成で確認するステージング、利用者が使う本番などがあります。",
+      "see": [
+        "3-3"
+      ]
+    },
+    {
+      "id": "nodejs",
+      "term": "Node.js",
+      "category": "チーム開発の流れ",
+      "definition": "ブラウザの外でJavaScriptを動かす実行環境です。開発ツール、ビルド、テスト、サーバー処理に使います。",
+      "see": [
+        "javascript.basic"
+      ]
+    },
+    {
+      "id": "feature-flag",
+      "term": "フィーチャーフラグ",
+      "category": "チーム開発の流れ",
+      "definition": "機能の有効・無効を設定で切り替える仕組みです。コードを公開したまま一部の利用者だけに機能を出したり、問題があれば即座に無効化したりできます。",
+      "see": [
+        "3-3"
+      ]
+    },
+    {
+      "id": "rollback",
+      "term": "ロールバック",
+      "category": "チーム開発の流れ",
+      "definition": "問題が起きたときに、以前の正常な版へ戻すことです。戻す手順を事前に用意し、試しておくことが重要です。",
+      "see": [
+        "3-3"
+      ]
+    },
+    {
+      "id": "iac",
+      "term": "Infrastructure as Code",
+      "category": "チーム開発の流れ",
+      "definition": "サーバーや配信の設定をコードとして記述し、履歴管理と再現を可能にする手法です。手作業の設定変更による差異を防ぎます。",
+      "see": [
+        "4-2"
+      ]
+    },
+    {
+      "id": "test-unit",
+      "term": "単体テスト",
+      "category": "品質・テスト",
+      "definition": "関数やモジュールなどの小さな単位を、単独で自動的に検証するテストです。速く実行でき、原因の特定が容易です。",
+      "see": [
+        "test.unit"
+      ]
+    },
+    {
+      "id": "test-component",
+      "term": "コンポーネントテスト",
+      "category": "品質・テスト",
+      "definition": "画面の部品を描画し、利用者の操作を模して表示や動きを検証するテストです。",
+      "see": [
+        "test.component"
+      ]
+    },
+    {
+      "id": "test-integration",
+      "term": "結合テスト",
+      "category": "品質・テスト",
+      "definition": "複数の部品や通信を組み合わせ、画面としての振る舞いを検証するテストです。APIはモックで置き換えることが多いです。",
+      "see": [
+        "test.integration"
+      ]
+    },
+    {
+      "id": "test-e2e",
+      "term": "E2Eテスト",
+      "category": "品質・テスト",
+      "definition": "End to End。実際のブラウザを自動操作し、ログインから購入完了までのように、利用者の一連の操作が最後まで通ることを検証するテストです。",
+      "see": [
+        "test.e2e"
+      ]
+    },
+    {
+      "id": "test-pyramid",
+      "term": "テストピラミッド",
+      "category": "品質・テスト",
+      "definition": "速く安い単体テストを多く、遅く高いE2Eテストを少なくする、テストの配分の考え方です。",
+      "see": [
+        "test.design"
+      ]
+    },
+    {
+      "id": "mock",
+      "term": "モック",
+      "category": "品質・テスト",
+      "definition": "テストのために、通信先や外部の部品を偽物に置き換えることです。MSW（Mock Service Worker）はブラウザの通信を横取りしてモックするライブラリです。",
+      "see": [
+        "test.integration"
+      ]
+    },
+    {
+      "id": "coverage",
+      "term": "カバレッジ",
+      "category": "品質・テスト",
+      "definition": "テストがコードのどの程度を実行したかの割合です。高いほど良いとは限らず、重要な経路が検証されているかを見ます。",
+      "see": [
+        "test.unit"
+      ]
+    },
+    {
+      "id": "flaky",
+      "term": "不安定なテスト",
+      "category": "品質・テスト",
+      "definition": "コードを変えていないのに、成功と失敗が変わるテストです。フレーキーとも呼びます。待ち時間や実行順序への依存が原因になりやすいです。",
+      "see": [
+        "test.e2e"
+      ]
+    },
+    {
+      "id": "vrt",
+      "term": "ビジュアルリグレッションテスト",
+      "category": "品質・テスト",
+      "definition": "画面のスクリーンショットを以前のものと比較し、意図しない見た目の変化を検出するテストです。",
+      "see": [
+        "storybook.basic"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "term": "アクセシビリティ",
+      "category": "品質・テスト",
+      "definition": "障害の有無や利用環境に関わらず、誰でも情報を得て操作できることです。キーボード操作、スクリーンリーダー対応、色のコントラストなどを含みます。a11yと略します。",
+      "see": [
+        "web.accessibility",
+        "2-2"
+      ]
+    },
+    {
+      "id": "wcag",
+      "term": "WCAG",
+      "category": "品質・テスト",
+      "definition": "Web Content Accessibility Guidelines。アクセシビリティの国際的なガイドラインです。達成基準がA、AA、AAAの3段階で示されます。",
+      "see": [
+        "web.accessibility"
+      ]
+    },
+    {
+      "id": "assistive-tech",
+      "term": "支援技術とスクリーンリーダー",
+      "category": "品質・テスト",
+      "definition": "障害のある利用者がコンピューターを使うための道具です。スクリーンリーダーは画面の内容を音声で読み上げるソフトウェアで、HTMLの意味付けが正しくないと内容を伝えられません。",
+      "see": [
+        "web.accessibility"
+      ]
+    },
+    {
+      "id": "performance",
+      "term": "Webパフォーマンス",
+      "category": "品質・テスト",
+      "definition": "ページの表示や操作への反応の速さです。通信量、JavaScriptの処理量、描画の仕方が影響します。",
+      "see": [
+        "web.performance"
+      ]
+    },
+    {
+      "id": "cwv",
+      "term": "Core Web Vitals",
+      "category": "品質・テスト",
+      "definition": "Googleが定める利用者体験の指標です。表示の速さ（LCP）、操作への反応（INP）、表示のずれ（CLS）を測ります。",
+      "see": [
+        "web.performance",
+        "2-1"
+      ]
+    },
+    {
+      "id": "lighthouse",
+      "term": "Lighthouse",
+      "category": "品質・テスト",
+      "definition": "Googleが提供する自動監査ツールです。性能、アクセシビリティ、SEOなどを採点します。ブラウザの開発者ツールからも実行できます。",
+      "see": [
+        "web.performance"
+      ]
+    },
+    {
+      "id": "seo",
+      "term": "SEO",
+      "category": "品質・テスト",
+      "definition": "Search Engine Optimization。検索エンジンに内容を正しく理解させ、検索結果に適切に表示されるようにすることです。見出しの構造、メタ情報、表示速度が関係します。",
+      "see": [
+        "web.seo"
+      ]
+    },
+    {
+      "id": "vulnerability",
+      "term": "脆弱性",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "攻撃に悪用され得るソフトウェアの欠陥です。公開された既知の脆弱性にはCVEという識別番号が付きます。",
+      "see": [
+        "web.security"
+      ]
+    },
+    {
+      "id": "xss",
+      "term": "XSS",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "Cross Site Scripting。攻撃者が用意したスクリプトを、他の利用者のブラウザで実行させる攻撃です。入力値をそのままHTMLに埋め込むと起きます。エスケープと検証で防ぎます。",
+      "see": [
+        "web.security"
+      ]
+    },
+    {
+      "id": "csp",
+      "term": "CSP",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "Content Security Policy。ページが読み込めるスクリプトや通信先をサーバーが宣言し、不正なスクリプトの実行を防ぐ仕組みです。",
+      "see": [
+        "web.security"
+      ]
+    },
+    {
+      "id": "sast",
+      "term": "SAST",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "Static Application Security Testing。コードを実行せずに、セキュリティ上の問題となる書き方を機械的に検出する検査です。",
+      "see": [
+        "2-3"
+      ]
+    },
+    {
+      "id": "supply-chain",
+      "term": "サプライチェーン",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "自分たちのコードが依存する外部パッケージ、ビルドツール、配信経路の全体です。依存先に脆弱性や悪意あるコードが混入するリスクを扱います。",
+      "see": [
+        "3-4"
+      ]
+    },
+    {
+      "id": "secrets",
+      "term": "機密情報とシークレット管理",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "パスワード、APIキー、秘密鍵など、漏れると被害が出る情報（クレデンシャル）です。コードに書かず、専用の保管機構から実行時に渡します。",
+      "see": [
+        "web.security",
+        "2-3"
+      ]
+    },
+    {
+      "id": "dependency-update",
+      "term": "依存関係の更新検知",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "DependabotやRenovateのように、依存パッケージの新版や脆弱性を検知して、更新のPRを自動で作る仕組みです。",
+      "see": [
+        "3-4"
+      ]
+    },
+    {
+      "id": "privacy",
+      "term": "プライバシーと外部送信",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "利用者の情報を扱うときの配慮です。分析や広告のために外部サービスへ利用者の情報を送ることを外部送信と呼び、日本では電気通信事業法に基づく通知・公表の規律があります。",
+      "see": [
+        "2-4"
+      ]
+    },
+    {
+      "id": "monitoring",
+      "term": "モニタリングとオブザーバビリティ",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "本番で動くシステムの状態を継続的に観測することです。ログ、メトリクス（数値）、トレース（処理の追跡）を集め、異常の検知と原因の調査に使います。",
+      "see": [
+        "4-4"
+      ]
+    },
+    {
+      "id": "slo",
+      "term": "SLO",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "Service Level Objective。「表示は2秒以内が95%」のように、サービスの品質目標を数値で定めたものです。",
+      "see": [
+        "4-4"
+      ]
+    },
+    {
+      "id": "incident",
+      "term": "インシデントとポストモーテム",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "インシデントは、利用者に影響する障害や問題です。ポストモーテムは、復旧後に経緯と原因を振り返り、個人を責めずに再発防止策を決める記録です。",
+      "see": [
+        "4-5"
+      ]
+    },
+    {
+      "id": "design-system",
+      "term": "デザインシステムとデザイントークン",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "デザインシステムは、色、文字、部品、使い方の規則をまとめた共通の基盤です。デザイントークンは、色や余白などの値に名前を付けて、デザインツールとコードで共有する仕組みです。",
+      "see": [
+        "2-5"
+      ]
+    },
+    {
+      "id": "dx-criteria",
+      "term": "DX Criteria",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "一般社団法人日本CTO協会が公開する、開発組織の状態を自己診断するための基準です。本書のチームチェックリストは、そのWebフロントエンド版を出典としています。",
+      "see": [
+        "checklists/index.md"
+      ]
+    },
+    {
+      "id": "dora",
+      "term": "DORAの4指標",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "開発チームのデリバリー性能を測る4つの指標です。デプロイ頻度、変更のリードタイム、変更失敗率、復旧時間からなります。",
+      "see": [
+        "5-1"
+      ]
+    },
+    {
+      "id": "enabling",
+      "term": "イネーブリング",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "他のチームが自力で課題を解決できるように、知識や仕組みを移して支援することです。代わりに作業するのではなく、できるようにすることを目指します。",
+      "see": [
+        "5-2"
+      ]
+    },
+    {
+      "id": "adr",
+      "term": "ADR",
+      "category": "セキュリティ・運用・チーム",
+      "definition": "Architecture Decision Record。設計上の判断を、背景、選択肢、決定、影響の形で記録した文書です。後から経緯を追えるようにします。",
+      "see": [
+        "5-2"
+      ]
+    }
+  ],
+  "pages": {
+    "guide/improvement.md": [
+      "ci",
+      "type-check",
+      "api",
+      "code-review",
+      "environment"
+    ],
+    "guide/overview.md": [
+      "frontend-backend",
+      "ci",
+      "type-check",
+      "pull-request",
+      "merge"
+    ],
+    "guide/team-assessment.md": [
+      "dx-criteria",
+      "repository",
+      "environment",
+      "pull-request"
+    ],
+    "checklists/accessibility.md": [
+      "accessibility",
+      "wcag",
+      "assistive-tech",
+      "semantic-html",
+      "lighthouse"
+    ],
+    "checklists/backend-collaboration.md": [
+      "frontend-backend",
+      "api",
+      "rest",
+      "openapi",
+      "json",
+      "mock",
+      "nodejs"
+    ],
+    "checklists/builds.md": [
+      "build",
+      "package",
+      "ci",
+      "cache"
+    ],
+    "checklists/business-collaboration.md": [
+      "dora",
+      "feature-flag",
+      "monitoring"
+    ],
+    "checklists/caching.md": [
+      "cache",
+      "cdn",
+      "http",
+      "status-code"
+    ],
+    "checklists/cicd.md": [
+      "ci",
+      "cd",
+      "pull-request",
+      "lint",
+      "test-unit",
+      "environment"
+    ],
+    "checklists/dependencies.md": [
+      "package",
+      "supply-chain",
+      "vulnerability",
+      "dependency-update"
+    ],
+    "checklists/deployment.md": [
+      "cd",
+      "environment",
+      "feature-flag",
+      "rollback",
+      "ci"
+    ],
+    "checklists/design-consistency.md": [
+      "design-system",
+      "component",
+      "storybook",
+      "responsive",
+      "accessibility"
+    ],
+    "checklists/development-tooling.md": [
+      "environment",
+      "build",
+      "lint",
+      "mock",
+      "ci"
+    ],
+    "checklists/engineering-improvement.md": [
+      "dora",
+      "code-review",
+      "adr"
+    ],
+    "checklists/incident-response.md": [
+      "incident",
+      "rollback",
+      "monitoring",
+      "slo"
+    ],
+    "checklists/infrastructure.md": [
+      "server",
+      "cdn",
+      "environment",
+      "iac",
+      "slo"
+    ],
+    "checklists/knowledge-sharing.md": [
+      "enabling",
+      "design-system",
+      "adr",
+      "storybook"
+    ],
+    "checklists/observability.md": [
+      "monitoring",
+      "slo",
+      "incident",
+      "performance"
+    ],
+    "checklists/performance.md": [
+      "performance",
+      "cwv",
+      "lighthouse",
+      "monitoring",
+      "slo"
+    ],
+    "checklists/privacy.md": [
+      "privacy",
+      "cookie",
+      "auth"
+    ],
+    "checklists/quality-and-types.md": [
+      "repository",
+      "typescript",
+      "type-check",
+      "lint",
+      "api",
+      "openapi"
+    ],
+    "checklists/roles-and-growth.md": [
+      "frontend-backend",
+      "framework",
+      "enabling"
+    ],
+    "checklists/security.md": [
+      "vulnerability",
+      "sast",
+      "ci",
+      "supply-chain",
+      "dependency-update",
+      "secrets"
+    ],
+    "checklists/technical-communication.md": [
+      "adr",
+      "repository",
+      "enabling"
+    ],
+    "checklists/technology-selection.md": [
+      "framework",
+      "package",
+      "vulnerability",
+      "adr"
+    ],
+    "checklists/testing.md": [
+      "test-pyramid",
+      "test-unit",
+      "test-component",
+      "test-integration",
+      "test-e2e",
+      "ci",
+      "flaky",
+      "coverage"
+    ],
+    "checklists/ui-components.md": [
+      "component",
+      "storybook",
+      "react",
+      "design-system",
+      "accessibility"
+    ],
+    "checklists/user-centered-design.md": [
+      "performance",
+      "cwv",
+      "state-management",
+      "rendering"
+    ],
+    "skills/applied-foundation/css.responsive.md": [
+      "css",
+      "responsive",
+      "layout",
+      "devtools"
+    ],
+    "skills/applied-foundation/git.collaboration.md": [
+      "git",
+      "branch",
+      "merge",
+      "pull-request",
+      "code-review",
+      "ci"
+    ],
+    "skills/applied-foundation/html.semantic.md": [
+      "html",
+      "semantic-html",
+      "dom",
+      "accessibility",
+      "assistive-tech"
+    ],
+    "skills/applied-foundation/javascript.async.md": [
+      "async",
+      "promise",
+      "http",
+      "api"
+    ],
+    "skills/applied-foundation/javascript.dom.md": [
+      "javascript",
+      "dom",
+      "event",
+      "rendering"
+    ],
+    "skills/applied-foundation/typescript.basic.md": [
+      "javascript",
+      "typescript",
+      "type-check",
+      "build"
+    ],
+    "skills/applied-foundation/web.accessibility.md": [
+      "accessibility",
+      "wcag",
+      "assistive-tech",
+      "semantic-html"
+    ],
+    "skills/applied-foundation/web.seo.md": [
+      "seo",
+      "semantic-html",
+      "rendering",
+      "cwv"
+    ],
+    "skills/foundation/css.basic.md": [
+      "css",
+      "selector",
+      "cascade",
+      "box-model",
+      "layout",
+      "devtools"
+    ],
+    "skills/foundation/git.basic.md": [
+      "git",
+      "repository",
+      "commit",
+      "branch",
+      "merge"
+    ],
+    "skills/foundation/html.basic.md": [
+      "html",
+      "browser",
+      "form",
+      "devtools"
+    ],
+    "skills/foundation/javascript.basic.md": [
+      "javascript",
+      "dom",
+      "nodejs",
+      "lint"
+    ],
+    "skills/foundation/web.basic.md": [
+      "browser",
+      "server",
+      "http",
+      "request-response",
+      "status-code",
+      "url",
+      "cookie",
+      "cache",
+      "devtools"
+    ],
+    "skills/implementation/frontend.api-integration.md": [
+      "api",
+      "rest",
+      "json",
+      "http",
+      "async",
+      "openapi",
+      "mock"
+    ],
+    "skills/implementation/frontend.validation.md": [
+      "validation",
+      "schema",
+      "typescript",
+      "openapi"
+    ],
+    "skills/implementation/react.basic.md": [
+      "javascript",
+      "framework",
+      "react",
+      "component",
+      "props-state",
+      "dom"
+    ],
+    "skills/implementation/react.component-design.md": [
+      "react",
+      "component",
+      "props-state",
+      "storybook",
+      "accessibility"
+    ],
+    "skills/implementation/react.form.md": [
+      "form",
+      "validation",
+      "react",
+      "props-state",
+      "accessibility"
+    ],
+    "skills/implementation/react.state-management.md": [
+      "react",
+      "props-state",
+      "state-management",
+      "async",
+      "cache",
+      "optimistic"
+    ],
+    "skills/implementation/storybook.basic.md": [
+      "storybook",
+      "component",
+      "mock",
+      "vrt",
+      "accessibility"
+    ],
+    "skills/quality/frontend.quality.md": [
+      "lint",
+      "type-check",
+      "ci",
+      "coverage",
+      "sast",
+      "monitoring"
+    ],
+    "skills/quality/test.component.md": [
+      "test-component",
+      "component",
+      "mock",
+      "accessibility"
+    ],
+    "skills/quality/test.design.md": [
+      "test-pyramid",
+      "test-unit",
+      "test-e2e",
+      "coverage",
+      "flaky"
+    ],
+    "skills/quality/test.e2e.md": [
+      "test-e2e",
+      "ci",
+      "flaky",
+      "environment"
+    ],
+    "skills/quality/test.integration.md": [
+      "test-integration",
+      "mock",
+      "api",
+      "flaky"
+    ],
+    "skills/quality/test.unit.md": [
+      "test-unit",
+      "test-pyramid",
+      "mock",
+      "coverage"
+    ],
+    "skills/quality/web.performance.md": [
+      "performance",
+      "cwv",
+      "lighthouse",
+      "cache",
+      "build",
+      "rendering"
+    ],
+    "skills/quality/web.security.md": [
+      "vulnerability",
+      "xss",
+      "csp",
+      "cors",
+      "secrets",
+      "auth"
+    ]
+  }
+}

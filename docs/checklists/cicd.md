@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 3. 安定的なデリバリー  
 **小テーマ：** 3-5 CI/CD
 
+<!-- terms:start -->
+
+**前提となる用語：** [CI](../guide/glossary.md#ci)、[デプロイとCD](../guide/glossary.md#デプロイとcd)、[Pull RequestとMerge Request](../guide/glossary.md#pull-requestとmerge-request)、[Lintと静的検査](../guide/glossary.md#lintと静的検査)、[単体テスト](../guide/glossary.md#単体テスト)、[環境](../guide/glossary.md#環境)
+
+<!-- terms:end -->
+
 ## 3-5-1：メトリクスの計測
 
 CI/CDを取り扱う関係者で運用を振り返る機会が定期的（月ごと〜半年ごと）にあり、継続的な改善を行っている。

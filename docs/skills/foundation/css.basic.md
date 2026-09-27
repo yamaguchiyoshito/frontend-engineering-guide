@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [基礎領域](index.md)  
 **評価対象：** セレクタ、ボックスモデル、レイアウト
 
+<!-- terms:start -->
+
+**前提となる用語：** [CSS](../../guide/glossary.md#css)、[セレクタ](../../guide/glossary.md#セレクタ)、[カスケードと詳細度](../../guide/glossary.md#カスケードと詳細度)、[ボックスモデル](../../guide/glossary.md#ボックスモデル)、[FlexboxとGrid](../../guide/glossary.md#flexboxとgrid)、[開発者ツール](../../guide/glossary.md#開発者ツール)
+
+<!-- terms:end -->
+
 CSSで画面の見た目とレイアウトを実装する要素技術です。セレクタ、カスケード、ボックスモデル、FlexboxやGridを理解し、表示の崩れを分析して保守しやすく修正できるかを評価します。
 
 ## Lv0

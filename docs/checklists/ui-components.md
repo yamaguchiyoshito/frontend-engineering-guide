@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 1. 持続可能な技術スタック  
 **小テーマ：** 1-3 UIコンポーネント
 
+<!-- terms:start -->
+
+**前提となる用語：** [コンポーネント](../guide/glossary.md#コンポーネント)、[Storybook](../guide/glossary.md#storybook)、[React](../guide/glossary.md#react)、[デザインシステムとデザイントークン](../guide/glossary.md#デザインシステムとデザイントークン)、[アクセシビリティ](../guide/glossary.md#アクセシビリティ)
+
+<!-- terms:end -->
+
 ## 1-3-1：メトリクスの計測
 
 広く共通化を意図しているUIコンポーネントがカタログ化されており、それに該当しないものも定期的（月ごと〜半年ごと）に整理し、改善している。

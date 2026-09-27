@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [品質・高度化領域](index.md)  
 **主な前提：** HTML、CSS、JavaScript、React
 
+<!-- terms:start -->
+
+**前提となる用語：** [Webパフォーマンス](../../guide/glossary.md#webパフォーマンス)、[Core Web Vitals](../../guide/glossary.md#core-web-vitals)、[Lighthouse](../../guide/glossary.md#lighthouse)、[キャッシュ](../../guide/glossary.md#キャッシュ)、[ビルドとバンドル](../../guide/glossary.md#ビルドとバンドル)、[レンダリング](../../guide/glossary.md#レンダリング)
+
+<!-- terms:end -->
+
 画面の表示と操作の速度を計測し、改善する要素技術です。速度指標と計測条件を定めて画像、通信、JavaScript処理、描画のボトルネックを特定し、実利用データに基づく代替案を比較できるかを評価します。
 
 ## Lv0

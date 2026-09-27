@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [フレームワーク・実装領域](index.md)  
 **主な前提：** React、TypeScript
 
+<!-- terms:start -->
+
+**前提となる用語：** [フォーム](../../guide/glossary.md#フォーム)、[入力検証](../../guide/glossary.md#入力検証)、[React](../../guide/glossary.md#react)、[propsと状態](../../guide/glossary.md#propsと状態)、[アクセシビリティ](../../guide/glossary.md#アクセシビリティ)
+
+<!-- terms:end -->
+
 入力フォームを実装する要素技術です。入力状態、エラー、送信中、成功、失敗、リセットを扱い、動的項目、項目間の依存、複数ステップ、離脱時の確認を含む複雑なフォームを設計できるかを評価します。
 
 ## Lv0

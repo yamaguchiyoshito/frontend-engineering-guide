@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [応用基礎領域](index.md)  
 **主な前提：** JavaScript
 
+<!-- terms:start -->
+
+**前提となる用語：** [非同期処理](../../guide/glossary.md#非同期処理)、[Promise](../../guide/glossary.md#promise)、[HTTP](../../guide/glossary.md#http)、[API](../../guide/glossary.md#api)
+
+<!-- terms:end -->
+
 PromiseやasyncとawaitによるJavaScriptの非同期処理を実装する要素技術です。読み込み中、成功、失敗の状態と処理の順序を扱い、競合、キャンセル、再試行を含む処理を設計できるかを評価します。
 
 ## Lv0

@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [応用基礎領域](index.md)  
 **主な前提：** HTML、セマンティックHTML
 
+<!-- terms:start -->
+
+**前提となる用語：** [SEO](../../guide/glossary.md#seo)、[セマンティックHTML](../../guide/glossary.md#セマンティックhtml)、[レンダリング](../../guide/glossary.md#レンダリング)、[Core Web Vitals](../../guide/glossary.md#core-web-vitals)
+
+<!-- terms:end -->
+
 検索エンジンに公開ページを正しく巡回・索引登録させる要素技術です。タイトル、内部リンク、正規URL、サイトマップを設定し、重複URLや動的描画、移行時のリダイレクトの影響を調査できるかを評価します。
 
 ## Lv0

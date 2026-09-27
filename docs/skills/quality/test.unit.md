@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [品質・高度化領域](index.md)  
 **主な前提：** JavaScript、TypeScript
 
+<!-- terms:start -->
+
+**前提となる用語：** [単体テスト](../../guide/glossary.md#単体テスト)、[テストピラミッド](../../guide/glossary.md#テストピラミッド)、[モック](../../guide/glossary.md#モック)、[カバレッジ](../../guide/glossary.md#カバレッジ)
+
+<!-- terms:end -->
+
 関数やモジュールの単体テストを実装する要素技術です。正常系、境界値、空値、例外を検証し、副作用や非同期処理を含むコードを検証可能な構造にして、検出力と保守性を保てるかを評価します。
 
 ## Lv0

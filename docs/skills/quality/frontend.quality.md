@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [品質・高度化領域](index.md)  
 **主な前提：** テスト設計、性能、セキュリティ
 
+<!-- terms:start -->
+
+**前提となる用語：** [Lintと静的検査](../../guide/glossary.md#lintと静的検査)、[型検査](../../guide/glossary.md#型検査)、[CI](../../guide/glossary.md#ci)、[カバレッジ](../../guide/glossary.md#カバレッジ)、[SAST](../../guide/glossary.md#sast)、[モニタリングとオブザーバビリティ](../../guide/glossary.md#モニタリングとオブザーバビリティ)
+
+<!-- terms:end -->
+
 フロントエンドの品質を計画的に確保し、リリース判断を支える要素技術です。品質基準と受け入れ条件に沿ってテストや検査を実施し、業務リスクから品質目標、合否基準、残るリスクを説明できるかを評価します。
 
 ## Lv0

@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [フレームワーク・実装領域](index.md)  
 **主な前提：** フォーム、TypeScript
 
+<!-- terms:start -->
+
+**前提となる用語：** [入力検証](../../guide/glossary.md#入力検証)、[スキーマ](../../guide/glossary.md#スキーマ)、[TypeScript](../../guide/glossary.md#typescript)、[OpenAPI](../../guide/glossary.md#openapi)
+
+<!-- terms:end -->
+
 入力値の検証を実装し、型定義とAPIの入出力を整合させる要素技術です。スキーマで空値、型変換、境界値、メッセージを扱い、フロントエンドとサーバー側の検証責務を区別できるかを評価します。
 
 ## Lv0

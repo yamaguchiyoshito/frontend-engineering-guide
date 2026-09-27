@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 1. 持続可能な技術スタック  
 **小テーマ：** 1-1 コードベース
 
+<!-- terms:start -->
+
+**前提となる用語：** [リポジトリ](../guide/glossary.md#リポジトリ)、[TypeScript](../guide/glossary.md#typescript)、[型検査](../guide/glossary.md#型検査)、[Lintと静的検査](../guide/glossary.md#lintと静的検査)、[API](../guide/glossary.md#api)、[OpenAPI](../guide/glossary.md#openapi)
+
+<!-- terms:end -->
+
 ## 1-1-1：メトリクスの計測
 
 コードのデプロイに対する不具合の発生割合、ライブラリをアップデートする頻度、PRのオープンからクローズまでの時間などを計測し、定期的（月ごと〜半年ごと）に改善のためのアクションを計画・実施している。

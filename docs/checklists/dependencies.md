@@ -10,6 +10,12 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 **大テーマ：** 3. 安定的なデリバリー  
 **小テーマ：** 3-4 サプライチェーン
 
+<!-- terms:start -->
+
+**前提となる用語：** [パッケージと依存関係](../guide/glossary.md#パッケージと依存関係)、[サプライチェーン](../guide/glossary.md#サプライチェーン)、[脆弱性](../guide/glossary.md#脆弱性)、[依存関係の更新検知](../guide/glossary.md#依存関係の更新検知)
+
+<!-- terms:end -->
+
 ## 3-4-1：メトリクスの計測
 
 DependabotやRenovateなど依存ライブラリの更新を検知する仕組みを導入している。

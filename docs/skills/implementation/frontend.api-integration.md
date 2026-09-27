@@ -10,6 +10,12 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **領域：** [フレームワーク・実装領域](index.md)  
 **主な前提：** 非同期処理、TypeScript
 
+<!-- terms:start -->
+
+**前提となる用語：** [API](../../guide/glossary.md#api)、[REST API](../../guide/glossary.md#rest-api)、[JSON](../../guide/glossary.md#json)、[HTTP](../../guide/glossary.md#http)、[非同期処理](../../guide/glossary.md#非同期処理)、[OpenAPI](../../guide/glossary.md#openapi)、[モック](../../guide/glossary.md#モック)
+
+<!-- terms:end -->
+
 REST APIと連携して画面を動かす要素技術です。API仕様から要求と応答を実装し、読み込み中、空データ、失敗、認証切れを扱い、複数APIの依存や部分失敗、仕様変更に対応できるかを評価します。
 
 ## Lv0
