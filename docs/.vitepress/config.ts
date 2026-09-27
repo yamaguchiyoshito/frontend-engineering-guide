@@ -17,7 +17,7 @@ const item = (p: any) => ({ text: p.title, link: url(p) })
 const by = (kind: string) => pages.filter((p: any) => p.kind === kind)
 const guide = [{ text: '使い方ガイド', items: by('guide').map(item) }]
 const skills = [
-  { text: 'スキル定義', link: '/skills/', items: [] },
+  { text: '要素技術', link: '/skills/', items: [] },
   ...catalog.areas.map((a: any) => ({ text: a.title, link: `/skills/${a.id}/`, collapsed: true, items: by('skill').filter((p: any) => p.area === a.id).map(item) }))
 ]
 const checks = [
@@ -29,7 +29,7 @@ const maintenance = [{ text: '運用・改訂', items: by('maintenance').map(ite
 const ordered = pages.filter((p: any) => p.handbook)
 export default defineConfig({
   lang: 'ja-JP', title: 'フロントエンド開発ガイド', titleTemplate: ':title | 開発ガイド',
-  description: '28スキルの習熟度と100項目のチームチェック。共通の基準で評価し、育成と開発環境の改善につなげます。',
+  description: '28の要素技術の習熟度と100項目のチームチェック。共通の基準で評価し、育成と開発環境の改善につなげます。',
   base, cleanUrls: false, appearance: true,
   srcExclude: ['public/**'],
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}assets/favicon.svg` }]],
@@ -57,7 +57,7 @@ export default defineConfig({
     siteTitle: 'フロントエンド開発ガイド',
     nav: [
       { text: '使い方', link: '/guide/overview', activeMatch: '/guide/' },
-      { text: 'スキル定義', link: '/skills/', activeMatch: '/skills/' },
+      { text: '要素技術', link: '/skills/', activeMatch: '/skills/' },
       { text: 'チームチェック', link: '/checklists/', activeMatch: '/checklists/' },
       { text: '書式・記入例', link: '/templates/', activeMatch: '/(templates|examples)/' },
       { text: '運用・改訂', link: '/maintenance/', activeMatch: '/maintenance/' },

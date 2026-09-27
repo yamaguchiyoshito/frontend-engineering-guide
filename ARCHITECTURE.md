@@ -12,7 +12,7 @@
 | `CHANGELOG.md` | 改訂履歴の正本 `docs/maintenance/changelog.md` への入口。編集手順は `docs/maintenance/contributing.md` |
 | `docs/index.md` | 読む順序と目的別の入口 |
 | `docs/guide/` | 個人・チームの評価手順と改善方法 |
-| `docs/skills/<領域>/<ID>.md` | 1スキル1ファイル、Lv0〜Lv4の正本 |
+| `docs/skills/<領域>/<ID>.md` | 1つの要素技術1ファイル、Lv0〜Lv4の正本 |
 | `docs/checklists/<小テーマ>.md` | 出典の1小テーマ1ファイル、各4項目の正本 |
 | `docs/templates/` | 記入説明と空のテンプレートの正本 |
 | `docs/examples/` | 架空の記入例 |
@@ -37,9 +37,9 @@
 | :--- | ---: | :--- |
 | ホーム | 1 | `docs/index.md` |
 | 使い方ガイド | 4 | `docs/guide/overview.md` |
-| スキル一覧 | 1 | `docs/skills/index.md` |
+| 要素技術一覧 | 1 | `docs/skills/index.md` |
 | 領域一覧 | 4 | `docs/skills/<領域>/index.md` |
-| スキル個別定義 | 28 | `docs/skills/<領域>/<ID>.md` |
+| 要素技術の個別定義 | 28 | `docs/skills/<領域>/<ID>.md` |
 | チェックリスト一覧 | 1 | `docs/checklists/index.md` |
 | 小テーマ別チェックリスト | 25 | `docs/checklists/<小テーマ>.md` |
 | 書式一覧・書式 | 5 | `docs/templates/index.md` |
@@ -48,12 +48,12 @@
 | ダウンロード | 1 | `docs/downloads.md` |
 | **合計** | **76** | 404ページとダウンロードファイルを除く |
 
-全ファイルの対応は `build/document-map.json` で管理します。4領域のディレクトリは `foundation`、`applied-foundation`、`implementation`、`quality` です。スキル分類に「レベル」は使用せず、習熟度だけをLv0〜Lv4で表します。
+全ファイルの対応は `build/document-map.json` で管理します。4領域のディレクトリは `foundation`、`applied-foundation`、`implementation`、`quality` です。要素技術の分類に「レベル」は使用せず、習熟度だけをLv0〜Lv4で表します。
 
 ## 閲覧経路とURL
 
-- 上部メニュー：使い方、スキル定義、チームチェック、書式・記入例、運用・改訂。ダウンロードを補助リンクとして配置。
-- サイドバー：開いているページ群に対応。28スキルは領域ごと、25の小テーマは出典の5つの大テーマごとに折りたたむ。
+- 上部メニュー：使い方、要素技術、チームチェック、書式・記入例、運用・改訂。ダウンロードを補助リンクとして配置。
+- サイドバー：開いているページ群に対応。28の要素技術は領域ごと、25の小テーマは出典の5つの大テーマごとに折りたたむ。
 - 初めて読む順序：全体像 → 個人評価 → チーム確認 → 改善 → 詳細定義 → 書式。前後リンクも文書マップから生成。
 - 各ページ：見出し目次、版、本文、前後ページへのリンク。
 - ページURL：`index.md` は末尾 `/`、他は `.html`。例：`skills/implementation/react.form.html#lv3`、`checklists/security.html#c029`。

@@ -1,13 +1,13 @@
 # フロントエンド開発ガイド
 
-一般公開のGitHub Pagesで読む、スキル評価とチーム改善の文書です。
+一般公開のGitHub Pagesで読む、要素技術の習熟度評価とチーム改善の文書です。
 
-- **スキル定義：** 4領域・28スキルについて、Lv0〜Lv4の到達状態を140の定義で示します。
+- **要素技術：** 4領域・28の要素技術について、Lv0〜Lv4の到達状態を140の定義で示します。
 - **チームチェックリスト：** 日本CTO協会 Webフロントエンド版DX Criteriaの100項目（5つの大テーマ・25の小テーマ・4つの観点）を出典の分類と文面で収録し、架空の回答例を添えます。
 - **使い方と書式：** 評価の手順、4種類の空の記録書式、架空の記入例を収録します。
 - **公開サイト：** 76ページ、日本語全文検索、単一Markdownと書式のダウンロードに対応します。
 
-まず [ガイドの全体像](docs/guide/overview.md) を読み、[スキル定義](docs/skills/index.md)・[チームチェック](docs/checklists/index.md) を参照してください。詳細な構成は [ARCHITECTURE.md](ARCHITECTURE.md)、実行した検証は [VALIDATION.md](VALIDATION.md) に記載しています。
+まず [ガイドの全体像](docs/guide/overview.md) を読み、[要素技術](docs/skills/index.md)・[チームチェック](docs/checklists/index.md) を参照してください。詳細な構成は [ARCHITECTURE.md](ARCHITECTURE.md)、実行した検証は [VALIDATION.md](VALIDATION.md) に記載しています。
 
 ## ローカルで読む
 
@@ -53,7 +53,7 @@ npm run docs:preview
 | コマンド | 処理 |
 | :--- | :--- |
 | `docs:sync` | 文書マップから一覧ページのリンク・表を同期 |
-| `docs:check` | 76ページ、28スキル、140定義、100項目、判定、内部参照を検査 |
+| `docs:check` | 76ページ、28の要素技術、140定義、100項目、判定、内部参照を検査 |
 | `docs:downloads` | 単一Markdown、空の4書式、ZIP、生成元・SHA-256を生成 |
 | `docs:build` | 文書検査・ダウンロード生成・サイトビルド |
 | `test:site` | 全HTMLのリンク・アンカーとブラウザの検索・表示・ダウンロードを検査 |
@@ -84,7 +84,7 @@ npm run test:site
 
 このリポジトリは基準・使い方・空の書式・架空の回答例を管理します。記入済みの個人評価、社内URL、案件情報は所属組織の管理先へ保存します。サイトに入力・保存・認証の機能はありません。検索は配信済みの索引をブラウザ内で検索します。
 
-チームチェックリストの原文は、一般社団法人日本CTO協会が公開する [Webフロントエンド版DX Criteria（v202402）](https://dxcriteria.cto-a.org/frontend) です。分類と文面は出典に従い、回答例と28スキルの定義は本リポジトリで追加した内容です。詳細は [出典と追加した内容](docs/maintenance/sources.md)、変更履歴は [改訂履歴](docs/maintenance/changelog.md) を参照してください。
+チームチェックリストの原文は、一般社団法人日本CTO協会が公開する [Webフロントエンド版DX Criteria（v202402）](https://dxcriteria.cto-a.org/frontend) です。分類と文面は出典に従い、回答例と28の要素技術の定義は本リポジトリで追加した内容です。詳細は [出典と追加した内容](docs/maintenance/sources.md)、変更履歴は [改訂履歴](docs/maintenance/changelog.md) を参照してください。
 
 ## ライセンス
 

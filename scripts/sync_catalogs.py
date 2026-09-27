@@ -9,14 +9,14 @@ def skill_table(path,area):
    label,prerequisite=re.search(r'\*\*(評価対象|主な前提)：\*\* (.+)',body(p['path'])).groups()
    rows.append((label,f'| `{p["skillId"]}` | [{p["title"]}]({rel(path,p["path"])}) | {prerequisite.strip()} |'))
  labels={label for label,_ in rows};header=labels.pop() if len(labels)==1 else '評価対象・主な前提'
- return [f'| スキルID | スキル | {header} |','| :--- | :--- | :--- |']+[row for _,row in rows]
+ return [f'| ID | 要素技術 | {header} |','| :--- | :--- | :--- |']+[row for _,row in rows]
 
 def catalog(page):
  path=page['path'];kind=page['kind'];out=[]
  if kind=='skill-index':
   for area in MAP['areas']:
    target=f'skills/{area["id"]}/index.md';count=sum(p['kind']=='skill' and p['area']==area['id'] for p in PAGES)
-   out += ['',f'## {area["title"]}（{count}スキル）','']+skill_table(path,area['id'])
+   out += ['',f'## {area["title"]}（{count}つの要素技術）','']+skill_table(path,area['id'])
  elif kind=='area':
   out=skill_table(path,page['area'])
  elif kind=='checklist-index':
