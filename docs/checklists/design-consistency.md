@@ -67,3 +67,26 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/0cbc52118a334490b858a516c228dfc2)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [Design Tokens Format Module](https://tr.designtokens.org/format/) — デザイントークンの標準形式（英語）
+- [MDN：レスポンシブデザイン](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)（出典で言及） — レスポンシブWebデザインの基礎
+- [デジタル庁：デザインシステム](https://design.digital.go.jp/) — 一貫性の体系化の公開例
+
+**代表的なツール・サービス**
+
+- [Storybook](https://storybook.js.org/) — UIのバリエーションの棚卸し
+- [Style Dictionary](https://styledictionary.com/) — デザイントークンの変換と配布
+
+**関連する要素技術**
+
+- [レスポンシブ設計](../skills/applied-foundation/css.responsive.md)、[コンポーネント設計](../skills/implementation/react.component-design.md)、[Storybook](../skills/implementation/storybook.basic.md)
+
+<!-- references:end -->

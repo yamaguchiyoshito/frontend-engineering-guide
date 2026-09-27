@@ -62,3 +62,27 @@ Webフロントエンドとバックエンドの分業している場合、画�
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/ea1cc6fba8d24bc79590f66fc4a55d73)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [Martin Fowler：Consumer-Driven Contracts](https://martinfowler.com/articles/consumerDrivenContracts.html)（出典で言及） — 利用側主導のAPI定義（英語）
+- [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — APIインターフェースの記述形式（英語）
+- [Node.js：ドキュメント](https://nodejs.org/ja/docs) — サーバー実装の学習資料
+
+**代表的なツール・サービス**
+
+- [Pact](https://pact.io/) — 契約テスト
+- [Mock Service Worker](https://mswjs.io/) — APIモック
+- [OpenTelemetry](https://opentelemetry.io/ja/docs/) — リソース指標の収集の標準
+
+**関連する要素技術**
+
+- [REST API連携](../skills/implementation/frontend.api-integration.md)、[Web基礎](../skills/foundation/web.basic.md)、[React実装](../skills/implementation/react.basic.md)
+
+<!-- references:end -->

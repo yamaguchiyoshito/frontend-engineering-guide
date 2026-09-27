@@ -61,3 +61,28 @@ Secrets Managerなどを経由してビルド時や実行時に環境変数と�
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/a11bd8821047430bbb6c37d4002d504e)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/) — 代表的なリスク（英語）
+- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) — 対策の実装指針（英語）
+- [IPA：安全なウェブサイトの作り方](https://www.ipa.go.jp/security/vuln/websecurity.html) — 脆弱性別の対策と教育資料
+
+**代表的なツール・サービス**
+
+- [GitHub code scanning](https://docs.github.com/ja/code-security/code-scanning)（出典で言及） — PRごとの静的検査
+- [Dependabot](https://docs.github.com/ja/code-security/dependabot)（出典で言及） — サプライチェーン脆弱性の検知
+- [Renovate](https://docs.renovatebot.com/)（出典で言及） — 依存関係の自動更新
+- [gitleaks](https://github.com/gitleaks/gitleaks) — 機密情報の混入検査
+
+**関連する要素技術**
+
+- [Webセキュリティ](../skills/quality/web.security.md)、[REST API連携](../skills/implementation/frontend.api-integration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
+
+<!-- references:end -->

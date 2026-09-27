@@ -65,3 +65,28 @@ DependabotやRenovateなど依存ライブラリの更新を検知する仕組�
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/60ddfb9cc3f5409792e00fcebeeb5734)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [OWASP：Software Supply Chain Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet.html) — 依存関係の管理と検証の指針（英語）
+- [npm Docs：npm audit](https://docs.npmjs.com/cli/v10/commands/npm-audit) — 依存関係の脆弱性の確認
+- [OpenSSF Scorecard](https://scorecard.dev/) — 依存先の保守状況の評価（英語）
+
+**代表的なツール・サービス**
+
+- [Dependabot](https://docs.github.com/ja/code-security/dependabot)（出典で言及） — 更新検知と自動PR
+- [Renovate](https://docs.renovatebot.com/)（出典で言及） — 更新ポリシーを細かく設定できる自動更新
+- [Socket](https://socket.dev/) — 依存パッケージの供給元リスクの検査
+- [GitHub Advisory Database](https://github.com/advisories) — 脆弱性情報の検索
+
+**関連する要素技術**
+
+- [Webセキュリティ](../skills/quality/web.security.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)
+
+<!-- references:end -->

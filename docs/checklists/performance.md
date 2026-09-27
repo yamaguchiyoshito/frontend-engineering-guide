@@ -53,3 +53,29 @@ Synthetic MonitoringやReal User Monitoringに対応したパフォーマンス�
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/dc6c2f9f23ba45768a87e0219e745174)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [web.dev：Core Web Vitals](https://web.dev/articles/vitals?hl=ja) — 速度指標の定義
+- [MDN：User Timing](https://developer.mozilla.org/ja/docs/Web/API/Performance_API/User_timing)（出典で言及） — 独自の速度指標の計測
+- [Chrome UX Report](https://developer.chrome.com/docs/crux?hl=ja) — 実利用データの公開情報
+
+**代表的なツール・サービス**
+
+- [SpeedCurve](https://www.speedcurve.com/)（出典で言及） — Synthetic／Real User Monitoring
+- [New Relic](https://newrelic.com/jp)（出典で言及） — 性能監視サービス
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse?hl=ja) — 試験環境での自動計測
+- [PageSpeed Insights](https://pagespeed.web.dev/) — 実利用データを含む診断
+- [web-vitals](https://github.com/GoogleChrome/web-vitals) — 実利用の指標を計測するライブラリ
+
+**関連する要素技術**
+
+- [Webパフォーマンス](../skills/quality/web.performance.md)
+
+<!-- references:end -->

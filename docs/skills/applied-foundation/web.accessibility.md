@@ -49,7 +49,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 - [axe-core](https://github.com/dequelabs/axe-core) — 自動アクセシビリティ検査エンジン
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse?hl=ja) — アクセシビリティ監査を含むページ診断
-- [eslint-plugin-jsx-a11y](https://github.com/jsx-eye/eslint-plugin-jsx-a11y) — JSXの静的検査
+- [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y) — JSXの静的検査
 - [NVDA](https://www.nvaccess.org/) — Windows向けスクリーンリーダー（無償）
 
 <!-- references:end -->

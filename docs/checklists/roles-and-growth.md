@@ -57,3 +57,20 @@ Webフロントエンド技術領域の技術選定に責任をもつ職務上�
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/b78f7b3f66dc44e48cb941250952b356)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [IPA：デジタルスキル標準](https://www.ipa.go.jp/jinzai/skill-standard/dss/index.html) — 職務と学習項目の整理の参考
+- [SFIA](https://sfia-online.org/) — ITスキルの枠組み（英語）
+
+**関連する要素技術**
+
+- [要素技術](../skills/index.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
+
+<!-- references:end -->

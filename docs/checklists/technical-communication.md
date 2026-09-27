@@ -60,3 +60,26 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/fac5f7f0244f4e4699102ee484b644fb)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [Google：Technical Writing Courses](https://developers.google.com/tech-writing?hl=ja) — 技術文書の書き方
+
+**代表的なツール・サービス**
+
+- [Zenn](https://zenn.dev/) — 技術記事の公開
+- [Qiita](https://qiita.com/) — 技術記事の公開
+- [Speaker Deck](https://speakerdeck.com/) — 登壇資料の公開
+- [connpass](https://connpass.com/) — 勉強会の開催
+
+**関連する要素技術**
+
+- [チーム開発](../skills/applied-foundation/git.collaboration.md)
+
+<!-- references:end -->

@@ -63,3 +63,27 @@ SLI/SLOに関わるシステムの稼働を24時間365日モニタリングし�
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/4e236d711c09478392092ad957948336)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [Google SRE Book：Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-distributed-systems/) — 監視とアラートの原則（英語）
+- [OpenTelemetry：ドキュメント](https://opentelemetry.io/ja/docs/) — ログ・トレース・メトリクスの統合
+
+**代表的なツール・サービス**
+
+- [Sentry](https://sentry.io/)（出典で言及） — エラー監視とアラート
+- [OpenTelemetry](https://opentelemetry.io/) — 統合トレースの標準
+- [Grafana](https://grafana.com/) — ダッシュボードとアラート
+- [Prometheus](https://prometheus.io/) — メトリクスの収集
+
+**関連する要素技術**
+
+- [Webパフォーマンス](../skills/quality/web.performance.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)、[Web基礎](../skills/foundation/web.basic.md)
+
+<!-- references:end -->

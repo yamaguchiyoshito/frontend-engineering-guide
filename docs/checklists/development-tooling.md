@@ -49,3 +49,27 @@ API仕様に沿ったモックを用意し、バックエンドをローカル�
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/c30a3bb8c9ad42aebda9a5ad370ade7a)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [Vite：ガイド](https://ja.vite.dev/guide/) — 設定を最小限に保つ開発環境の構築
+- [Mock Service Worker：ドキュメント](https://mswjs.io/docs/) — バックエンドに依存しないローカル開発のためのモック
+
+**代表的なツール・サービス**
+
+- [Vite](https://ja.vite.dev/) — 開発サーバーとビルド
+- [Biome](https://biomejs.dev/) — 整形と静的検査を一体化したツール
+- [Mock Service Worker](https://mswjs.io/) — APIモック
+- [GitHub Actions](https://docs.github.com/ja/actions) — ビルド・テスト時間の記録
+
+**関連する要素技術**
+
+- [JavaScript](../skills/foundation/javascript.basic.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)、[REST API連携](../skills/implementation/frontend.api-integration.md)、[Storybook](../skills/implementation/storybook.basic.md)
+
+<!-- references:end -->

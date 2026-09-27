@@ -40,7 +40,7 @@ TypeScriptの型でプログラムの入出力と状態を表現する要素技�
 
 **仕様・公式ドキュメント**
 
-- [TypeScript Handbook（日本語）](https://www.typescriptlang.org/ja/docs/handbook/intro.html) — 公式ハンドブック
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) — 公式ハンドブック（英語）
 - [サバイバルTypeScript](https://typescriptbook.jp/) — 実務向けの入門書（日本語、OSS）
 - [TypeScript Deep Dive（日本語版）](https://typescript-jp.gitbook.io/deep-dive) — 型システムの詳細解説
 
