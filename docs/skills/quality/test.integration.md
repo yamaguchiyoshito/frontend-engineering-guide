@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 画面、状態管理、APIなど複数の部品を結合して検証する要素技術です。結合範囲と実物とモックの境界を明示し、機能横断の状態遷移や部分失敗を検証して障害箇所を切り分けられるかを評価します。
 
+::: start
+MSWの「Getting started」で、通信を偽の応答に置き換える仕組みを読みます。一覧画面のテストで、APIの成功応答と失敗応答をモックし、それぞれの表示を確認できれば、Lv1の入口です。まず読む：[Mock Service Worker：ドキュメント](https://mswjs.io/docs/)
+:::
+
 ## Lv0
 
 結合対象、境界、データの受け渡し、期待結果を説明できず、単体テストとの違いの整理に支援が必要である。
@@ -46,7 +50,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **仕様・公式ドキュメント**
 
-- [Mock Service Worker：ドキュメント](https://mswjs.io/docs/) — APIモックの設計と使い方
+- **まず読む** [Mock Service Worker：ドキュメント](https://mswjs.io/docs/) — APIモックの設計と使い方
 - [Playwright：コンポーネントテスト](https://playwright.dev/docs/test-components) — 実ブラウザでの結合検証（実験的機能）
 - [Martin Fowler：The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) — テスト層の役割分担（英語）
 

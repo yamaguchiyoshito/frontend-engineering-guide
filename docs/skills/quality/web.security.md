@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 Webアプリケーションの代表的なリスクを理解し、対策を実装する要素技術です。XSS、CSRF、認可漏れ、機密情報の露出を実装箇所と結び付け、データの流れと信頼境界から脅威を評価できるかを評価します。
 
+::: start
+IPAの「安全なウェブサイトの作り方」で、XSSなど代表的な脆弱性の仕組みと対策を読みます。自分の画面で利用者の入力をそのままHTMLに出している箇所を探し、エスケープや検証で直せれば、Lv1の入口です。まず読む：[IPA：安全なウェブサイトの作り方](https://www.ipa.go.jp/security/vuln/websecurity.html)
+:::
+
 ## Lv0
 
 入力・出力、認証・認可、機密情報、信頼できないデータの区別を説明できず、安全な実装の確認に手順ごとの指示が必要である。
@@ -50,7 +54,7 @@ XSS、CSRF、認可漏れ、機密情報の露出などの代表的なリスク�
 - [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) — 対策の実装指針（英語）
 - [MDN：Webセキュリティ](https://developer.mozilla.org/ja/docs/Web/Security) — ブラウザのセキュリティ機構の解説
 - [MDN：Content Security Policy](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/CSP) — スクリプト実行の制限
-- [IPA：安全なウェブサイトの作り方](https://www.ipa.go.jp/security/vuln/websecurity.html) — 脆弱性別の対策（日本語）
+- **まず読む** [IPA：安全なウェブサイトの作り方](https://www.ipa.go.jp/security/vuln/websecurity.html) — 脆弱性別の対策（日本語）
 
 **代表的なライブラリ・ツール**
 

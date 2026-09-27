@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [プライバシーと外部送信](../guide/glossary.md#プライバシーと外部送信)、[Cookie](../guide/glossary.md#cookie)、[認証と認可](../guide/glossary.md#認証と認可)
+**前提となる用語：** [プライバシーと外部送信](../guide/glossary.md#プライバシーと外部送信)、[Cookie](../guide/glossary.md#cookie)、[認証と認可](../guide/glossary.md#認証と認可)  
+**関連する要素技術：** [Web基礎](../skills/foundation/web.basic.md)、[Webセキュリティ](../skills/quality/web.security.md)
 
 <!-- terms:end -->
 
@@ -85,9 +86,5 @@ Webブラウザの各ベンダーによるプライバシーに関する仕様�
 
 - [Chrome DevTools：Applicationパネル](https://developer.chrome.com/docs/devtools/application?hl=ja) — Cookieとストレージの確認
 - [Chrome DevTools：Networkパネル](https://developer.chrome.com/docs/devtools/network?hl=ja) — 外部送信の棚卸し
-
-**関連する要素技術**
-
-- [Web基礎](../skills/foundation/web.basic.md)、[Webセキュリティ](../skills/quality/web.security.md)
 
 <!-- references:end -->

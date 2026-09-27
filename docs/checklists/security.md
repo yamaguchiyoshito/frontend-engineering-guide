@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [脆弱性](../guide/glossary.md#脆弱性)、[SAST](../guide/glossary.md#sast)、[CI](../guide/glossary.md#ci)、[サプライチェーン](../guide/glossary.md#サプライチェーン)、[依存関係の更新検知](../guide/glossary.md#依存関係の更新検知)、[機密情報とシークレット管理](../guide/glossary.md#機密情報とシークレット管理)
+**前提となる用語：** [脆弱性](../guide/glossary.md#脆弱性)、[SAST](../guide/glossary.md#sast)、[CI](../guide/glossary.md#ci)、[サプライチェーン](../guide/glossary.md#サプライチェーン)、[依存関係の更新検知](../guide/glossary.md#依存関係の更新検知)、[機密情報とシークレット管理](../guide/glossary.md#機密情報とシークレット管理)  
+**関連する要素技術：** [Webセキュリティ](../skills/quality/web.security.md)、[REST API連携](../skills/implementation/frontend.api-integration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
 
 <!-- terms:end -->
 
@@ -86,9 +87,5 @@ Secrets Managerなどを経由してビルド時や実行時に環境変数と�
 - [Dependabot](https://docs.github.com/ja/code-security/dependabot)（出典で言及） — サプライチェーン脆弱性の検知
 - [Renovate](https://docs.renovatebot.com/)（出典で言及） — 依存関係の自動更新
 - [gitleaks](https://github.com/gitleaks/gitleaks) — 機密情報の混入検査
-
-**関連する要素技術**
-
-- [Webセキュリティ](../skills/quality/web.security.md)、[REST API連携](../skills/implementation/frontend.api-integration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
 
 <!-- references:end -->

@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 Storybookでコンポーネントの状態と振る舞いをカタログ化する要素技術です。主要な状態、境界値、操作をStoryとして記述し、画面に近い構成や非同期処理を再現して実装との不整合を発見できるかを評価します。
 
+::: start
+Storybook公式ドキュメントの「Get started」で、導入と最初のStoryの書き方を読みます。既存のボタンなど一つの部品について、通常・無効・読み込み中の状態を別々のStoryとして表示できれば、Lv1の入口です。まず読む：[Storybook：ドキュメント](https://storybook.js.org/docs)
+:::
+
 ## Lv0
 
 Storyの役割と対象コンポーネントの関係を説明できず、既存カタログの起動や確認に個別の指示が必要である。
@@ -46,7 +50,7 @@ Storyの作成・更新・公開の規約とCI検証を整備し、設計・レ�
 
 **仕様・公式ドキュメント**
 
-- [Storybook：ドキュメント](https://storybook.js.org/docs) — 設定、Story、アドオンの公式ガイド
+- **まず読む** [Storybook：ドキュメント](https://storybook.js.org/docs) — 設定、Story、アドオンの公式ガイド
 - [Storybook：インタラクションテスト](https://storybook.js.org/docs/writing-tests/interaction-testing) — Story上での操作と検証
 - [Storybook：Autodocs](https://storybook.js.org/docs/writing-docs/autodocs) — Storyからの文書生成
 - [Storybook：Vitest addon](https://storybook.js.org/docs/writing-tests/integrations/vitest-addon) — StoryをVitestのテストとして実行

@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 フロントエンドの品質を計画的に確保し、リリース判断を支える要素技術です。品質基準と受け入れ条件に沿ってテストや検査を実施し、業務リスクから品質目標、合否基準、残るリスクを説明できるかを評価します。
 
+::: start
+「Webフロントエンド版DX Criteria」のテストとCI/CDの項目で、チームとして何を自動化すべきかを読みます。自分のリポジトリでLint、型検査、テストをCIで実行し、失敗した変更をマージできない設定を確認できれば、Lv1の入口です。まず読む：[Webフロントエンド版DX Criteria](https://dxcriteria.cto-a.org/frontend)
+:::
+
 ## Lv0
 
 機能、性能、セキュリティ、アクセシビリティなどの品質特性と、確認すべき証拠を説明できず、品質確認の作業に個別の指示が必要である。
@@ -48,7 +52,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 - [ISO/IEC 25010](https://www.iso.org/standard/78176.html) — ソフトウェア品質特性の国際規格（有償。自動到達確認の対象外）
 - [JSTQB](https://jstqb.jp/) — テスト技術者資格制度。シラバスと用語集を公開（日本語）
-- [Webフロントエンド版DX Criteria](https://dxcriteria.cto-a.org/frontend) — チームの品質活動のチェック項目
+- **まず読む** [Webフロントエンド版DX Criteria](https://dxcriteria.cto-a.org/frontend) — チームの品質活動のチェック項目
 
 **代表的なライブラリ・ツール**
 

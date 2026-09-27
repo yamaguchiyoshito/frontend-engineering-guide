@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [フレームワークとライブラリ](../guide/glossary.md#フレームワークとライブラリ)、[パッケージと依存関係](../guide/glossary.md#パッケージと依存関係)、[脆弱性](../guide/glossary.md#脆弱性)、[ADR](../guide/glossary.md#adr)
+**前提となる用語：** [フレームワークとライブラリ](../guide/glossary.md#フレームワークとライブラリ)、[パッケージと依存関係](../guide/glossary.md#パッケージと依存関係)、[脆弱性](../guide/glossary.md#脆弱性)、[ADR](../guide/glossary.md#adr)  
+**関連する要素技術：** [フロントエンド品質保証](../skills/quality/frontend.quality.md)、[Webセキュリティ](../skills/quality/web.security.md)、[TypeScript](../skills/applied-foundation/typescript.basic.md)
 
 <!-- terms:end -->
 
@@ -72,9 +73,5 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 - [npm trends](https://npmtrends.com/) — パッケージの利用推移の比較
 - [Bundlephobia](https://bundlephobia.com/) — パッケージの容量と依存の確認
 - [GitHub Advisory Database](https://github.com/advisories) — 脆弱性情報の検索
-
-**関連する要素技術**
-
-- [フロントエンド品質保証](../skills/quality/frontend.quality.md)、[Webセキュリティ](../skills/quality/web.security.md)、[TypeScript](../skills/applied-foundation/typescript.basic.md)
 
 <!-- references:end -->

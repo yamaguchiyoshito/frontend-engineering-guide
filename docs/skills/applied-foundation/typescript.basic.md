@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 TypeScriptの型でプログラムの入出力と状態を表現する要素技術です。ユニオン型や型の絞り込みを使い、外部データの実行時確認と型定義を整合させ、あり得ない状態を型で防げるかを評価します。
 
+::: start
+「サバイバルTypeScript」の入門で、基本の型、関数の型、オブジェクトの型を読みます。既存のJavaScriptの短い関数に型を付け、tscが出す型エラーを読んで直せれば、Lv1の入口です。まず読む：[サバイバルTypeScript](https://typescriptbook.jp/)
+:::
+
 ## Lv0
 
 型注釈やコンパイル時の検査の役割を説明できず、単純な型エラーの修正にも手順ごとの指示が必要である。
@@ -47,7 +51,7 @@ TypeScriptの型でプログラムの入出力と状態を表現する要素技�
 **仕様・公式ドキュメント**
 
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) — 公式ハンドブック（英語）
-- [サバイバルTypeScript](https://typescriptbook.jp/) — 実務向けの入門書（日本語、OSS）
+- **まず読む** [サバイバルTypeScript](https://typescriptbook.jp/) — 実務向けの入門書（日本語、OSS）
 - [TypeScript Deep Dive（日本語版）](https://typescript-jp.gitbook.io/deep-dive) — 型システムの詳細解説
 
 **代表的なライブラリ・ツール**

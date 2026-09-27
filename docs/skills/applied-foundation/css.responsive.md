@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 画面幅、向き、文字量、操作方法の違いに応じてレイアウトを設計する要素技術です。コンテンツの優先順位から表示の切り替えを決め、固定値に依存しない実装へ改善できるかを評価します。
 
+::: start
+MDNの「レスポンシブデザイン」で、メディアクエリと相対的な単位の使い方を読みます。開発者ツールのデバイスモードで幅を変え、一つの画面がスマートフォンの幅とPCの幅で崩れずに並び替わる状態を作れれば、Lv1の入口です。まず読む：[MDN：レスポンシブデザイン](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
+:::
+
 ## Lv0
 
 画面幅や文字量によってレイアウトが変わる理由を説明できず、複数の表示幅への対応に手順ごとの指示が必要である。
@@ -46,7 +50,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **仕様・公式ドキュメント**
 
-- [MDN：レスポンシブデザイン](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Responsive_Design) — メディアクエリと流動的なレイアウトの入門
+- **まず読む** [MDN：レスポンシブデザイン](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Responsive_Design) — メディアクエリと流動的なレイアウトの入門
 - [MDN：コンテナクエリ](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_containment/Container_queries) — 親要素の大きさに応じたスタイル
 - [web.dev：Learn Responsive Design](https://web.dev/learn/design?hl=ja) — レスポンシブ設計の学習コース
 

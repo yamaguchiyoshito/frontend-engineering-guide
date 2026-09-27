@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 HTMLで文書の構造とフォームを組み立てる要素技術です。要素の役割を理解して適切な構造を実装し、リンク、ボタン、フォーム送信の基本動作を自分で確認・修正できるかを評価します。
 
+::: start
+MDNの「HTMLの学習」に沿って、見出し、段落、リンク、画像、リストだけの短いページを一つ作り、ブラウザで表示します。フォームの入力欄と送信ボタンまで置き、W3Cの検証サービスで指摘された誤りを直せれば、Lv1の入口です。まず読む：[MDN：HTMLの学習](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Structuring_content)
+:::
+
 ## Lv0
 
 要素・属性・入れ子の基本を説明できず、簡単な文書やフォームの作成にも手順ごとの指示が必要である。
@@ -47,7 +51,7 @@ HTMLの実装規約、フォームの共通パターン、確認項目を整備�
 **仕様・公式ドキュメント**
 
 - [MDN：HTML](https://developer.mozilla.org/ja/docs/Web/HTML) — 要素と属性のリファレンス
-- [MDN：HTMLの学習](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Structuring_content) — 文書構造とフォームの入門
+- **まず読む** [MDN：HTMLの学習](https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Structuring_content) — 文書構造とフォームの入門
 - [HTML Living Standard](https://html.spec.whatwg.org/multipage/) — HTMLの仕様（英語）
 - [web.dev：Learn HTML](https://web.dev/learn/html?hl=ja) — HTMLの体系的な学習コース
 

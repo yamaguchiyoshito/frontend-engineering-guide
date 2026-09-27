@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [CI](../guide/glossary.md#ci)、[デプロイとCD](../guide/glossary.md#デプロイとcd)、[Pull RequestとMerge Request](../guide/glossary.md#pull-requestとmerge-request)、[Lintと静的検査](../guide/glossary.md#lintと静的検査)、[単体テスト](../guide/glossary.md#単体テスト)、[環境](../guide/glossary.md#環境)
+**前提となる用語：** [CI](../guide/glossary.md#ci)、[デプロイとCD](../guide/glossary.md#デプロイとcd)、[Pull RequestとMerge Request](../guide/glossary.md#pull-requestとmerge-request)、[Lintと静的検査](../guide/glossary.md#lintと静的検査)、[単体テスト](../guide/glossary.md#単体テスト)、[環境](../guide/glossary.md#環境)  
+**関連する要素技術：** [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
 
 <!-- terms:end -->
 
@@ -80,9 +81,5 @@ Webフロントエンド技術の知見を活かすことでCI/CDパイプライ
 - [actionlint](https://github.com/rhysd/actionlint) — ワークフロー定義の静的検査
 - [act](https://github.com/nektos/act) — ワークフローのローカル実行
 - [GitLab CI/CD](https://docs.gitlab.com/ci/) — GitLabでのパイプラインの自動化
-
-**関連する要素技術**
-
-- [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
 
 <!-- references:end -->

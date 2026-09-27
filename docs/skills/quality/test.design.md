@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 何をどのテスト層でどこまで検証するかを設計する要素技術です。要求と仕様から正常系、異常系、境界値、状態遷移を整理し、優先順位、ケースの不足や重複、未検証の範囲を説明できるかを評価します。
 
+::: start
+Martin Fowlerの「The Practical Test Pyramid」で、テストの種類ごとの役割と配分を読みます。一つの機能について、何を単体テスト、コンポーネントテスト、E2Eテストのどこで確認するかを表に書き分けられれば、Lv1の入口です。まず読む：[Martin Fowler：The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
+:::
+
 ## Lv0
 
 テストの観点、条件、手順、期待結果を区別できず、要求から検証内容を考えるために手順ごとの指示が必要である。
@@ -47,7 +51,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 **仕様・公式ドキュメント**
 
 - [JSTQB](https://jstqb.jp/) — テスト技術者資格制度。シラバスと用語集を公開（日本語）
-- [Martin Fowler：The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) — テスト層の配分（英語）
+- **まず読む** [Martin Fowler：The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) — テスト層の配分（英語）
 - [ISO/IEC/IEEE 29119-4：テスト技法](https://www.iso.org/standard/79430.html) — テスト設計技法の国際規格（有償。自動到達確認の対象外）
 - [Martin Fowler：UnitTest](https://martinfowler.com/bliki/UnitTest.html) — SociableテストとSolitaryテストの区別（英語）
 

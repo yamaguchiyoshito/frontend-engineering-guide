@@ -7,7 +7,8 @@
         {
           "title": "MDN：Webの仕組み",
           "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works",
-          "note": "ブラウザとサーバーの通信の流れ"
+          "note": "ブラウザとサーバーの通信の流れ",
+          "start": true
         },
         {
           "title": "MDN：HTTP",
@@ -53,7 +54,8 @@
         {
           "title": "MDN：HTMLの学習",
           "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Structuring_content",
-          "note": "文書構造とフォームの入門"
+          "note": "文書構造とフォームの入門",
+          "start": true
         },
         {
           "title": "HTML Living Standard",
@@ -89,7 +91,8 @@
         {
           "title": "MDN：CSSの学習",
           "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Styling_basics",
-          "note": "カスケード、ボックスモデル、レイアウトの入門"
+          "note": "カスケード、ボックスモデル、レイアウトの入門",
+          "start": true
         },
         {
           "title": "MDN：Flexbox",
@@ -140,7 +143,8 @@
         {
           "title": "JavaScript Primer",
           "url": "https://jsprimer.net/",
-          "note": "ECMAScript 2015以降を前提にした入門書（日本語、OSS）"
+          "note": "ECMAScript 2015以降を前提にした入門書（日本語、OSS）",
+          "start": true
         },
         {
           "title": "ECMAScript Language Specification",
@@ -181,7 +185,8 @@
         {
           "title": "Pro Git（日本語版）",
           "url": "https://git-scm.com/book/ja/v2",
-          "note": "Gitの基本操作と内部構造の解説書"
+          "note": "Gitの基本操作と内部構造の解説書",
+          "start": true
         },
         {
           "title": "Git Reference",
@@ -217,7 +222,8 @@
         {
           "title": "MDN：HTML要素リファレンス",
           "url": "https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements",
-          "note": "各要素の意味と使い方"
+          "note": "各要素の意味と使い方",
+          "start": true
         },
         {
           "title": "HTML Living Standard：セクションと見出し",
@@ -253,7 +259,8 @@
         {
           "title": "MDN：レスポンシブデザイン",
           "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
-          "note": "メディアクエリと流動的なレイアウトの入門"
+          "note": "メディアクエリと流動的なレイアウトの入門",
+          "start": true
         },
         {
           "title": "MDN：コンテナクエリ",
@@ -289,7 +296,8 @@
         {
           "title": "MDN：イベント入門",
           "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Core/Scripting/Events",
-          "note": "イベントの登録、伝播、既定動作"
+          "note": "イベントの登録、伝播、既定動作",
+          "start": true
         },
         {
           "title": "DOM Standard",
@@ -330,7 +338,8 @@
         {
           "title": "JavaScript Primer：非同期処理",
           "url": "https://jsprimer.net/basic/async/",
-          "note": "コールバック、Promise、async/awaitの解説（日本語）"
+          "note": "コールバック、Promise、async/awaitの解説（日本語）",
+          "start": true
         }
       ],
       "tools": [
@@ -356,7 +365,8 @@
         {
           "title": "サバイバルTypeScript",
           "url": "https://typescriptbook.jp/",
-          "note": "実務向けの入門書（日本語、OSS）"
+          "note": "実務向けの入門書（日本語、OSS）",
+          "start": true
         },
         {
           "title": "TypeScript Deep Dive（日本語版）",
@@ -402,7 +412,8 @@
         {
           "title": "デジタル庁：ウェブアクセシビリティ導入ガイドブック",
           "url": "https://www.digital.go.jp/resources/introduction-to-web-accessibility-guidebook",
-          "note": "方針策定と実務の手引き"
+          "note": "方針策定と実務の手引き",
+          "start": true
         }
       ],
       "tools": [
@@ -433,7 +444,8 @@
         {
           "title": "Google検索セントラル",
           "url": "https://developers.google.com/search/docs?hl=ja",
-          "note": "検索エンジン向けの公式ガイド"
+          "note": "検索エンジン向けの公式ガイド",
+          "start": true
         },
         {
           "title": "sitemaps.org：プロトコル",
@@ -464,7 +476,8 @@
         {
           "title": "GitHub Docs：Pull Request",
           "url": "https://docs.github.com/ja/pull-requests",
-          "note": "PRの作成、レビュー、マージの手順"
+          "note": "PRの作成、レビュー、マージの手順",
+          "start": true
         },
         {
           "title": "Google Engineering Practices：Code Review",
@@ -505,7 +518,8 @@
         {
           "title": "React：学習（日本語）",
           "url": "https://ja.react.dev/learn",
-          "note": "公式チュートリアルと概念の解説"
+          "note": "公式チュートリアルと概念の解説",
+          "start": true
         },
         {
           "title": "React：リファレンス（日本語）",
@@ -546,7 +560,8 @@
         {
           "title": "React：Reactの流儀（日本語）",
           "url": "https://ja.react.dev/learn/thinking-in-react",
-          "note": "画面をコンポーネントに分ける手順"
+          "note": "画面をコンポーネントに分ける手順",
+          "start": true
         },
         {
           "title": "React：コンポーネントにpropsを渡す（日本語）",
@@ -587,7 +602,8 @@
         {
           "title": "React：stateの管理（日本語）",
           "url": "https://ja.react.dev/learn/managing-state",
-          "note": "状態の設計とリフトアップ"
+          "note": "状態の設計とリフトアップ",
+          "start": true
         },
         {
           "title": "React：useReducer（日本語）",
@@ -628,7 +644,8 @@
         {
           "title": "React：form要素（日本語）",
           "url": "https://ja.react.dev/reference/react-dom/components/form",
-          "note": "フォーム送信とアクションの公式解説"
+          "note": "フォーム送信とアクションの公式解説",
+          "start": true
         },
         {
           "title": "MDN：フォームデータの検証",
@@ -664,7 +681,8 @@
         {
           "title": "MDN：Fetch API",
           "url": "https://developer.mozilla.org/ja/docs/Web/API/Fetch_API",
-          "note": "HTTP要求のリファレンス"
+          "note": "HTTP要求のリファレンス",
+          "start": true
         },
         {
           "title": "OpenAPI Specification",
@@ -727,7 +745,8 @@
         {
           "title": "Zod",
           "url": "https://zod.dev/",
-          "note": "スキーマ定義と型の導出"
+          "note": "スキーマ定義と型の導出",
+          "start": true
         },
         {
           "title": "Valibot",
@@ -751,7 +770,8 @@
         {
           "title": "Storybook：ドキュメント",
           "url": "https://storybook.js.org/docs",
-          "note": "設定、Story、アドオンの公式ガイド"
+          "note": "設定、Story、アドオンの公式ガイド",
+          "start": true
         },
         {
           "title": "Storybook：インタラクションテスト",
@@ -812,7 +832,8 @@
         {
           "title": "Vitest：ガイド",
           "url": "https://vitest.dev/guide/",
-          "note": "Vite互換のテストランナーの公式ガイド"
+          "note": "Vite互換のテストランナーの公式ガイド",
+          "start": true
         },
         {
           "title": "Jest（日本語）",
@@ -853,7 +874,8 @@
         {
           "title": "React Testing Library：入門",
           "url": "https://testing-library.com/docs/react-testing-library/intro/",
-          "note": "Reactコンポーネントの検証方法"
+          "note": "Reactコンポーネントの検証方法",
+          "start": true
         },
         {
           "title": "Testing Library：クエリの優先順位",
@@ -894,7 +916,8 @@
         {
           "title": "Mock Service Worker：ドキュメント",
           "url": "https://mswjs.io/docs/",
-          "note": "APIモックの設計と使い方"
+          "note": "APIモックの設計と使い方",
+          "start": true
         },
         {
           "title": "Playwright：コンポーネントテスト",
@@ -930,7 +953,8 @@
         {
           "title": "Playwright：ドキュメント",
           "url": "https://playwright.dev/docs/intro",
-          "note": "導入からCI実行までの公式ガイド"
+          "note": "導入からCI実行までの公式ガイド",
+          "start": true
         },
         {
           "title": "Playwright：ベストプラクティス",
@@ -991,7 +1015,8 @@
         {
           "title": "Martin Fowler：The Practical Test Pyramid",
           "url": "https://martinfowler.com/articles/practical-test-pyramid.html",
-          "note": "テスト層の配分（英語）"
+          "note": "テスト層の配分（英語）",
+          "start": true
         },
         {
           "title": "ISO/IEC/IEEE 29119-4：テスト技法",
@@ -1023,7 +1048,8 @@
         {
           "title": "web.dev：Core Web Vitals",
           "url": "https://web.dev/articles/vitals?hl=ja",
-          "note": "主要な速度指標の定義"
+          "note": "主要な速度指標の定義",
+          "start": true
         },
         {
           "title": "MDN：Webパフォーマンス",
@@ -1090,7 +1116,8 @@
         {
           "title": "IPA：安全なウェブサイトの作り方",
           "url": "https://www.ipa.go.jp/security/vuln/websecurity.html",
-          "note": "脆弱性別の対策（日本語）"
+          "note": "脆弱性別の対策（日本語）",
+          "start": true
         }
       ],
       "tools": [
@@ -1127,7 +1154,8 @@
         {
           "title": "Webフロントエンド版DX Criteria",
           "url": "https://dxcriteria.cto-a.org/frontend",
-          "note": "チームの品質活動のチェック項目"
+          "note": "チームの品質活動のチェック項目",
+          "start": true
         }
       ],
       "tools": [

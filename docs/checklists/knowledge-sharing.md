@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [イネーブリング](../guide/glossary.md#イネーブリング)、[デザインシステムとデザイントークン](../guide/glossary.md#デザインシステムとデザイントークン)、[ADR](../guide/glossary.md#adr)、[Storybook](../guide/glossary.md#storybook)
+**前提となる用語：** [イネーブリング](../guide/glossary.md#イネーブリング)、[デザインシステムとデザイントークン](../guide/glossary.md#デザインシステムとデザイントークン)、[ADR](../guide/glossary.md#adr)、[Storybook](../guide/glossary.md#storybook)  
+**関連する要素技術：** [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
 
 <!-- terms:end -->
 
@@ -86,9 +87,5 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 - [connpass](https://connpass.com/) — 勉強会・ワークショップの検索と開催
 - [GitHub Discussions](https://docs.github.com/ja/discussions) — チーム内の知見共有
-
-**関連する要素技術**
-
-- [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
 
 <!-- references:end -->

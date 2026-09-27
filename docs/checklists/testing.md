@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [テストピラミッド](../guide/glossary.md#テストピラミッド)、[単体テスト](../guide/glossary.md#単体テスト)、[コンポーネントテスト](../guide/glossary.md#コンポーネントテスト)、[結合テスト](../guide/glossary.md#結合テスト)、[E2Eテスト](../guide/glossary.md#e2eテスト)、[CI](../guide/glossary.md#ci)、[不安定なテスト](../guide/glossary.md#不安定なテスト)、[カバレッジ](../guide/glossary.md#カバレッジ)
+**前提となる用語：** [テストピラミッド](../guide/glossary.md#テストピラミッド)、[単体テスト](../guide/glossary.md#単体テスト)、[コンポーネントテスト](../guide/glossary.md#コンポーネントテスト)、[結合テスト](../guide/glossary.md#結合テスト)、[E2Eテスト](../guide/glossary.md#e2eテスト)、[CI](../guide/glossary.md#ci)、[不安定なテスト](../guide/glossary.md#不安定なテスト)、[カバレッジ](../guide/glossary.md#カバレッジ)  
+**関連する要素技術：** [テスト設計](../skills/quality/test.design.md)、[単体テスト](../skills/quality/test.unit.md)、[コンポーネントテスト](../skills/quality/test.component.md)、[E2Eテスト](../skills/quality/test.e2e.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
 
 <!-- terms:end -->
 
@@ -79,9 +80,5 @@ CIで実行する各テストジョブと、取得可能なテストケース単
 - [reg-suit](https://github.com/reg-viz/reg-suit) — スクリーンショット差分の検出と報告（OSS）
 - [MagicPod](https://magicpod.com/) — ノーコードのE2Eテスト自動化（商用）
 - [GitLab CI/CD](https://docs.gitlab.com/ci/) — GitLabでのパイプライン実行
-
-**関連する要素技術**
-
-- [テスト設計](../skills/quality/test.design.md)、[単体テスト](../skills/quality/test.unit.md)、[コンポーネントテスト](../skills/quality/test.component.md)、[E2Eテスト](../skills/quality/test.e2e.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
 
 <!-- references:end -->

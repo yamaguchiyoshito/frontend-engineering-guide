@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [コンポーネント](../guide/glossary.md#コンポーネント)、[Storybook](../guide/glossary.md#storybook)、[React](../guide/glossary.md#react)、[デザインシステムとデザイントークン](../guide/glossary.md#デザインシステムとデザイントークン)、[アクセシビリティ](../guide/glossary.md#アクセシビリティ)
+**前提となる用語：** [コンポーネント](../guide/glossary.md#コンポーネント)、[Storybook](../guide/glossary.md#storybook)、[React](../guide/glossary.md#react)、[デザインシステムとデザイントークン](../guide/glossary.md#デザインシステムとデザイントークン)、[アクセシビリティ](../guide/glossary.md#アクセシビリティ)  
+**関連する要素技術：** [コンポーネント設計](../skills/implementation/react.component-design.md)、[Storybook](../skills/implementation/storybook.basic.md)、[React実装](../skills/implementation/react.basic.md)
 
 <!-- terms:end -->
 
@@ -76,9 +77,5 @@ UIコンポーネントの設計パターンが開発者間で共有されてお
 - [Radix Primitives](https://www.radix-ui.com/primitives) — 責務を絞ったアクセシブルな部品。shadcn/uiの基盤
 - [shadcn/ui](https://ui.shadcn.com/docs) — Radixを基盤にしたUI部品集
 - [Tailwind CSS](https://tailwindcss.com/docs) — ユーティリティクラスによるスタイリング
-
-**関連する要素技術**
-
-- [コンポーネント設計](../skills/implementation/react.component-design.md)、[Storybook](../skills/implementation/storybook.basic.md)、[React実装](../skills/implementation/react.basic.md)
 
 <!-- references:end -->

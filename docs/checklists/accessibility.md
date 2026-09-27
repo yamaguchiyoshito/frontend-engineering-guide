@@ -12,7 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [アクセシビリティ](../guide/glossary.md#アクセシビリティ)、[WCAG](../guide/glossary.md#wcag)、[支援技術とスクリーンリーダー](../guide/glossary.md#支援技術とスクリーンリーダー)、[セマンティックHTML](../guide/glossary.md#セマンティックhtml)、[Lighthouse](../guide/glossary.md#lighthouse)
+**前提となる用語：** [アクセシビリティ](../guide/glossary.md#アクセシビリティ)、[WCAG](../guide/glossary.md#wcag)、[支援技術とスクリーンリーダー](../guide/glossary.md#支援技術とスクリーンリーダー)、[セマンティックHTML](../guide/glossary.md#セマンティックhtml)、[Lighthouse](../guide/glossary.md#lighthouse)  
+**関連する要素技術：** [アクセシビリティ](../skills/applied-foundation/web.accessibility.md)、[セマンティックHTML](../skills/applied-foundation/html.semantic.md)
 
 <!-- terms:end -->
 
@@ -92,9 +93,5 @@ HTMLのフォーム要素やナビゲーション要素を代替するUIパー�
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse?hl=ja)（出典で言及） — 自動アクセシビリティテスト
 - [axe-core](https://github.com/dequelabs/axe-core)（出典で言及） — 自動アクセシビリティテスト
 - [NVDA](https://www.nvaccess.org/) — スクリーンリーダーでの手動確認
-
-**関連する要素技術**
-
-- [アクセシビリティ](../skills/applied-foundation/web.accessibility.md)、[セマンティックHTML](../skills/applied-foundation/html.semantic.md)
 
 <!-- references:end -->

@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 Reactで画面をコンポーネントとして実装する要素技術です。イベント、状態更新、外部処理との同期をHooksの規則に沿って実装し、再描画や依存配列に起因する不具合を分析できるかを評価します。
 
+::: start
+React公式の「学習」のクイックスタートで、コンポーネント、JSX、propsとstateを順に試します。ボタンを押すと数が増えるコンポーネントを自分で書き、stateが変わると画面が更新される理由を説明できれば、Lv1の入口です。まず読む：[React：学習（日本語）](https://ja.react.dev/learn)
+:::
+
 ## Lv0
 
 コンポーネント、props、stateと表示の関係を説明できず、簡単な画面変更にも手順ごとの指示が必要である。
@@ -46,7 +50,7 @@ React実装の基本構成、Hooksの設計方針、共通処理、検証・レ�
 
 **仕様・公式ドキュメント**
 
-- [React：学習（日本語）](https://ja.react.dev/learn) — 公式チュートリアルと概念の解説
+- **まず読む** [React：学習（日本語）](https://ja.react.dev/learn) — 公式チュートリアルと概念の解説
 - [React：リファレンス（日本語）](https://ja.react.dev/reference/react) — HooksとAPIのリファレンス
 - [React：Reactのルール（日本語）](https://ja.react.dev/reference/rules) — コンポーネントとHooksの規則
 - [Next.js：App Router](https://nextjs.org/docs/app) — Server Components、Server Actions、ルーティング

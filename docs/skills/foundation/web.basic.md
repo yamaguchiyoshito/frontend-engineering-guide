@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 ブラウザがサーバーと通信して画面を表示するまでの仕組みを扱う要素技術です。HTTPの要求と応答、URL、Cookie、キャッシュの動作を理解し、通信の内容から不具合を切り分けられるかを評価します。
 
+::: start
+MDNの「Webの仕組み」で、ブラウザがサーバーへ要求を送り、応答を受け取る流れを読みます。次に、開発者ツールのNetworkパネルで任意のページを開いたときの要求一覧、ステータスコード、応答ヘッダーを自分で確認できれば、Lv1の入口です。まず読む：[MDN：Webの仕組み](https://developer.mozilla.org/ja/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works)
+:::
+
 ## Lv0
 
 ブラウザとサーバーの役割、URL、リクエストとレスポンスの関係を説明できず、通信内容の確認には手順ごとの指示が必要である。
@@ -46,7 +50,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **仕様・公式ドキュメント**
 
-- [MDN：Webの仕組み](https://developer.mozilla.org/ja/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works) — ブラウザとサーバーの通信の流れ
+- **まず読む** [MDN：Webの仕組み](https://developer.mozilla.org/ja/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works) — ブラウザとサーバーの通信の流れ
 - [MDN：HTTP](https://developer.mozilla.org/ja/docs/Web/HTTP) — 要求と応答、ヘッダー、ステータスコードのリファレンス
 - [MDN：HTTP Cookie](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Cookies) — Cookieの属性と送信条件
 - [MDN：HTTPキャッシュ](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Caching) — ブラウザと中間キャッシュの動作

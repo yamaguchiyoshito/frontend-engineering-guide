@@ -43,6 +43,12 @@ export default defineConfig({
           ? '<div class="answer-example"><p class="answer-example-title">望ましい回答例<span>架空の記入例。実際の回答には実態と根拠を記載</span></p>\n'
           : '</div>\n'
       })
+      // ::: start … ::: is the first step toward Lv1 on each element-technology page.
+      md.use(container, 'start', {
+        render: (tokens: any[], idx: number) => tokens[idx].nesting === 1
+          ? '<div class="first-step"><p class="first-step-title">はじめの一歩<span>Lv1へ向けて最初に学ぶこと</span></p>\n'
+          : '</div>\n'
+      })
     }
   },
   vite: { server: { fs: { allow: [fileURLToPath(root)] } } },

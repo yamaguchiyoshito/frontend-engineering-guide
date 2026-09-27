@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 入力フォームを実装する要素技術です。入力状態、エラー、送信中、成功、失敗、リセットを扱い、動的項目、項目間の依存、複数ステップ、離脱時の確認を含む複雑なフォームを設計できるかを評価します。
 
+::: start
+React公式のform要素の解説で、入力値の取得と送信の流れを読みます。名前とメールアドレスの二項目のフォームを作り、必須チェックのエラーを表示してから送信できれば、Lv1の入口です。まず読む：[React：form要素（日本語）](https://ja.react.dev/reference/react-dom/components/form)
+:::
+
 ## Lv0
 
 入力値、初期値、送信、エラー表示の関係を説明できず、単純なフォームの変更にも手順ごとの指示が必要である。
@@ -46,7 +50,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **仕様・公式ドキュメント**
 
-- [React：form要素（日本語）](https://ja.react.dev/reference/react-dom/components/form) — フォーム送信とアクションの公式解説
+- **まず読む** [React：form要素（日本語）](https://ja.react.dev/reference/react-dom/components/form) — フォーム送信とアクションの公式解説
 - [MDN：フォームデータの検証](https://developer.mozilla.org/ja/docs/Learn_web_development/Extensions/Forms/Form_validation) — HTML標準の検証と制約検証API
 - [WAI：フォームのチュートリアル](https://www.w3.org/WAI/tutorials/forms/) — ラベル、エラー通知、必須項目の指針（英語）
 

@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 REST APIと連携して画面を動かす要素技術です。API仕様から要求と応答を実装し、読み込み中、空データ、失敗、認証切れを扱い、複数APIの依存や部分失敗、仕様変更に対応できるかを評価します。
 
+::: start
+MDNの「Fetch API」で、要求の送り方と応答の読み方を確認します。公開APIから一覧を取得して画面に表示し、読み込み中とエラーの表示を分けられれば、Lv1の入口です。まず読む：[MDN：Fetch API](https://developer.mozilla.org/ja/docs/Web/API/Fetch_API)
+:::
+
 ## Lv0
 
 API仕様のURL、メソッド、要求・応答、ステータスを読み取れず、呼び出しと表示の実装に手順ごとの指示が必要である。
@@ -46,7 +50,7 @@ APIクライアント、型生成・契約確認、共通エラー処理、通�
 
 **仕様・公式ドキュメント**
 
-- [MDN：Fetch API](https://developer.mozilla.org/ja/docs/Web/API/Fetch_API) — HTTP要求のリファレンス
+- **まず読む** [MDN：Fetch API](https://developer.mozilla.org/ja/docs/Web/API/Fetch_API) — HTTP要求のリファレンス
 - [OpenAPI Specification](https://spec.openapis.org/oas/latest.html) — REST APIの仕様記述形式（英語）
 - [MDN：CORS](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/CORS) — オリジン間要求の仕組み
 

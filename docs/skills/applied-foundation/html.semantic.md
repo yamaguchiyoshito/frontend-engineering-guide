@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 画面の情報構造を意味に沿ったHTMLで表現する要素技術です。見出し、ランドマーク、リスト、表、フォームを目的に合わせて選び、見た目と意味構造の不一致が操作や読み上げに与える影響を判断できるかを評価します。
 
+::: start
+MDNの「HTML要素リファレンス」で、header、nav、main、article、section、footerなど意味を表す要素を確認し、自分のページの各領域に当てはめます。開発者ツールのアクセシビリティツリーで、見出しの階層と領域が意図どおりに読まれることを確認できれば、Lv1の入口です。まず読む：[MDN：HTML要素リファレンス](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements)
+:::
+
 ## Lv0
 
 見た目と要素の意味の違いを説明できず、見出し、ナビゲーション、本文、ボタンなどの選択に手順ごとの指示が必要である。
@@ -46,7 +50,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **仕様・公式ドキュメント**
 
-- [MDN：HTML要素リファレンス](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements) — 各要素の意味と使い方
+- **まず読む** [MDN：HTML要素リファレンス](https://developer.mozilla.org/ja/docs/Web/HTML/Reference/Elements) — 各要素の意味と使い方
 - [HTML Living Standard：セクションと見出し](https://html.spec.whatwg.org/multipage/sections.html) — 文書構造の仕様（英語）
 - [ARIA in HTML](https://www.w3.org/TR/html-aria/) — HTML要素に許可されるARIAロールの対応表（英語）
 - [web.dev：Learn HTML（セマンティクス）](https://web.dev/learn/html/semantic-html?hl=ja) — 意味構造の考え方

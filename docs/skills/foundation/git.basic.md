@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 Gitで変更履歴を管理する要素技術です。branch、commit、merge、rebaseの操作と違いを理解し、競合の解消や誤った変更からの復旧を、他者の作業に影響を与えずに行えるかを評価します。
 
+::: start
+「Pro Git」の1章と2章に沿って、リポジトリの作成、変更の記録（commit）、履歴の確認までを実際に操作します。ブランチを一つ作って変更し、元のブランチへマージできれば、Lv1の入口です。まず読む：[Pro Git（日本語版）](https://git-scm.com/book/ja/v2)
+:::
+
 ## Lv0
 
 作業ツリー、ステージ、コミット、ブランチの関係を説明できず、変更の保存や取り込みに手順ごとの指示が必要である。
@@ -46,7 +50,7 @@ Gitで変更履歴を管理する要素技術です。branch、commit、merge、
 
 **仕様・公式ドキュメント**
 
-- [Pro Git（日本語版）](https://git-scm.com/book/ja/v2) — Gitの基本操作と内部構造の解説書
+- **まず読む** [Pro Git（日本語版）](https://git-scm.com/book/ja/v2) — Gitの基本操作と内部構造の解説書
 - [Git Reference](https://git-scm.com/docs) — コマンドのリファレンス（英語）
 - [GitHub Docs：Gitの使用](https://docs.github.com/ja/get-started/using-git) — 日常的な操作の手順
 

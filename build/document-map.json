@@ -569,6 +569,12 @@
       "handbook": true
     },
     {
+      "path": "examples/git-first-assessment.md",
+      "title": "記入例：Gitの習熟度を初めて評価する",
+      "kind": "example",
+      "handbook": true
+    },
+    {
       "path": "maintenance/index.md",
       "title": "運用・改訂",
       "kind": "maintenance",

@@ -18,6 +18,10 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 関数やモジュールの単体テストを実装する要素技術です。正常系、境界値、空値、例外を検証し、副作用や非同期処理を含むコードを検証可能な構造にして、検出力と保守性を保てるかを評価します。
 
+::: start
+Vitestの「Getting Started」で、テストファイルの置き方とexpectの書き方を読みます。純粋な関数を一つ選び、通常の入力と境界の入力のテストを書いて実行できれば、Lv1の入口です。まず読む：[Vitest：ガイド](https://vitest.dev/guide/)
+:::
+
 ## Lv0
 
 テスト対象、入力、期待結果、アサーションの関係を説明できず、テストの追加と失敗原因の確認に個別の指示が必要である。
@@ -46,7 +50,7 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **仕様・公式ドキュメント**
 
-- [Vitest：ガイド](https://vitest.dev/guide/) — Vite互換のテストランナーの公式ガイド
+- **まず読む** [Vitest：ガイド](https://vitest.dev/guide/) — Vite互換のテストランナーの公式ガイド
 - [Jest（日本語）](https://jestjs.io/ja/) — テストランナーの公式ドキュメント
 - [Testing Library：指針](https://testing-library.com/docs/guiding-principles) — 利用者視点で検証する考え方（英語）
 - [Vitest：モック](https://vitest.dev/guide/mocking.html) — 時刻、乱数、モジュールの固定と差し替え
