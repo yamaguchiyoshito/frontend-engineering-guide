@@ -1,6 +1,7 @@
 ---
 title: "HTML"
-description: "HTMLの基準と使い方。フロントエンド開発のスキル評価・チーム改善ガイド。"
+description: "スキル「HTML」（html.basic）のLv0〜Lv4の到達状態。基礎領域。"
+titleTemplate: ":title | スキル定義 | 開発ガイド"
 ---
 
 # HTML
@@ -9,7 +10,7 @@ description: "HTMLの基準と使い方。フロントエンド開発のスキ�
 **スキル領域：** [基礎領域](index.md)  
 **評価対象：** 文書構造、フォーム、基本要素
 
-[習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿って、根拠を確認します。
+Lv1は支援を受けて実行できる、Lv2は標準的な課題を自力で完了できる、Lv3は複雑な課題を設計・改善できる、Lv4はチームで再現できる仕組みにできる状態を表します。判定は[習熟度の共通定義と判定方法](../../guide/individual-assessment.md)に沿い、根拠を確認して行います。
 
 ## Lv0
 

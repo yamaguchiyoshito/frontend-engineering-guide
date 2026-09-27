@@ -1,6 +1,6 @@
 ---
 title: "記入例：PR／MRごとのセキュリティ検査を整備する"
-description: "記入例：PR／MRごとのセキュリティ検査を整備するの基準と使い方。フロントエンド開発のスキル評価・チーム改善ガイド。"
+description: "チェック項目No.029を題材に、対象範囲、判定、原因、行うこと、完了条件、効果の確認を記入した架空の例。"
 ---
 
 # 記入例：PR／MRごとのセキュリティ検査を整備する
@@ -22,4 +22,4 @@ description: "記入例：PR／MRごとのセキュリティ検査を整備す�
 
 この例では、まず環境・運用を整備する必要があります。担当者がCI設定を一度作成したことだけでLv4とは判定しません。個人の習熟度は、[スキル定義](../skills/index.md)の該当定義と本人の行動に照らして別に確認します。
 
-[関連チェック項目 C029](../checklists/security.md#c029)・[Webセキュリティ](../skills/quality/web.security.md)・[改善イシュー書式](../templates/improvement-issue.md)
+関連ページ：[チェック項目C029](../checklists/security.md#c029)・[スキル定義：Webセキュリティ](../skills/quality/web.security.md)・[改善・育成イシューの書式](../templates/improvement-issue.md)

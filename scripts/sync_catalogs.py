@@ -10,11 +10,13 @@ def catalog(page):
    target=f'skills/{area["id"]}/index.md';count=sum(p['kind']=='skill' and p['area']==area['id'] for p in PAGES)
    out.append(f'| [{area["title"]}]({rel(path,target)}) | {count} |')
  elif kind=='area':
-  out=['| スキルID | スキル | 評価対象・主な前提 |','| :--- | :--- | :--- |']
+  rows=[]
   for p in PAGES:
    if p['kind']=='skill' and p['area']==page['area']:
-    prerequisite=re.search(r'\*\*(?:評価対象|主な前提)：\*\* (.+)',body(p['path'])).group(1).strip()
-    out.append(f'| `{p["skillId"]}` | [{p["title"]}]({rel(path,p["path"])}) | {prerequisite} |')
+    label,prerequisite=re.search(r'\*\*(評価対象|主な前提)：\*\* (.+)',body(p['path'])).groups()
+    rows.append((label,f'| `{p["skillId"]}` | [{p["title"]}]({rel(path,p["path"])}) | {prerequisite.strip()} |'))
+  labels={label for label,_ in rows};header=labels.pop() if len(labels)==1 else '評価対象・主な前提'
+  out=[f'| スキルID | スキル | {header} |','| :--- | :--- | :--- |']+[row for _,row in rows]
  elif kind=='checklist-index':
   section=None
   for p in PAGES:

@@ -1,6 +1,7 @@
 ---
 title: "Webパフォーマンス"
-description: "Webパフォーマンスの基準と使い方。フロントエンド開発のスキル評価・チーム改善ガイド。"
+description: "チームチェック項目No.021〜024「Webパフォーマンス」の原文、望ましい判定（TRUE／FALSE）、架空の回答例。"
+titleTemplate: ":title | チームチェック | 開発ガイド"
 ---
 
 # Webパフォーマンス

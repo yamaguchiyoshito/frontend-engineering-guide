@@ -1,6 +1,7 @@
 ---
 title: "CI/CDの運用と改善"
-description: "CI/CDの運用と改善の基準と使い方。フロントエンド開発のスキル評価・チーム改善ガイド。"
+description: "チームチェック項目No.057〜060「CI/CDの運用と改善」の原文、望ましい判定（TRUE／FALSE）、架空の回答例。"
+titleTemplate: ":title | チームチェック | 開発ガイド"
 ---
 
 # CI/CDの運用と改善

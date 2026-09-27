@@ -1,6 +1,6 @@
 ---
 title: "応用基礎領域"
-description: "応用基礎領域の基準と使い方。フロントエンド開発のスキル評価・チーム改善ガイド。"
+description: "応用基礎領域に含まれる8スキルの一覧。スキルID、評価対象・主な前提、Lv0〜Lv4の定義への入口。"
 ---
 
 # 応用基礎領域
@@ -9,7 +9,7 @@ description: "応用基礎領域の基準と使い方。フロントエンド開
 
 <!-- catalog:start -->
 
-| スキルID | スキル | 評価対象・主な前提 |
+| スキルID | スキル | 主な前提 |
 | :--- | :--- | :--- |
 | `html.semantic` | [セマンティックHTML](html.semantic.md) | HTML |
 | `css.responsive` | [レスポンシブ設計](css.responsive.md) | CSS |
