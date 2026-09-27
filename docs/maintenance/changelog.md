@@ -5,6 +5,12 @@ description: "本ガイドの版ごとの変更内容。"
 
 # 改訂履歴
 
+## 1.3.1 — 2026年9月27日
+
+- 「レンダリングとデータ取得」の参考リンクのうち到達できなかった Next.js「Updating Data」を、APIリファレンスの「use server」に差し替え。
+- 参考リンクの到達確認で、失敗した URL を3秒後に1回再試行するように変更（Figma ヘルプセンターが同一実行内で 200 と 404 を返す不安定な応答への対処）。
+- 到達状態、チェック項目、回答例の変更なし。
+
 ## 1.3.0 — 2026年9月27日
 
 - フレームワーク・実装領域に3つの要素技術を追加（28 → 31）。`nextjs.routing`「App Routerによる画面構成」、`nextjs.rendering`「レンダリングとデータ取得」、`frontend.styling`「スタイリング設計」。roadmap.sh の React、Next.js、Frontend Performance の各ロードマップと採用技術スタック（Next.js App Router、Tailwind CSS、shadcn/ui、Figma Variables）に照らして不足していた領域を補うもの。

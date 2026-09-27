@@ -52,7 +52,7 @@ Next.js公式の「Server and Client Components」で、どちらの部品がど
 
 - **まず読む** [Next.js：Server and Client Components](https://nextjs.org/docs/app/getting-started/server-and-client-components) — 境界の決め方と組み合わせ方
 - [Next.js：Fetching Data](https://nextjs.org/docs/app/getting-started/fetching-data) — サーバー側とブラウザ側のデータ取得、ストリーミング
-- [Next.js：Updating Data](https://nextjs.org/docs/app/getting-started/updating-data) — Server Actionsによる更新と再検証
+- [Next.js：use server](https://nextjs.org/docs/app/api-reference/directives/use-server) — Server Actionsの定義と呼び出し、再検証
 - [Next.js：Caching](https://nextjs.org/docs/app/deep-dive/caching) — 4層のキャッシュと再検証の仕組み
 - [React：Server Components（日本語）](https://ja.react.dev/reference/rsc/server-components) — Server Componentsの考え方
 
