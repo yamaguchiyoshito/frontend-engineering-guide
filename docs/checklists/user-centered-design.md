@@ -12,8 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [Webパフォーマンス](../guide/glossary.md#webパフォーマンス)、[Core Web Vitals](../guide/glossary.md#core-web-vitals)、[状態管理](../guide/glossary.md#状態管理)、[レンダリング](../guide/glossary.md#レンダリング)  
-**関連する要素技術：** [コンポーネント設計](../skills/implementation/react.component-design.md)、[状態管理](../skills/implementation/react.state-management.md)、[Webパフォーマンス](../skills/quality/web.performance.md)
+**前提となる用語：** [Webパフォーマンス](../guide/glossary.md#webパフォーマンス)、[Core Web Vitals](../guide/glossary.md#core-web-vitals)、[状態管理](../guide/glossary.md#状態管理)、[レンダリング](../guide/glossary.md#レンダリング)、[レイアウトとページ](../guide/glossary.md#レイアウトとページ)、[Server ComponentsとClient Components](../guide/glossary.md#server-componentsとclient-components)  
+**関連する要素技術：** [コンポーネント設計](../skills/implementation/react.component-design.md)、[状態管理](../skills/implementation/react.state-management.md)、[Webパフォーマンス](../skills/quality/web.performance.md)、[App Routerによる画面構成](../skills/implementation/nextjs.routing.md)、[レンダリングとデータ取得](../skills/implementation/nextjs.rendering.md)
 
 <!-- terms:end -->
 

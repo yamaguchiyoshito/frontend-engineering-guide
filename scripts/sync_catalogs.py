@@ -16,7 +16,7 @@ def catalog(page):
  if kind=='skill-index':
   for area in MAP['areas']:
    target=f'skills/{area["id"]}/index.md';count=sum(p['kind']=='skill' and p['area']==area['id'] for p in PAGES)
-   out += ['',f'## {area["title"]}（{count}つの要素技術）','']+skill_table(path,area['id'])
+   out += ['',f'## {area["title"]}（{count}つの要素技術）' if count<10 else f'## {area["title"]}（{count}の要素技術）','']+skill_table(path,area['id'])
  elif kind=='area':
   out=skill_table(path,page['area'])
  elif kind=='checklist-index':

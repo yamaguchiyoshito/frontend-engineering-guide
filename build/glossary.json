@@ -836,6 +836,79 @@
       "see": [
         "5-2"
       ]
+    },
+    {
+      "id": "app-layout",
+      "term": "レイアウトとページ",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "App Routerでは、ディレクトリがURLに対応し、pageがその画面の内容、layoutが複数の画面で共有する枠（ヘッダーやナビゲーション）を表します。レイアウトは画面遷移をまたいで保持されます。",
+      "see": [
+        "nextjs.routing"
+      ]
+    },
+    {
+      "id": "server-components",
+      "term": "Server ComponentsとClient Components",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "Server Componentsはサーバーで描画され、データベースやAPIへ直接アクセスできますが、クリックなどの操作は扱えません。Client Componentsはブラウザで動き、状態やイベントを扱います。App Routerでは両者を組み合わせて画面を作ります。",
+      "see": [
+        "nextjs.rendering"
+      ]
+    },
+    {
+      "id": "server-actions",
+      "term": "Server Actions",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "フォームの送信などをきっかけに、サーバー側の関数をブラウザから直接呼び出す仕組みです。APIの実装を省いてデータの更新を行え、更新後にキャッシュを再検証します。",
+      "see": [
+        "nextjs.rendering"
+      ]
+    },
+    {
+      "id": "streaming",
+      "term": "ストリーミング",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "画面全体の準備を待たず、できた部分からブラウザへ順に送って表示する仕組みです。時間のかかる部分は読み込み中の表示を先に出し、後から差し替えます。",
+      "see": [
+        "nextjs.rendering"
+      ]
+    },
+    {
+      "id": "hydration",
+      "term": "ハイドレーション",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "サーバーで描画したHTMLに、ブラウザでJavaScriptを結び付けて操作できる状態にする処理です。サーバーとブラウザで描画結果が食い違うと、警告や表示の乱れが起きます。",
+      "see": [
+        "nextjs.rendering"
+      ]
+    },
+    {
+      "id": "revalidation",
+      "term": "キャッシュの再検証",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "キャッシュした内容を、一定時間の経過やデータ更新をきっかけに取り直すことです。速さと鮮度の釣り合いを決める設定で、更新が画面に反映されない原因の多くはここにあります。",
+      "see": [
+        "nextjs.rendering",
+        "4-3"
+      ]
+    },
+    {
+      "id": "utility-first",
+      "term": "ユーティリティクラス",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "余白、色、文字サイズなど一つの役割だけを持つ小さなクラスをHTMLに並べて見た目を指定する方法です。Tailwind CSSが代表で、クラス名の値はテーマから決まります。",
+      "see": [
+        "frontend.styling"
+      ]
+    },
+    {
+      "id": "theme",
+      "term": "テーマとダークモード",
+      "category": "HTML・CSS・JavaScript",
+      "definition": "テーマは、色や余白などの値をまとめて名前を付けたものです。ダークモードは、暗い背景向けの値の組に切り替える表示で、テーマの値を意味付け（背景、文字、強調など）で定義しておくと切り替えが容易になります。",
+      "see": [
+        "frontend.styling"
+      ]
     }
   ],
   "pages": {
@@ -890,7 +963,8 @@
       "cache",
       "cdn",
       "http",
-      "status-code"
+      "status-code",
+      "revalidation"
     ],
     "checklists/cicd.md": [
       "ci",
@@ -918,7 +992,9 @@
       "component",
       "storybook",
       "responsive",
-      "accessibility"
+      "accessibility",
+      "utility-first",
+      "theme"
     ],
     "checklists/development-tooling.md": [
       "environment",
@@ -1022,7 +1098,9 @@
       "performance",
       "cwv",
       "state-management",
-      "rendering"
+      "rendering",
+      "app-layout",
+      "server-components"
     ],
     "skills/applied-foundation/css.responsive.md": [
       "css",
@@ -1219,6 +1297,31 @@
       "cors",
       "secrets",
       "auth"
+    ],
+    "skills/implementation/nextjs.routing.md": [
+      "framework",
+      "react",
+      "app-layout",
+      "url",
+      "rendering",
+      "seo"
+    ],
+    "skills/implementation/nextjs.rendering.md": [
+      "server-components",
+      "server-actions",
+      "streaming",
+      "hydration",
+      "cache",
+      "revalidation",
+      "api"
+    ],
+    "skills/implementation/frontend.styling.md": [
+      "css",
+      "utility-first",
+      "design-system",
+      "theme",
+      "component",
+      "responsive"
     ]
   }
 }

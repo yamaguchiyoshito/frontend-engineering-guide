@@ -12,8 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [デザインシステムとデザイントークン](../guide/glossary.md#デザインシステムとデザイントークン)、[コンポーネント](../guide/glossary.md#コンポーネント)、[Storybook](../guide/glossary.md#storybook)、[レスポンシブデザイン](../guide/glossary.md#レスポンシブデザイン)、[アクセシビリティ](../guide/glossary.md#アクセシビリティ)  
-**関連する要素技術：** [レスポンシブ設計](../skills/applied-foundation/css.responsive.md)、[コンポーネント設計](../skills/implementation/react.component-design.md)、[Storybook](../skills/implementation/storybook.basic.md)
+**前提となる用語：** [デザインシステムとデザイントークン](../guide/glossary.md#デザインシステムとデザイントークン)、[コンポーネント](../guide/glossary.md#コンポーネント)、[Storybook](../guide/glossary.md#storybook)、[レスポンシブデザイン](../guide/glossary.md#レスポンシブデザイン)、[アクセシビリティ](../guide/glossary.md#アクセシビリティ)、[ユーティリティクラス](../guide/glossary.md#ユーティリティクラス)、[テーマとダークモード](../guide/glossary.md#テーマとダークモード)  
+**関連する要素技術：** [レスポンシブ設計](../skills/applied-foundation/css.responsive.md)、[コンポーネント設計](../skills/implementation/react.component-design.md)、[Storybook](../skills/implementation/storybook.basic.md)、[スタイリング設計](../skills/implementation/frontend.styling.md)
 
 <!-- terms:end -->
 

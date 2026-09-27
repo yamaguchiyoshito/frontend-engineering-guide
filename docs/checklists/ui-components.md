@@ -13,7 +13,7 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 <!-- terms:start -->
 
 **前提となる用語：** [コンポーネント](../guide/glossary.md#コンポーネント)、[Storybook](../guide/glossary.md#storybook)、[React](../guide/glossary.md#react)、[デザインシステムとデザイントークン](../guide/glossary.md#デザインシステムとデザイントークン)、[アクセシビリティ](../guide/glossary.md#アクセシビリティ)  
-**関連する要素技術：** [コンポーネント設計](../skills/implementation/react.component-design.md)、[Storybook](../skills/implementation/storybook.basic.md)、[React実装](../skills/implementation/react.basic.md)
+**関連する要素技術：** [コンポーネント設計](../skills/implementation/react.component-design.md)、[Storybook](../skills/implementation/storybook.basic.md)、[React実装](../skills/implementation/react.basic.md)、[スタイリング設計](../skills/implementation/frontend.styling.md)
 
 <!-- terms:end -->
 

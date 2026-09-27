@@ -1060,6 +1060,11 @@
           "title": "Chrome DevTools：パフォーマンス",
           "url": "https://developer.chrome.com/docs/devtools/performance?hl=ja",
           "note": "処理と描画のプロファイル"
+        },
+        {
+          "title": "web.dev：Learn Performance",
+          "url": "https://web.dev/learn/performance?hl=ja",
+          "note": "画像、フォント、リソースヒント、コード分割の体系的な学習コース"
         }
       ],
       "tools": [
@@ -1173,6 +1178,162 @@
           "title": "GitHub Actions",
           "url": "https://docs.github.com/ja/actions",
           "note": "検査と配布の自動化"
+        }
+      ]
+    },
+    "nextjs.routing": {
+      "docs": [
+        {
+          "title": "Next.js：Layouts and Pages",
+          "url": "https://nextjs.org/docs/app/getting-started/layouts-and-pages",
+          "note": "ファイル規約、レイアウト、動的ルート、リンク",
+          "start": true
+        },
+        {
+          "title": "Next.js：Linking and Navigating",
+          "url": "https://nextjs.org/docs/app/getting-started/linking-and-navigating",
+          "note": "遷移の仕組みとプリフェッチ"
+        },
+        {
+          "title": "Next.js：Error Handling",
+          "url": "https://nextjs.org/docs/app/getting-started/error-handling",
+          "note": "エラー表示と404の扱い"
+        },
+        {
+          "title": "Next.js：Metadata and OG images",
+          "url": "https://nextjs.org/docs/app/getting-started/metadata-and-og-images",
+          "note": "タイトル、説明文、OG画像の設定"
+        },
+        {
+          "title": "Next.js：File-system conventions",
+          "url": "https://nextjs.org/docs/app/api-reference/file-conventions",
+          "note": "layout、page、loading、error などの規約一覧"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Next.js",
+          "url": "https://nextjs.org/docs",
+          "note": "Reactを基にしたフレームワーク"
+        },
+        {
+          "title": "next-intl",
+          "url": "https://next-intl.dev/",
+          "note": "App Router向けの多言語対応とルーティング"
+        },
+        {
+          "title": "React Router",
+          "url": "https://reactrouter.com/",
+          "note": "Next.js以外のReactアプリケーションでのルーティング"
+        }
+      ]
+    },
+    "nextjs.rendering": {
+      "docs": [
+        {
+          "title": "Next.js：Server and Client Components",
+          "url": "https://nextjs.org/docs/app/getting-started/server-and-client-components",
+          "note": "境界の決め方と組み合わせ方",
+          "start": true
+        },
+        {
+          "title": "Next.js：Fetching Data",
+          "url": "https://nextjs.org/docs/app/getting-started/fetching-data",
+          "note": "サーバー側とブラウザ側のデータ取得、ストリーミング"
+        },
+        {
+          "title": "Next.js：Updating Data",
+          "url": "https://nextjs.org/docs/app/getting-started/updating-data",
+          "note": "Server Actionsによる更新と再検証"
+        },
+        {
+          "title": "Next.js：Caching",
+          "url": "https://nextjs.org/docs/app/deep-dive/caching",
+          "note": "4層のキャッシュと再検証の仕組み"
+        },
+        {
+          "title": "React：Server Components（日本語）",
+          "url": "https://ja.react.dev/reference/rsc/server-components",
+          "note": "Server Componentsの考え方"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Next.js",
+          "url": "https://nextjs.org/docs",
+          "note": "Reactを基にしたフレームワーク"
+        },
+        {
+          "title": "TanStack Query",
+          "url": "https://tanstack.com/query",
+          "note": "ブラウザ側でのサーバー状態の取得とキャッシュ"
+        },
+        {
+          "title": "Zod",
+          "url": "https://zod.dev/",
+          "note": "Server Actionsの入力検証"
+        }
+      ]
+    },
+    "frontend.styling": {
+      "docs": [
+        {
+          "title": "Tailwind CSS：Styling with utility classes",
+          "url": "https://tailwindcss.com/docs/styling-with-utility-classes",
+          "note": "ユーティリティクラスの考え方",
+          "start": true
+        },
+        {
+          "title": "Tailwind CSS：Theme variables",
+          "url": "https://tailwindcss.com/docs/theme",
+          "note": "テーマの値の定義と参照"
+        },
+        {
+          "title": "Tailwind CSS：Dark mode",
+          "url": "https://tailwindcss.com/docs/dark-mode",
+          "note": "ダークモードの切り替え"
+        },
+        {
+          "title": "shadcn/ui：Theming",
+          "url": "https://ui.shadcn.com/docs/theming",
+          "note": "CSS変数によるテーマの調整"
+        },
+        {
+          "title": "Design Tokens Format Module",
+          "url": "https://tr.designtokens.org/format/",
+          "note": "デザイントークンの標準形式（英語）"
+        },
+        {
+          "title": "Figma：バリアブルのガイド",
+          "url": "https://help.figma.com/hc/ja/articles/15339657135383",
+          "note": "デザイントークンをFigmaで一元管理"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Tailwind CSS",
+          "url": "https://tailwindcss.com/docs",
+          "note": "ユーティリティクラスによるスタイリング"
+        },
+        {
+          "title": "shadcn/ui",
+          "url": "https://ui.shadcn.com/docs",
+          "note": "Radixを基盤にした複製して使うUI部品集"
+        },
+        {
+          "title": "class-variance-authority",
+          "url": "https://cva.style/docs",
+          "note": "コンポーネントのバリエーション定義"
+        },
+        {
+          "title": "Style Dictionary",
+          "url": "https://styledictionary.com/",
+          "note": "デザイントークンから各種形式への変換"
+        },
+        {
+          "title": "CSS Modules",
+          "url": "https://github.com/css-modules/css-modules",
+          "note": "コンポーネント単位のCSSのスコープ化"
         }
       ]
     }
@@ -1332,7 +1493,8 @@
       "skills": [
         "react.component-design",
         "storybook.basic",
-        "react.basic"
+        "react.basic",
+        "frontend.styling"
       ]
     },
     "1-4": {
@@ -1368,7 +1530,9 @@
       "skills": [
         "react.component-design",
         "react.state-management",
-        "web.performance"
+        "web.performance",
+        "nextjs.routing",
+        "nextjs.rendering"
       ]
     },
     "1-5": {
@@ -1456,7 +1620,8 @@
         }
       ],
       "skills": [
-        "web.performance"
+        "web.performance",
+        "nextjs.rendering"
       ]
     },
     "2-2": {
@@ -1648,7 +1813,8 @@
       "skills": [
         "css.responsive",
         "react.component-design",
-        "storybook.basic"
+        "storybook.basic",
+        "frontend.styling"
       ]
     },
     "3-1": {
@@ -2031,7 +2197,8 @@
       ],
       "skills": [
         "web.basic",
-        "web.performance"
+        "web.performance",
+        "nextjs.rendering"
       ]
     },
     "4-4": {

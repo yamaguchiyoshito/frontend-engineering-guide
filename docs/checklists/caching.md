@@ -12,8 +12,8 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 
 <!-- terms:start -->
 
-**前提となる用語：** [キャッシュ](../guide/glossary.md#キャッシュ)、[CDN](../guide/glossary.md#cdn)、[HTTP](../guide/glossary.md#http)、[ステータスコード](../guide/glossary.md#ステータスコード)  
-**関連する要素技術：** [Web基礎](../skills/foundation/web.basic.md)、[Webパフォーマンス](../skills/quality/web.performance.md)
+**前提となる用語：** [キャッシュ](../guide/glossary.md#キャッシュ)、[CDN](../guide/glossary.md#cdn)、[HTTP](../guide/glossary.md#http)、[ステータスコード](../guide/glossary.md#ステータスコード)、[キャッシュの再検証](../guide/glossary.md#キャッシュの再検証)  
+**関連する要素技術：** [Web基礎](../skills/foundation/web.basic.md)、[Webパフォーマンス](../skills/quality/web.performance.md)、[レンダリングとデータ取得](../skills/implementation/nextjs.rendering.md)
 
 <!-- terms:end -->
 
