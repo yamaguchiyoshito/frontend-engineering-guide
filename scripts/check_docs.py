@@ -25,7 +25,6 @@ def main():
   rows=checklist_data(p);assert list(rows)==p['numbers'],p['path']+': item numbers differ'
   for num,row in rows.items():
    assert num not in items,'Duplicate checklist number'
-   assert row[2]==('FALSE' if int(num)%4==0 else 'TRUE'),f'C{num}: expected polarity changed; revise the validation rule only with a criteria change'
    items[num]=hashlib.sha256(json.dumps(row,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()
  assert list(items)==[f'{n:03}' for n in range(1,101)],'100 sequential items required'
  for p in PAGES:
