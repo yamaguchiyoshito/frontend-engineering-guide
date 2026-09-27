@@ -48,8 +48,9 @@ try {
   results.checks.push('deep links, anchor navigation and refresh');
 
   await page.goto(url + 'guide/prerequisites.html');
-  await expect(page.locator('.mermaid svg').first()).toBeVisible({ timeout: 15000 });
-  results.checks.push('mermaid sequence diagram renders');
+  await expect(page.locator('.mermaid svg')).toHaveCount(2, { timeout: 15000 });
+  await expect(page.locator('.mermaid svg').nth(1)).toBeVisible();
+  results.checks.push('mermaid sequence and flow diagrams render');
 
   for (const [query, target] of [['react.form', 'react.form'], ['2-3-1', 'security'], ['セキュリティ', 'security'], ['非同期', 'javascript.async']]) {
     await page.locator('button.DocSearch-Button').click();
