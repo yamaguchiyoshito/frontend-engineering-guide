@@ -13,7 +13,7 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 <!-- terms:start -->
 
 **前提となる用語：** [Webパフォーマンス](../guide/glossary.md#webパフォーマンス)、[Core Web Vitals](../guide/glossary.md#core-web-vitals)、[Lighthouse](../guide/glossary.md#lighthouse)、[モニタリングとオブザーバビリティ](../guide/glossary.md#モニタリングとオブザーバビリティ)、[SLO](../guide/glossary.md#slo)  
-**関連する要素技術：** [Webパフォーマンス](../skills/quality/web.performance.md)
+**関連する要素技術：** [Webパフォーマンス](../skills/quality/web.performance.md)、[レンダリングとデータ取得](../skills/implementation/nextjs.rendering.md)
 
 <!-- terms:end -->
 

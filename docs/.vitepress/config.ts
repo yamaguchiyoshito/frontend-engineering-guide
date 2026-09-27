@@ -30,7 +30,7 @@ const maintenance = [{ text: '運用・改訂', items: by('maintenance').map(ite
 const ordered = pages.filter((p: any) => p.handbook)
 export default withMermaid(defineConfig({
   lang: 'ja-JP', title: 'フロントエンド開発ガイド', titleTemplate: ':title | 開発ガイド',
-  description: '28の要素技術の習熟度と100項目のチームチェック。共通の基準で評価し、育成と開発環境の改善につなげます。',
+  description: '31の要素技術の習熟度と100項目のチームチェック。共通の基準で評価し、育成と開発環境の改善につなげます。',
   base, cleanUrls: false, appearance: true,
   srcExclude: ['public/**'],
   // Mermaid: keep Japanese node labels on one line instead of wrapping at the 200px default.

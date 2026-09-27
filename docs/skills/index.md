@@ -1,6 +1,6 @@
 ---
 title: "要素技術"
-description: "28の要素技術の一覧。4つの領域ごとに要素技術ID、評価対象または主な前提を示し、各要素技術のLv0〜Lv4の定義へ進めます。"
+description: "31の要素技術の一覧。4つの領域ごとに要素技術ID、評価対象または主な前提を示し、各要素技術のLv0〜Lv4の定義へ進めます。"
 ---
 
 # 要素技術
@@ -34,7 +34,7 @@ description: "28の要素技術の一覧。4つの領域ごとに要素技術ID�
 | `web.seo` | [基本SEO](applied-foundation/web.seo.md) | HTML、セマンティックHTML |
 | `git.collaboration` | [チーム開発](applied-foundation/git.collaboration.md) | Git |
 
-## フレームワーク・実装領域（7つの要素技術）
+## フレームワーク・実装領域（10の要素技術）
 
 | ID | 要素技術 | 主な前提 |
 | :--- | :--- | :--- |
@@ -45,6 +45,9 @@ description: "28の要素技術の一覧。4つの領域ごとに要素技術ID�
 | `frontend.api-integration` | [REST API連携](implementation/frontend.api-integration.md) | 非同期処理、TypeScript |
 | `frontend.validation` | [入力検証・型連携](implementation/frontend.validation.md) | フォーム、TypeScript |
 | `storybook.basic` | [Storybook](implementation/storybook.basic.md) | React、コンポーネント設計 |
+| `nextjs.routing` | [App Routerによる画面構成](implementation/nextjs.routing.md) | React実装、Web基礎 |
+| `nextjs.rendering` | [レンダリングとデータ取得](implementation/nextjs.rendering.md) | App Routerによる画面構成、REST API連携、非同期処理 |
+| `frontend.styling` | [スタイリング設計](implementation/frontend.styling.md) | CSS、レスポンシブ設計、コンポーネント設計 |
 
 ## 品質・高度化領域（8つの要素技術）
 

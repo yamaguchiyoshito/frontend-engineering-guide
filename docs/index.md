@@ -1,6 +1,6 @@
 ---
 title: "フロントエンド開発ガイド"
-description: "個人の習熟度（28の要素技術、Lv0〜Lv4）とチームの取り組み（100項目）を共通の基準で確認し、改善につなげるためのガイド。"
+description: "個人の習熟度（31の要素技術、Lv0〜Lv4）とチームの取り組み（100項目）を共通の基準で確認し、改善につなげるためのガイド。"
 ---
 
 # フロントエンド開発ガイド
@@ -9,7 +9,7 @@ description: "個人の習熟度（28の要素技術、Lv0〜Lv4）とチーム�
 
 個人の習熟度とチームの取り組みを、共通の基準で確認し、次の改善につなげるためのガイドです。
 
-<div class="guide-stats"><span><strong>4</strong>領域</span><span><strong>28</strong>要素技術</span><span><strong>100</strong>チェック項目</span></div>
+<div class="guide-stats"><span><strong>4</strong>領域</span><span><strong>31</strong>要素技術</span><span><strong>100</strong>チェック項目</span></div>
 
 ## はじめて使う方へ
 
@@ -22,7 +22,7 @@ description: "個人の習熟度（28の要素技術、Lv0〜Lv4）とチーム�
 | 行いたいこと | 参照するページ |
 | :--- | :--- |
 | 用語の意味を確認する | [用語集](guide/glossary.md)・[前提知識](guide/prerequisites.md) |
-| 自分の実行できる範囲を確認する | [要素技術：28の要素技術のLv0〜Lv4](skills/index.md) |
+| 自分の実行できる範囲を確認する | [要素技術：31の要素技術のLv0〜Lv4](skills/index.md) |
 | チームの仕組みを見直す | [チームチェック：出典の分類による100項目と回答例](checklists/index.md) |
 | 評価と改善を記録する | [空の書式](templates/index.md)・[記入例](examples/index.md) |
 | 一つの文書として読む | [単一Markdownと書式をダウンロード](downloads.md) |

@@ -287,6 +287,54 @@ propsは親の部品から子の部品へ渡す設定値です。状態（state�
 
 関連：[Web基礎](../skills/foundation/web.basic.md)
 
+### レイアウトとページ
+
+App Routerでは、ディレクトリがURLに対応し、pageがその画面の内容、layoutが複数の画面で共有する枠（ヘッダーやナビゲーション）を表します。レイアウトは画面遷移をまたいで保持されます。
+
+関連：[App Routerによる画面構成](../skills/implementation/nextjs.routing.md)
+
+### Server ComponentsとClient Components
+
+Server Componentsはサーバーで描画され、データベースやAPIへ直接アクセスできますが、クリックなどの操作は扱えません。Client Componentsはブラウザで動き、状態やイベントを扱います。App Routerでは両者を組み合わせて画面を作ります。
+
+関連：[レンダリングとデータ取得](../skills/implementation/nextjs.rendering.md)
+
+### Server Actions
+
+フォームの送信などをきっかけに、サーバー側の関数をブラウザから直接呼び出す仕組みです。APIの実装を省いてデータの更新を行え、更新後にキャッシュを再検証します。
+
+関連：[レンダリングとデータ取得](../skills/implementation/nextjs.rendering.md)
+
+### ストリーミング
+
+画面全体の準備を待たず、できた部分からブラウザへ順に送って表示する仕組みです。時間のかかる部分は読み込み中の表示を先に出し、後から差し替えます。
+
+関連：[レンダリングとデータ取得](../skills/implementation/nextjs.rendering.md)
+
+### ハイドレーション
+
+サーバーで描画したHTMLに、ブラウザでJavaScriptを結び付けて操作できる状態にする処理です。サーバーとブラウザで描画結果が食い違うと、警告や表示の乱れが起きます。
+
+関連：[レンダリングとデータ取得](../skills/implementation/nextjs.rendering.md)
+
+### キャッシュの再検証
+
+キャッシュした内容を、一定時間の経過やデータ更新をきっかけに取り直すことです。速さと鮮度の釣り合いを決める設定で、更新が画面に反映されない原因の多くはここにあります。
+
+関連：[レンダリングとデータ取得](../skills/implementation/nextjs.rendering.md)、[4-3 キャッシュ](../checklists/caching.md)
+
+### ユーティリティクラス
+
+余白、色、文字サイズなど一つの役割だけを持つ小さなクラスをHTMLに並べて見た目を指定する方法です。Tailwind CSSが代表で、クラス名の値はテーマから決まります。
+
+関連：[スタイリング設計](../skills/implementation/frontend.styling.md)
+
+### テーマとダークモード
+
+テーマは、色や余白などの値をまとめて名前を付けたものです。ダークモードは、暗い背景向けの値の組に切り替える表示で、テーマの値を意味付け（背景、文字、強調など）で定義しておくと切り替えが容易になります。
+
+関連：[スタイリング設計](../skills/implementation/frontend.styling.md)
+
 ## チーム開発の流れ
 
 ### リポジトリ

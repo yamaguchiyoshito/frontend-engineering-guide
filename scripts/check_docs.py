@@ -9,10 +9,10 @@ def main():
  paths=[p['path'] for p in PAGES]
  assert len(paths)==len(set(paths)),'Duplicate page paths'
  assert files==set(paths),f'Unmapped/missing Markdown: {files.symmetric_difference(paths)}'
- assert len(paths)==79,'Expected 79 pages'
+ assert len(paths)==82,'Expected 82 pages'
  skills=[p for p in PAGES if p['kind']=='skill'];checks=[p for p in PAGES if p['kind']=='checklist']
- assert len(skills)==28 and len(checks)==25,'Expected 28 skills and 25 checklist groups'
- assert len({p['skillId'] for p in skills})==28,'Duplicate skill ID'
+ assert len(skills)==31 and len(checks)==25,'Expected 31 skills and 25 checklist groups'
+ assert len({p['skillId'] for p in skills})==31,'Duplicate skill ID'
  assert len({p['area'] for p in skills})==4,'Expected four skill areas'
  definitions={};items={}
  for p in skills:
@@ -58,9 +58,9 @@ def main():
  for p in skills+checks:assert p['path'] in glossary['pages'],p['path']+': add its terms to build/glossary.json'
  if '--migration' in sys.argv:
   baseline=json.loads((ROOT/'build/migration-baseline.json').read_text())
-  assert definitions==baseline['skills'],'Skill definitions differ from source 1.1'
+  assert definitions==baseline['skills'],'Skill definitions differ from the migration baseline'
   assert items==baseline['checks'],'Checklist content differs from source 1.1'
-  print('Migration verified: all 140 definitions and 100 complete checklist entries unchanged')
+  print(f'Migration verified: all {len(definitions)} definitions and 100 complete checklist entries unchanged')
  print(f'Docs OK: {len(paths)} pages, {len(definitions)} definitions, {len(items)} items (75 TRUE / 25 FALSE), {len(terms)} glossary terms')
 if __name__=='__main__':
  try:main()

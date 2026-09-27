@@ -250,6 +250,30 @@
       "skillId": "storybook.basic"
     },
     {
+      "path": "skills/implementation/nextjs.routing.md",
+      "title": "App Routerによる画面構成",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "nextjs.routing"
+    },
+    {
+      "path": "skills/implementation/nextjs.rendering.md",
+      "title": "レンダリングとデータ取得",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "nextjs.rendering"
+    },
+    {
+      "path": "skills/implementation/frontend.styling.md",
+      "title": "スタイリング設計",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "frontend.styling"
+    },
+    {
       "path": "skills/quality/index.md",
       "title": "品質・高度化領域",
       "kind": "area",
