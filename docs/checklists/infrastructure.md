@@ -67,3 +67,27 @@ Platform as a Service の具体例として下記のものが挙げられる。
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/3babe5df95bb423aaeb05a6e384a797d)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [Google SRE Book：Service Level Objectives](https://sre.google/sre-book/service-level-objectives/) — 可用性指標の考え方（英語）
+- [AWS Well-Architected Framework](https://aws.amazon.com/jp/architecture/well-architected/) — インフラ設計の観点
+
+**代表的なツール・サービス**
+
+- [Vercel](https://vercel.com/)（出典で言及） — Platform as a Service
+- [Firebase](https://firebase.google.com/?hl=ja)（出典で言及） — Platform as a Service
+- [Supabase](https://supabase.com/)（出典で言及） — Platform as a Service
+- [AWS Amplify](https://aws.amazon.com/jp/amplify/)（出典で言及） — Platform as a Service
+
+**関連する要素技術**
+
+- [Web基礎](../skills/foundation/web.basic.md)、[Webパフォーマンス](../skills/quality/web.performance.md)
+
+<!-- references:end -->

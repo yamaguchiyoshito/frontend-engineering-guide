@@ -49,3 +49,26 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/2d00021c9a904ab38a96a3c1cae55f92)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [ThoughtWorks：Technology Radar](https://www.thoughtworks.com/radar) — 技術の採用段階を整理した公開情報（英語）
+- [OpenSSF Scorecard](https://scorecard.dev/) — OSSの保守・セキュリティ状況の評価（英語）
+
+**代表的なツール・サービス**
+
+- [npm trends](https://npmtrends.com/) — パッケージの利用推移の比較
+- [Bundlephobia](https://bundlephobia.com/) — パッケージの容量と依存の確認
+- [GitHub Advisory Database](https://github.com/advisories) — 脆弱性情報の検索
+
+**関連する要素技術**
+
+- [フロントエンド品質保証](../skills/quality/frontend.quality.md)、[Webセキュリティ](../skills/quality/web.security.md)、[TypeScript](../skills/applied-foundation/typescript.basic.md)
+
+<!-- references:end -->

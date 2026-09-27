@@ -59,3 +59,26 @@ CDNのパージ、サーバーキャッシュの無効化、静的ファイル�
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/ffcabe1203954b0b9282aeeaad0afc4b)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [MDN：HTTPキャッシュ](https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Caching) — ブラウザとCDNのキャッシュ制御
+- [web.dev：HTTPキャッシュ](https://web.dev/articles/http-cache?hl=ja) — キャッシュ設計の実践
+- [RFC 9111：HTTP Caching](https://www.rfc-editor.org/rfc/rfc9111) — キャッシュの仕様（英語）
+
+**代表的なツール・サービス**
+
+- [Chrome DevTools：Networkパネル](https://developer.chrome.com/docs/devtools/network?hl=ja) — キャッシュヒットの確認
+- [Vite：静的アセットの扱い](https://ja.vite.dev/guide/assets)（出典で言及） — ハッシュ付きファイル名によるキャッシュバスティング
+
+**関連する要素技術**
+
+- [Web基礎](../skills/foundation/web.basic.md)、[Webパフォーマンス](../skills/quality/web.performance.md)
+
+<!-- references:end -->

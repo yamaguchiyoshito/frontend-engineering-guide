@@ -49,3 +49,27 @@ CIで実行する各テストジョブと、取得可能なテストケース単
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/5a32cc51bb894f3da6a2998366a838ff)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [Martin Fowler：The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html) — テスト層の配分と方針の文書化（英語）
+- [Playwright：ベストプラクティス](https://playwright.dev/docs/best-practices) — 不安定なテストを減らす指針
+- [Testing Library：指針](https://testing-library.com/docs/guiding-principles) — 頑健なテストの考え方（英語）
+
+**代表的なツール・サービス**
+
+- [Vitest](https://vitest.dev/) — 単体・コンポーネントテスト
+- [Playwright](https://playwright.dev/) — E2Eテストと所要時間の記録
+- [GitHub Actions](https://docs.github.com/ja/actions) — CIでの実行と時間の記録
+
+**関連する要素技術**
+
+- [テスト設計](../skills/quality/test.design.md)、[単体テスト](../skills/quality/test.unit.md)、[コンポーネントテスト](../skills/quality/test.component.md)、[E2Eテスト](../skills/quality/test.e2e.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
+
+<!-- references:end -->

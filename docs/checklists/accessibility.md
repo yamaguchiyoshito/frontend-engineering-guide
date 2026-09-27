@@ -67,3 +67,28 @@ HTMLのフォーム要素やナビゲーション要素を代替するUIパー�
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/6676a4cd96d048c2aeea40c46982b8e5)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [WCAG 2.2（日本語訳）](https://waic.jp/translations/WCAG22/)（出典で言及） — 品質基準の目安
+- [WAIC：ウェブアクセシビリティ方針策定ガイドライン](https://waic.jp/docs/policy-guidelines/)（出典で言及） — 方針の策定と掲出
+- [デジタル庁：ウェブアクセシビリティ導入ガイドブック](https://www.digital.go.jp/resources/introduction-to-web-accessibility-guidebook)（出典で言及） — 実務の手引き
+- [WAI-ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/) — 独自UIで標準の操作性を保つパターン（英語）
+
+**代表的なツール・サービス**
+
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse?hl=ja)（出典で言及） — 自動アクセシビリティテスト
+- [axe-core](https://github.com/dequelabs/axe-core)（出典で言及） — 自動アクセシビリティテスト
+- [NVDA](https://www.nvaccess.org/) — スクリーンリーダーでの手動確認
+
+**関連する要素技術**
+
+- [アクセシビリティ](../skills/applied-foundation/web.accessibility.md)、[セマンティックHTML](../skills/applied-foundation/html.semantic.md)
+
+<!-- references:end -->

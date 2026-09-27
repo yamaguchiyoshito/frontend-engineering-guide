@@ -55,3 +55,24 @@ Google Tag Managerなど開発を介さずツールやスクリプトを導入�
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/6c20ed1fbbbf488787f897892185283f)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [DORA：ビジネス成果](https://dora.dev/research/) — 技術活動と事業成果の関係（英語）
+- [Domain-Driven Design Reference](https://www.domainlanguage.com/ddd/reference/) — ドメイン知識の学習の出発点（英語）
+
+**代表的なツール・サービス**
+
+- [Google タグ マネージャー](https://marketingplatform.google.com/intl/ja/about/tag-manager/)（出典で言及） — 開発を介さないタグ導入の仕組み
+
+**関連する要素技術**
+
+- [フロントエンド品質保証](../skills/quality/frontend.quality.md)、[REST API連携](../skills/implementation/frontend.api-integration.md)、[Webセキュリティ](../skills/quality/web.security.md)
+
+<!-- references:end -->

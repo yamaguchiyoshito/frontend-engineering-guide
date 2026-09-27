@@ -53,3 +53,26 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/23a2052725d4470cadde5fe336825390)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [Team Topologies](https://teamtopologies.com/) — イネーブリングチームの位置付け（英語）
+- [Architecture Decision Records](https://adr.github.io/) — 技術方針の記録形式（英語）
+- [DORA：4つの主要指標](https://dora.dev/guides/dora-metrics-four-keys/) — 生産性指標の追跡（英語）
+
+**代表的なツール・サービス**
+
+- [Backstage](https://backstage.io/) — 社内開発者ポータル
+- [GitHub Discussions](https://docs.github.com/ja/discussions) — 取り決めとナレッジの蓄積
+
+**関連する要素技術**
+
+- [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
+
+<!-- references:end -->

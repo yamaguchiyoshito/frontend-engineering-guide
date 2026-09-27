@@ -49,3 +49,28 @@ UIコンポーネントの設計パターンが開発者間で共有されてお
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/d8624cedad794b39a9d2b387394a20a7)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [React：Reactの流儀（日本語）](https://ja.react.dev/learn/thinking-in-react) — コンポーネントの分割と責務
+- [Storybook：ドキュメント](https://storybook.js.org/docs) — カタログ化と説明の整備
+
+**代表的なツール・サービス**
+
+- [React](https://ja.react.dev/)（出典で言及） — コンポーネント指向のUIライブラリ
+- [Vue.js](https://ja.vuejs.org/)（出典で言及） — コンポーネント指向のUIフレームワーク
+- [Angular](https://angular.dev/)（出典で言及） — コンポーネント指向のUIフレームワーク
+- [Storybook](https://storybook.js.org/) — UIコンポーネントのカタログ
+- [Radix Primitives](https://www.radix-ui.com/primitives) — 責務を絞ったアクセシブルな部品
+
+**関連する要素技術**
+
+- [コンポーネント設計](../skills/implementation/react.component-design.md)、[Storybook](../skills/implementation/storybook.basic.md)、[React実装](../skills/implementation/react.basic.md)
+
+<!-- references:end -->

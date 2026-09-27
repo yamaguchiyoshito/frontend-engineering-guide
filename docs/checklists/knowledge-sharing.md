@@ -64,3 +64,25 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/6fc6f18ea9ee469a836cbe6ff970254b)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [Google re:Work](https://rework.withgoogle.com/jp/) — チームの学習と心理的安全性の指針
+- [DORA：文化](https://dora.dev/capabilities/generative-organizational-culture/) — 学習する組織文化の解説（英語）
+
+**代表的なツール・サービス**
+
+- [connpass](https://connpass.com/) — 勉強会・ワークショップの検索と開催
+- [GitHub Discussions](https://docs.github.com/ja/discussions) — チーム内の知見共有
+
+**関連する要素技術**
+
+- [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
+
+<!-- references:end -->

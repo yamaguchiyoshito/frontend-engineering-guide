@@ -55,3 +55,26 @@ Webフロントエンド技術の知見を活かすことでCI/CDパイプライ
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/83dbabd5a8bb43a78b2e1ef4ebced61d)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [GitHub Docs：GitHub Actions](https://docs.github.com/ja/actions) — パイプラインの構成と運用
+- [DORA：継続的デリバリー](https://dora.dev/capabilities/continuous-delivery/) — CI/CDの能力の解説（英語）
+
+**代表的なツール・サービス**
+
+- [GitHub Actions](https://docs.github.com/ja/actions) — パイプラインの自動化
+- [actionlint](https://github.com/rhysd/actionlint) — ワークフロー定義の静的検査
+- [act](https://github.com/nektos/act) — ワークフローのローカル実行
+
+**関連する要素技術**
+
+- [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)
+
+<!-- references:end -->

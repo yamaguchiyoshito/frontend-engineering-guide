@@ -53,3 +53,26 @@ titleTemplate: ":title | チームチェック | 開発ガイド"
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/9d347242ba9f4270be7a4747e9c4f168)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [web.dev：Core Web Vitals](https://web.dev/articles/vitals?hl=ja) — 閲覧・操作の特性に応じた指標
+- [web.dev：Interaction to Next Paint](https://web.dev/articles/inp?hl=ja) — 操作中の応答性の指標
+- [デジタル庁：デザインシステム](https://design.digital.go.jp/) — ユーザー理解に基づく設計指針の公開例
+
+**代表的なツール・サービス**
+
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse?hl=ja) — 特性に応じた計測
+- [web-vitals](https://github.com/GoogleChrome/web-vitals) — 実利用データの計測
+
+**関連する要素技術**
+
+- [コンポーネント設計](../skills/implementation/react.component-design.md)、[状態管理](../skills/implementation/react.state-management.md)、[Webパフォーマンス](../skills/quality/web.performance.md)
+
+<!-- references:end -->

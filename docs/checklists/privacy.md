@@ -61,3 +61,27 @@ Webブラウザの各ベンダーによるプライバシーに関する仕様�
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/5541cf6cc76445be9b23fd34a70f052e)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [総務省：外部送信規律](https://www.soumu.go.jp/main_sosiki/joho_tsusin/d_syohi/gaibusoushin_kiritsu.html)（出典で言及） — 利用者情報の外部送信に関する規律
+- [個人情報保護委員会](https://www.ppc.go.jp/) — 個人情報保護法の解説と告示
+- [MDN：Webのプライバシー](https://developer.mozilla.org/ja/docs/Web/Privacy) — ブラウザのプライバシー機構
+- [Privacy Sandbox](https://privacysandbox.google.com/?hl=ja) — ブラウザの仕様変更の情報源
+
+**代表的なツール・サービス**
+
+- [Chrome DevTools：Applicationパネル](https://developer.chrome.com/docs/devtools/application?hl=ja) — Cookieとストレージの確認
+- [Chrome DevTools：Networkパネル](https://developer.chrome.com/docs/devtools/network?hl=ja) — 外部送信の棚卸し
+
+**関連する要素技術**
+
+- [Web基礎](../skills/foundation/web.basic.md)、[Webセキュリティ](../skills/quality/web.security.md)
+
+<!-- references:end -->

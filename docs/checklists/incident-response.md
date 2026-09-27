@@ -53,3 +53,25 @@ Webフロントエンドを主とする開発者にも障害対応のロール�
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/8315b91196f3469a999f9b8c130d6e14)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [Google SRE Book：Postmortem Culture](https://sre.google/sre-book/postmortem-culture/)（出典で言及） — 非難しないポストモーテム（英語）
+- [PagerDuty：Incident Response](https://response.pagerduty.com/) — 障害対応のロールと手順（英語）
+
+**代表的なツール・サービス**
+
+- [Sentry](https://sentry.io/) — 障害に繋がるユーザーアクションの計測
+- [OpenTelemetry](https://opentelemetry.io/) — 原因調査のためのトレース
+
+**関連する要素技術**
+
+- [フロントエンド品質保証](../skills/quality/frontend.quality.md)、[Web基礎](../skills/foundation/web.basic.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)
+
+<!-- references:end -->

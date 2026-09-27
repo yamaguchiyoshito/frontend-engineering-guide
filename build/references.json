@@ -339,9 +339,9 @@
     "typescript.basic": {
       "docs": [
         {
-          "title": "TypeScript Handbook（日本語）",
-          "url": "https://www.typescriptlang.org/ja/docs/handbook/intro.html",
-          "note": "公式ハンドブック"
+          "title": "TypeScript Handbook",
+          "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+          "note": "公式ハンドブック（英語）"
         },
         {
           "title": "サバイバルTypeScript",
@@ -408,7 +408,7 @@
         },
         {
           "title": "eslint-plugin-jsx-a11y",
-          "url": "https://github.com/jsx-eye/eslint-plugin-jsx-a11y",
+          "url": "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y",
           "note": "JSXの静的検査"
         },
         {
@@ -468,7 +468,7 @@
         },
         {
           "title": "Pro Git：ブランチ",
-          "url": "https://git-scm.com/book/ja/v2/Git-のブランチ機能-ブランチとは",
+          "url": "https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF",
           "note": "ブランチ運用の基礎"
         }
       ],
@@ -688,9 +688,9 @@
           "note": "サーバー側で必須となる検証の指針（英語）"
         },
         {
-          "title": "TypeScript Handbook：型の絞り込み（日本語）",
-          "url": "https://www.typescriptlang.org/ja/docs/handbook/2/narrowing.html",
-          "note": "外部データを型安全に扱う基礎"
+          "title": "TypeScript Handbook：Narrowing",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/narrowing.html",
+          "note": "外部データを型安全に扱う基礎（英語）"
         }
       ],
       "tools": [
@@ -894,9 +894,9 @@
     "test.design": {
       "docs": [
         {
-          "title": "JSTQB：シラバス",
-          "url": "https://jstqb.jp/syllabus.html",
-          "note": "テスト技法と用語の標準（日本語）"
+          "title": "JSTQB",
+          "url": "https://jstqb.jp/",
+          "note": "テスト技術者資格制度。シラバスと用語集を公開（日本語）"
         },
         {
           "title": "Martin Fowler：The Practical Test Pyramid",
@@ -906,7 +906,8 @@
         {
           "title": "ISO/IEC/IEEE 29119-4：テスト技法",
           "url": "https://www.iso.org/standard/79430.html",
-          "note": "テスト設計技法の国際規格（有償）"
+          "note": "テスト設計技法の国際規格（有償。自動到達確認の対象外）",
+          "check": false
         }
       ],
       "tools": [
@@ -959,7 +960,8 @@
         {
           "title": "WebPageTest",
           "url": "https://www.webpagetest.org/",
-          "note": "条件を指定した詳細計測"
+          "note": "条件を指定した詳細計測（自動到達確認の対象外）",
+          "check": false
         }
       ]
     },
@@ -1014,12 +1016,13 @@
         {
           "title": "ISO/IEC 25010",
           "url": "https://www.iso.org/standard/78176.html",
-          "note": "ソフトウェア品質特性の国際規格（有償）"
+          "note": "ソフトウェア品質特性の国際規格（有償。自動到達確認の対象外）",
+          "check": false
         },
         {
-          "title": "JSTQB：シラバス",
-          "url": "https://jstqb.jp/syllabus.html",
-          "note": "テストプロセスと管理の標準（日本語）"
+          "title": "JSTQB",
+          "url": "https://jstqb.jp/",
+          "note": "テスト技術者資格制度。シラバスと用語集を公開（日本語）"
         },
         {
           "title": "Webフロントエンド版DX Criteria",
@@ -1043,6 +1046,1003 @@
           "url": "https://docs.github.com/ja/actions",
           "note": "検査と配布の自動化"
         }
+      ]
+    }
+  },
+  "note_checklist": "参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。",
+  "checklists": {
+    "1-1": {
+      "guides": [
+        {
+          "title": "DORA：4つの主要指標",
+          "url": "https://dora.dev/guides/dora-metrics-four-keys/",
+          "note": "デプロイ頻度、変更のリードタイム、変更失敗率、復旧時間の定義（英語）"
+        },
+        {
+          "title": "typescript-eslint：設定ガイド",
+          "url": "https://typescript-eslint.io/getting-started/",
+          "note": "型付き静的検査の導入と段階的な厳格化"
+        }
+      ],
+      "tools": [
+        {
+          "title": "TypeScript",
+          "url": "https://www.typescriptlang.org/",
+          "note": "静的型付け"
+        },
+        {
+          "title": "ESLint",
+          "url": "https://eslint.org/",
+          "note": "静的検査"
+        },
+        {
+          "title": "Prettier",
+          "url": "https://prettier.io/",
+          "note": "コード整形"
+        },
+        {
+          "title": "OpenAPI",
+          "url": "https://www.openapis.org/",
+          "note": "APIレベルの型共有",
+          "cited": true
+        },
+        {
+          "title": "GraphQL",
+          "url": "https://graphql.org/",
+          "note": "APIレベルの型共有",
+          "cited": true
+        },
+        {
+          "title": "tRPC",
+          "url": "https://trpc.io/",
+          "note": "TypeScript間の型共有",
+          "cited": true
+        }
+      ],
+      "skills": [
+        "javascript.basic",
+        "typescript.basic",
+        "frontend.api-integration",
+        "git.collaboration"
+      ]
+    },
+    "1-2": {
+      "guides": [
+        {
+          "title": "Vite：ガイド",
+          "url": "https://ja.vite.dev/guide/",
+          "note": "設定を最小限に保つ開発環境の構築"
+        },
+        {
+          "title": "Mock Service Worker：ドキュメント",
+          "url": "https://mswjs.io/docs/",
+          "note": "バックエンドに依存しないローカル開発のためのモック"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Vite",
+          "url": "https://ja.vite.dev/",
+          "note": "開発サーバーとビルド"
+        },
+        {
+          "title": "Biome",
+          "url": "https://biomejs.dev/",
+          "note": "整形と静的検査を一体化したツール"
+        },
+        {
+          "title": "Mock Service Worker",
+          "url": "https://mswjs.io/",
+          "note": "APIモック"
+        },
+        {
+          "title": "GitHub Actions",
+          "url": "https://docs.github.com/ja/actions",
+          "note": "ビルド・テスト時間の記録"
+        }
+      ],
+      "skills": [
+        "javascript.basic",
+        "git.collaboration",
+        "frontend.api-integration",
+        "storybook.basic"
+      ]
+    },
+    "1-3": {
+      "guides": [
+        {
+          "title": "React：Reactの流儀（日本語）",
+          "url": "https://ja.react.dev/learn/thinking-in-react",
+          "note": "コンポーネントの分割と責務"
+        },
+        {
+          "title": "Storybook：ドキュメント",
+          "url": "https://storybook.js.org/docs",
+          "note": "カタログ化と説明の整備"
+        }
+      ],
+      "tools": [
+        {
+          "title": "React",
+          "url": "https://ja.react.dev/",
+          "note": "コンポーネント指向のUIライブラリ",
+          "cited": true
+        },
+        {
+          "title": "Vue.js",
+          "url": "https://ja.vuejs.org/",
+          "note": "コンポーネント指向のUIフレームワーク",
+          "cited": true
+        },
+        {
+          "title": "Angular",
+          "url": "https://angular.dev/",
+          "note": "コンポーネント指向のUIフレームワーク",
+          "cited": true
+        },
+        {
+          "title": "Storybook",
+          "url": "https://storybook.js.org/",
+          "note": "UIコンポーネントのカタログ"
+        },
+        {
+          "title": "Radix Primitives",
+          "url": "https://www.radix-ui.com/primitives",
+          "note": "責務を絞ったアクセシブルな部品"
+        }
+      ],
+      "skills": [
+        "react.component-design",
+        "storybook.basic",
+        "react.basic"
+      ]
+    },
+    "1-4": {
+      "guides": [
+        {
+          "title": "web.dev：Core Web Vitals",
+          "url": "https://web.dev/articles/vitals?hl=ja",
+          "note": "閲覧・操作の特性に応じた指標"
+        },
+        {
+          "title": "web.dev：Interaction to Next Paint",
+          "url": "https://web.dev/articles/inp?hl=ja",
+          "note": "操作中の応答性の指標"
+        },
+        {
+          "title": "デジタル庁：デザインシステム",
+          "url": "https://design.digital.go.jp/",
+          "note": "ユーザー理解に基づく設計指針の公開例"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Lighthouse",
+          "url": "https://developer.chrome.com/docs/lighthouse?hl=ja",
+          "note": "特性に応じた計測"
+        },
+        {
+          "title": "web-vitals",
+          "url": "https://github.com/GoogleChrome/web-vitals",
+          "note": "実利用データの計測"
+        }
+      ],
+      "skills": [
+        "react.component-design",
+        "react.state-management",
+        "web.performance"
+      ]
+    },
+    "1-5": {
+      "guides": [
+        {
+          "title": "ThoughtWorks：Technology Radar",
+          "url": "https://www.thoughtworks.com/radar",
+          "note": "技術の採用段階を整理した公開情報（英語）"
+        },
+        {
+          "title": "OpenSSF Scorecard",
+          "url": "https://scorecard.dev/",
+          "note": "OSSの保守・セキュリティ状況の評価（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "npm trends",
+          "url": "https://npmtrends.com/",
+          "note": "パッケージの利用推移の比較"
+        },
+        {
+          "title": "Bundlephobia",
+          "url": "https://bundlephobia.com/",
+          "note": "パッケージの容量と依存の確認"
+        },
+        {
+          "title": "GitHub Advisory Database",
+          "url": "https://github.com/advisories",
+          "note": "脆弱性情報の検索"
+        }
+      ],
+      "skills": [
+        "frontend.quality",
+        "web.security",
+        "typescript.basic"
+      ]
+    },
+    "2-1": {
+      "guides": [
+        {
+          "title": "web.dev：Core Web Vitals",
+          "url": "https://web.dev/articles/vitals?hl=ja",
+          "note": "速度指標の定義"
+        },
+        {
+          "title": "MDN：User Timing",
+          "url": "https://developer.mozilla.org/ja/docs/Web/API/Performance_API/User_timing",
+          "note": "独自の速度指標の計測",
+          "cited": true
+        },
+        {
+          "title": "Chrome UX Report",
+          "url": "https://developer.chrome.com/docs/crux?hl=ja",
+          "note": "実利用データの公開情報"
+        }
+      ],
+      "tools": [
+        {
+          "title": "SpeedCurve",
+          "url": "https://www.speedcurve.com/",
+          "note": "Synthetic／Real User Monitoring",
+          "cited": true
+        },
+        {
+          "title": "New Relic",
+          "url": "https://newrelic.com/jp",
+          "note": "性能監視サービス",
+          "cited": true
+        },
+        {
+          "title": "Lighthouse",
+          "url": "https://developer.chrome.com/docs/lighthouse?hl=ja",
+          "note": "試験環境での自動計測"
+        },
+        {
+          "title": "PageSpeed Insights",
+          "url": "https://pagespeed.web.dev/",
+          "note": "実利用データを含む診断"
+        },
+        {
+          "title": "web-vitals",
+          "url": "https://github.com/GoogleChrome/web-vitals",
+          "note": "実利用の指標を計測するライブラリ"
+        }
+      ],
+      "skills": [
+        "web.performance"
+      ]
+    },
+    "2-2": {
+      "guides": [
+        {
+          "title": "WCAG 2.2（日本語訳）",
+          "url": "https://waic.jp/translations/WCAG22/",
+          "note": "品質基準の目安",
+          "cited": true
+        },
+        {
+          "title": "WAIC：ウェブアクセシビリティ方針策定ガイドライン",
+          "url": "https://waic.jp/docs/policy-guidelines/",
+          "note": "方針の策定と掲出",
+          "cited": true
+        },
+        {
+          "title": "デジタル庁：ウェブアクセシビリティ導入ガイドブック",
+          "url": "https://www.digital.go.jp/resources/introduction-to-web-accessibility-guidebook",
+          "note": "実務の手引き",
+          "cited": true
+        },
+        {
+          "title": "WAI-ARIA Authoring Practices Guide",
+          "url": "https://www.w3.org/WAI/ARIA/apg/",
+          "note": "独自UIで標準の操作性を保つパターン（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Lighthouse",
+          "url": "https://developer.chrome.com/docs/lighthouse?hl=ja",
+          "note": "自動アクセシビリティテスト",
+          "cited": true
+        },
+        {
+          "title": "axe-core",
+          "url": "https://github.com/dequelabs/axe-core",
+          "note": "自動アクセシビリティテスト",
+          "cited": true
+        },
+        {
+          "title": "NVDA",
+          "url": "https://www.nvaccess.org/",
+          "note": "スクリーンリーダーでの手動確認"
+        }
+      ],
+      "skills": [
+        "web.accessibility",
+        "html.semantic"
+      ]
+    },
+    "2-3": {
+      "guides": [
+        {
+          "title": "OWASP Top 10",
+          "url": "https://owasp.org/www-project-top-ten/",
+          "note": "代表的なリスク（英語）"
+        },
+        {
+          "title": "OWASP Cheat Sheet Series",
+          "url": "https://cheatsheetseries.owasp.org/",
+          "note": "対策の実装指針（英語）"
+        },
+        {
+          "title": "IPA：安全なウェブサイトの作り方",
+          "url": "https://www.ipa.go.jp/security/vuln/websecurity.html",
+          "note": "脆弱性別の対策と教育資料"
+        }
+      ],
+      "tools": [
+        {
+          "title": "GitHub code scanning",
+          "url": "https://docs.github.com/ja/code-security/code-scanning",
+          "note": "PRごとの静的検査",
+          "cited": true
+        },
+        {
+          "title": "Dependabot",
+          "url": "https://docs.github.com/ja/code-security/dependabot",
+          "note": "サプライチェーン脆弱性の検知",
+          "cited": true
+        },
+        {
+          "title": "Renovate",
+          "url": "https://docs.renovatebot.com/",
+          "note": "依存関係の自動更新",
+          "cited": true
+        },
+        {
+          "title": "gitleaks",
+          "url": "https://github.com/gitleaks/gitleaks",
+          "note": "機密情報の混入検査"
+        }
+      ],
+      "skills": [
+        "web.security",
+        "frontend.api-integration",
+        "frontend.quality"
+      ]
+    },
+    "2-4": {
+      "guides": [
+        {
+          "title": "総務省：外部送信規律",
+          "url": "https://www.soumu.go.jp/main_sosiki/joho_tsusin/d_syohi/gaibusoushin_kiritsu.html",
+          "note": "利用者情報の外部送信に関する規律",
+          "cited": true
+        },
+        {
+          "title": "個人情報保護委員会",
+          "url": "https://www.ppc.go.jp/",
+          "note": "個人情報保護法の解説と告示"
+        },
+        {
+          "title": "MDN：Webのプライバシー",
+          "url": "https://developer.mozilla.org/ja/docs/Web/Privacy",
+          "note": "ブラウザのプライバシー機構"
+        },
+        {
+          "title": "Privacy Sandbox",
+          "url": "https://privacysandbox.google.com/?hl=ja",
+          "note": "ブラウザの仕様変更の情報源"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Chrome DevTools：Applicationパネル",
+          "url": "https://developer.chrome.com/docs/devtools/application?hl=ja",
+          "note": "Cookieとストレージの確認"
+        },
+        {
+          "title": "Chrome DevTools：Networkパネル",
+          "url": "https://developer.chrome.com/docs/devtools/network?hl=ja",
+          "note": "外部送信の棚卸し"
+        }
+      ],
+      "skills": [
+        "web.basic",
+        "web.security"
+      ]
+    },
+    "2-5": {
+      "guides": [
+        {
+          "title": "Design Tokens Format Module",
+          "url": "https://tr.designtokens.org/format/",
+          "note": "デザイントークンの標準形式（英語）"
+        },
+        {
+          "title": "MDN：レスポンシブデザイン",
+          "url": "https://developer.mozilla.org/ja/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+          "note": "レスポンシブWebデザインの基礎",
+          "cited": true
+        },
+        {
+          "title": "デジタル庁：デザインシステム",
+          "url": "https://design.digital.go.jp/",
+          "note": "一貫性の体系化の公開例"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Storybook",
+          "url": "https://storybook.js.org/",
+          "note": "UIのバリエーションの棚卸し"
+        },
+        {
+          "title": "Style Dictionary",
+          "url": "https://styledictionary.com/",
+          "note": "デザイントークンの変換と配布"
+        }
+      ],
+      "skills": [
+        "css.responsive",
+        "react.component-design",
+        "storybook.basic"
+      ]
+    },
+    "3-1": {
+      "guides": [
+        {
+          "title": "Martin Fowler：The Practical Test Pyramid",
+          "url": "https://martinfowler.com/articles/practical-test-pyramid.html",
+          "note": "テスト層の配分と方針の文書化（英語）"
+        },
+        {
+          "title": "Playwright：ベストプラクティス",
+          "url": "https://playwright.dev/docs/best-practices",
+          "note": "不安定なテストを減らす指針"
+        },
+        {
+          "title": "Testing Library：指針",
+          "url": "https://testing-library.com/docs/guiding-principles",
+          "note": "頑健なテストの考え方（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Vitest",
+          "url": "https://vitest.dev/",
+          "note": "単体・コンポーネントテスト"
+        },
+        {
+          "title": "Playwright",
+          "url": "https://playwright.dev/",
+          "note": "E2Eテストと所要時間の記録"
+        },
+        {
+          "title": "GitHub Actions",
+          "url": "https://docs.github.com/ja/actions",
+          "note": "CIでの実行と時間の記録"
+        }
+      ],
+      "skills": [
+        "test.design",
+        "test.unit",
+        "test.component",
+        "test.e2e",
+        "frontend.quality"
+      ]
+    },
+    "3-2": {
+      "guides": [
+        {
+          "title": "Vite：ガイド",
+          "url": "https://ja.vite.dev/guide/",
+          "note": "設定を最小限に保つビルド",
+          "cited": true
+        },
+        {
+          "title": "web.dev：JavaScriptの分割読み込み",
+          "url": "https://web.dev/articles/reduce-javascript-payloads-with-code-splitting?hl=ja",
+          "note": "成果物の容量の管理"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Vite",
+          "url": "https://ja.vite.dev/",
+          "note": "ゼロコンフィギュレーション志向のビルド"
+        },
+        {
+          "title": "esbuild",
+          "url": "https://esbuild.github.io/",
+          "note": "高速なバンドラー"
+        },
+        {
+          "title": "rollup-plugin-visualizer",
+          "url": "https://github.com/btd/rollup-plugin-visualizer",
+          "note": "成果物の内訳の可視化"
+        },
+        {
+          "title": "size-limit",
+          "url": "https://github.com/ai/size-limit",
+          "note": "成果物の容量の上限管理"
+        }
+      ],
+      "skills": [
+        "javascript.basic",
+        "git.collaboration",
+        "web.performance"
+      ]
+    },
+    "3-3": {
+      "guides": [
+        {
+          "title": "DORA：4つの主要指標",
+          "url": "https://dora.dev/guides/dora-metrics-four-keys/",
+          "note": "デプロイ頻度とリードタイム（英語）"
+        },
+        {
+          "title": "Google SRE Workbook：Canarying Releases",
+          "url": "https://sre.google/workbook/canarying-releases/",
+          "note": "段階的リリースの考え方（英語）",
+          "cited": true
+        },
+        {
+          "title": "Martin Fowler：Feature Toggles",
+          "url": "https://martinfowler.com/articles/feature-toggles.html",
+          "note": "機能の切り替えの設計（英語）",
+          "cited": true
+        }
+      ],
+      "tools": [
+        {
+          "title": "OpenFeature",
+          "url": "https://openfeature.dev/",
+          "note": "Feature Toggleの標準API"
+        },
+        {
+          "title": "GitHub Actions：環境",
+          "url": "https://docs.github.com/ja/actions/deployment/targeting-different-environments/using-environments-for-deployment",
+          "note": "デプロイ先ごとの保護と承認"
+        }
+      ],
+      "skills": [
+        "git.collaboration",
+        "frontend.quality",
+        "test.e2e"
+      ]
+    },
+    "3-4": {
+      "guides": [
+        {
+          "title": "OWASP：Software Supply Chain Security Cheat Sheet",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet.html",
+          "note": "依存関係の管理と検証の指針（英語）"
+        },
+        {
+          "title": "npm Docs：npm audit",
+          "url": "https://docs.npmjs.com/cli/v10/commands/npm-audit",
+          "note": "依存関係の脆弱性の確認"
+        },
+        {
+          "title": "OpenSSF Scorecard",
+          "url": "https://scorecard.dev/",
+          "note": "依存先の保守状況の評価（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Dependabot",
+          "url": "https://docs.github.com/ja/code-security/dependabot",
+          "note": "更新検知と自動PR",
+          "cited": true
+        },
+        {
+          "title": "Renovate",
+          "url": "https://docs.renovatebot.com/",
+          "note": "更新ポリシーを細かく設定できる自動更新",
+          "cited": true
+        },
+        {
+          "title": "Socket",
+          "url": "https://socket.dev/",
+          "note": "依存パッケージの供給元リスクの検査"
+        },
+        {
+          "title": "GitHub Advisory Database",
+          "url": "https://github.com/advisories",
+          "note": "脆弱性情報の検索"
+        }
+      ],
+      "skills": [
+        "web.security",
+        "git.collaboration"
+      ]
+    },
+    "3-5": {
+      "guides": [
+        {
+          "title": "GitHub Docs：GitHub Actions",
+          "url": "https://docs.github.com/ja/actions",
+          "note": "パイプラインの構成と運用"
+        },
+        {
+          "title": "DORA：継続的デリバリー",
+          "url": "https://dora.dev/capabilities/continuous-delivery/",
+          "note": "CI/CDの能力の解説（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "GitHub Actions",
+          "url": "https://docs.github.com/ja/actions",
+          "note": "パイプラインの自動化"
+        },
+        {
+          "title": "actionlint",
+          "url": "https://github.com/rhysd/actionlint",
+          "note": "ワークフロー定義の静的検査"
+        },
+        {
+          "title": "act",
+          "url": "https://github.com/nektos/act",
+          "note": "ワークフローのローカル実行"
+        }
+      ],
+      "skills": [
+        "git.collaboration",
+        "frontend.quality"
+      ]
+    },
+    "4-1": {
+      "guides": [
+        {
+          "title": "Martin Fowler：Consumer-Driven Contracts",
+          "url": "https://martinfowler.com/articles/consumerDrivenContracts.html",
+          "note": "利用側主導のAPI定義（英語）",
+          "cited": true
+        },
+        {
+          "title": "OpenAPI Specification",
+          "url": "https://spec.openapis.org/oas/latest.html",
+          "note": "APIインターフェースの記述形式（英語）"
+        },
+        {
+          "title": "Node.js：ドキュメント",
+          "url": "https://nodejs.org/ja/docs",
+          "note": "サーバー実装の学習資料"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Pact",
+          "url": "https://pact.io/",
+          "note": "契約テスト"
+        },
+        {
+          "title": "Mock Service Worker",
+          "url": "https://mswjs.io/",
+          "note": "APIモック"
+        },
+        {
+          "title": "OpenTelemetry",
+          "url": "https://opentelemetry.io/ja/docs/",
+          "note": "リソース指標の収集の標準"
+        }
+      ],
+      "skills": [
+        "frontend.api-integration",
+        "web.basic",
+        "react.basic"
+      ]
+    },
+    "4-2": {
+      "guides": [
+        {
+          "title": "Google SRE Book：Service Level Objectives",
+          "url": "https://sre.google/sre-book/service-level-objectives/",
+          "note": "可用性指標の考え方（英語）"
+        },
+        {
+          "title": "AWS Well-Architected Framework",
+          "url": "https://aws.amazon.com/jp/architecture/well-architected/",
+          "note": "インフラ設計の観点"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Vercel",
+          "url": "https://vercel.com/",
+          "note": "Platform as a Service",
+          "cited": true
+        },
+        {
+          "title": "Firebase",
+          "url": "https://firebase.google.com/?hl=ja",
+          "note": "Platform as a Service",
+          "cited": true
+        },
+        {
+          "title": "Supabase",
+          "url": "https://supabase.com/",
+          "note": "Platform as a Service",
+          "cited": true
+        },
+        {
+          "title": "AWS Amplify",
+          "url": "https://aws.amazon.com/jp/amplify/",
+          "note": "Platform as a Service",
+          "cited": true
+        }
+      ],
+      "skills": [
+        "web.basic",
+        "web.performance"
+      ]
+    },
+    "4-3": {
+      "guides": [
+        {
+          "title": "MDN：HTTPキャッシュ",
+          "url": "https://developer.mozilla.org/ja/docs/Web/HTTP/Guides/Caching",
+          "note": "ブラウザとCDNのキャッシュ制御"
+        },
+        {
+          "title": "web.dev：HTTPキャッシュ",
+          "url": "https://web.dev/articles/http-cache?hl=ja",
+          "note": "キャッシュ設計の実践"
+        },
+        {
+          "title": "RFC 9111：HTTP Caching",
+          "url": "https://www.rfc-editor.org/rfc/rfc9111",
+          "note": "キャッシュの仕様（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Chrome DevTools：Networkパネル",
+          "url": "https://developer.chrome.com/docs/devtools/network?hl=ja",
+          "note": "キャッシュヒットの確認"
+        },
+        {
+          "title": "Vite：静的アセットの扱い",
+          "url": "https://ja.vite.dev/guide/assets",
+          "note": "ハッシュ付きファイル名によるキャッシュバスティング",
+          "cited": true
+        }
+      ],
+      "skills": [
+        "web.basic",
+        "web.performance"
+      ]
+    },
+    "4-4": {
+      "guides": [
+        {
+          "title": "Google SRE Book：Monitoring Distributed Systems",
+          "url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+          "note": "監視とアラートの原則（英語）"
+        },
+        {
+          "title": "OpenTelemetry：ドキュメント",
+          "url": "https://opentelemetry.io/ja/docs/",
+          "note": "ログ・トレース・メトリクスの統合"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Sentry",
+          "url": "https://sentry.io/",
+          "note": "エラー監視とアラート",
+          "cited": true
+        },
+        {
+          "title": "OpenTelemetry",
+          "url": "https://opentelemetry.io/",
+          "note": "統合トレースの標準"
+        },
+        {
+          "title": "Grafana",
+          "url": "https://grafana.com/",
+          "note": "ダッシュボードとアラート"
+        },
+        {
+          "title": "Prometheus",
+          "url": "https://prometheus.io/",
+          "note": "メトリクスの収集"
+        }
+      ],
+      "skills": [
+        "web.performance",
+        "frontend.quality",
+        "web.basic"
+      ]
+    },
+    "4-5": {
+      "guides": [
+        {
+          "title": "Google SRE Book：Postmortem Culture",
+          "url": "https://sre.google/sre-book/postmortem-culture/",
+          "note": "非難しないポストモーテム（英語）",
+          "cited": true
+        },
+        {
+          "title": "PagerDuty：Incident Response",
+          "url": "https://response.pagerduty.com/",
+          "note": "障害対応のロールと手順（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Sentry",
+          "url": "https://sentry.io/",
+          "note": "障害に繋がるユーザーアクションの計測"
+        },
+        {
+          "title": "OpenTelemetry",
+          "url": "https://opentelemetry.io/",
+          "note": "原因調査のためのトレース"
+        }
+      ],
+      "skills": [
+        "frontend.quality",
+        "web.basic",
+        "git.collaboration"
+      ]
+    },
+    "5-1": {
+      "guides": [
+        {
+          "title": "Google re:Work",
+          "url": "https://rework.withgoogle.com/jp/",
+          "note": "チームの学習と心理的安全性の指針"
+        },
+        {
+          "title": "DORA：文化",
+          "url": "https://dora.dev/capabilities/generative-organizational-culture/",
+          "note": "学習する組織文化の解説（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "connpass",
+          "url": "https://connpass.com/",
+          "note": "勉強会・ワークショップの検索と開催"
+        },
+        {
+          "title": "GitHub Discussions",
+          "url": "https://docs.github.com/ja/discussions",
+          "note": "チーム内の知見共有"
+        }
+      ],
+      "skills": [
+        "git.collaboration",
+        "frontend.quality"
+      ]
+    },
+    "5-2": {
+      "guides": [
+        {
+          "title": "Team Topologies",
+          "url": "https://teamtopologies.com/",
+          "note": "イネーブリングチームの位置付け（英語）"
+        },
+        {
+          "title": "Architecture Decision Records",
+          "url": "https://adr.github.io/",
+          "note": "技術方針の記録形式（英語）"
+        },
+        {
+          "title": "DORA：4つの主要指標",
+          "url": "https://dora.dev/guides/dora-metrics-four-keys/",
+          "note": "生産性指標の追跡（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Backstage",
+          "url": "https://backstage.io/",
+          "note": "社内開発者ポータル"
+        },
+        {
+          "title": "GitHub Discussions",
+          "url": "https://docs.github.com/ja/discussions",
+          "note": "取り決めとナレッジの蓄積"
+        }
+      ],
+      "skills": [
+        "git.collaboration",
+        "frontend.quality"
+      ]
+    },
+    "5-3": {
+      "guides": [
+        {
+          "title": "IPA：デジタルスキル標準",
+          "url": "https://www.ipa.go.jp/jinzai/skill-standard/dss/index.html",
+          "note": "職務と学習項目の整理の参考"
+        },
+        {
+          "title": "SFIA",
+          "url": "https://sfia-online.org/",
+          "note": "ITスキルの枠組み（英語）"
+        }
+      ],
+      "tools": [],
+      "skills": [
+        "skills/index.md",
+        "git.collaboration",
+        "frontend.quality"
+      ]
+    },
+    "5-4": {
+      "guides": [
+        {
+          "title": "DORA：ビジネス成果",
+          "url": "https://dora.dev/research/",
+          "note": "技術活動と事業成果の関係（英語）"
+        },
+        {
+          "title": "Domain-Driven Design Reference",
+          "url": "https://www.domainlanguage.com/ddd/reference/",
+          "note": "ドメイン知識の学習の出発点（英語）"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Google タグ マネージャー",
+          "url": "https://marketingplatform.google.com/intl/ja/about/tag-manager/",
+          "note": "開発を介さないタグ導入の仕組み",
+          "cited": true
+        }
+      ],
+      "skills": [
+        "frontend.quality",
+        "frontend.api-integration",
+        "web.security"
+      ]
+    },
+    "5-5": {
+      "guides": [
+        {
+          "title": "Google：Technical Writing Courses",
+          "url": "https://developers.google.com/tech-writing?hl=ja",
+          "note": "技術文書の書き方"
+        }
+      ],
+      "tools": [
+        {
+          "title": "Zenn",
+          "url": "https://zenn.dev/",
+          "note": "技術記事の公開"
+        },
+        {
+          "title": "Qiita",
+          "url": "https://qiita.com/",
+          "note": "技術記事の公開"
+        },
+        {
+          "title": "Speaker Deck",
+          "url": "https://speakerdeck.com/",
+          "note": "登壇資料の公開"
+        },
+        {
+          "title": "connpass",
+          "url": "https://connpass.com/",
+          "note": "勉強会の開催"
+        }
+      ],
+      "skills": [
+        "git.collaboration"
       ]
     }
   }

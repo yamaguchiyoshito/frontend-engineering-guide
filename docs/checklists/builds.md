@@ -49,3 +49,27 @@ CI/CDのビルドごとに所要時間、成果物全体と主要ファイルの
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/72babf2388f341c8b88d99e50cba9b16)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [Vite：ガイド](https://ja.vite.dev/guide/)（出典で言及） — 設定を最小限に保つビルド
+- [web.dev：JavaScriptの分割読み込み](https://web.dev/articles/reduce-javascript-payloads-with-code-splitting?hl=ja) — 成果物の容量の管理
+
+**代表的なツール・サービス**
+
+- [Vite](https://ja.vite.dev/) — ゼロコンフィギュレーション志向のビルド
+- [esbuild](https://esbuild.github.io/) — 高速なバンドラー
+- [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer) — 成果物の内訳の可視化
+- [size-limit](https://github.com/ai/size-limit) — 成果物の容量の上限管理
+
+**関連する要素技術**
+
+- [JavaScript](../skills/foundation/javascript.basic.md)、[チーム開発](../skills/applied-foundation/git.collaboration.md)、[Webパフォーマンス](../skills/quality/web.performance.md)
+
+<!-- references:end -->

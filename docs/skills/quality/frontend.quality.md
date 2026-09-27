@@ -40,8 +40,8 @@ titleTemplate: ":title | 要素技術 | 開発ガイド"
 
 **仕様・公式ドキュメント**
 
-- [ISO/IEC 25010](https://www.iso.org/standard/78176.html) — ソフトウェア品質特性の国際規格（有償）
-- [JSTQB：シラバス](https://jstqb.jp/syllabus.html) — テストプロセスと管理の標準（日本語）
+- [ISO/IEC 25010](https://www.iso.org/standard/78176.html) — ソフトウェア品質特性の国際規格（有償。自動到達確認の対象外）
+- [JSTQB](https://jstqb.jp/) — テスト技術者資格制度。シラバスと用語集を公開（日本語）
 - [Webフロントエンド版DX Criteria](https://dxcriteria.cto-a.org/frontend) — チームの品質活動のチェック項目
 
 **代表的なライブラリ・ツール**

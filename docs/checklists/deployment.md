@@ -55,3 +55,26 @@ Webアプリケーションが依存する外部サービスにおいてリリ�
 :::
 
 [原文の参照先](https://dxcriteria.cto-a.org/b0f3daace7344be38a587da37543f600)
+
+## 参考リンク
+
+<!-- references:start -->
+
+参考資料であり、採用の推奨ではありません。出典の項目文で言及されているものには（出典で言及）と付記しています。選定は[技術選定](technology-selection.md)の観点で行ってください。2026年9月確認。
+
+**指針・標準**
+
+- [DORA：4つの主要指標](https://dora.dev/guides/dora-metrics-four-keys/) — デプロイ頻度とリードタイム（英語）
+- [Google SRE Workbook：Canarying Releases](https://sre.google/workbook/canarying-releases/)（出典で言及） — 段階的リリースの考え方（英語）
+- [Martin Fowler：Feature Toggles](https://martinfowler.com/articles/feature-toggles.html)（出典で言及） — 機能の切り替えの設計（英語）
+
+**代表的なツール・サービス**
+
+- [OpenFeature](https://openfeature.dev/) — Feature Toggleの標準API
+- [GitHub Actions：環境](https://docs.github.com/ja/actions/deployment/targeting-different-environments/using-environments-for-deployment) — デプロイ先ごとの保護と承認
+
+**関連する要素技術**
+
+- [チーム開発](../skills/applied-foundation/git.collaboration.md)、[フロントエンド品質保証](../skills/quality/frontend.quality.md)、[E2Eテスト](../skills/quality/test.e2e.md)
+
+<!-- references:end -->
