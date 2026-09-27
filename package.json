@@ -1,0 +1,28 @@
+{
+  "name": "frontend-engineering-guide",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "docs:sync": "python3 scripts/sync_catalogs.py",
+    "docs:check": "python3 scripts/check_docs.py",
+    "docs:downloads": "python3 scripts/build_handbook.py",
+    "docs:dev": "npm run docs:sync && npm run docs:downloads && vitepress dev docs",
+    "docs:build": "node scripts/build_docs.mjs",
+    "docs:preview": "vitepress preview docs --port 4173",
+    "test:site": "node scripts/check_site.mjs",
+    "test": "npm run docs:build && npm run test:site",
+    "check:migration": "python3 scripts/check_docs.py --migration",
+    "test:release": "python3 scripts/test_release.py"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "vitepress": "1.6.4"
+  },
+  "overrides": {
+    "vite": "6.4.3"
+  }
+}

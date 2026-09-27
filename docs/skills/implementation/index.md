@@ -1,0 +1,22 @@
+---
+title: "フレームワーク・実装領域"
+description: "フレームワーク・実装領域の基準と使い方。フロントエンド開発のスキル評価・チーム改善ガイド。"
+---
+
+# フレームワーク・実装領域
+
+この領域に含まれる7スキルを示します。前提知識は学習の目安であり、同じ習熟度への到達を一律に要求するものではありません。
+
+<!-- catalog:start -->
+
+| スキルID | スキル | 評価対象・主な前提 |
+| :--- | :--- | :--- |
+| `react.basic` | [React実装](react.basic.md) | JavaScript、TypeScript、DOM |
+| `react.component-design` | [コンポーネント設計](react.component-design.md) | React、UI実装 |
+| `react.state-management` | [状態管理](react.state-management.md) | React、非同期処理 |
+| `react.form` | [フォーム実装](react.form.md) | React、TypeScript |
+| `frontend.api-integration` | [REST API連携](frontend.api-integration.md) | 非同期処理、TypeScript |
+| `frontend.validation` | [入力検証・型連携](frontend.validation.md) | フォーム、TypeScript |
+| `storybook.basic` | [Storybook](storybook.basic.md) | React、コンポーネント設計 |
+
+<!-- catalog:end -->

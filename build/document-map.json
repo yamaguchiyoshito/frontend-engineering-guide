@@ -1,0 +1,715 @@
+{
+  "schemaVersion": 1,
+  "title": "フロントエンド開発のスキル評価・チーム改善ガイド",
+  "areas": [
+    {
+      "id": "foundation",
+      "title": "基礎領域"
+    },
+    {
+      "id": "applied-foundation",
+      "title": "応用基礎領域"
+    },
+    {
+      "id": "implementation",
+      "title": "フレームワーク・実装領域"
+    },
+    {
+      "id": "quality",
+      "title": "品質・高度化領域"
+    }
+  ],
+  "pages": [
+    {
+      "path": "index.md",
+      "title": "フロントエンド開発ガイド",
+      "kind": "home",
+      "handbook": false
+    },
+    {
+      "path": "guide/overview.md",
+      "title": "ガイドの目的と評価の全体像",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
+      "path": "guide/individual-assessment.md",
+      "title": "個人のスキルを評価する",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
+      "path": "guide/team-assessment.md",
+      "title": "チームの取り組みを確認する",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
+      "path": "guide/improvement.md",
+      "title": "評価結果を改善につなげる",
+      "kind": "guide",
+      "handbook": true
+    },
+    {
+      "path": "skills/index.md",
+      "title": "スキル定義",
+      "kind": "skill-index",
+      "handbook": true
+    },
+    {
+      "path": "skills/foundation/index.md",
+      "title": "基礎領域",
+      "kind": "area",
+      "handbook": true,
+      "area": "foundation"
+    },
+    {
+      "path": "skills/foundation/web.basic.md",
+      "title": "Web基礎",
+      "kind": "skill",
+      "handbook": true,
+      "area": "foundation",
+      "skillId": "web.basic"
+    },
+    {
+      "path": "skills/foundation/html.basic.md",
+      "title": "HTML",
+      "kind": "skill",
+      "handbook": true,
+      "area": "foundation",
+      "skillId": "html.basic"
+    },
+    {
+      "path": "skills/foundation/css.basic.md",
+      "title": "CSS",
+      "kind": "skill",
+      "handbook": true,
+      "area": "foundation",
+      "skillId": "css.basic"
+    },
+    {
+      "path": "skills/foundation/javascript.basic.md",
+      "title": "JavaScript",
+      "kind": "skill",
+      "handbook": true,
+      "area": "foundation",
+      "skillId": "javascript.basic"
+    },
+    {
+      "path": "skills/foundation/git.basic.md",
+      "title": "Git",
+      "kind": "skill",
+      "handbook": true,
+      "area": "foundation",
+      "skillId": "git.basic"
+    },
+    {
+      "path": "skills/applied-foundation/index.md",
+      "title": "応用基礎領域",
+      "kind": "area",
+      "handbook": true,
+      "area": "applied-foundation"
+    },
+    {
+      "path": "skills/applied-foundation/html.semantic.md",
+      "title": "セマンティックHTML",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "html.semantic"
+    },
+    {
+      "path": "skills/applied-foundation/css.responsive.md",
+      "title": "レスポンシブ設計",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "css.responsive"
+    },
+    {
+      "path": "skills/applied-foundation/javascript.dom.md",
+      "title": "DOM・イベント操作",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "javascript.dom"
+    },
+    {
+      "path": "skills/applied-foundation/javascript.async.md",
+      "title": "非同期処理",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "javascript.async"
+    },
+    {
+      "path": "skills/applied-foundation/typescript.basic.md",
+      "title": "TypeScript",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "typescript.basic"
+    },
+    {
+      "path": "skills/applied-foundation/web.accessibility.md",
+      "title": "アクセシビリティ",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "web.accessibility"
+    },
+    {
+      "path": "skills/applied-foundation/web.seo.md",
+      "title": "基本SEO",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "web.seo"
+    },
+    {
+      "path": "skills/applied-foundation/git.collaboration.md",
+      "title": "チーム開発",
+      "kind": "skill",
+      "handbook": true,
+      "area": "applied-foundation",
+      "skillId": "git.collaboration"
+    },
+    {
+      "path": "skills/implementation/index.md",
+      "title": "フレームワーク・実装領域",
+      "kind": "area",
+      "handbook": true,
+      "area": "implementation"
+    },
+    {
+      "path": "skills/implementation/react.basic.md",
+      "title": "React実装",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "react.basic"
+    },
+    {
+      "path": "skills/implementation/react.component-design.md",
+      "title": "コンポーネント設計",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "react.component-design"
+    },
+    {
+      "path": "skills/implementation/react.state-management.md",
+      "title": "状態管理",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "react.state-management"
+    },
+    {
+      "path": "skills/implementation/react.form.md",
+      "title": "フォーム実装",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "react.form"
+    },
+    {
+      "path": "skills/implementation/frontend.api-integration.md",
+      "title": "REST API連携",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "frontend.api-integration"
+    },
+    {
+      "path": "skills/implementation/frontend.validation.md",
+      "title": "入力検証・型連携",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "frontend.validation"
+    },
+    {
+      "path": "skills/implementation/storybook.basic.md",
+      "title": "Storybook",
+      "kind": "skill",
+      "handbook": true,
+      "area": "implementation",
+      "skillId": "storybook.basic"
+    },
+    {
+      "path": "skills/quality/index.md",
+      "title": "品質・高度化領域",
+      "kind": "area",
+      "handbook": true,
+      "area": "quality"
+    },
+    {
+      "path": "skills/quality/test.unit.md",
+      "title": "単体テスト",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "test.unit"
+    },
+    {
+      "path": "skills/quality/test.component.md",
+      "title": "コンポーネントテスト",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "test.component"
+    },
+    {
+      "path": "skills/quality/test.integration.md",
+      "title": "結合テスト",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "test.integration"
+    },
+    {
+      "path": "skills/quality/test.e2e.md",
+      "title": "E2Eテスト",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "test.e2e"
+    },
+    {
+      "path": "skills/quality/test.design.md",
+      "title": "テスト設計",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "test.design"
+    },
+    {
+      "path": "skills/quality/web.performance.md",
+      "title": "Webパフォーマンス",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "web.performance"
+    },
+    {
+      "path": "skills/quality/web.security.md",
+      "title": "Webセキュリティ",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "web.security"
+    },
+    {
+      "path": "skills/quality/frontend.quality.md",
+      "title": "フロントエンド品質保証",
+      "kind": "skill",
+      "handbook": true,
+      "area": "quality",
+      "skillId": "frontend.quality"
+    },
+    {
+      "path": "checklists/index.md",
+      "title": "チームチェックリスト",
+      "kind": "checklist-index",
+      "handbook": true
+    },
+    {
+      "path": "checklists/quality-and-types.md",
+      "title": "品質と型安全性",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "001",
+        "002",
+        "003",
+        "004"
+      ],
+      "section": "設計・開発"
+    },
+    {
+      "path": "checklists/development-tooling.md",
+      "title": "開発環境とツールの運用",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "005",
+        "006",
+        "007",
+        "008"
+      ],
+      "section": "設計・開発"
+    },
+    {
+      "path": "checklists/ui-components.md",
+      "title": "UIコンポーネントの設計と再利用",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "009",
+        "010",
+        "011",
+        "012"
+      ],
+      "section": "設計・開発"
+    },
+    {
+      "path": "checklists/user-centered-design.md",
+      "title": "ユーザー理解と設計の改善",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "013",
+        "014",
+        "015",
+        "016"
+      ],
+      "section": "設計・開発"
+    },
+    {
+      "path": "checklists/technology-selection.md",
+      "title": "技術情報の収集と技術選定",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "017",
+        "018",
+        "019",
+        "020"
+      ],
+      "section": "設計・開発"
+    },
+    {
+      "path": "checklists/performance.md",
+      "title": "Webパフォーマンス",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "021",
+        "022",
+        "023",
+        "024"
+      ],
+      "section": "品質"
+    },
+    {
+      "path": "checklists/accessibility.md",
+      "title": "アクセシビリティ",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "025",
+        "026",
+        "027",
+        "028"
+      ],
+      "section": "品質"
+    },
+    {
+      "path": "checklists/security.md",
+      "title": "セキュリティ",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "029",
+        "030",
+        "031",
+        "032"
+      ],
+      "section": "品質"
+    },
+    {
+      "path": "checklists/privacy.md",
+      "title": "プライバシーと外部スクリプト",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "033",
+        "034",
+        "035",
+        "036"
+      ],
+      "section": "品質"
+    },
+    {
+      "path": "checklists/design-consistency.md",
+      "title": "デザインの一貫性とユーザーテスト",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "037",
+        "038",
+        "039",
+        "040"
+      ],
+      "section": "品質"
+    },
+    {
+      "path": "checklists/testing.md",
+      "title": "テストの計画と保守",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "041",
+        "042",
+        "043",
+        "044"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/builds.md",
+      "title": "ビルドの計測と保守",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "045",
+        "046",
+        "047",
+        "048"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/deployment.md",
+      "title": "デプロイとリリースの安全性",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "049",
+        "050",
+        "051",
+        "052"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/dependencies.md",
+      "title": "依存ライブラリの管理",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "053",
+        "054",
+        "055",
+        "056"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/cicd.md",
+      "title": "CI/CDの運用と改善",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "057",
+        "058",
+        "059",
+        "060"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/backend-collaboration.md",
+      "title": "バックエンドとの連携",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "061",
+        "062",
+        "063",
+        "064"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/infrastructure.md",
+      "title": "インフラ設計と可用性",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "065",
+        "066",
+        "067",
+        "068"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/caching.md",
+      "title": "キャッシュの設計と運用",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "069",
+        "070",
+        "071",
+        "072"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/observability.md",
+      "title": "モニタリングとログ",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "073",
+        "074",
+        "075",
+        "076"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/incident-response.md",
+      "title": "障害対応",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "077",
+        "078",
+        "079",
+        "080"
+      ],
+      "section": "開発・運用"
+    },
+    {
+      "path": "checklists/knowledge-sharing.md",
+      "title": "学習とチーム間の知識共有",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "081",
+        "082",
+        "083",
+        "084"
+      ],
+      "section": "組織・連携"
+    },
+    {
+      "path": "checklists/engineering-improvement.md",
+      "title": "横断的な生産性向上と技術方針",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "085",
+        "086",
+        "087",
+        "088"
+      ],
+      "section": "組織・連携"
+    },
+    {
+      "path": "checklists/roles-and-growth.md",
+      "title": "職能・役割・育成",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "089",
+        "090",
+        "091",
+        "092"
+      ],
+      "section": "組織・連携"
+    },
+    {
+      "path": "checklists/business-collaboration.md",
+      "title": "他部門との連携と事業への貢献",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "093",
+        "094",
+        "095",
+        "096"
+      ],
+      "section": "組織・連携"
+    },
+    {
+      "path": "checklists/technical-communication.md",
+      "title": "技術発信の継続",
+      "kind": "checklist",
+      "handbook": true,
+      "numbers": [
+        "097",
+        "098",
+        "099",
+        "100"
+      ],
+      "section": "組織・連携"
+    },
+    {
+      "path": "templates/index.md",
+      "title": "記録書式",
+      "kind": "template-index",
+      "handbook": true
+    },
+    {
+      "path": "templates/assessment-scope.md",
+      "title": "評価全体の対象範囲",
+      "kind": "template",
+      "handbook": true
+    },
+    {
+      "path": "templates/individual-assessment.md",
+      "title": "個人のスキル評価記録",
+      "kind": "template",
+      "handbook": true
+    },
+    {
+      "path": "templates/team-assessment.md",
+      "title": "チームの確認記録",
+      "kind": "template",
+      "handbook": true
+    },
+    {
+      "path": "templates/improvement-issue.md",
+      "title": "改善・育成イシュー",
+      "kind": "template",
+      "handbook": true
+    },
+    {
+      "path": "examples/index.md",
+      "title": "記入例",
+      "kind": "example-index",
+      "handbook": true
+    },
+    {
+      "path": "examples/security-ci-improvement.md",
+      "title": "記入例：PR／MRごとのセキュリティ検査を整備する",
+      "kind": "example",
+      "handbook": true
+    },
+    {
+      "path": "maintenance/index.md",
+      "title": "運用・改訂",
+      "kind": "maintenance",
+      "handbook": true
+    },
+    {
+      "path": "maintenance/contributing.md",
+      "title": "編集・検証・公開手順",
+      "kind": "maintenance",
+      "handbook": true
+    },
+    {
+      "path": "maintenance/changelog.md",
+      "title": "改訂履歴",
+      "kind": "maintenance",
+      "handbook": true
+    },
+    {
+      "path": "maintenance/sources.md",
+      "title": "出典と追加した内容",
+      "kind": "maintenance",
+      "handbook": true
+    },
+    {
+      "path": "downloads.md",
+      "title": "ダウンロード",
+      "kind": "downloads",
+      "handbook": false
+    }
+  ]
+}
