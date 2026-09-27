@@ -24,7 +24,7 @@ def definition_data(page):
 def checklist_data(page):
  text=body(page['path']);result={}
  for num,section in re.findall(r'^## C(\d{3})\n\n(.*?)(?=^## C\d{3}|\Z)',text,re.M|re.S):
-  m=re.search(r'\*\*チェック項目 No\.\d{3}\*\*\n\n(.*?)\n\n\*\*望ましい原文への回答：(TRUE|FALSE)\*\*.*?### 望ましい回答例\n\n(.*?)\n\n\[原文の参照先\]\((https://[^)]+)\)',section,re.S)
+  m=re.search(r'\*\*チェック項目 No\.\d{3}[^*\n]*\*\*\n\n(.*?)\n\n\*\*望ましい原文への回答：(TRUE|FALSE)\*\*.*?### 望ましい回答例\n\n(.*?)\n\n\[原文の参照先\]\((https://[^)]+)\)',section,re.S)
   if not m:raise ValueError(f'{page["path"]}: C{num}の構造を確認してください')
   criterion,desired,answer,url=m.groups();result[num]=[criterion,url,desired,answer]
  return result

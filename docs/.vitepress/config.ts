@@ -21,7 +21,7 @@ const skills = [
 ]
 const checks = [
   { text: 'チームチェック', link: '/checklists/', items: [] },
-  ...['設計・開発', '品質', '開発・運用', '組織・連携'].map(section => ({ text: section, collapsed: true, items: by('checklist').filter((p: any) => p.section === section).map((p: any) => ({ text: `${p.numbers[0]}–${p.numbers[3]} ${p.title}`, link: url(p) })) }))
+  ...[...new Set(by('checklist').map((p: any) => p.section as string))].map(section => ({ text: section, collapsed: true, items: by('checklist').filter((p: any) => p.section === section).map((p: any) => ({ text: `${p.sourceId} ${p.title}`, link: url(p) })) }))
 ]
 const forms = [{ text: '記録書式', link: '/templates/', items: by('template').map(item) }, { text: '記入例', link: '/examples/', items: by('example').map(item) }, { text: 'ダウンロード', link: '/downloads', items: [] }]
 const maintenance = [{ text: '運用・改訂', items: by('maintenance').map(item) }]

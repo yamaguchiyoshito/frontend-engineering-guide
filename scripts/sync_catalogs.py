@@ -22,8 +22,8 @@ def catalog(page):
   for p in PAGES:
    if p['kind']!='checklist':continue
    if section!=p['section']:
-    section=p['section'];out += ['','## '+section,'','| 項目No. | 分野 |','| :--- | :--- |']
-   out.append(f'| {p["numbers"][0]}〜{p["numbers"][-1]} | [{p["title"]}]({rel(path,p["path"])}) |')
+    section=p['section'];out += ['','## '+section,'','| 原典ID | 小テーマ（本書の見出し） | 本書の項目No. |','| :--- | :--- | :--- |']
+   out.append(f'| {p["sourceId"]} | [{p["title"]}]({rel(path,p["path"])}) | {p["numbers"][0]}〜{p["numbers"][-1]} |')
  elif kind=='template-index':
   out=[f'- [{p["title"]}]({rel(path,p["path"])})' for p in PAGES if p['kind']=='template']
  else:return None
