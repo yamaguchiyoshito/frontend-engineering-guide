@@ -1,6 +1,6 @@
 ---
 title: "JavaScript"
-description: "スキル「JavaScript」（javascript.basic）のLv0〜Lv4の到達状態。基礎領域。"
+description: "JavaScriptの構文、関数、オブジェクト、配列を使って処理を実装するスキルです。要件を関数に分解し、境界値や例外を扱い、スコープや参照が原因の不具合を分析できるかを評価します。"
 titleTemplate: ":title | スキル定義 | 開発ガイド"
 ---
 
@@ -9,6 +9,8 @@ titleTemplate: ":title | スキル定義 | 開発ガイド"
 **スキルID：** `javascript.basic`  
 **スキル領域：** [基礎領域](index.md)  
 **評価対象：** 構文、関数、オブジェクト、配列
+
+JavaScriptの構文、関数、オブジェクト、配列を使って処理を実装するスキルです。要件を関数に分解し、境界値や例外を扱い、スコープや参照が原因の不具合を分析できるかを評価します。
 
 ## Lv0
 

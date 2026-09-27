@@ -1,6 +1,6 @@
 ---
 title: "REST API連携"
-description: "スキル「REST API連携」（frontend.api-integration）のLv0〜Lv4の到達状態。フレームワーク・実装領域。"
+description: "REST APIと連携して画面を動かすスキルです。API仕様から要求と応答を実装し、読み込み中、空データ、失敗、認証切れを扱い、複数APIの依存や部分失敗、仕様変更に対応できるかを評価します。"
 titleTemplate: ":title | スキル定義 | 開発ガイド"
 ---
 
@@ -9,6 +9,8 @@ titleTemplate: ":title | スキル定義 | 開発ガイド"
 **スキルID：** `frontend.api-integration`  
 **スキル領域：** [フレームワーク・実装領域](index.md)  
 **主な前提：** 非同期処理、TypeScript
+
+REST APIと連携して画面を動かすスキルです。API仕様から要求と応答を実装し、読み込み中、空データ、失敗、認証切れを扱い、複数APIの依存や部分失敗、仕様変更に対応できるかを評価します。
 
 ## Lv0
 

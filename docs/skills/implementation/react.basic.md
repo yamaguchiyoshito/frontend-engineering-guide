@@ -1,6 +1,6 @@
 ---
 title: "React実装"
-description: "スキル「React実装」（react.basic）のLv0〜Lv4の到達状態。フレームワーク・実装領域。"
+description: "Reactで画面をコンポーネントとして実装するスキルです。イベント、状態更新、外部処理との同期をHooksの規則に沿って実装し、再描画や依存配列に起因する不具合を分析できるかを評価します。"
 titleTemplate: ":title | スキル定義 | 開発ガイド"
 ---
 
@@ -9,6 +9,8 @@ titleTemplate: ":title | スキル定義 | 開発ガイド"
 **スキルID：** `react.basic`  
 **スキル領域：** [フレームワーク・実装領域](index.md)  
 **主な前提：** JavaScript、TypeScript、DOM
+
+Reactで画面をコンポーネントとして実装するスキルです。イベント、状態更新、外部処理との同期をHooksの規則に沿って実装し、再描画や依存配列に起因する不具合を分析できるかを評価します。
 
 ## Lv0
 

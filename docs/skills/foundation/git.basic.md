@@ -1,6 +1,6 @@
 ---
 title: "Git"
-description: "スキル「Git」（git.basic）のLv0〜Lv4の到達状態。基礎領域。"
+description: "Gitで変更履歴を管理するスキルです。branch、commit、merge、rebaseの操作と違いを理解し、競合の解消や誤った変更からの復旧を、他者の作業に影響を与えずに行えるかを評価します。"
 titleTemplate: ":title | スキル定義 | 開発ガイド"
 ---
 
@@ -9,6 +9,8 @@ titleTemplate: ":title | スキル定義 | 開発ガイド"
 **スキルID：** `git.basic`  
 **スキル領域：** [基礎領域](index.md)  
 **評価対象：** branch、commit、merge、rebase
+
+Gitで変更履歴を管理するスキルです。branch、commit、merge、rebaseの操作と違いを理解し、競合の解消や誤った変更からの復旧を、他者の作業に影響を与えずに行えるかを評価します。
 
 ## Lv0
 

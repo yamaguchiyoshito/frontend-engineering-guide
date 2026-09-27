@@ -1,6 +1,6 @@
 ---
 title: "チーム開発"
-description: "スキル「チーム開発」（git.collaboration）のLv0〜Lv4の到達状態。応用基礎領域。"
+description: "Pull Requestとレビューを通じてチームで開発を進めるスキルです。レビュー可能な単位で変更を分け、CIの確認と指摘対応を行い、複数人・複数ブランチの変更を調整できるかを評価します。"
 titleTemplate: ":title | スキル定義 | 開発ガイド"
 ---
 
@@ -9,6 +9,8 @@ titleTemplate: ":title | スキル定義 | 開発ガイド"
 **スキルID：** `git.collaboration`  
 **スキル領域：** [応用基礎領域](index.md)  
 **主な前提：** Git
+
+Pull Requestとレビューを通じてチームで開発を進めるスキルです。レビュー可能な単位で変更を分け、CIの確認と指摘対応を行い、複数人・複数ブランチの変更を調整できるかを評価します。
 
 ## Lv0
 

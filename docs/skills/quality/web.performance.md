@@ -1,6 +1,6 @@
 ---
 title: "Webパフォーマンス"
-description: "スキル「Webパフォーマンス」（web.performance）のLv0〜Lv4の到達状態。品質・高度化領域。"
+description: "画面の表示と操作の速度を計測し、改善するスキルです。速度指標と計測条件を定めて画像、通信、JavaScript処理、描画のボトルネックを特定し、実利用データに基づく代替案を比較できるかを評価します。"
 titleTemplate: ":title | スキル定義 | 開発ガイド"
 ---
 
@@ -9,6 +9,8 @@ titleTemplate: ":title | スキル定義 | 開発ガイド"
 **スキルID：** `web.performance`  
 **スキル領域：** [品質・高度化領域](index.md)  
 **主な前提：** HTML、CSS、JavaScript、React
+
+画面の表示と操作の速度を計測し、改善するスキルです。速度指標と計測条件を定めて画像、通信、JavaScript処理、描画のボトルネックを特定し、実利用データに基づく代替案を比較できるかを評価します。
 
 ## Lv0
 

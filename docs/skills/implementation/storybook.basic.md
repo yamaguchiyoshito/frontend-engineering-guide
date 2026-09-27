@@ -1,6 +1,6 @@
 ---
 title: "Storybook"
-description: "スキル「Storybook」（storybook.basic）のLv0〜Lv4の到達状態。フレームワーク・実装領域。"
+description: "Storybookでコンポーネントの状態と振る舞いをカタログ化するスキルです。主要な状態、境界値、操作をStoryとして記述し、画面に近い構成や非同期処理を再現して実装との不整合を発見できるかを評価します。"
 titleTemplate: ":title | スキル定義 | 開発ガイド"
 ---
 
@@ -9,6 +9,8 @@ titleTemplate: ":title | スキル定義 | 開発ガイド"
 **スキルID：** `storybook.basic`  
 **スキル領域：** [フレームワーク・実装領域](index.md)  
 **主な前提：** React、コンポーネント設計
+
+Storybookでコンポーネントの状態と振る舞いをカタログ化するスキルです。主要な状態、境界値、操作をStoryとして記述し、画面に近い構成や非同期処理を再現して実装との不整合を発見できるかを評価します。
 
 ## Lv0
 

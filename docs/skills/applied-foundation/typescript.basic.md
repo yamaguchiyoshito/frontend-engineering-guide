@@ -1,6 +1,6 @@
 ---
 title: "TypeScript"
-description: "スキル「TypeScript」（typescript.basic）のLv0〜Lv4の到達状態。応用基礎領域。"
+description: "TypeScriptの型でプログラムの入出力と状態を表現するスキルです。ユニオン型や型の絞り込みを使い、外部データの実行時確認と型定義を整合させ、あり得ない状態を型で防げるかを評価します。"
 titleTemplate: ":title | スキル定義 | 開発ガイド"
 ---
 
@@ -9,6 +9,8 @@ titleTemplate: ":title | スキル定義 | 開発ガイド"
 **スキルID：** `typescript.basic`  
 **スキル領域：** [応用基礎領域](index.md)  
 **主な前提：** JavaScript
+
+TypeScriptの型でプログラムの入出力と状態を表現するスキルです。ユニオン型や型の絞り込みを使い、外部データの実行時確認と型定義を整合させ、あり得ない状態を型で防げるかを評価します。
 
 ## Lv0
 
