@@ -1,7 +1,7 @@
 ---
 title: "技術選定"
 description: "Webフロントエンド版DX Criteria 1-5「技術選定」（持続可能な技術スタック）の4項目。メトリクスの計測、学習と改善、プラクティス、アンチパターンの原文と補足、架空の回答例。"
-titleTemplate: ":title | チームチェック | 開発ガイド"
+titleTemplate: ":title | チームチェック | 習熟度ガイド"
 ---
 
 # 技術選定

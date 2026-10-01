@@ -1,7 +1,7 @@
 ---
 title: "チームの確認記録"
 description: "「チームの確認記録」の記入方法と、空のMarkdownテンプレート。"
-titleTemplate: ":title | 記録書式 | 開発ガイド"
+titleTemplate: ":title | 記録書式 | 習熟度ガイド"
 ---
 
 # チームの確認記録

@@ -1,7 +1,7 @@
 ---
 title: "JavaScript"
 description: "JavaScriptの構文、関数、オブジェクト、配列を使って処理を実装する要素技術です。要件を関数に分解し、境界値や例外を扱い、スコープや参照が原因の不具合を分析できるかを評価します。"
-titleTemplate: ":title | 要素技術 | 開発ガイド"
+titleTemplate: ":title | 要素技術 | 習熟度ガイド"
 ---
 
 # JavaScript

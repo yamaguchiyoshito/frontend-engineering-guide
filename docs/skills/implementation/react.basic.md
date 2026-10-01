@@ -1,7 +1,7 @@
 ---
 title: "React実装"
 description: "Reactで画面をコンポーネントとして実装する要素技術です。イベント、状態更新、外部処理との同期をHooksの規則に沿って実装し、再描画や依存配列に起因する不具合を分析できるかを評価します。"
-titleTemplate: ":title | 要素技術 | 開発ガイド"
+titleTemplate: ":title | 要素技術 | 習熟度ガイド"
 ---
 
 # React実装

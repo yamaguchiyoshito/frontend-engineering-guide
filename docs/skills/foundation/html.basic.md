@@ -1,7 +1,7 @@
 ---
 title: "HTML"
 description: "HTMLで文書の構造とフォームを組み立てる要素技術です。要素の役割を理解して適切な構造を実装し、リンク、ボタン、フォーム送信の基本動作を自分で確認・修正できるかを評価します。"
-titleTemplate: ":title | 要素技術 | 開発ガイド"
+titleTemplate: ":title | 要素技術 | 習熟度ガイド"
 ---
 
 # HTML

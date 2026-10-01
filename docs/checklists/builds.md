@@ -1,7 +1,7 @@
 ---
 title: "ビルド"
 description: "Webフロントエンド版DX Criteria 3-2「ビルド」（安定的なデリバリー）の4項目。メトリクスの計測、学習と改善、プラクティス、アンチパターンの原文と補足、架空の回答例。"
-titleTemplate: ":title | チームチェック | 開発ガイド"
+titleTemplate: ":title | チームチェック | 習熟度ガイド"
 ---
 
 # ビルド

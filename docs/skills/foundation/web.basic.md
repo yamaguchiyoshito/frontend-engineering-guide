@@ -1,7 +1,7 @@
 ---
 title: "Web基礎"
 description: "ブラウザがサーバーと通信して画面を表示するまでの仕組みを扱う要素技術です。HTTPの要求と応答、URL、Cookie、キャッシュの動作を理解し、通信の内容から不具合を切り分けられるかを評価します。"
-titleTemplate: ":title | 要素技術 | 開発ガイド"
+titleTemplate: ":title | 要素技術 | 習熟度ガイド"
 ---
 
 # Web基礎

@@ -1,7 +1,7 @@
 ---
 title: "CSS"
 description: "CSSで画面の見た目とレイアウトを実装する要素技術です。セレクタ、カスケード、ボックスモデル、FlexboxやGridを理解し、表示の崩れを分析して保守しやすく修正できるかを評価します。"
-titleTemplate: ":title | 要素技術 | 開発ガイド"
+titleTemplate: ":title | 要素技術 | 習熟度ガイド"
 ---
 
 # CSS
