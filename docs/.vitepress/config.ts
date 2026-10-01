@@ -29,7 +29,7 @@ const forms = [{ text: '記録書式', link: '/templates/', items: by('template'
 const maintenance = [{ text: '運用・改訂', items: by('maintenance').map(item) }]
 const ordered = pages.filter((p: any) => p.handbook)
 export default withMermaid(defineConfig({
-  lang: 'ja-JP', title: 'フロントエンド開発ガイド', titleTemplate: ':title | 開発ガイド',
+  lang: 'ja-JP', title: 'フロントエンド習熟度ガイド', titleTemplate: ':title | 習熟度ガイド',
   description: '31の要素技術の習熟度と100項目のチームチェック。共通の基準で評価し、育成と開発環境の改善につなげます。',
   base, cleanUrls: false, appearance: true,
   srcExclude: ['public/**'],
@@ -63,7 +63,7 @@ export default withMermaid(defineConfig({
     }
   },
   themeConfig: {
-    siteTitle: 'フロントエンド開発ガイド',
+    siteTitle: 'フロントエンド習熟度ガイド',
     nav: [
       { text: '使い方', link: '/guide/overview', activeMatch: '/guide/' },
       { text: '要素技術', link: '/skills/', activeMatch: '/skills/' },

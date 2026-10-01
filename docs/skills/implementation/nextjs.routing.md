@@ -1,7 +1,7 @@
 ---
 title: "App Routerによる画面構成"
 description: "Next.jsのApp Routerで画面群を構成する要素技術です。ファイル規約によるルーティング、レイアウトの入れ子、動的ルート、ナビゲーション、読み込み中とエラーの表示、メタデータを設計し、URLと画面の対応を保守しやすく実装できるかを評価します。"
-titleTemplate: ":title | 要素技術 | 開発ガイド"
+titleTemplate: ":title | 要素技術 | 習熟度ガイド"
 ---
 
 # App Routerによる画面構成

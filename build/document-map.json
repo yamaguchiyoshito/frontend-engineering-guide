@@ -22,7 +22,7 @@
   "pages": [
     {
       "path": "index.md",
-      "title": "フロントエンド開発ガイド",
+      "title": "フロントエンド習熟度ガイド",
       "kind": "home",
       "handbook": false
     },

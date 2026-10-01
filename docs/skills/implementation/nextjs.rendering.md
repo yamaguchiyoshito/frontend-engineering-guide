@@ -1,7 +1,7 @@
 ---
 title: "レンダリングとデータ取得"
 description: "Next.jsのServer ComponentsとClient Componentsを使い分け、データ取得とキャッシュを設計する要素技術です。静的・動的レンダリング、ストリーミング、Server Actionsによる更新、再検証、ハイドレーションを理解し、表示の正しさと速度を両立できるかを評価します。"
-titleTemplate: ":title | 要素技術 | 開発ガイド"
+titleTemplate: ":title | 要素技術 | 習熟度ガイド"
 ---
 
 # レンダリングとデータ取得

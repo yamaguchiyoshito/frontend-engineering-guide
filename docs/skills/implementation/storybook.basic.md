@@ -1,7 +1,7 @@
 ---
 title: "Storybook"
 description: "Storybookでコンポーネントの状態と振る舞いをカタログ化する要素技術です。主要な状態、境界値、操作をStoryとして記述し、画面に近い構成や非同期処理を再現して実装との不整合を発見できるかを評価します。"
-titleTemplate: ":title | 要素技術 | 開発ガイド"
+titleTemplate: ":title | 要素技術 | 習熟度ガイド"
 ---
 
 # Storybook

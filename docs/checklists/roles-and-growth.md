@@ -1,7 +1,7 @@
 ---
 title: "職務定義"
 description: "Webフロントエンド版DX Criteria 5-3「職務定義」（成長できるチーム）の4項目。メトリクスの計測、学習と改善、プラクティス、アンチパターンの原文と補足、架空の回答例。"
-titleTemplate: ":title | チームチェック | 開発ガイド"
+titleTemplate: ":title | チームチェック | 習熟度ガイド"
 ---
 
 # 職務定義

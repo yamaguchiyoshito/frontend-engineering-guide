@@ -1,7 +1,7 @@
 ---
 title: "REST API連携"
 description: "REST APIと連携して画面を動かす要素技術です。API仕様から要求と応答を実装し、読み込み中、空データ、失敗、認証切れを扱い、複数APIの依存や部分失敗、仕様変更に対応できるかを評価します。"
-titleTemplate: ":title | 要素技術 | 開発ガイド"
+titleTemplate: ":title | 要素技術 | 習熟度ガイド"
 ---
 
 # REST API連携

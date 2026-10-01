@@ -1,7 +1,7 @@
 ---
 title: "改善・育成イシュー"
 description: "「改善・育成イシュー」の記入方法と、空のMarkdownテンプレート。"
-titleTemplate: ":title | 記録書式 | 開発ガイド"
+titleTemplate: ":title | 記録書式 | 習熟度ガイド"
 ---
 
 # 改善・育成イシュー

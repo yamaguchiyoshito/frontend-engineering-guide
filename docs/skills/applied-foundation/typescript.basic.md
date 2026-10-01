@@ -1,7 +1,7 @@
 ---
 title: "TypeScript"
 description: "TypeScriptの型でプログラムの入出力と状態を表現する要素技術です。ユニオン型や型の絞り込みを使い、外部データの実行時確認と型定義を整合させ、あり得ない状態を型で防げるかを評価します。"
-titleTemplate: ":title | 要素技術 | 開発ガイド"
+titleTemplate: ":title | 要素技術 | 習熟度ガイド"
 ---
 
 # TypeScript

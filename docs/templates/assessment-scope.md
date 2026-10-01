@@ -1,7 +1,7 @@
 ---
 title: "評価全体の対象範囲"
 description: "「評価全体の対象範囲」の記入方法と、空のMarkdownテンプレート。"
-titleTemplate: ":title | 記録書式 | 開発ガイド"
+titleTemplate: ":title | 記録書式 | 習熟度ガイド"
 ---
 
 # 評価全体の対象範囲

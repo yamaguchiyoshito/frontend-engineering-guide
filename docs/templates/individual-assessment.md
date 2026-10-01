@@ -1,7 +1,7 @@
 ---
 title: "個人の習熟度評価記録"
 description: "「個人の習熟度評価記録」の記入方法と、空のMarkdownテンプレート。"
-titleTemplate: ":title | 記録書式 | 開発ガイド"
+titleTemplate: ":title | 記録書式 | 習熟度ガイド"
 ---
 
 # 個人の習熟度評価記録

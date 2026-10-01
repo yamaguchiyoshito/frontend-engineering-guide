@@ -1,7 +1,7 @@
 ---
 title: "チーム開発"
 description: "Pull Requestとレビューを通じてチームで開発を進める要素技術です。レビュー可能な単位で変更を分け、CIの確認と指摘対応を行い、複数人・複数ブランチの変更を調整できるかを評価します。"
-titleTemplate: ":title | 要素技術 | 開発ガイド"
+titleTemplate: ":title | 要素技術 | 習熟度ガイド"
 ---
 
 # チーム開発

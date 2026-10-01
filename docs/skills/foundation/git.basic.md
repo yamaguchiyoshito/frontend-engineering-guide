@@ -1,7 +1,7 @@
 ---
 title: "Git"
 description: "Gitで変更履歴を管理する要素技術です。branch、commit、merge、rebaseの操作と違いを理解し、競合の解消や誤った変更からの復旧を、他者の作業に影響を与えずに行えるかを評価します。"
-titleTemplate: ":title | 要素技術 | 開発ガイド"
+titleTemplate: ":title | 要素技術 | 習熟度ガイド"
 ---
 
 # Git
