@@ -114,8 +114,23 @@ def courses(page):
  out += ['','## 全体地図','','学習項目の全体像を見渡すための外部の地図です。分類は本書の要素技術と一致しないため、対応する領域や要素技術を付記しています。','']+[f'- [{r["title"]}]({r["url"]})（英語） — {r["note"]}' for r in LEARNING['maps']]
  return '\n'.join(out)
 
+def matrix(page):
+ """One table: every skill (rows, in area order) by Lv0-Lv4 (columns), wrapped for sticky header and first column."""
+ if page['kind']!='skill-matrix':return None
+ path=page['path'];out=['<div class="skill-matrix">','','| 要素技術 | Lv0 | Lv1 | Lv2 | Lv3 | Lv4 |','| :--- | :--- | :--- | :--- | :--- | :--- |']
+ for area in MAP['areas']:
+  skills=[p for p in PAGES if p['kind']=='skill' and p['area']==area['id']];n=len(skills);index=rel(path,f'skills/{area["id"]}/index.md')
+  count=f'{n}つの要素技術' if n<10 else f'{n}の要素技術'
+  out.append(f'| <span class="matrix-area">[{area["title"]}]({index})</span>（{count}） | | | | | |')
+  for p in skills:
+   ds=definition_data(p)
+   assert all('|' not in t and '\n' not in t for t in ds.values()),p['path']+': matrix cells must be one paragraph without |'
+   out.append(f'| [{p["title"]}]({rel(path,p["path"])})<br>`{p["skillId"]}` | '+' | '.join(ds[lv] for lv in ('Lv0','Lv1','Lv2','Lv3','Lv4'))+' |')
+ out += ['','</div>']
+ return '\n'.join(out)
+
 def blocks(page):
- for marker,value in [('catalog',catalog(page)),('references',references(page)),('terms',terms(page)),('glossary',glossary(page)),('route',route(page)),('courses',courses(page))]:
+ for marker,value in [('catalog',catalog(page)),('matrix',matrix(page)),('references',references(page)),('terms',terms(page)),('glossary',glossary(page)),('route',route(page)),('courses',courses(page))]:
   if value is not None:yield marker,value
 
 def sync(check=False):

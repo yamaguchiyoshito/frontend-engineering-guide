@@ -41,6 +41,18 @@
 .download-provenance { font-size: 14px; overflow-wrap: anywhere; margin-top: 24px; }
 .download-provenance summary { cursor: pointer; }
 .download-version { font-size: 14px; color: var(--vp-c-text-2); }
+/* Skill matrix: 31 skills by Lv0-Lv4 in one scrollable table with a sticky header row and first column. */
+.vp-doc .skill-matrix { margin: 20px 0 28px; overflow: auto; max-height: calc(100vh - 150px); border: 1px solid var(--vp-c-divider); border-radius: 8px; }
+.vp-doc .skill-matrix table { display: table; width: max-content; margin: 0; border-collapse: separate; border-spacing: 0; }
+.vp-doc .skill-matrix th, .vp-doc .skill-matrix td { min-width: 280px; max-width: 320px; vertical-align: top; font-size: 14px; line-height: 1.75; border-width: 0 0 1px 0; }
+.vp-doc .skill-matrix th:first-child, .vp-doc .skill-matrix td:first-child { position: sticky; left: 0; z-index: 1; min-width: 200px; max-width: 220px; background: var(--vp-c-bg); border-right: 1px solid var(--vp-c-divider); }
+.vp-doc .skill-matrix tr:nth-child(2n) td:first-child { background: var(--vp-c-bg-soft); }
+.vp-doc .skill-matrix thead th { position: sticky; top: 0; z-index: 2; background: var(--vp-c-bg-soft); }
+.vp-doc .skill-matrix thead th:first-child { z-index: 3; }
+.vp-doc .skill-matrix td:first-child code { font-size: 12px; }
+.vp-doc .skill-matrix tr:has(.matrix-area) td { background: var(--vp-c-brand-soft); font-weight: 700; color: var(--vp-c-brand-1); }
+.vp-doc .skill-matrix tr:has(.matrix-area) td:first-child { min-width: 200px; white-space: nowrap; }
+@media (max-width: 639px) { .vp-doc .skill-matrix th:first-child, .vp-doc .skill-matrix td:first-child { min-width: 130px; max-width: 140px; } .vp-doc .skill-matrix th, .vp-doc .skill-matrix td { min-width: 230px; } }
 @media (min-width: 960px) { .VPDoc:not(.has-sidebar) .content { max-width: 1000px; } }
 @media (max-width: 639px) { .guide-stats { gap: 24px; } .vp-doc h1 { font-size: 1.65rem; } .vp-doc th, .vp-doc td { min-width: 110px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0s !important; } }

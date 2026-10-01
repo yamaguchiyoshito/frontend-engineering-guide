@@ -75,6 +75,12 @@
       "handbook": true
     },
     {
+      "path": "skills/matrix.md",
+      "title": "習熟度マトリクス",
+      "kind": "skill-matrix",
+      "handbook": true
+    },
+    {
       "path": "skills/foundation/index.md",
       "title": "基礎領域",
       "kind": "area",
