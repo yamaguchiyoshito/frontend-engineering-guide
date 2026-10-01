@@ -24,7 +24,7 @@ const server = createServer(async (req, res) => {
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const origin = `http://127.0.0.1:${server.address().port}`;
 const url = origin + base;
-const results = { base, pages: 83, definitions: 155, checklistItems: 100, checks: [] };
+const results = { base, pages: 84, definitions: 155, checklistItems: 100, checks: [] };
 let browser;
 try {
   browser = await chromium.launch({ headless: true, ...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH, args: JSON.parse(process.env.PLAYWRIGHT_CHROMIUM_ARGS || '["--no-sandbox","--disable-dev-shm-usage"]') } : {}) });
@@ -51,6 +51,13 @@ try {
   await expect(page.locator('.mermaid svg')).toHaveCount(2, { timeout: 15000 });
   await expect(page.locator('.mermaid svg').nth(1)).toBeVisible();
   results.checks.push('mermaid sequence and flow diagrams render');
+
+  await page.goto(url + 'skills/matrix.html');
+  await expect(page.locator('h1')).toHaveText('習熟度マトリクス');
+  await expect(page.locator('.skill-matrix tbody tr')).toHaveCount(35); // 31 skills + 4 area rows
+  await expect(page.locator('.skill-matrix tbody tr:has(a[href*="web.basic"]) td')).toHaveCount(6);
+  await expect(page.locator('.skill-matrix tbody tr:has(a[href*="web.basic"]) td').nth(5)).not.toBeEmpty();
+  results.checks.push('skill matrix: 31 rows by five levels');
 
   for (const [query, target] of [['react.form', 'react.form'], ['2-3-1', 'security'], ['セキュリティ', 'security'], ['非同期', 'javascript.async']]) {
     await page.locator('button.DocSearch-Button').click();

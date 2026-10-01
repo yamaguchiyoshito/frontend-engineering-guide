@@ -19,6 +19,7 @@ const by = (kind: string) => pages.filter((p: any) => p.kind === kind)
 const guide = [{ text: '使い方ガイド', items: by('guide').map(item) }]
 const skills = [
   { text: '要素技術', link: '/skills/', items: [] },
+  { text: '習熟度マトリクス', link: '/skills/matrix', items: [] },
   ...catalog.areas.map((a: any) => ({ text: a.title, link: `/skills/${a.id}/`, collapsed: true, items: by('skill').filter((p: any) => p.area === a.id).map(item) }))
 ]
 const checks = [

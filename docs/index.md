@@ -24,7 +24,7 @@ titleTemplate: false
 | :--- | :--- |
 | 学習の順路と教材を確認する | [学習コンテンツ](guide/learning.md) |
 | 用語の意味を確認する | [用語集](guide/glossary.md)・[前提知識](guide/prerequisites.md) |
-| 自分の実行できる範囲を確認する | [要素技術：31の要素技術のLv0〜Lv4](skills/index.md) |
+| 自分の実行できる範囲を確認する | [要素技術：31の要素技術のLv0〜Lv4](skills/index.md)・[習熟度マトリクス：全要素技術×Lvを一枚で](skills/matrix.md) |
 | チームの仕組みを見直す | [チームチェック：出典の分類による100項目と回答例](checklists/index.md) |
 | 評価と改善を記録する | [空の書式](templates/index.md)・[記入例](examples/index.md) |
 | 一つの文書として読む | [単一Markdownと書式をダウンロード](downloads.md) |
