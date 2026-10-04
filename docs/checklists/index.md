@@ -20,40 +20,6 @@ aside: false
 
 <ClientOnly><TeamAssessment summary /></ClientOnly>
 
-## 小テーマの一覧
-
-<!-- catalog:start -->
-
-| 大テーマ | ID | 小テーマ |
-| :--- | :--- | :--- |
-| 1. 持続可能な技術スタック | 1-1 | [コードベース](quality-and-types.md) |
-|  | 1-2 | [開発環境](development-tooling.md) |
-|  | 1-3 | [UIコンポーネント](ui-components.md) |
-|  | 1-4 | [アプリケーション設計](user-centered-design.md) |
-|  | 1-5 | [技術選定](technology-selection.md) |
-| 2. ユーザー体験を支える品質 | 2-1 | [パフォーマンス](performance.md) |
-|  | 2-2 | [アクセシビリティ](accessibility.md) |
-|  | 2-3 | [セキュリティ](security.md) |
-|  | 2-4 | [プライバシー](privacy.md) |
-|  | 2-5 | [デザイン](design-consistency.md) |
-| 3. 安定的なデリバリー | 3-1 | [テスト](testing.md) |
-|  | 3-2 | [ビルド](builds.md) |
-|  | 3-3 | [デプロイ](deployment.md) |
-|  | 3-4 | [サプライチェーン](dependencies.md) |
-|  | 3-5 | [CI/CD](cicd.md) |
-| 4. 効果的なシステム設計 | 4-1 | [サーバー](backend-collaboration.md) |
-|  | 4-2 | [インフラ](infrastructure.md) |
-|  | 4-3 | [キャッシュ](caching.md) |
-|  | 4-4 | [モニタリング](observability.md) |
-|  | 4-5 | [障害対応](incident-response.md) |
-| 5. 成長できるチーム | 5-1 | [専門性の育成](knowledge-sharing.md) |
-|  | 5-2 | [イネーブリング](engineering-improvement.md) |
-|  | 5-3 | [職務定義](roles-and-growth.md) |
-|  | 5-4 | [ビジネス連携](business-collaboration.md) |
-|  | 5-5 | [外部発信](technical-communication.md) |
-
-<!-- catalog:end -->
-
 <!-- sheet:start -->
 
 大テーマへ移動：[1. 持続可能な技術スタック](#_1-持続可能な技術スタック) · [2. ユーザー体験を支える品質](#_2-ユーザー体験を支える品質) · [3. 安定的なデリバリー](#_3-安定的なデリバリー) · [4. 効果的なシステム設計](#_4-効果的なシステム設計) · [5. 成長できるチーム](#_5-成長できるチーム)

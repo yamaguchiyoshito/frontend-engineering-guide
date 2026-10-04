@@ -19,12 +19,6 @@ def catalog(page):
    out += ['',f'## {area["title"]}（{count}つの要素技術）' if count<10 else f'## {area["title"]}（{count}の要素技術）','']+skill_table(path,area['id'])
  elif kind=='area':
   out=skill_table(path,page['area'])
- elif kind=='checklist-index':
-  out=['| 大テーマ | ID | 小テーマ |','| :--- | :--- | :--- |'];section=None
-  for p in PAGES:
-   if p['kind']!='checklist':continue
-   label=p['section'] if section!=p['section'] else '';section=p['section']
-   out.append(f'| {label} | {p["sourceId"]} | [{p["title"]}]({rel(path,p["path"])}) |')
  elif kind=='template-index':
   out=[f'- [{p["title"]}]({rel(path,p["path"])})' for p in PAGES if p['kind']=='template']
  else:return None
