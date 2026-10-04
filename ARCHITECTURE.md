@@ -46,6 +46,7 @@
 | 領域一覧 | 4 | `docs/skills/<領域>/index.md` |
 | 要素技術の個別定義 | 31 | `docs/skills/<領域>/<ID>.md` |
 | チェックリスト一覧 | 1 | `docs/checklists/index.md`（`TeamAssessment.vue` が全体の集計を表示） |
+| チームチェック回答シート | 1 | `docs/checklists/assessment.md`（`sheet` ブロックとして100項目を各小テーマページから自動生成。単一Markdownには含めず、リンクはチェックリスト一覧へ） |
 | 小テーマ別チェックリスト | 25 | `docs/checklists/<小テーマ>.md`（`TeamAssessment.vue` が項目ごとの回答・評価記述を localStorage に保存。項目カタログは `build/checklist-items.json` を `docs:sync` で生成） |
 | 書式一覧・書式 | 5 | `docs/templates/index.md` |
 | 記入例一覧・記入例 | 2 | `docs/examples/index.md` |

@@ -32,7 +32,7 @@ for path,parser in parsers.items():
   if url.fragment and target.suffix=='.html':
    assert unquote(url.fragment) in parsers[target].ids,f'{path.relative_to(site)}: unknown anchor {ref}'
   count+=1
-assert len(parsers)==85,f'Expected 84 pages + 404; got {len(parsers)}'
+assert len(parsers)==86,f'Expected 85 pages + 404; got {len(parsers)}'
 manifest=json.loads((site/'downloads/manifest.json').read_text())
 import hashlib
 for item in manifest['files']:

@@ -6,6 +6,7 @@ import shutil,hashlib
 selected=[p for p in PAGES if p['handbook']]
 ids={p['path']:page_id(p['path']) for p in selected}
 ids.update({'index.md':'top','downloads.md':'download-files'})
+ids.update({p['path']:page_id(p['handbookTarget']) for p in PAGES if not p['handbook'] and p.get('handbookTarget')})  # browser-only pages point at their handbook counterpart
 revision=commit();date=datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 out=ROOT/'dist';public=DOCS/'public/downloads'
 out.mkdir(exist_ok=True);public.mkdir(parents=True,exist_ok=True)
@@ -17,7 +18,7 @@ handbook.extend(f'- [{p["title"]}](#{ids[p["path"]]})' for p in selected)
 linkre=re.compile(r'\]\(([^)]+)\)')
 for p in selected:
  path=p['path'];text=body(path)
- text=re.sub(r'<!-- (?:catalog|matrix|template|references|terms|glossary|route|courses):(start|end) -->\n?','',text)
+ text=re.sub(r'<!-- (?:catalog|matrix|sheet|template|references|terms|glossary|route|courses):(start|end) -->\n?','',text)
  text=re.sub(r'^<ClientOnly>.*?</ClientOnly>\n\n?','',text,flags=re.M|re.S)  # browser-only self-assessment widget
  text=re.sub(r'^</?div[^>]*>\n\n?','',text,flags=re.M)  # the skill matrix keeps only its Markdown tables
  text=re.sub(r'^::: start\n(.*?)\n:::$',lambda m:'> **はじめの一歩**（Lv1へ向けて最初に学ぶこと）\n>\n'+'\n'.join('> '+l if l else '>' for l in m.group(1).split('\n')),text,flags=re.M|re.S)

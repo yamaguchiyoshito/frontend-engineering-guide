@@ -94,19 +94,17 @@ async function copy() {
 
 onMounted(() => {
   load()
-  if (!props.summary) {
-    const found: { sid: string; el: HTMLElement }[] = []
-    for (const h2 of Array.from(document.querySelectorAll<HTMLHeadingElement>('.vp-doc h2'))) {
-      const m = /^(\d-\d-\d)：/.exec(h2.textContent?.trim() ?? '')
-      if (!m || !byId[m[1]]) continue
-      let node: Element | null = h2.nextElementSibling; let example: Element | null = null
-      while (node && node.tagName !== 'H2') { if (node.classList.contains('answer-example')) example = node; node = node.nextElementSibling }
-      if (!example) continue
-      const el = document.createElement('div'); el.className = 'team-item-slot'
-      example.after(el); found.push({ sid: m[1], el })
-    }
-    slots.value = found; sub.value = found[0]?.sid.slice(0, 3) ?? null
+  const found: { sid: string; el: HTMLElement }[] = []
+  for (const heading of Array.from(document.querySelectorAll<HTMLHeadingElement>('.vp-doc h2, .vp-doc h3, .vp-doc h4'))) {
+    const m = /^(\d-\d-\d)：/.exec(heading.textContent?.trim() ?? '')
+    if (!m || !byId[m[1]]) continue
+    let node: Element | null = heading.nextElementSibling; let example: Element | null = null
+    while (node && !/^H[2-4]$/.test(node.tagName)) { if (node.classList.contains('answer-example')) example = node; node = node.nextElementSibling }
+    if (!example) continue
+    const el = document.createElement('div'); el.className = 'team-item-slot'
+    example.after(el); found.push({ sid: m[1], el })
   }
+  slots.value = found; sub.value = found[0]?.sid.slice(0, 3) ?? null
   state.ready = true
 })
 </script>
