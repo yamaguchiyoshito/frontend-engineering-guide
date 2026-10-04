@@ -5,7 +5,7 @@ import { withBase } from 'vitepress'
 /** Self-assessment on the skill matrix: one Lv per skill, kept in this browser's localStorage only. */
 const KEY = 'fe-guide.assessment.v1'
 const LEVELS = ['Lv0', 'Lv1', 'Lv2', 'Lv3', 'Lv4']
-type Row = { id: string; title: string; area: string; cells: HTMLTableCellElement[]; marker: HTMLElement }
+type Row = { id: string; title: string; area: string; cells: HTMLTableCellElement[]; definitions: string[]; marker: HTMLElement }
 const rows: Row[] = []
 const areas: string[] = []
 const state = reactive<{ levels: Record<string, number>; updatedAt: string | null; ready: boolean }>({ levels: {}, updatedAt: null, ready: false })
@@ -51,33 +51,34 @@ function clearAll() {
 
 onMounted(() => {
   load()
-  const table = document.querySelector<HTMLTableElement>('.skill-matrix table')
-  if (!table) return
-  let area = ''
-  for (const tr of Array.from(table.tBodies[0]?.rows ?? [])) {
-    const first = tr.cells[0]
-    const areaLabel = first.querySelector('.matrix-area')
-    if (areaLabel) { area = areaLabel.textContent?.trim() ?? ''; if (!areas.includes(area)) areas.push(area); continue }
-    const id = first.querySelector('code')?.textContent?.trim()
-    const title = first.querySelector('a')?.textContent?.trim()
-    if (!id || !title) continue
-    const marker = document.createElement('span')
-    marker.className = 'row-level'
-    first.appendChild(marker)
-    const cells = Array.from(tr.cells).slice(1, 6) as HTMLTableCellElement[]
-    const row: Row = { id, title, area, cells, marker }
-    cells.forEach((td, i) => {
-      td.classList.add('lv-cell')
-      td.setAttribute('role', 'button'); td.setAttribute('tabindex', '0')
-      td.setAttribute('aria-label', `${title} を ${LEVELS[i]} として記録`)
-      const mark = document.createElement('span'); mark.className = 'lv-mark'; mark.textContent = '選択中'
-      td.prepend(mark)
-      const onClick = (e: Event) => { if ((e.target as HTMLElement).closest('a')) return; set(row, i) }
-      const onKey = (e: KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); set(row, i) } }
-      td.addEventListener('click', onClick); td.addEventListener('keydown', onKey)
-      cleanups.push(() => { td.removeEventListener('click', onClick); td.removeEventListener('keydown', onKey) })
-    })
-    rows.push(row); paint(row)
+  for (const wrapper of Array.from(document.querySelectorAll<HTMLElement>('.skill-matrix'))) {
+    const area = wrapper.dataset.area ?? ''
+    if (!areas.includes(area)) areas.push(area)
+    const table = wrapper.querySelector('table')
+    for (const tr of Array.from(table?.tBodies[0]?.rows ?? [])) {
+      const first = tr.cells[0]
+      const id = first.querySelector('code')?.textContent?.trim()
+      const title = first.querySelector('a')?.textContent?.trim()
+      if (!id || !title) continue
+      const marker = document.createElement('span')
+      marker.className = 'row-level'
+      first.appendChild(marker)
+      const cells = Array.from(tr.cells).slice(1, 6) as HTMLTableCellElement[]
+      const definitions = cells.map(td => (td.textContent ?? '').trim()) // read before the 選択中 mark is added
+      const row: Row = { id, title, area, cells, definitions, marker }
+      cells.forEach((td, i) => {
+        td.classList.add('lv-cell')
+        td.setAttribute('role', 'button'); td.setAttribute('tabindex', '0')
+        td.setAttribute('aria-label', `${title} を ${LEVELS[i]} として記録`)
+        const mark = document.createElement('span'); mark.className = 'lv-mark'; mark.textContent = '選択中'
+        td.prepend(mark)
+        const onClick = (e: Event) => { if ((e.target as HTMLElement).closest('a')) return; set(row, i) }
+        const onKey = (e: KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); set(row, i) } }
+        td.addEventListener('click', onClick); td.addEventListener('keydown', onKey)
+        cleanups.push(() => { td.removeEventListener('click', onClick); td.removeEventListener('keydown', onKey) })
+      })
+      rows.push(row); paint(row)
+    }
   }
   state.ready = true
 })
@@ -94,7 +95,7 @@ const markdown = computed(() => {
   const lines = [`# 習熟度マトリクスの自己評価（${state.updatedAt ?? '未記録'}）`, '', `評価済み ${assessed.value} / ${total.value}（未評価 ${total.value - assessed.value}）`]
   for (const a of areas) {
     lines.push('', `## ${a}`, '')
-    for (const r of rows.filter(r => r.area === a)) lines.push(`- ${r.title}（\`${r.id}\`）：${state.levels[r.id] === undefined ? '未評価' : LEVELS[state.levels[r.id]]}`)
+    for (const r of rows.filter(r => r.area === a)) { const lv = state.levels[r.id]; lines.push(`- ${r.title}（\`${r.id}\`）：${lv === undefined ? '未評価' : `${LEVELS[lv]} ${r.definitions[lv]}`}`) }
   }
   return lines.join('\n') + '\n'
 })
