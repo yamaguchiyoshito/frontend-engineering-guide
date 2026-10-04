@@ -54,10 +54,11 @@ try {
 
   await page.goto(url + 'skills/matrix.html');
   await expect(page.locator('h1')).toHaveText('習熟度マトリクス');
-  await expect(page.locator('.skill-matrix tbody tr')).toHaveCount(35); // 31 skills + 4 area rows
+  await expect(page.locator('.skill-matrix')).toHaveCount(4); // one table per area
+  await expect(page.locator('.skill-matrix tbody tr')).toHaveCount(31);
   await expect(page.locator('.skill-matrix tbody tr:has(a[href*="web.basic"]) td')).toHaveCount(6);
   await expect(page.locator('.skill-matrix tbody tr:has(a[href*="web.basic"]) td').nth(5)).not.toBeEmpty();
-  results.checks.push('skill matrix: 31 rows by five levels');
+  results.checks.push('skill matrix: four area tables, 31 rows by five levels');
 
   const lv2 = page.locator('.skill-matrix tbody tr:has(a[href*="web.basic"]) td.lv-cell').nth(2);
   await expect(lv2).toHaveAttribute('aria-pressed', 'false');
@@ -67,6 +68,7 @@ try {
   await page.reload();
   await expect(page.locator('.skill-matrix tbody tr:has(a[href*="web.basic"]) td.lv-cell').nth(2)).toHaveAttribute('aria-pressed', 'true'); // persisted in localStorage
   await expect(page.locator('.skill-matrix tbody tr:has(a[href*="web.basic"]) .row-level')).toHaveText('Lv2');
+  await expect(page.locator('.matrix-markdown pre')).toContainText('- Web基礎（`web.basic`）：Lv2 画面表示やAPI呼び出しの通信を追跡し'); // level plus its definition
   results.checks.push('self-assessment on the matrix persists across reloads');
 
   const sidebar = page.locator('.VPSidebar');

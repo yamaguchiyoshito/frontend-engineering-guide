@@ -42,7 +42,7 @@
 .download-provenance summary { cursor: pointer; }
 .download-version { font-size: 14px; color: var(--vp-c-text-2); }
 /* Skill matrix: 31 skills by Lv0-Lv4 in one scrollable table with a sticky header row and first column. */
-.vp-doc .skill-matrix { margin: 20px 0 28px; overflow: auto; max-height: calc(100vh - 150px); border: 1px solid var(--vp-c-divider); border-radius: 8px; }
+.vp-doc .skill-matrix { margin: 16px 0 28px; overflow: auto; max-height: calc(100vh - 150px); border: 1px solid var(--vp-c-divider); border-radius: 8px; }
 .vp-doc .skill-matrix table { display: table; width: max-content; margin: 0; border-collapse: separate; border-spacing: 0; }
 .vp-doc .skill-matrix th, .vp-doc .skill-matrix td { min-width: 280px; max-width: 320px; vertical-align: top; font-size: 14px; line-height: 1.75; border-width: 0 0 1px 0; }
 .vp-doc .skill-matrix th:first-child, .vp-doc .skill-matrix td:first-child { position: sticky; left: 0; z-index: 1; min-width: 200px; max-width: 220px; background: var(--vp-c-bg); border-right: 1px solid var(--vp-c-divider); }
@@ -50,9 +50,7 @@
 .vp-doc .skill-matrix thead th { position: sticky; top: 0; z-index: 2; background: var(--vp-c-bg-soft); }
 .vp-doc .skill-matrix thead th:first-child { z-index: 3; }
 .vp-doc .skill-matrix td:first-child code { font-size: 12px; }
-.vp-doc .skill-matrix tr:has(.matrix-area) td { background: var(--vp-c-brand-soft); font-weight: 700; color: var(--vp-c-brand-1); }
-.vp-doc .skill-matrix tr:has(.matrix-area) td:first-child { min-width: 200px; white-space: nowrap; }
-@media (max-width: 639px) { .vp-doc .skill-matrix th:first-child, .vp-doc .skill-matrix td:first-child { min-width: 120px; max-width: 130px; width: 130px; } .vp-doc .skill-matrix tr:has(.matrix-area) td:first-child { min-width: 120px; white-space: normal; } .vp-doc .skill-matrix th, .vp-doc .skill-matrix td { min-width: 220px; } }
+@media (max-width: 639px) { .vp-doc .skill-matrix th:first-child, .vp-doc .skill-matrix td:first-child { min-width: 120px; max-width: 130px; width: 130px; } .vp-doc .skill-matrix th, .vp-doc .skill-matrix td { min-width: 220px; } }
 /* Self-assessment on the skill matrix: clickable Lv cells, selected / passed states, per-row level chip. */
 .vp-doc .skill-matrix td.lv-cell { cursor: pointer; position: relative; padding-top: 26px; transition: background-color .12s; }
 .vp-doc .skill-matrix td.lv-cell:hover { background: var(--vp-c-brand-soft); }
@@ -73,10 +71,6 @@
 .vp-doc .matrix-stats .stat strong small { font-size: 13px; font-weight: 400; color: var(--vp-c-text-3); }
 .vp-doc .matrix-stats .stat-primary { border-color: var(--vp-c-brand-1); }
 .vp-doc .matrix-stats .stat-primary strong { color: var(--vp-c-brand-1); }
-.vp-doc table.matrix-area-table { display: table; width: 100%; margin: 0 0 12px; font-size: 13px; }
-.vp-doc .matrix-area-table th, .vp-doc .matrix-area-table td { min-width: 0; padding: 6px 10px; font-size: 13px; line-height: 1.5; text-align: center; }
-.vp-doc .matrix-area-table th:first-child, .vp-doc .matrix-area-table td:first-child { text-align: left; }
-@media (max-width: 639px) { .vp-doc table.matrix-area-table { display: block; overflow-x: auto; white-space: nowrap; } }
 .vp-doc .matrix-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
 .vp-doc .matrix-updated { margin-right: auto; font-size: 13px; color: var(--vp-c-text-3); }
 .vp-doc .matrix-button { padding: 4px 14px; border: 1px solid var(--vp-c-brand-1); border-radius: 6px; background: var(--vp-c-bg); color: var(--vp-c-brand-1); font-size: 13px; font-weight: 600; line-height: 1.6; cursor: pointer; }

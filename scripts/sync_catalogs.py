@@ -115,18 +115,21 @@ def courses(page):
  return '\n'.join(out)
 
 def matrix(page):
- """One table: every skill (rows, in area order) by Lv0-Lv4 (columns), wrapped for sticky header and first column."""
+ """One table per area: its skills (rows) by Lv0-Lv4 (columns). Each table is wrapped for a sticky header and first column."""
  if page['kind']!='skill-matrix':return None
- path=page['path'];out=['<div class="skill-matrix">','','| 要素技術 | Lv0 | Lv1 | Lv2 | Lv3 | Lv4 |','| :--- | :--- | :--- | :--- | :--- | :--- |']
+ path=page['path'];sections=[]
  for area in MAP['areas']:
-  skills=[p for p in PAGES if p['kind']=='skill' and p['area']==area['id']];n=len(skills);index=rel(path,f'skills/{area["id"]}/index.md')
-  count=f'{n}つの要素技術' if n<10 else f'{n}の要素技術'
-  out.append(f'| <span class="matrix-area">[{area["title"]}]({index})</span>（{count}） | | | | | |')
+  skills=[p for p in PAGES if p['kind']=='skill' and p['area']==area['id']];n=len(skills)
+  sections.append((area,skills,f'{area["title"]}（{n}つの要素技術）' if n<10 else f'{area["title"]}（{n}の要素技術）'))
+ out=['領域へ移動：'+' · '.join(f'[{area["title"]}](#{slug(heading)})' for area,_,heading in sections)]
+ for area,skills,heading in sections:
+  index=rel(path,f'skills/{area["id"]}/index.md')
+  out += ['',f'## {heading}','',f'領域の説明と要素技術の一覧：[{area["title"]}]({index})','',f'<div class="skill-matrix" data-area="{area["title"]}">','','| 要素技術 | Lv0 | Lv1 | Lv2 | Lv3 | Lv4 |','| :--- | :--- | :--- | :--- | :--- | :--- |']
   for p in skills:
    ds=definition_data(p)
    assert all('|' not in t and '\n' not in t for t in ds.values()),p['path']+': matrix cells must be one paragraph without |'
    out.append(f'| [{p["title"]}]({rel(path,p["path"])})<br>`{p["skillId"]}` | '+' | '.join(ds[lv] for lv in ('Lv0','Lv1','Lv2','Lv3','Lv4'))+' |')
- out += ['','</div>']
+  out += ['','</div>']
  return '\n'.join(out)
 
 def blocks(page):
