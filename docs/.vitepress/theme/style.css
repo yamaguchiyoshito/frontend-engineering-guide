@@ -52,7 +52,59 @@
 .vp-doc .skill-matrix td:first-child code { font-size: 12px; }
 .vp-doc .skill-matrix tr:has(.matrix-area) td { background: var(--vp-c-brand-soft); font-weight: 700; color: var(--vp-c-brand-1); }
 .vp-doc .skill-matrix tr:has(.matrix-area) td:first-child { min-width: 200px; white-space: nowrap; }
-@media (max-width: 639px) { .vp-doc .skill-matrix th:first-child, .vp-doc .skill-matrix td:first-child { min-width: 130px; max-width: 140px; } .vp-doc .skill-matrix th, .vp-doc .skill-matrix td { min-width: 230px; } }
+@media (max-width: 639px) { .vp-doc .skill-matrix th:first-child, .vp-doc .skill-matrix td:first-child { min-width: 120px; max-width: 130px; width: 130px; } .vp-doc .skill-matrix tr:has(.matrix-area) td:first-child { min-width: 120px; white-space: normal; } .vp-doc .skill-matrix th, .vp-doc .skill-matrix td { min-width: 220px; } }
+/* Self-assessment on the skill matrix: clickable Lv cells, selected / passed states, per-row level chip. */
+.vp-doc .skill-matrix td.lv-cell { cursor: pointer; position: relative; padding-top: 26px; transition: background-color .12s; }
+.vp-doc .skill-matrix td.lv-cell:hover { background: var(--vp-c-brand-soft); }
+.vp-doc .skill-matrix td.lv-cell:focus-visible { outline: 2px solid var(--vp-c-brand-1); outline-offset: -2px; }
+.vp-doc .skill-matrix tr td.is-passed { background: var(--vp-c-brand-soft); }
+.vp-doc .skill-matrix tr td.is-selected { background: var(--vp-c-brand-soft); box-shadow: inset 0 0 0 2px var(--vp-c-brand-1); }
+.vp-doc .skill-matrix .lv-mark { display: none; position: absolute; top: 6px; left: 12px; padding: 0 8px; border-radius: 10px; background: var(--vp-c-brand-1); color: #fff; font-size: 11px; font-weight: 700; line-height: 18px; }
+.vp-doc .skill-matrix td.is-selected .lv-mark { display: inline-block; }
+.vp-doc .skill-matrix .row-level { display: inline-block; margin-top: 6px; padding: 0 8px; border: 1px solid var(--vp-c-divider); border-radius: 10px; color: var(--vp-c-text-3); font-size: 11px; font-weight: 700; line-height: 18px; }
+.vp-doc .skill-matrix .row-level.is-set { border-color: var(--vp-c-brand-1); color: var(--vp-c-brand-1); background: var(--vp-c-brand-soft); }
+.vp-doc .matrix-assessment { margin: 24px 0 20px; padding: 16px 20px 18px; border: 1px solid var(--vp-c-divider); border-left: 4px solid var(--vp-c-brand-1); border-radius: 6px; background: var(--vp-c-bg-soft); }
+.vp-doc .matrix-assessment-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin: 0 0 6px; padding: 0; border: 0; font-size: 16px; font-weight: 700; color: var(--vp-c-brand-1); line-height: 1.6; }
+.vp-doc .matrix-assessment-title span { font-size: 12px; font-weight: 400; color: var(--vp-c-text-3); }
+.vp-doc .matrix-assessment-help { margin: 0 0 12px; font-size: 14px; line-height: 1.8; color: var(--vp-c-text-2); }
+.vp-doc .matrix-stats { display: flex; flex-wrap: wrap; gap: 8px 10px; margin: 0 0 12px; }
+.vp-doc .matrix-stats .stat { display: flex; flex-direction: column; min-width: 68px; padding: 8px 12px; border: 1px solid var(--vp-c-divider); border-radius: 6px; background: var(--vp-c-bg); font-size: 12px; color: var(--vp-c-text-2); line-height: 1.4; }
+.vp-doc .matrix-stats .stat strong { font-size: 22px; font-weight: 650; color: var(--vp-c-text-1); line-height: 1.2; }
+.vp-doc .matrix-stats .stat strong small { font-size: 13px; font-weight: 400; color: var(--vp-c-text-3); }
+.vp-doc .matrix-stats .stat-primary { border-color: var(--vp-c-brand-1); }
+.vp-doc .matrix-stats .stat-primary strong { color: var(--vp-c-brand-1); }
+.vp-doc table.matrix-area-table { display: table; width: 100%; margin: 0 0 12px; font-size: 13px; }
+.vp-doc .matrix-area-table th, .vp-doc .matrix-area-table td { min-width: 0; padding: 6px 10px; font-size: 13px; line-height: 1.5; text-align: center; }
+.vp-doc .matrix-area-table th:first-child, .vp-doc .matrix-area-table td:first-child { text-align: left; }
+@media (max-width: 639px) { .vp-doc table.matrix-area-table { display: block; overflow-x: auto; white-space: nowrap; } }
+.vp-doc .matrix-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+.vp-doc .matrix-updated { margin-right: auto; font-size: 13px; color: var(--vp-c-text-3); }
+.vp-doc .matrix-button { padding: 4px 14px; border: 1px solid var(--vp-c-brand-1); border-radius: 6px; background: var(--vp-c-bg); color: var(--vp-c-brand-1); font-size: 13px; font-weight: 600; line-height: 1.6; cursor: pointer; }
+.vp-doc .matrix-button:hover { background: var(--vp-c-brand-soft); }
+.vp-doc .matrix-button:disabled { opacity: .5; cursor: default; }
+.vp-doc .matrix-button-danger { border-color: var(--vp-c-danger-1); color: var(--vp-c-danger-1); }
+.vp-doc .matrix-button-danger:hover:not(:disabled) { background: var(--vp-c-danger-soft); }
+.vp-doc .matrix-markdown { margin-top: 12px; font-size: 13px; }
+.vp-doc .matrix-markdown summary { cursor: pointer; color: var(--vp-c-text-2); }
+.vp-doc .matrix-markdown pre { margin: 8px 0 0; padding: 12px 16px; border-radius: 6px; background: var(--vp-c-bg); font-size: 12px; line-height: 1.6; overflow: auto; max-height: 320px; }
+
+/* Sidebar: full / compact. The compact rail keeps the toggle and frees about 216px for wide tables. Desktop only. */
+.sidebar-toggle { display: none; }
+@media (min-width: 960px) {
+  .sidebar-toggle { display: flex; align-items: center; gap: 8px; width: 100%; margin: 0 0 12px; padding: 4px 8px; border: 1px solid var(--vp-c-divider); border-radius: 6px; background: var(--vp-c-bg); color: var(--vp-c-text-2); font-size: 12px; line-height: 1.6; cursor: pointer; }
+  .sidebar-toggle:hover { border-color: var(--vp-c-brand-1); color: var(--vp-c-brand-1); }
+  .sidebar-toggle-icon { font-size: 16px; font-weight: 700; line-height: 1; }
+  html[data-sidebar="compact"] .VPSidebar { width: 64px; padding-left: 12px; padding-right: 12px; }
+  html[data-sidebar="compact"] .VPSidebar .nav > .group { display: none; }
+  html[data-sidebar="compact"] .VPSidebar .sidebar-toggle { justify-content: center; width: 40px; height: 40px; padding: 0; }
+  html[data-sidebar="compact"] .VPSidebar .sidebar-toggle-text { display: none; }
+  html[data-sidebar="compact"] .VPContent.has-sidebar { padding-left: 64px; }
+  html[data-sidebar="compact"] .VPNavBar.has-sidebar .title { background-color: var(--vp-nav-bg-color); } /* the sidebar no longer sits under the title area */
+}
+@media (min-width: 1440px) {
+  html[data-sidebar="compact"] .VPSidebar { padding-left: max(12px, calc((100% - (var(--vp-layout-max-width) - 64px)) / 2)); width: calc((100% - (var(--vp-layout-max-width) - 64px)) / 2 + 32px); }
+  html[data-sidebar="compact"] .VPContent.has-sidebar { padding-left: calc((100vw - var(--vp-layout-max-width)) / 2 + 64px); }
+}
 @media (min-width: 960px) { .VPDoc:not(.has-sidebar) .content { max-width: 1000px; } }
 @media (max-width: 639px) { .guide-stats { gap: 24px; } .vp-doc h1 { font-size: 1.65rem; } .vp-doc th, .vp-doc td { min-width: 110px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0s !important; } }

@@ -36,7 +36,11 @@ export default withMermaid(defineConfig({
   srcExclude: ['public/**'],
   // Mermaid: keep Japanese node labels on one line instead of wrapping at the 200px default.
   mermaid: { flowchart: { wrappingWidth: 360 } },
-  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}assets/favicon.svg` }]],
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}assets/favicon.svg` }],
+    // Apply the saved sidebar mode (full / compact) before first paint, like VitePress does for dark mode.
+    ['script', {}, "(()=>{try{document.documentElement.dataset.sidebar=localStorage.getItem('fe-guide.sidebar')==='compact'?'compact':'full'}catch(e){}})()"]
+  ],
   ...(origin ? { sitemap: { hostname: origin + base } } : {}),
   markdown: {
     lineNumbers: false,

@@ -42,7 +42,7 @@
 | ホーム | 1 | `docs/index.md` |
 | 使い方ガイド | 4 | `docs/guide/overview.md` |
 | 要素技術一覧 | 1 | `docs/skills/index.md` |
-| 習熟度マトリクス | 1 | `docs/skills/matrix.md`（`matrix` ブロックを各要素技術の定義から自動生成） |
+| 習熟度マトリクス | 1 | `docs/skills/matrix.md`（`matrix` ブロックを各要素技術の定義から自動生成。`MatrixAssessment.vue` がセル選択・localStorage保存・集計を担い、単一Markdownには表だけを収録） |
 | 領域一覧 | 4 | `docs/skills/<領域>/index.md` |
 | 要素技術の個別定義 | 31 | `docs/skills/<領域>/<ID>.md` |
 | チェックリスト一覧 | 1 | `docs/checklists/index.md` |
