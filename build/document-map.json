@@ -363,6 +363,13 @@
       "handbook": true
     },
     {
+      "path": "checklists/assessment.md",
+      "title": "チームチェック回答シート",
+      "kind": "checklist-sheet",
+      "handbook": false,
+      "handbookTarget": "checklists/index.md"
+    },
+    {
       "path": "checklists/quality-and-types.md",
       "title": "コードベース",
       "kind": "checklist",

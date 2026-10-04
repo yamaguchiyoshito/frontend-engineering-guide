@@ -145,8 +145,29 @@ def checklist_items():
  assert len(out)==100,'100 checklist items expected'
  return json.dumps(out,ensure_ascii=False,indent=1)+'\n'
 
+def sheet(page):
+ """All 100 checklist items on one page (theme > sub-theme > item), each with its criterion, supplement and desirable answer; the team widget adds the answer fields."""
+ if page['kind']!='checklist-sheet':return None
+ path=page['path'];checks=[p for p in PAGES if p['kind']=='checklist'];sections=[]
+ for p in checks:
+  if p['section'] not in sections:sections.append(p['section'])
+ out=['大テーマへ移動：'+' · '.join(f'[{sec}](#{slug(sec)})' for sec in sections)]
+ for sec in sections:
+  out += ['',f'## {sec}']
+  for p in checks:
+   if p['section']!=sec:continue
+   text=body(p['path']);out += ['',f'### {p["sourceId"]} {p["title"]}','',f'小テーマのページ：[{p["title"]}]({rel(path,p["path"])})']
+   for sid,title,section in re.findall(r'^## (\d-\d-\d)：([^\n]+)\n\n(.*?)(?=^## \d-\d-\d：|\Z)',text,re.M|re.S):
+    m=re.match(r'(.*?)\n\n(?:\*\*補足\*\*\n\n(.*?)\n\n)?::: example\n(.*?)\n:::\n\n\[原文の参照先\]\((https://[^)]+)\)',section,re.S)
+    if not m:raise ValueError(f'{p["path"]}: {sid}の構造を確認してください')
+    criterion,supplement,answer,url=m.groups()
+    out += ['',f'#### {sid}：{title}','',criterion.strip()]
+    if supplement:out += ['','**補足**','',supplement.strip()]
+    out += ['','::: example',answer.strip(),':::','',f'[原文の参照先]({url})']
+ return '\n'.join(out)
+
 def blocks(page):
- for marker,value in [('catalog',catalog(page)),('matrix',matrix(page)),('references',references(page)),('terms',terms(page)),('glossary',glossary(page)),('route',route(page)),('courses',courses(page))]:
+ for marker,value in [('catalog',catalog(page)),('matrix',matrix(page)),('sheet',sheet(page)),('references',references(page)),('terms',terms(page)),('glossary',glossary(page)),('route',route(page)),('courses',courses(page))]:
   if value is not None:yield marker,value
 
 def sync(check=False):
