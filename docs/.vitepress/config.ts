@@ -51,6 +51,12 @@ export default withMermaid(defineConfig({
           ? '<div class="answer-example"><p class="answer-example-title">望ましい回答例<span>架空の記入例。実際の回答には実態と根拠を記載</span></p>\n'
           : '</div>\n'
       })
+      // ::: supplement … ::: is the source's supplementary note on a checklist item, set apart from the criterion.
+      md.use(container, 'supplement', {
+        render: (tokens: any[], idx: number) => tokens[idx].nesting === 1
+          ? '<div class="supplement"><p class="supplement-title">補足</p>\n'
+          : '</div>\n'
+      })
       // ::: start … ::: is the first step toward Lv1 on each element-technology page.
       md.use(container, 'start', {
         render: (tokens: any[], idx: number) => tokens[idx].nesting === 1

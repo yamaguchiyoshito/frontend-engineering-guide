@@ -30,7 +30,7 @@ def item_number(sid):
 def checklist_data(page):
  text=body(page['path']);result={}
  for sid,section in re.findall(r'^## (\d-\d-\d)：[^\n]+\n\n(.*?)(?=^## \d-\d-\d：|\Z)',text,re.M|re.S):
-  m=re.match(r'(.*?)\n\n(?:\*\*補足\*\*\n\n.*?\n\n)?::: example\n(.*?)\n:::\n\n\[原文の参照先\]\((https://[^)]+)\)',section,re.S)
+  m=re.match(r'(.*?)\n\n(?:::: supplement\n.*?\n:::\n\n)?::: example\n(.*?)\n:::\n\n\[原文の参照先\]\((https://[^)]+)\)',section,re.S)
   if not m:raise ValueError(f'{page["path"]}: {sid}の構造を確認してください')
   criterion,answer,url=m.groups();num=item_number(sid)
   # The source's fourth perspective in every sub-theme is アンチパターン, whose desirable answer is FALSE.

@@ -20,6 +20,10 @@
 .vp-doc .answer-example-title span { font-size: 12px; font-weight: 400; color: var(--vp-c-text-3); }
 .vp-doc .answer-example p:not(.answer-example-title) { margin: 0; font-size: 15px; line-height: 1.85; }
 .vp-doc .answer-example p + p:not(.answer-example-title) { margin-top: 8px; }
+.vp-doc .supplement { margin: 12px 0 18px; padding: 8px 16px 10px; border-left: 3px solid var(--vp-c-divider); color: var(--vp-c-text-2); }
+.vp-doc .supplement-title { margin: 0 0 4px; font-size: 12px; font-weight: 700; letter-spacing: .08em; color: var(--vp-c-text-3); line-height: 1.6; }
+.vp-doc .supplement p:not(.supplement-title) { margin: 0; font-size: 14px; line-height: 1.85; }
+.vp-doc .supplement p + p:not(.supplement-title) { margin-top: 8px; }
 .vp-doc .first-step { margin: 20px 0 24px; padding: 14px 20px 16px; border: 1px solid var(--vp-c-divider); border-left: 4px solid var(--vp-c-green-1); border-radius: 6px; background: var(--vp-c-bg-soft); }
 .vp-doc .first-step-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin: 0 0 6px; font-size: 14px; font-weight: 700; color: var(--vp-c-green-1); line-height: 1.6; }
 .vp-doc .first-step-title span { font-size: 12px; font-weight: 400; color: var(--vp-c-text-3); }

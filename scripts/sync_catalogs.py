@@ -151,11 +151,11 @@ def sheet(page):
    if p['section']!=sec:continue
    text=body(p['path']);out += ['',f'### {p["sourceId"]} {p["title"]}','',f'小テーマのページ：[{p["title"]}]({rel(path,p["path"])})']
    for sid,title,section in re.findall(r'^## (\d-\d-\d)：([^\n]+)\n\n(.*?)(?=^## \d-\d-\d：|\Z)',text,re.M|re.S):
-    m=re.match(r'(.*?)\n\n(?:\*\*補足\*\*\n\n(.*?)\n\n)?::: example\n(.*?)\n:::\n\n\[原文の参照先\]\((https://[^)]+)\)',section,re.S)
+    m=re.match(r'(.*?)\n\n(?:::: supplement\n(.*?)\n:::\n\n)?::: example\n(.*?)\n:::\n\n\[原文の参照先\]\((https://[^)]+)\)',section,re.S)
     if not m:raise ValueError(f'{p["path"]}: {sid}の構造を確認してください')
     criterion,supplement,answer,url=m.groups()
     out += ['',f'#### {sid}：{title}','',criterion.strip()]
-    if supplement:out += ['','**補足**','',supplement.strip()]
+    if supplement:out += ['','::: supplement',supplement.strip(),':::']
     out += ['','::: example',answer.strip(),':::','',f'[原文の参照先]({url})']
  return '\n'.join(out)
 
