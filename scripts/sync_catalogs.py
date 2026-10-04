@@ -20,12 +20,11 @@ def catalog(page):
  elif kind=='area':
   out=skill_table(path,page['area'])
  elif kind=='checklist-index':
-  section=None
+  out=['| 大テーマ | ID | 小テーマ |','| :--- | :--- | :--- |'];section=None
   for p in PAGES:
    if p['kind']!='checklist':continue
-   if section!=p['section']:
-    section=p['section'];out += ['','## '+section,'','| ID | 小テーマ |','| :--- | :--- |']
-   out.append(f'| {p["sourceId"]} | [{p["title"]}]({rel(path,p["path"])}) |')
+   label=p['section'] if section!=p['section'] else '';section=p['section']
+   out.append(f'| {label} | {p["sourceId"]} | [{p["title"]}]({rel(path,p["path"])}) |')
  elif kind=='template-index':
   out=[f'- [{p["title"]}]({rel(path,p["path"])})' for p in PAGES if p['kind']=='template']
  else:return None
@@ -147,7 +146,7 @@ def checklist_items():
 
 def sheet(page):
  """All 100 checklist items on one page (theme > sub-theme > item), each with its criterion, supplement and desirable answer; the team widget adds the answer fields."""
- if page['kind']!='checklist-sheet':return None
+ if page['kind']!='checklist-index':return None
  path=page['path'];checks=[p for p in PAGES if p['kind']=='checklist'];sections=[]
  for p in checks:
   if p['section'] not in sections:sections.append(p['section'])

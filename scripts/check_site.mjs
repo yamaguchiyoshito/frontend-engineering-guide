@@ -24,7 +24,7 @@ const server = createServer(async (req, res) => {
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const origin = `http://127.0.0.1:${server.address().port}`;
 const url = origin + base;
-const results = { base, pages: 85, definitions: 155, checklistItems: 100, checks: [] };
+const results = { base, pages: 84, definitions: 155, checklistItems: 100, checks: [] };
 let browser;
 try {
   browser = await chromium.launch({ headless: true, ...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH, args: JSON.parse(process.env.PLAYWRIGHT_CHROMIUM_ARGS || '["--no-sandbox","--disable-dev-shm-usage"]') } : {}) });
@@ -126,12 +126,11 @@ try {
   await page.goto(url + 'checklists/');
   await expect(page.locator('.team-summary-table tbody tr')).toHaveCount(30); // 5 themes + 25 sub-themes
   await expect(page.locator('.team-assessment .stat-primary strong')).toContainText('1.5');
-  await page.goto(url + 'checklists/assessment.html');
-  await expect(page.locator('.team-item')).toHaveCount(100); // every item on one sheet
+  await expect(page.locator('.team-item')).toHaveCount(100); // every item answerable on the index page
   await expect(page.locator('.team-item[data-sid="2-3-1"] .team-option.selected')).toHaveText('はい'); // shared storage with the sub-theme page
   await page.locator('.team-item[data-sid="1-1-1"]').getByRole('button', { name: 'はい', exact: true }).click();
   await expect(page.locator('.team-assessment .stat-primary strong')).toContainText('2.5');
-  results.checks.push('team checklist answers, anti-pattern scoring, index summary and the one-page sheet persist');
+  results.checks.push('team checklist answers, anti-pattern scoring, and the index page with all 100 items persist');
 
   await page.goto(url + 'skills/quality/web.security.html');
   await page.emulateMedia({ colorScheme: 'dark' });

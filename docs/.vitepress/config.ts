@@ -24,7 +24,6 @@ const skills = [
 ]
 const checks = [
   { text: 'チームチェック', link: '/checklists/', items: [] },
-  { text: 'チームチェック回答シート', link: '/checklists/assessment', items: [] },
   ...[...new Set(by('checklist').map((p: any) => p.section as string))].map(section => ({ text: section, collapsed: true, items: by('checklist').filter((p: any) => p.section === section).map((p: any) => ({ text: `${p.sourceId} ${p.title}`, link: url(p) })) }))
 ]
 const forms = [{ text: '記録書式', link: '/templates/', items: by('template').map(item) }, { text: '記入例', link: '/examples/', items: by('example').map(item) }, { text: 'ダウンロード', link: '/downloads', items: [] }]
