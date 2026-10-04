@@ -18,6 +18,7 @@ linkre=re.compile(r'\]\(([^)]+)\)')
 for p in selected:
  path=p['path'];text=body(path)
  text=re.sub(r'<!-- (?:catalog|matrix|template|references|terms|glossary|route|courses):(start|end) -->\n?','',text)
+ text=re.sub(r'^<ClientOnly>.*?</ClientOnly>\n\n?','',text,flags=re.M|re.S)  # browser-only self-assessment widget
  text=re.sub(r'^</?div[^>]*>\n\n?','',text,flags=re.M);text=re.sub(r'<span class="matrix-area">(.*?)</span>',r'\1',text)  # the skill matrix keeps only its Markdown table
  text=re.sub(r'^::: start\n(.*?)\n:::$',lambda m:'> **はじめの一歩**（Lv1へ向けて最初に学ぶこと）\n>\n'+'\n'.join('> '+l if l else '>' for l in m.group(1).split('\n')),text,flags=re.M|re.S)
  text=re.sub(r'^::: example\n(.*?)\n:::$',lambda m:'> **望ましい回答例**（架空の記入例）\n>\n'+'\n'.join('> '+l if l else '>' for l in m.group(1).split('\n')),text,flags=re.M|re.S)

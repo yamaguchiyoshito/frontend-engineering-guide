@@ -59,6 +59,29 @@ try {
   await expect(page.locator('.skill-matrix tbody tr:has(a[href*="web.basic"]) td').nth(5)).not.toBeEmpty();
   results.checks.push('skill matrix: 31 rows by five levels');
 
+  const lv2 = page.locator('.skill-matrix tbody tr:has(a[href*="web.basic"]) td.lv-cell').nth(2);
+  await expect(lv2).toHaveAttribute('aria-pressed', 'false');
+  await lv2.click();
+  await expect(lv2).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('.matrix-stats .stat-primary strong')).toContainText('1');
+  await page.reload();
+  await expect(page.locator('.skill-matrix tbody tr:has(a[href*="web.basic"]) td.lv-cell').nth(2)).toHaveAttribute('aria-pressed', 'true'); // persisted in localStorage
+  await expect(page.locator('.skill-matrix tbody tr:has(a[href*="web.basic"]) .row-level')).toHaveText('Lv2');
+  results.checks.push('self-assessment on the matrix persists across reloads');
+
+  const sidebar = page.locator('.VPSidebar');
+  const fullWidth = (await sidebar.boundingBox()).width;
+  await page.getByRole('button', { name: '目次をコンパクト表示' }).click();
+  await expect(page.locator('html')).toHaveAttribute('data-sidebar', 'compact');
+  await page.reload();
+  await expect(page.locator('html')).toHaveAttribute('data-sidebar', 'compact'); // persisted and applied before paint
+  const compactWidth = (await sidebar.boundingBox()).width;
+  if (!(compactWidth < fullWidth - 150)) throw Error(`Compact sidebar not narrower: ${compactWidth} vs ${fullWidth}`);
+  await page.screenshot({ path: 'artifacts/matrix-compact.png' });
+  await page.getByRole('button', { name: '目次を表示' }).click();
+  await expect(page.locator('html')).toHaveAttribute('data-sidebar', 'full');
+  results.checks.push('sidebar full / compact toggle persists');
+
   for (const [query, target] of [['react.form', 'react.form'], ['2-3-1', 'security'], ['セキュリティ', 'security'], ['非同期', 'javascript.async']]) {
     await page.locator('button.DocSearch-Button').click();
     const input = page.locator('#localsearch-input');
