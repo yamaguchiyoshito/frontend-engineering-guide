@@ -93,3 +93,16 @@ PRの検査は `contents: read` で実行し、公開権限を持ちません。
 公開先のbase pathとoriginはGitHub Pagesの設定から取得します。コードに所有者名を固定しません。同時公開を直列化します。旧版へ戻す場合は `main` で変更を取り消し、手動実行は `main` の再公開に限ります。
 
 GitHub上の設定と最初のpushはREADMEに記載しています。配布時点で特定のGitHubリポジトリへの登録や公開は行っていません。
+
+## Agent Skill（評価の下書き）
+
+| パス | 役割 |
+| :--- | :--- |
+| `.claude/skills/assessment-draft/SKILL.md` | 手順書。入力の確認、根拠の収集、個人評価・チームチェックの判定規則、出力 |
+| `.claude/skills/assessment-draft/scripts/collect_evidence.py` | 対象リポジトリの構成・設定・CI・テスト・ソースの手がかり・機密情報らしき文字列・Git履歴・対象者の活動を集め、`evidence.md` と `evidence.json` を書く。標準ライブラリのみ、読み取り専用 |
+| `.claude/skills/assessment-draft/references/skills.json` | 31の要素技術の定義（`docs:sync` で `docs/skills/**` から生成） |
+| `.claude/skills/assessment-draft/references/checklist-items.json` | 100項目のカタログ（`build/checklist-items.json` と同内容、`docs:sync` で生成） |
+| `.claude/skills/assessment-draft/references/skill-evidence-map.md`、`team-evidence-map.md` | 手がかりを Lv・回答に読み替える対応表 |
+| `.claude/skills/assessment-draft/references/output-format.md` | 出力の書式（本書の「Markdownでコピー」と同じ Markdown、保存形式と互換の JSON） |
+
+生成ファイルの同期は `docs:check` が検査します。

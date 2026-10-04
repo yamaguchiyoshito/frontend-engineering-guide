@@ -166,6 +166,19 @@ def sheet(page):
     out += ['','::: example',answer.strip(),':::','',f'[原文の参照先]({url})']
  return '\n'.join(out)
 
+SKILL_REFS=ROOT/'.claude/skills/assessment-draft/references'
+def skills_json():
+ """The 31 skills with their Lv0-Lv4 definitions, bundled with the assessment-draft skill so it works when copied out of this repository."""
+ out=[]
+ for area in MAP['areas']:
+  for p in PAGES:
+   if p['kind']!='skill' or p['area']!=area['id']:continue
+   text=body(p['path']);label,prerequisite=re.search(r'\*\*(評価対象|主な前提)：\*\* (.+)',text).groups();start=start_reference(p['skillId'])
+   description=re.search(r'<!-- terms:end -->\n\n(.+?)\n',text).group(1).strip()
+   out.append({'id':p['skillId'],'title':p['title'],'area':area['id'],'areaTitle':area['title'],'page':p['path'],label:prerequisite.strip(),'description':description,'levels':definition_data(p),'firstStep':first_step(p),'mustRead':{'title':start['title'],'url':start['url']}})
+ assert len(out)==31
+ return json.dumps(out,ensure_ascii=False,indent=1)+'\n'
+
 def blocks(page):
  for marker,value in [('catalog',catalog(page)),('matrix',matrix(page)),('sheet',sheet(page)),('references',references(page)),('terms',terms(page)),('glossary',glossary(page)),('route',route(page)),('courses',courses(page))]:
   if value is not None:yield marker,value
@@ -181,9 +194,10 @@ def sync(check=False):
     dirty.append(page['path'])
     if not check:file.write_text(new)
  items=checklist_items()
- if not ITEMS_PATH.exists() or ITEMS_PATH.read_text()!=items:
-  dirty.append(str(ITEMS_PATH.relative_to(ROOT)))
-  if not check:ITEMS_PATH.write_text(items)
+ for target,content in ((ITEMS_PATH,items),(SKILL_REFS/'checklist-items.json',items),(SKILL_REFS/'skills.json',skills_json())):
+  if not target.exists() or target.read_text()!=content:
+   dirty.append(str(target.relative_to(ROOT)))
+   if not check:target.parent.mkdir(parents=True,exist_ok=True);target.write_text(content)
  if check and dirty:raise ValueError('Run npm run docs:sync: '+', '.join(dirty))
  return dirty
 if __name__=='__main__':
