@@ -33,6 +33,7 @@ def checklist_data(page):
   m=re.match(r'(.*?)\n\n(?:::: supplement\n.*?\n:::\n\n)?::: example\n(.*?)\n:::\n\n\[原文の参照先\]\((https://[^)]+)\)',section,re.S)
   if not m:raise ValueError(f'{page["path"]}: {sid}の構造を確認してください')
   criterion,answer,url=m.groups();num=item_number(sid)
+  answer=re.sub(r'^- ','',answer,flags=re.M).replace('\n','')  # the sample answer is written one sentence per bullet; compare the wording only
   # The source's fourth perspective in every sub-theme is アンチパターン, whose desirable answer is FALSE.
   desired='FALSE' if int(num)%4==0 else 'TRUE';result[num]=[criterion,url,desired,answer]
  return result

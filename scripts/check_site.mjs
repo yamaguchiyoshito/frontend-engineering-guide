@@ -111,6 +111,7 @@ try {
   await page.goto(url + 'checklists/security.html');
   await expect(page.locator('.team-item')).toHaveCount(4); // one widget per item, after its 望ましい回答例
   await expect(page.locator('.supplement .supplement-title').first()).toHaveText('補足'); // the source's note sits apart from the criterion
+  await expect(page.locator('.answer-example li').first()).toBeVisible(); // sample answers are bulleted, one sentence each
   const item1 = page.locator('.team-item[data-sid="2-3-1"]'); const item4 = page.locator('.team-item[data-sid="2-3-4"]');
   await item1.getByRole('button', { name: 'はい', exact: true }).click();
   await expect(item1.locator('.team-score')).toHaveText('1点');
