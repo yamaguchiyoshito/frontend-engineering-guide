@@ -87,6 +87,15 @@ npm run test:site
 
 チームチェックリストの原文は、一般社団法人日本CTO協会が公開する [Webフロントエンド版DX Criteria（v202402）](https://dxcriteria.cto-a.org/frontend) です。分類と文面は出典に従い、回答例と28の要素技術の定義は本リポジトリで追加した内容です。詳細は [出典と追加した内容](docs/maintenance/sources.md)、変更履歴は [改訂履歴](docs/maintenance/changelog.md) を参照してください。
 
+## Agent Skill：評価の下書き
+
+`.claude/skills/assessment-draft/` に、利用者が指定したリポジトリの状態とGit履歴から、個人の習熟度評価（31の要素技術 × Lv0〜Lv4）とチームチェック（100項目）の下書きを根拠付きで作る Agent Skill を同梱しています。
+
+- このリポジトリを Claude Code で開くとプロジェクトのスキルとして自動で使えます。他の場所で使うには `.claude/skills/assessment-draft` を `~/.claude/skills/` にコピーします。
+- 依頼の例：「`~/work/shop-front` について、山田さんの個人評価とチームチェックの下書きを作って（直近12か月）」
+- 根拠の収集は同梱の `scripts/collect_evidence.py`（Python 3.9以降とgitのみ、読み取り専用、ネットワーク不使用）が行い、判定は手順書 `SKILL.md` と対応表 `references/` に従います。要素技術の定義と項目カタログ（`references/skills.json`、`references/checklist-items.json`）は `docs:sync` で本書から生成します。
+- 出力は本書の「Markdownでコピー」と同じ書式の Markdown と、ページの保存形式と互換の JSON です。下書きは仮説であり、面談やチームのレビューで根拠を確認してから記録書式へ転記します。
+
 ## ライセンス
 
 本リポジトリの内容（文書、記録書式、回答例、スクリプト、サイト設定）は、[クリエイティブ・コモンズ 表示—継承 4.0 国際（CC BY-SA 4.0）](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) で提供します。全文は [LICENSE](LICENSE) にあります。出典であるWebフロントエンド版DX Criteriaも同じライセンスで提供されており、その著作権は一般社団法人日本CTO協会に帰属します。

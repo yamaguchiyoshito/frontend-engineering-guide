@@ -1,0 +1,84 @@
+# 出力書式
+
+4つのファイルを出力先に書く。Markdownは本ガイドの「Markdownでコピー」と同じ形にそろえ、JSONは本ガイドのページがブラウザに保存する形にそろえる（将来の取り込みに備える）。
+
+## individual-draft.md
+
+```markdown
+# 習熟度マトリクスの自己評価の下書き（2026-10-04）
+
+- 対象者：山田 太郎（Gitの表示名）
+- 対象リポジトリ：/path/to/repo（既定ブランチ main、対象期間 2025-10-01〜2026-10-04）
+- 対象者のコミット：128件（全体の 41%）、触れたファイル：212
+- 集計：Lv候補 9（Lv1 3、Lv2 5、Lv3候補 1）、未評価 22
+- この文書は、リポジトリの状態とGit履歴から機械的に集めた根拠に基づく下書きです。Lv3・Lv4は面談とレビューで根拠を確認するまで候補とします。確定した評価は「個人の習熟度評価記録」へ転記してください。
+
+## 基礎領域
+
+- Web基礎（`web.basic`）：Lv2 画面表示やAPI呼び出しの通信を追跡し、URL、ヘッダー、ステータス、Cookie、キャッシュの設定から、標準的な通信不具合を切り分けて修正を確認できる。
+  - 根拠：`src/lib/http.ts` に再試行とタイムアウトを実装（`a1b2c3d`、2026-03-12）。`next.config.ts` の `headers()` で Cache-Control を設定（`d4e5f6a`）。
+  - 確認事項：不具合の切り分けを本人が行ったか、PR #42 の議論で確認する。
+- HTML（`html.basic`）：未評価
+  - 根拠：対象期間に HTML／JSX の構造に関わる変更がない。
+  - 確認事項：担当した画面があれば、そのPRを根拠として追加する。
+```
+
+要素技術は `skills.json` の順（領域ごと）にすべて（31件）並べる。Lvの行は「Lv＋半角スペース＋定義文（`skills.json` の文面そのまま）」。候補の場合は「Lv3候補」と書き、定義文を続ける。
+
+## individual-draft.json
+
+```json
+{
+  "version": 1,
+  "updatedAt": "2026-10-04",
+  "source": { "repo": "/path/to/repo", "author": "山田 太郎", "since": "2025-10-01", "until": "2026-10-04", "generator": "assessment-draft" },
+  "levels": { "web.basic": 2, "css.basic": 1 },
+  "candidates": { "git.collaboration": 3 },
+  "evidence": { "web.basic": ["src/lib/http.ts (a1b2c3d)", "next.config.ts (d4e5f6a)"] },
+  "questions": { "web.basic": ["不具合の切り分けを本人が行ったか"] }
+}
+```
+
+`levels` は確定候補（Lv0〜Lv2、根拠が十分なLv3）だけを入れ、本ガイドのマトリクスの保存形式（`levels`：要素技術ID → 0〜4）と互換にする。未評価の要素技術は入れない。
+
+## team-draft.md
+
+```markdown
+# チームチェックの回答の下書き（2026-10-04）
+
+- 対象リポジトリ：/path/to/repo（対象期間 2025-10-01〜2026-10-04）
+- 得点 31.5 / 100、回答 54 / 100（未回答 46 は確認事項を参照）。配点は出典の「使い方」に従い、はい 1点、はい・いいえでも… 0.5点、いいえ 0点、アンチパターンは逆転。
+- この文書は、リポジトリの状態とGit履歴から機械的に集めた根拠に基づく下書きです。チームで根拠を確認してから「チームの確認記録」へ転記してください。
+
+## 1. 持続可能な技術スタック（得点 8.5 / 20、回答 13 / 20）
+
+### 1-1 コードベース（得点 2.5 / 4、回答 3 / 4）
+
+- 1-1-1 メトリクスの計測：未回答
+  項目文：コードのデプロイに対する不具合の発生割合、…
+  評価記述：デプロイ単位の不具合率やPRのリードタイムを集計している痕跡はリポジトリにない。計測の有無と頻度を開発責任者に確認する。
+- 1-1-2 学習と改善：はい（1点）
+  項目文：静的型付け言語、コードフォーマッター、リンターを導入している。
+  評価記述：TypeScript（`tsconfig.json`、strict）、ESLint（`eslint.config.js`）、Prettier（`.prettierrc`）を導入し、`.github/workflows/ci.yml` の lint・typecheck ジョブでPRごとに実行している。
+- 1-1-4 アンチパターン（配点逆転）：いいえ（1点）
+  項目文：…
+  評価記述：…
+```
+
+項目は `checklist-items.json` の順にすべて（100件）並べる。回答の表記は「はい」「はい、でも…」「いいえ、でも…」「いいえ」「未回答」。得点は小テーマ・大テーマ・全体の3段階で書く。
+
+## team-draft.json
+
+```json
+{
+  "version": 1,
+  "updatedAt": "2026-10-04",
+  "source": { "repo": "/path/to/repo", "since": "2025-10-01", "until": "2026-10-04", "generator": "assessment-draft" },
+  "items": {
+    "1-1-2": { "answer": "yes", "note": "TypeScript（strict）、ESLint、Prettier を導入し、CI の lint・typecheck ジョブで PR ごとに実行。" },
+    "1-1-4": { "answer": "no", "note": "機密情報らしき文字列は検出されなかった（collect_evidence の secrets 検査、0件）。" }
+  }
+}
+```
+
+`answer` は `yes` / `yes-but` / `no-but` / `no`。未回答の項目は `items` に入れず、確認事項は Markdown 側の評価記述に書く。本ガイドのチームチェックの保存形式（`items`：項目ID → `answer`, `note`）と互換にする。
