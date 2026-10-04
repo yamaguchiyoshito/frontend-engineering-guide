@@ -107,7 +107,7 @@ CONFIG_FILES = [
  ('Next.js config', r'(^|/)next\.config\.\w+$'), ('Vite config', r'(^|/)vite\.config\.\w+$'), ('.nvmrc／.node-version', r'(^|/)(\.nvmrc|\.node-version|\.tool-versions)$'), ('.env.example', r'(^|/)\.env(\.\w+)?\.(example|sample|template)$'),
  ('Dockerfile', r'(^|/)Dockerfile'), ('docker-compose', r'(^|/)(docker-)?compose\.ya?ml$'), ('Dev Container', r'(^|/)\.devcontainer/'), ('Vercel／Netlify config', r'(^|/)(vercel\.json|netlify\.toml)$'), ('IaC（Terraform／CDK）', r'(\.tf$|(^|/)cdk\.json$)'), ('Kubernetes manifests', r'(^|/)(k8s|kubernetes|helm)/'),
  ('Renovate／Dependabot', r'(^|/)(renovate\.json5?|\.renovaterc(\.json)?|\.github/dependabot\.ya?ml)$'), ('CODEOWNERS', r'(^|/)CODEOWNERS$'), ('PR template', r'(?i)(^|/)pull_request_template\.md$'), ('Issue templates', r'(^|/)\.github/ISSUE_TEMPLATE/'),
- ('README', r'^README(\.\w+)?$'), ('CONTRIBUTING', r'(^|/)CONTRIBUTING(\.\w+)?$'), ('CHANGELOG', r'(^|/)CHANGELOG(\.\w+)?$'), ('LICENSE', r'(^|/)LICENSE'), ('SECURITY.md', r'(^|/)SECURITY\.md$'), ('docs ディレクトリ', r'^docs?/'), ('ADR／設計記録', r'(?i)(^|/)(adr|adrs|decisions|architecture)/'), ('RUNBOOK／インシデント手順', r'(?i)(^|/)(runbook|incident|postmortem|on-?call)'),
+ ('README', r'^README(\.\w+)?$'), ('CONTRIBUTING', r'(^|/)CONTRIBUTING(\.\w+)?$'), ('CHANGELOG', r'(^|/)CHANGELOG(\.\w+)?$'), ('LICENSE', r'(^|/)LICENSE'), ('SECURITY.md', r'(^|/)SECURITY\.md$'), ('docs ディレクトリ', r'^docs?/'), ('ADR／設計記録', r'(?i)(^|/)(adr|adrs|decisions|architecture)/'), ('RUNBOOK／インシデント手順らしきファイル（要確認）', r'(?i)(^|/)(runbook|incident|postmortem|on-?call)'),
  ('Lighthouse CI config', r'(^|/)lighthouserc(\.\w+)?$'), ('Sentry config', r'(^|/)sentry\.\w+\.config\.\w+$'), ('OpenAPI 定義', r'(?i)(^|/)(openapi|swagger)[^/]*\.(ya?ml|json)$'), ('MSW handlers', r'(^|/)(mocks?|msw)/'), ('locales（多言語）', r'(^|/)(locales?|messages|i18n)/'), ('robots.txt／sitemap', r'(^|/)(robots\.txt|sitemap[^/]*)$'), ('browserslist', r'(^|/)\.browserslistrc$'), ('codecov config', r'(^|/)(codecov\.ya?ml|\.codecov\.ya?ml)$'),
 ]
 TEST_FILE = re.compile(r'(\.(test|spec)\.[cm]?[jt]sx?$|(^|/)__tests__/)')
@@ -119,7 +119,7 @@ NEXT_ROUTE = re.compile(r'(^|/)app/.*/(page|layout|loading|error|not-found|templ
 
 def skills_for_path(path: str) -> set[str]:
     s: set[str] = set(); p = path
-    if GENERATED.search(p): return s
+    if GENERATED.search(p) or Path(p).suffix.lower() in DOC_EXT: return s  # prose describes tools; it is not evidence of using them
     if p.endswith('.html'): s |= {'html.basic', 'html.semantic'}
     if STYLE_FILE.search(p): s |= {'css.basic', 'css.responsive', 'frontend.styling'}
     if re.search(r'tailwind\.config|postcss\.config|/styles?/|/theme/|tokens?\.(json|css|ts)$', p): s.add('frontend.styling')
@@ -265,14 +265,17 @@ def collect_git(repo: Path, since: str | None, until: str | None, author_query: 
     if since: rng.append(f'--since={since}')
     if until: rng.append(f'--until={until}')
     fmt = '%H%x1f%an%x1f%ae%x1f%as%x1f%P%x1f%s'
-    raw = git(repo, 'log', '--all' if False else 'HEAD', f'--format={fmt}', *rng)
+    raw = git(repo, 'log', 'HEAD', f'--format={fmt}', *rng)
     commits = []
     for line in raw.splitlines():
         parts = line.split('\x1f')
         if len(parts) != 6: continue
         h, an, ae, d, parents, subject = parts
         commits.append({'hash': h, 'author': an, 'email': ae, 'date': d, 'merge': len(parents.split()) > 1, 'subject': subject})
-    default_branch = git(repo, 'rev-parse', '--abbrev-ref', 'HEAD').strip()
+    current_branch = git(repo, 'rev-parse', '--abbrev-ref', 'HEAD').strip()
+    head_commit = git(repo, 'rev-parse', '--short', 'HEAD').strip()
+    origin_head = git(repo, 'symbolic-ref', '--quiet', '--short', 'refs/remotes/origin/HEAD').strip()
+    default_branch = origin_head.split('/', 1)[1] if origin_head.startswith('origin/') else next((b for b in ('main', 'master', 'develop') if git(repo, 'rev-parse', '--verify', '--quiet', b).strip()), current_branch)
     tags = [t for t in git(repo, 'tag', '--list').splitlines() if t]
     remote_branches = [b for b in git(repo, 'branch', '-r').splitlines() if b.strip() and '->' not in b]
     authors: dict[str, dict] = {}
@@ -317,7 +320,7 @@ def collect_git(repo: Path, since: str | None, until: str | None, author_query: 
     ranked = sorted(authors.values(), key=lambda a: -a['commits'])
     top = [{'name': a['name'], 'commits': a['commits'], 'merges': a['merges'], 'first': a['first'], 'last': a['last'], 'share': round(a['commits'] / len(commits), 2) if commits else 0} for a in ranked[:15]]
     return {
-        'default_branch': default_branch, 'commits': len(commits), 'non_merge_commits': len(non_merge), 'merge_commits': len(merges), 'pr_like_merges': pr_like,
+        'default_branch': default_branch, 'current_branch': current_branch, 'head_commit': head_commit, 'commits': len(commits), 'non_merge_commits': len(non_merge), 'merge_commits': len(merges), 'pr_like_merges': pr_like,
         'first_date': min((c['date'] for c in commits), default=None), 'last_date': max((c['date'] for c in commits), default=None),
         'authors': len(authors), 'top_authors': top, 'top_author_share': top[0]['share'] if top else None,
         'commits_per_month': dict(sorted(months.items())), 'conventional_commit_ratio': round(conventional / len(non_merge), 2) if non_merge else None,
@@ -326,11 +329,15 @@ def collect_git(repo: Path, since: str | None, until: str | None, author_query: 
         '_per_commit_files': per_commit_files, '_meta': meta, '_selected_author': selected, '_author_query': author_query,
     }
 
-def collect_author(repo: Path, g: dict, files_set: set[str], per_file_signals: dict) -> dict | None:
+def collect_author(repo: Path, g: dict, files_set: set[str], per_file_signals: dict, bulk_threshold: int) -> dict | None:
     name = g['_selected_author']
     if not name: return None
-    commits = [h for h, m in g['_meta'].items() if m['author'] == name]
+    all_commits = [h for h, m in g['_meta'].items() if m['author'] == name]
+    # A commit touching many files (initial import, mass migration, reformat) says little about any single skill: keep it apart.
+    bulk = [h for h in all_commits if len(g['_per_commit_files'].get(h, [])) >= bulk_threshold]
+    commits = [h for h in all_commits if h not in bulk]
     touched: Counter = Counter()
+    bulk_touched: set[str] = set(p for h in bulk for p in g['_per_commit_files'].get(h, []))
     by_skill: dict[str, dict] = defaultdict(lambda: {'files': set(), 'commits': []})
     for h in commits:
         fl = g['_per_commit_files'].get(h, [])
@@ -351,10 +358,15 @@ def collect_author(repo: Path, g: dict, files_set: set[str], per_file_signals: d
         skills[s] = {'files_touched': len(d['files']), 'sample_files': sorted(d['files'])[:6], 'sample_commits': d['commits'], 'content_signals': {k: {'hits': n, 'label': SIGNALS[k][2]} for k, n in sig_by_skill.get(s, Counter()).most_common(6)}}
     author_merges = next((a['merges'] for a in g['top_authors'] if a['name'] == name), 0)
     subjects = [g['_meta'][h]['subject'] for h in commits]
+    deleted = sum(1 for p in touched if p not in files_set)
+    notes = []
+    if bulk: notes.append(f"一括コミット {len(bulk)} 件（{bulk_threshold} ファイル以上）を要素技術ごとの集計から除外：" + '、'.join(f"{h[:7]}（{len(g['_per_commit_files'].get(h, []))} ファイル、{g['_meta'][h]['date']}）" for h in bulk[:5]))
+    if author_merges and len(all_commits) <= max(2, author_merges // 5): notes.append(f"非マージ {len(all_commits)} 件に対しマージ {author_merges} 件：取り込み・レビュー役の可能性が高い。git.collaboration 以外の根拠には数えない")
+    if deleted: notes.append(f"触れたファイルのうち {deleted} 件は現在のツリーに存在しない（削除・移動済み。内容の手がかりは現存ファイルのみ）")
     tests_touched = sum(1 for p in touched if TEST_FILE.search(p) or E2E_FILE.search(p))
     docs_touched = sum(1 for p in touched if p.endswith(('.md', '.mdx')))
     ci_touched = sum(1 for p in touched if re.search(r'(^|/)\.github/|\.gitlab-ci', p))
-    return {'name': name, 'commits': len(commits), 'merges_by_author': author_merges, 'files_touched': len(touched), 'test_files_touched': tests_touched, 'doc_files_touched': docs_touched, 'ci_files_touched': ci_touched,
+    return {'name': name, 'commits': len(all_commits), 'commits_excluding_bulk': len(commits), 'bulk_commits': [{'hash': h[:7], 'date': g['_meta'][h]['date'], 'files': len(g['_per_commit_files'].get(h, [])), 'subject': g['_meta'][h]['subject'][:90]} for h in bulk], 'bulk_files_touched': len(bulk_touched), 'files_no_longer_present': deleted, 'notes': notes, 'merges_by_author': author_merges, 'files_touched': len(touched), 'test_files_touched': tests_touched, 'doc_files_touched': docs_touched, 'ci_files_touched': ci_touched,
             'conventional_commit_ratio': round(sum(bool(CONVENTIONAL.match(s)) for s in subjects) / len(subjects), 2) if subjects else None,
             'most_touched_files': [{'path': p, 'commits': n} for p, n in touched.most_common(12)], 'skills': dict(sorted(skills.items(), key=lambda kv: -kv[1]['files_touched']))}
 
@@ -383,7 +395,7 @@ def team_facts(stack, configs, ci, tests, per_signal, secrets, g, strict) -> dic
     f['4-2'] += [f"IaC: {has('IaC（Terraform／CDK）')}、Kubernetes: {has('Kubernetes manifests')}、Docker: {has('Dockerfile')}、.env.example: {has('.env.example')}"]
     f['4-3'] += [f"HTTP キャッシュ制御 {sig('cache_control')} ファイル、再検証 {sig('revalidate')}、サーバー状態キャッシュ {sig('query')}"]
     f['4-4'] += [f"監視・エラー収集 {sig('monitoring')} ファイル、Sentry config: {has('Sentry config')}、web-vitals {sig('web_vitals')}"]
-    f['4-5'] += [f"RUNBOOK／インシデント手順: {has('RUNBOOK／インシデント手順')}、revert {g['reverts']} 件、タグ {g['tags']} 件"]
+    f['4-5'] += [f"RUNBOOK／インシデント手順らしきファイル（要確認）: {has('RUNBOOK／インシデント手順らしきファイル（要確認）')}、revert {g['reverts']} 件、タグ {g['tags']} 件"]
     f['5-1'] += [f"docs: {has('docs ディレクトリ')}、ADR: {has('ADR／設計記録')}、Co-authored-by {g['co_authored_by']} 件、作者数 {g['authors']}、最多作者の比率 {g['top_author_share']}"]
     f['5-2'] += [f"共通部品の兆候：components/ {sig('cva_shadcn')} ファイル、Storybook: {has('Storybook')}、workspaces: {stack['workspaces'] or stack['pnpm_workspace']}"]
     f['5-3'] += [f"CODEOWNERS: {has('CODEOWNERS')}、CONTRIBUTING: {has('CONTRIBUTING')}、PR テンプレート: {has('PR template')}、Issue テンプレート: {has('Issue templates')}"]
@@ -399,7 +411,7 @@ def sub_titles() -> dict[str, str]:
 def write_markdown(ev: dict, out: Path):
     L = []
     g = ev['git']; st = ev['stack']
-    L += [f"# 根拠の要約：{ev['repo']['name']}", '', f"- パス：`{ev['repo']['path']}`（現在のブランチ `{g['default_branch']}`）", f"- 期間：{ev['repo']['since'] or '全期間'} 〜 {ev['repo']['until'] or ev['repo']['generated']}（コミット {g['commits']} 件、うちマージ {g['merge_commits']} 件、作者 {g['authors']} 人、{g['first_date']} 〜 {g['last_date']}）", f"- 追跡ファイル：{ev['repo']['tracked_files']} 件（内容を走査したファイル {ev['repo']['scanned_files']} 件）", '']
+    L += [f"# 根拠の要約：{ev['repo']['name']}", '', f"- パス：`{ev['repo']['path']}`（既定ブランチ `{g['default_branch']}`、現在のブランチ `{g['current_branch']}`、評価時点のコミット `{g['head_commit']}`）", f"- 期間：{ev['repo']['since'] or '全期間'} 〜 {ev['repo']['until'] or ev['repo']['generated']}（コミット {g['commits']} 件、うちマージ {g['merge_commits']} 件、作者 {g['authors']} 人、{g['first_date']} 〜 {g['last_date']}）", f"- 追跡ファイル：{ev['repo']['tracked_files']} 件（内容を走査したファイル {ev['repo']['scanned_files']} 件）", '']
     L += ['## 技術スタック', '', f"- 検出したツール：{', '.join(st['tools']) or 'なし'}", f"- パッケージマネージャ：{st['package_manager']}、Node：{st['node']}、依存パッケージ数：{st.get('dependency_count')}、workspaces：{st['workspaces'] or st['pnpm_workspace']}", f"- scripts：{', '.join(f'`{k}`' for k in list(st['scripts'])[:16]) or 'なし'}", '']
     L += ['## 設定・文書', '', '| 項目 | ファイル |', '| :--- | :--- |'] + [f"| {k} | {', '.join(f'`{p}`' for p in v)} |" for k, v in ev['configs'].items()] + [f"| tsconfig strict | {ev['tsconfig_strict']} |", '']
     L += ['## CI/CD', '']
@@ -411,14 +423,14 @@ def write_markdown(ev: dict, out: Path):
         if v['files']: L.append(f"| {SIGNALS[k][2]} | {v['files']} | {v['hits']} | {', '.join(f'`{p}`' for p in v['examples'])} |")
     L += ['', '## 機密情報らしき文字列', '']
     L += ([f"- {s['kind']}：`{s['path']}:{s['line']}`" for s in ev['secrets']] or ['- 検出なし（.env.example、テスト、ドキュメント、lockfile は対象外）']) + ['']
-    L += ['## Git 履歴', '', f"- 規約（Conventional Commits）準拠率 {g['conventional_commit_ratio']}、PR らしきマージ {g['pr_like_merges']} 件、revert {g['reverts']} 件、Co-authored-by {g['co_authored_by']} 件、タグ {g['tags']} 件、リモートブランチ {g['remote_branches']} 件", f"- 1コミットの中央値：{g['median_files_per_commit']} ファイル、{g['median_lines_per_commit']} 行（標本 {g['sampled_commits_for_sizes']} 件）", f"- 月別コミット数：{', '.join(f'{m} {n}' for m, n in list(g['commits_per_month'].items())[-12:])}", '', '| 作者 | コミット | マージ | 期間 | 比率 |', '| :--- | ---: | ---: | :--- | ---: |']
+    L += ['## Git 履歴', '', f"- Conventional Commits 形式の件名の比率 {g['conventional_commit_ratio']}（別の規約を使うチームでは低くて当然。件名の一貫性は作者別の一覧で確認）、PR らしきマージ {g['pr_like_merges']} 件、revert {g['reverts']} 件、Co-authored-by {g['co_authored_by']} 件、タグ {g['tags']} 件、リモートブランチ {g['remote_branches']} 件", f"- 1コミットの中央値：{g['median_files_per_commit']} ファイル、{g['median_lines_per_commit']} 行（標本 {g['sampled_commits_for_sizes']} 件）", f"- 月別コミット数：{', '.join(f'{m} {n}' for m, n in list(g['commits_per_month'].items())[-12:])}", '', '| 作者 | コミット | マージ | 期間 | 比率 |', '| :--- | ---: | ---: | :--- | ---: |']
     L += [f"| {a['name']} | {a['commits']} | {a['merges']} | {a['first']} 〜 {a['last']} | {a['share']} |" for a in g['top_authors']] + ['']
     au = ev['author']
     L += ['## 対象者の活動', '']
     if not au:
         L += [f"- 対象者が指定されていないか一致しませんでした（指定：{g.get('author_query')}）。上の作者一覧から選んでください。", '']
     else:
-        L += [f"- {au['name']}：コミット {au['commits']} 件、マージ {au['merges_by_author']} 件、触れたファイル {au['files_touched']}（テスト {au['test_files_touched']}、文書 {au['doc_files_touched']}、CI {au['ci_files_touched']}）、規約準拠率 {au['conventional_commit_ratio']}", f"- よく触れたファイル：{', '.join('`' + x['path'] + '`(' + str(x['commits']) + ')' for x in au['most_touched_files'][:8])}", '', '### 要素技術ごとの手がかり', '']
+        L += [f"- {au['name']}：非マージコミット {au['commits']} 件（うち一括 {len(au['bulk_commits'])} 件を除いた {au['commits_excluding_bulk']} 件を集計）、マージ {au['merges_by_author']} 件、触れたファイル {au['files_touched']}（テスト {au['test_files_touched']}、文書 {au['doc_files_touched']}、CI {au['ci_files_touched']}）、Conventional Commits 比率 {au['conventional_commit_ratio']}"] + [f"- 注意：{n}" for n in au['notes']] + [f"- よく触れたファイル：{', '.join('`' + x['path'] + '`(' + str(x['commits']) + ')' for x in au['most_touched_files'][:8])}", '', '### 要素技術ごとの手がかり', '']
         for s, d in au['skills'].items():
             sig = '、'.join(f"{v['label']} {v['hits']}" for v in d['content_signals'].values())
             L += [f"- **`{s}`**：触れたファイル {d['files_touched']}" + (f"。内容：{sig}" if sig else ''), f"  - 例：{', '.join(f'`{p}`' for p in d['sample_files'][:4])}"] + [f"  - `{c['hash']}` {c['date']} {c['subject']}（{c['files']} ファイル）" for c in d['sample_commits'][:4]]
@@ -430,7 +442,7 @@ def write_markdown(ev: dict, out: Path):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('repo'); ap.add_argument('--author'); ap.add_argument('--since'); ap.add_argument('--until'); ap.add_argument('--out'); ap.add_argument('--max-files', type=int, default=4000); ap.add_argument('--max-commits', type=int, default=3000)
+    ap.add_argument('repo'); ap.add_argument('--author'); ap.add_argument('--since'); ap.add_argument('--until'); ap.add_argument('--out'); ap.add_argument('--max-files', type=int, default=4000); ap.add_argument('--max-commits', type=int, default=3000); ap.add_argument('--bulk-threshold', type=int, default=30, help='この数以上のファイルに触れたコミットは一括コミットとして要素技術の集計から除外')
     a = ap.parse_args()
     repo = Path(a.repo).expanduser().resolve()
     top = git(repo, 'rev-parse', '--show-toplevel').strip()
@@ -445,7 +457,7 @@ def main():
     stack = collect_stack(repo, files); configs = collect_configs(files); ci = collect_ci(repo, files); tests = collect_tests(files); strict = tsconfig_strict(repo, files)
     per_file, per_signal, secrets = scan_contents(repo, scan_files)
     g = collect_git(repo, a.since, a.until, a.author, a.max_commits)
-    author = collect_author(repo, g, set(files), per_file)
+    author = collect_author(repo, g, set(files), per_file, a.bulk_threshold)
     team = team_facts(stack, configs, ci, tests, per_signal, secrets, g, strict)
     public_git = {k: v for k, v in g.items() if not k.startswith('_')}; public_git['author_query'] = a.author
     ev = {'generator': 'assessment-draft/collect_evidence.py', 'repo': {'name': repo.name, 'path': str(repo), 'since': a.since, 'until': a.until, 'generated': date.today().isoformat(), 'tracked_files': len(files), 'scanned_files': len(scan_files)},
