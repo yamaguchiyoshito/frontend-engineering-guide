@@ -23,6 +23,7 @@ for p in selected:
  text=re.sub(r'^<ClientOnly>.*?</ClientOnly>\n\n?','',text,flags=re.M|re.S)  # browser-only self-assessment widget
  text=re.sub(r'^</?div[^>]*>\n\n?','',text,flags=re.M)  # the skill matrix keeps only its Markdown tables
  text=re.sub(r'^::: start\n(.*?)\n:::$',lambda m:'> **はじめの一歩**（Lv1へ向けて最初に学ぶこと）\n>\n'+'\n'.join('> '+l if l else '>' for l in m.group(1).split('\n')),text,flags=re.M|re.S)
+ text=re.sub(r'^::: supplement\n(.*?)\n:::$',lambda m:'> **補足**\n>\n'+'\n'.join('> '+l if l else '>' for l in m.group(1).split('\n')),text,flags=re.M|re.S)
  text=re.sub(r'^::: example\n(.*?)\n:::$',lambda m:'> **望ましい回答例**（架空の記入例）\n>\n'+'\n'.join('> '+l if l else '>' for l in m.group(1).split('\n')),text,flags=re.M|re.S)
  def convert(m):
   url=m.group(1)
