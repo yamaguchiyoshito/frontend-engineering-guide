@@ -18,6 +18,7 @@ handbook.extend(f'- [{p["title"]}](#{ids[p["path"]]})' for p in selected)
 linkre=re.compile(r'\]\(([^)]+)\)')
 for p in selected:
  path=p['path'];text=body(path)
+ text=re.sub(r'<!-- sheet:start -->.*?<!-- sheet:end -->\n?','',text,flags=re.S)  # the answer sheet repeats the 25 checklist pages
  text=re.sub(r'<!-- (?:catalog|matrix|sheet|template|references|terms|glossary|route|courses):(start|end) -->\n?','',text)
  text=re.sub(r'^<ClientOnly>.*?</ClientOnly>\n\n?','',text,flags=re.M|re.S)  # browser-only self-assessment widget
  text=re.sub(r'^</?div[^>]*>\n\n?','',text,flags=re.M)  # the skill matrix keeps only its Markdown tables

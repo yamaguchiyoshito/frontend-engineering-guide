@@ -113,7 +113,7 @@ onMounted(() => {
   <section class="matrix-assessment team-assessment" aria-labelledby="team-assessment-title">
     <h2 id="team-assessment-title" class="matrix-assessment-title">{{ summary ? 'チームチェックの集計' : 'チームチェックの回答' }}<span>この端末のブラウザにだけ保存されます</span></h2>
     <p class="matrix-assessment-help">
-      <template v-if="summary">各小テーマのページで記録した回答と評価記述の集計です。</template>
+      <template v-if="summary">このページの一覧と各小テーマのページで記録した回答と評価記述の集計です。</template>
       <template v-else>各項目の「望ましい回答例」の下で、回答（はい／はい、でも…／いいえ、でも…／いいえ）を選び、評価記述に実態、対象範囲、頻度、根拠資料を書きます。</template>
       配点は出典の<a href="https://dxcriteria.cto-a.org/db7e371398c2464792dc25d79e573ba1" target="_blank" rel="noopener">使い方</a>に従い、はい 1点、「でも…」は 0.5点、いいえ 0点、アンチパターンは逆転します。記録はサーバーに送られず、別の端末やブラウザには引き継がれません。確定した回答は<a :href="withBase('/templates/team-assessment.html')">チームの確認記録</a>へ転記してください。
     </p>
