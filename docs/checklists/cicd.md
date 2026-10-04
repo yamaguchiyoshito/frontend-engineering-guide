@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 3-5-1：メトリクスの計測
 
 CI/CDを取り扱う関係者で運用を振り返る機会が定期的（月ごと〜半年ごと）にあり、継続的な改善を行っている。

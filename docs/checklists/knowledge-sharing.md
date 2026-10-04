@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 5-1-1：メトリクスの計測
 
 複数の開発チームがあるとき、使用技術や問題点を互いに共有をする機会を定期的（月ごと〜半年ごと）に設けている。

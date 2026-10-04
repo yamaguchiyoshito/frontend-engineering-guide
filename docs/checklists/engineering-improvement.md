@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 5-2-1：メトリクスの計測
 
 横断的な技術向上を図るチームや取り組みがある場合、ユーザー体験や生産性の向上など事業成果に繋がる指標を追跡している。

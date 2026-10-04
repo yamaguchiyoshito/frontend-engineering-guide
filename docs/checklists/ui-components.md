@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 1-3-1：メトリクスの計測
 
 広く共通化を意図しているUIコンポーネントがカタログ化されており、それに該当しないものも定期的（月ごと〜半年ごと）に整理し、改善している。

@@ -15,6 +15,8 @@ description: "日本CTO協会 Webフロントエンド版DX Criteriaの100項目
 
 本書で加えたのは、架空の「望ましい回答例」、各ページ冒頭の「前提となる用語」（[用語集](../guide/glossary.md)への案内）、末尾の「参考リンク」、[チームの確認書式](../templates/team-assessment.md)です。詳細は[出典と追加した内容](../maintenance/sources.md)を参照してください。
 
+<ClientOnly><TeamAssessment summary /></ClientOnly>
+
 <!-- catalog:start -->
 
 ## 1. 持続可能な技術スタック

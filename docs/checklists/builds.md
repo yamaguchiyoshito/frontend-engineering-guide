@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 3-2-1：メトリクスの計測
 
 CI/CDにおける各種ビルドの所要時間や成果物のファイルサイズが常に記録されていて必要なときに参照できる状態にある。

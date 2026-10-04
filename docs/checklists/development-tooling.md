@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 1-2-1：メトリクスの計測
 
 ビルド時間、テスト実行時間、デプロイ時間などのメトリクスを取り、それらを元に定期的（月ごと〜半年ごと）に開発効率の改善を計画・実施している。

@@ -82,6 +82,27 @@
 .vp-doc .matrix-markdown summary { cursor: pointer; color: var(--vp-c-text-2); }
 .vp-doc .matrix-markdown pre { margin: 8px 0 0; padding: 12px 16px; border-radius: 6px; background: var(--vp-c-bg); font-size: 12px; line-height: 1.6; overflow: auto; max-height: 320px; }
 
+/* Team checklist answers: one widget per item (after the 望ましい回答例), summary at the top of the page / the index. */
+.vp-doc .team-item { margin: 0 0 20px; padding: 12px 16px 14px; border: 1px solid var(--vp-c-divider); border-radius: 6px; background: var(--vp-c-bg); }
+.vp-doc .team-item-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin: 0 0 8px; font-size: 14px; font-weight: 700; color: var(--vp-c-brand-1); line-height: 1.6; }
+.vp-doc .team-item-title span { font-size: 12px; font-weight: 600; color: var(--vp-c-danger-1); }
+.vp-doc .team-options { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin: 0 0 10px; }
+.vp-doc .team-option { padding: 3px 12px; border: 1px solid var(--vp-c-divider); border-radius: 999px; background: var(--vp-c-bg); color: var(--vp-c-text-2); font-size: 13px; font-weight: 600; line-height: 1.6; cursor: pointer; }
+.vp-doc .team-option:hover { border-color: var(--vp-c-brand-1); color: var(--vp-c-brand-1); }
+.vp-doc .team-option.selected { border-color: var(--vp-c-brand-1); background: var(--vp-c-brand-1); color: #fff; }
+.vp-doc .team-option:focus-visible { outline: 2px solid var(--vp-c-brand-1); outline-offset: 2px; }
+.vp-doc .team-score { margin-left: auto; padding: 0 10px; border: 1px solid var(--vp-c-divider); border-radius: 10px; font-size: 12px; font-weight: 700; color: var(--vp-c-text-3); line-height: 20px; }
+.vp-doc .team-score.is-set { border-color: var(--vp-c-brand-1); color: var(--vp-c-brand-1); background: var(--vp-c-brand-soft); }
+.vp-doc .team-note { display: block; }
+.vp-doc .team-note span { display: block; margin: 0 0 4px; font-size: 13px; font-weight: 600; color: var(--vp-c-text-2); }
+.vp-doc .team-note textarea { display: block; width: 100%; padding: 8px 10px; border: 1px solid var(--vp-c-divider); border-radius: 6px; background: var(--vp-c-bg-soft); color: var(--vp-c-text-1); font: inherit; font-size: 14px; line-height: 1.7; resize: vertical; }
+.vp-doc .team-note textarea:focus { outline: 2px solid var(--vp-c-brand-1); outline-offset: -1px; border-color: var(--vp-c-brand-1); }
+.vp-doc .team-summary-link { margin: 0 0 12px; font-size: 13px; color: var(--vp-c-text-2); }
+.vp-doc .team-summary-table th, .vp-doc .team-summary-table td { text-align: left; }
+.vp-doc .team-summary-table .team-theme-row th { background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); }
+.vp-doc .team-summary-table .team-theme-row td { background: var(--vp-c-brand-soft); font-weight: 700; }
+.vp-doc .team-summary-table .team-sub-row { padding-left: 24px; font-weight: 400; }
+
 /* Sidebar: full / compact. The compact rail keeps the toggle and frees about 216px for wide tables. Desktop only. */
 .sidebar-toggle { display: none; }
 @media (min-width: 960px) {

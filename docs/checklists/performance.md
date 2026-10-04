@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 2-1-1：メトリクスの計測
 
 Core Web Vitalsやプロダクトのコアな価値に通じる速度指標についてパフォーマンス計測を週1回以上の頻度で自動的に計測している。

@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 4-5-1：メトリクスの計測
 
 ログインの失敗など障害に繋がる主要なユーザーアクションに関する利用状況データを計測している。

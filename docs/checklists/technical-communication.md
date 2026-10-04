@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 5-5-1：メトリクスの計測
 
 チーム全体で発信の方針を定め、それに基づいて定期的（月ごと〜半年ごと）に発信数やインプレッション関連指標をモニタリングしている。

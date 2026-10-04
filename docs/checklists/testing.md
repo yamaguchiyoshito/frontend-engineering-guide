@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 3-1-1：メトリクスの計測
 
 CIにおける各種テストの所要時間が常に記録されていて必要なときに参照できる状態にある。

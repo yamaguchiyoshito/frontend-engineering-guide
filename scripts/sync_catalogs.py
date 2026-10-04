@@ -132,6 +132,19 @@ def matrix(page):
   out += ['','</div>']
  return '\n'.join(out)
 
+ITEMS_PATH=ROOT/'build/checklist-items.json'
+def checklist_items():
+ """All 100 checklist items (sub-theme, perspective, criterion, polarity) for the in-page team assessment widget."""
+ out=[]
+ for p in PAGES:
+  if p['kind']!='checklist':continue
+  rows=checklist_data(p);heads=dict(re.findall(r'^## (\d-\d-\d)：([^\n]+)$',body(p['path']),re.M))
+  for sid,perspective in heads.items():
+   criterion,url,desired,_=rows[item_number(sid)]
+   out.append({'sid':sid,'theme':p['section'],'sub':p['sourceId'],'subtitle':p['title'],'path':p['path'],'perspective':perspective,'criterion':criterion.strip(),'antipattern':desired=='FALSE','source':url})
+ assert len(out)==100,'100 checklist items expected'
+ return json.dumps(out,ensure_ascii=False,indent=1)+'\n'
+
 def blocks(page):
  for marker,value in [('catalog',catalog(page)),('matrix',matrix(page)),('references',references(page)),('terms',terms(page)),('glossary',glossary(page)),('route',route(page)),('courses',courses(page))]:
   if value is not None:yield marker,value
@@ -146,6 +159,10 @@ def sync(check=False):
    if new!=text:
     dirty.append(page['path'])
     if not check:file.write_text(new)
+ items=checklist_items()
+ if not ITEMS_PATH.exists() or ITEMS_PATH.read_text()!=items:
+  dirty.append(str(ITEMS_PATH.relative_to(ROOT)))
+  if not check:ITEMS_PATH.write_text(items)
  if check and dirty:raise ValueError('Run npm run docs:sync: '+', '.join(dirty))
  return dirty
 if __name__=='__main__':

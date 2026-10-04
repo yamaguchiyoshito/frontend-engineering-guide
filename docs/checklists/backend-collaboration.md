@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 4-1-1：メトリクスの計測
 
 サーバーアプリケーションのリソースについてメトリクスを収集している。

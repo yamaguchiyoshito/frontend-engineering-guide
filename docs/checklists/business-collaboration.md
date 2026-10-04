@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 5-4-1：メトリクスの計測
 
 他の技術領域（バックエンド、デザイン）やマーケティング部門などの連携先と互いの KPI や方針を相互理解する機会を設けている。

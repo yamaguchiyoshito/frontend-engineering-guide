@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 4-4-1：メトリクスの計測
 
 SLI/SLOに関わるシステムの稼働を24時間365日モニタリングしている。
