@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 4-3-1：メトリクスの計測
 
 計測可能なキャッシュヒット率について、定期的（月ごと〜半年ごと）に改善のためのアクションを検討している。

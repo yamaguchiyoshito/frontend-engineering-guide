@@ -108,6 +108,26 @@ try {
   }
   results.checks.push('six browser downloads');
 
+  await page.goto(url + 'checklists/security.html');
+  await expect(page.locator('.team-item')).toHaveCount(4); // one widget per item, after its 望ましい回答例
+  const item1 = page.locator('.team-item[data-sid="2-3-1"]'); const item4 = page.locator('.team-item[data-sid="2-3-4"]');
+  await item1.getByRole('button', { name: 'はい', exact: true }).click();
+  await expect(item1.locator('.team-score')).toHaveText('1点');
+  await item1.locator('textarea').fill('PRごとにSASTを実行。例外は期限付きで記録。');
+  await item4.getByRole('button', { name: 'はい', exact: true }).click();
+  await expect(item4.locator('.team-score')).toHaveText('0点'); // anti-pattern: はい scores 0
+  await item4.getByRole('button', { name: 'いいえ、でも…', exact: true }).click();
+  await expect(item4.locator('.team-score')).toHaveText('0.5点');
+  await expect(page.locator('.team-assessment .stat-primary strong')).toContainText('1.5');
+  await page.reload();
+  await expect(page.locator('.team-item[data-sid="2-3-1"] textarea')).toHaveValue('PRごとにSASTを実行。例外は期限付きで記録。'); // persisted
+  await expect(page.locator('.team-item[data-sid="2-3-1"] .team-option.selected')).toHaveText('はい');
+  await expect(page.locator('.matrix-markdown pre')).toContainText('- 2-3-1 メトリクスの計測：はい（1点）');
+  await page.goto(url + 'checklists/');
+  await expect(page.locator('.team-summary-table tbody tr')).toHaveCount(30); // 5 themes + 25 sub-themes
+  await expect(page.locator('.team-assessment .stat-primary strong')).toContainText('1.5');
+  results.checks.push('team checklist answers, anti-pattern scoring and index summary persist');
+
   await page.goto(url + 'skills/quality/web.security.html');
   await page.emulateMedia({ colorScheme: 'dark' });
   await page.screenshot({ path: 'artifacts/skill-dark.png', fullPage: true });

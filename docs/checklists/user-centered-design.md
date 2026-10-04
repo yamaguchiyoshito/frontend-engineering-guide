@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 1-4-1：メトリクスの計測
 
 アプリケーションの特性に応じてメトリクスの計測を行い、定期的（月ごと〜半年ごと）に改善アクションを計画、実施している。

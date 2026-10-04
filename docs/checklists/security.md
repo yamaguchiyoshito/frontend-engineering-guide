@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 2-3-1：メトリクスの計測
 
 SASTに相当する静的検査がPull Requestごとに実行されて一定の基準を満たさないコードが混入しない仕組みになっている。

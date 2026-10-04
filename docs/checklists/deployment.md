@@ -17,6 +17,8 @@ titleTemplate: ":title | チームチェック | 習熟度ガイド"
 
 <!-- terms:end -->
 
+<ClientOnly><TeamAssessment /></ClientOnly>
+
 ## 3-3-1：メトリクスの計測
 
 デプロイの頻度や変更のリードタイムなどデプロイ指標の計測結果がチーム全体に共有されていて、チームで定期的（月ごと〜半年ごと）に振り返っている。
