@@ -92,10 +92,14 @@ const byArea = computed(() => areas.map(a => {
   return { area: a, total: list.length, assessed: list.filter(r => state.levels[r.id] !== undefined).length, levels: LEVELS.map((_, lv) => list.filter(r => state.levels[r.id] === lv).length) }
 }))
 const markdown = computed(() => {
-  const lines = [`# 習熟度マトリクスの自己評価（${state.updatedAt ?? '未記録'}）`, '', `評価済み ${assessed.value} / ${total.value}（未評価 ${total.value - assessed.value}）`]
-  for (const a of areas) {
-    lines.push('', `## ${a}`, '')
-    for (const r of rows.filter(r => r.area === a)) { const lv = state.levels[r.id]; lines.push(`- ${r.title}（\`${r.id}\`）：${lv === undefined ? '未評価' : `${LEVELS[lv]} ${r.definitions[lv]}`}`) }
+  // Header, then the per-area tally (same figures as the on-page table) before the per-skill lines.
+  const lines = [`# 習熟度マトリクスの自己評価（${state.updatedAt ?? '未記録'}）`, '', `評価済み ${assessed.value} / ${total.value}（未評価 ${total.value - assessed.value}）`, '']
+  lines.push(`| 領域 | 評価済み | ${LEVELS.join(' | ')} | 未評価 |`, `| :--- | ---: | ${LEVELS.map(() => '---:').join(' | ')} | ---: |`)
+  for (const a of byArea.value) lines.push(`| ${a.area} | ${a.assessed} / ${a.total} | ${a.levels.join(' | ')} | ${a.total - a.assessed} |`)
+  lines.push(`| 合計 | ${assessed.value} / ${total.value} | ${byLevel.value.join(' | ')} | ${total.value - assessed.value} |`)
+  for (const a of byArea.value) {
+    lines.push('', `## ${a.area}（評価済み ${a.assessed} / ${a.total}、未評価 ${a.total - a.assessed}）`, '')
+    for (const r of rows.filter(r => r.area === a.area)) { const lv = state.levels[r.id]; lines.push(`- ${r.title}（\`${r.id}\`）：${lv === undefined ? '未評価' : `${LEVELS[lv]} ${r.definitions[lv]}`}`) }
   }
   return lines.join('\n') + '\n'
 })
