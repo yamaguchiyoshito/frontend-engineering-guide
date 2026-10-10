@@ -137,7 +137,11 @@ try {
   await expect(page.locator('.team-item[data-sid="2-3-1"] .team-option.selected')).toHaveText('はい'); // shared storage with the sub-theme page
   await page.locator('.team-item[data-sid="1-1-1"]').getByRole('button', { name: 'はい', exact: true }).click();
   await expect(page.locator('.team-assessment .stat-primary strong')).toContainText('2.5');
-  results.checks.push('team checklist answers, anti-pattern scoring, and the index page with all 100 items persist');
+  const teamMd = await page.locator('.matrix-markdown pre').textContent(); // textContent: the details element is collapsed
+  const themeRow = teamMd.indexOf('| 2. ユーザー体験を支える品質 | 2 / 20 | 1.5 / 20 |'), themeHeading = teamMd.indexOf('## 2. ユーザー体験を支える品質（得点 1.5 / 20、回答 2 / 20）'), subHeading = teamMd.indexOf('### 2-3 セキュリティ（得点 1.5 / 4、回答 2 / 4）');
+  assert.ok(themeRow >= 0 && themeHeading > themeRow && subHeading > themeHeading, 'team markdown copy: per-theme tally table, then theme and sub-theme headings with tallies');
+  assert.ok(teamMd.includes('| 合計 | 3 / 100 | 2.5 / 100 |'), 'team markdown copy: total row');
+  results.checks.push('team checklist answers, anti-pattern scoring, and the index page with all 100 items persist; markdown copy carries the per-theme tally');
 
   await page.goto(url + 'skills/quality/web.security.html');
   await page.emulateMedia({ colorScheme: 'dark' });
