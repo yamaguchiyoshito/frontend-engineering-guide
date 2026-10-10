@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict';
 import { chromium, expect } from '@playwright/test';
 import { createServer } from 'node:http';
 import { readFile, stat, mkdir, writeFile } from 'node:fs/promises';
@@ -69,7 +70,11 @@ try {
   await expect(page.locator('.skill-matrix tbody tr:has(a[href*="web.basic"]) td.lv-cell').nth(2)).toHaveAttribute('aria-pressed', 'true'); // persisted in localStorage
   await expect(page.locator('.skill-matrix tbody tr:has(a[href*="web.basic"]) .row-level')).toHaveText('Lv2');
   await expect(page.locator('.matrix-markdown pre')).toContainText('- Web基礎（`web.basic`）：Lv2 画面表示やAPI呼び出しの通信を追跡し'); // level plus its definition
-  results.checks.push('self-assessment on the matrix persists across reloads');
+  const md = await page.locator('.matrix-markdown pre').textContent(); // textContent: the details element is collapsed
+  const tally = md.indexOf('| 基礎領域 | 1 / 5 | 0 | 0 | 1 | 0 | 0 | 4 |'), heading = md.indexOf('## 基礎領域（評価済み 1 / 5、未評価 4）');
+  assert.ok(tally >= 0 && heading > tally, 'markdown copy: per-area tally table precedes the per-skill lines');
+  assert.ok(md.includes('| 合計 | 1 / 31 | 0 | 0 | 1 | 0 | 0 | 30 |'), 'markdown copy: total row');
+  results.checks.push('self-assessment on the matrix persists across reloads, markdown copy carries the per-area tally');
 
   const sidebar = page.locator('.VPSidebar');
   const fullWidth = (await sidebar.boundingBox()).width;
