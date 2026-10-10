@@ -120,16 +120,20 @@ try {
   const item1 = page.locator('.team-item[data-sid="2-3-1"]'); const item4 = page.locator('.team-item[data-sid="2-3-4"]');
   await item1.getByRole('button', { name: 'はい', exact: true }).click();
   await expect(item1.locator('.team-score')).toHaveText('1点');
-  await item1.locator('textarea').fill('PRごとにSASTを実行。例外は期限付きで記録。');
+  await item1.locator('textarea').fill('PRごとにSASTを実行。\n- 例外は期限付きで記録。'); // multi-line note, second line already bulleted
   await item4.getByRole('button', { name: 'はい', exact: true }).click();
   await expect(item4.locator('.team-score')).toHaveText('0点'); // anti-pattern: はい scores 0
   await item4.getByRole('button', { name: 'いいえ、でも…', exact: true }).click();
   await expect(item4.locator('.team-score')).toHaveText('0.5点');
   await expect(page.locator('.team-assessment .stat-primary strong')).toContainText('1.5');
   await page.reload();
-  await expect(page.locator('.team-item[data-sid="2-3-1"] textarea')).toHaveValue('PRごとにSASTを実行。例外は期限付きで記録。'); // persisted
+  await expect(page.locator('.team-item[data-sid="2-3-1"] textarea')).toHaveValue('PRごとにSASTを実行。\n- 例外は期限付きで記録。'); // persisted
   await expect(page.locator('.team-item[data-sid="2-3-1"] .team-option.selected')).toHaveText('はい');
   await expect(page.locator('.matrix-markdown pre')).toContainText('- 2-3-1 メトリクスの計測：はい（1点）');
+  const subMd = await page.locator('.matrix-markdown pre').textContent();
+  assert.ok(subMd.includes('- 2-3-1 メトリクスの計測：はい（1点）\n  - 項目文：SAST'), 'team markdown copy: criterion as a nested bullet');
+  assert.ok(subMd.includes('  - 評価記述：\n    - PRごとにSASTを実行。\n    - 例外は期限付きで記録。\n'), 'team markdown copy: one nested bullet per note line, marker not doubled');
+  assert.ok(subMd.includes('- 2-3-2 学習と改善：未回答\n  - 項目文：') && subMd.includes('  - 評価記述：（未記入）'), 'team markdown copy: empty note');
   await page.goto(url + 'checklists/');
   await expect(page.locator('.team-summary-table tbody tr')).toHaveCount(30); // 5 themes + 25 sub-themes
   await expect(page.locator('.team-assessment .stat-primary strong')).toContainText('1.5');
