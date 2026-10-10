@@ -71,22 +71,38 @@ const themes = computed(() => [...new Set(items.map(i => i.theme))].map(theme =>
   const subs = [...new Set(list.map(i => i.sub))].map(s => { const l = list.filter(i => i.sub === s); return { sub: s, subtitle: l[0].subtitle, path: l[0].path, ...stats(l) } })
   return { theme, ...stats(list), subs }
 }))
-function markdownFor(list: Item[]) {
+/** Note text as bullet items: one per non-empty line, with a leading list marker (-, *, ・) removed so it is not doubled. */
+const noteLines = (note: string) => note.split(/\r?\n/).map(l => l.trim().replace(/^[-*・]\s*/, '').trim()).filter(Boolean)
+const tally = (st: { points: number; answered: number; total: number }) => `得点 ${fmt(st.points)} / ${st.total}、回答 ${st.answered} / ${st.total}`
+/** Per-theme and per-sub-theme sections with their tallies, then the items. Summary mode nests sub-themes under their theme. */
+function markdownFor(list: Item[], withThemes: boolean) {
   const lines: string[] = []
-  for (const s of [...new Set(list.map(i => i.sub))]) {
-    const l = list.filter(i => i.sub === s); const st = stats(l)
-    lines.push(`## ${s} ${l[0].subtitle}（得点 ${fmt(st.points)} / ${st.total}、回答 ${st.answered} / ${st.total}）`, '')
-    for (const i of l) {
-      const e = entry(i.sid); const sc = score(i.sid); const label = OPTIONS.find(o => o.v === e.answer)?.label
-      lines.push(`- ${i.sid} ${i.perspective}${i.antipattern ? '（アンチパターン：配点逆転）' : ''}：${label ? `${label}（${fmt(sc!)}点）` : '未回答'}`, `  項目文：${i.criterion}`, `  評価記述：${e.note || '（未記入）'}`)
+  for (const theme of [...new Set(list.map(i => i.theme))]) {
+    const tl = list.filter(i => i.theme === theme)
+    if (withThemes) lines.push(`## ${theme}（${tally(stats(tl))}）`, '')
+    for (const s of [...new Set(tl.map(i => i.sub))]) {
+      const l = tl.filter(i => i.sub === s)
+      lines.push(`${withThemes ? '###' : '##'} ${s} ${l[0].subtitle}（${tally(stats(l))}）`, '')
+      for (const i of l) {
+        const e = entry(i.sid); const sc = score(i.sid); const label = OPTIONS.find(o => o.v === e.answer)?.label
+        lines.push(`- ${i.sid} ${i.perspective}${i.antipattern ? '（アンチパターン：配点逆転）' : ''}：${label ? `${label}（${fmt(sc!)}点）` : '未回答'}`, `  - 項目文：${i.criterion}`)
+        const note = noteLines(e.note) // one nested bullet per line, so multi-line notes keep their structure
+        if (note.length) lines.push('  - 評価記述：', ...note.map(n => `    - ${n}`)); else lines.push('  - 評価記述：（未記入）')
+      }
+      lines.push('')
     }
-    lines.push('')
   }
   return lines.join('\n')
 }
 const markdown = computed(() => {
   const list = props.summary ? items : pageItems.value; const st = props.summary ? allStats.value : pageStats.value
-  return `# チームチェックの回答（${state.updatedAt ?? '未記録'}）\n\n得点 ${fmt(st.points)} / ${st.total}、回答 ${st.answered} / ${st.total}。配点は出典の「使い方」に従い、はい 1点、はい・いいえでも… 0.5点、いいえ 0点、アンチパターンは逆転。\n\n` + markdownFor(list)
+  const head = [`# チームチェックの回答（${state.updatedAt ?? '未記録'}）`, '', `${tally(st)}。配点は出典の「使い方」に従い、はい 1点、はい・いいえでも… 0.5点、いいえ 0点、アンチパターンは逆転。`, '']
+  if (props.summary) { // per-theme tally (same figures as the on-page table) before the per-item lines
+    head.push('| 大テーマ | 回答済み | 得点 |', '| :--- | ---: | ---: |')
+    for (const t of themes.value) head.push(`| ${t.theme} | ${t.answered} / ${t.total} | ${fmt(t.points)} / ${t.total} |`)
+    head.push(`| 合計 | ${st.answered} / ${st.total} | ${fmt(st.points)} / ${st.total} |`, '')
+  }
+  return head.join('\n') + markdownFor(list, !!props.summary)
 })
 async function copy() {
   try { await navigator.clipboard.writeText(markdown.value); copied.value = true; setTimeout(() => (copied.value = false), 2000) } catch { copied.value = false }
